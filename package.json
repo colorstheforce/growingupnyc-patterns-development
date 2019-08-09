@@ -1,0 +1,17 @@
+{
+  "name": "growingupnyc-patterns",
+  "version": "1.0.0",
+  "description": "Patterns library for Growing Up NYC",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development cross-env PORT=7070 concurrently \"pttrn default -w\" \"pttrn serve -w\" -p \"none\"",
+    "preversion": "cross-env NODE_ENV=production pttrn default",
+    "prepublishOnly": "cross-env NODE_ENV=production pttrn default",
+    "publish": "cross-env NODE_ENV=production pttrn publish"
+  },
+  "author": "Mayor's Office for Economic Opportunity",
+  "license": "ISC",
+  "devDependencies": {
+    "@nycopportunity/patterns-framework": "0.0.10-alpha"
+  }
+}

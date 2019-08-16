@@ -1,0 +1,12 @@
+/ Layout
+= extend('layouts/default');
+
+/ Partials
+= partial('partials/head.mixin.slm');
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('content');
+  p The pattern library for Growing Up NYC.

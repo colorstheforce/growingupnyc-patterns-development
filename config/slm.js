@@ -14,8 +14,8 @@ const site = {
     package: version
   },
   urls: {
-    production: 'https://cityofnewyork.github.io/nyco-patterns-framework',
-    cdn: '"https://cdn.jsdelivr.net/gh/CityOfNewYork/nyco-patterns-framework@v' + version + '/dist"'
+    production: 'https://cityofnewyork.github.io/growingupnyc-patterns',
+    cdn: '"https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns@v' + version + '/dist"'
   }
 };
 

@@ -1,5 +1,5 @@
 = extend('layouts/default')
 
-- title = 'Test'
+- title = 'Fonts'
 
 = content('main')

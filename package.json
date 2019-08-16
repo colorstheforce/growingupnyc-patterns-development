@@ -1,6 +1,6 @@
 {
   "name": "growingupnyc-patterns",
-  "version": "1.0.0",
+  "version": "0.0.1-alpha",
   "description": "Patterns library for Growing Up NYC",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,15 @@
   "license": "ISC",
   "devDependencies": {
     "@nycopportunity/patterns-framework": "0.0.10-alpha"
+  },
+  "stylelintConfig": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "comment-whitespace-inside": null,
+      "no-missing-end-of-source-newline": null,
+      "at-rule-empty-line-before": null,
+      "number-leading-zero": "never",
+      "selector-pseudo-element-colon-notation": null
+    }
   }
 }

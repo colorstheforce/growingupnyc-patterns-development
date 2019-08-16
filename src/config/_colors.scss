@@ -1,0 +1,13 @@
+//
+// Variables
+//
+
+// Dependencies
+@import 'config/variables';
+
+// Declarations
+$colors: map-get($variables, 'colors');
+
+// Variables
+$color-bright-blue: map-get($colors, 'bright-blue');
+$very-light-gray: map-get($colors, 'very-light-gray');

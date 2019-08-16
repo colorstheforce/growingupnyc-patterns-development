@@ -1,0 +1,9 @@
+doctype html
+html lang='en'
+  = content('head');
+
+  body
+    h1 WIP Growing Up NYC Patterns
+
+    main
+      = content('content');

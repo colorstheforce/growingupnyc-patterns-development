@@ -1,0 +1,47 @@
+/**
+ * Base
+ */
+
+// Dependencies
+@import 'config/variables';
+
+// Declarations
+html,
+body {
+  height: 100%;
+  font-family: map-get(map-get($variables, 'fonts'), 'default-sans');
+}
+
+svg {
+  fill: currentColor;
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  transition: all ease-in-out .15s;
+}
+
+#main {
+  position: relative;
+}
+
+hr {
+  background: map-get(map-get($variables, 'colors'), 'very-light-gray');
+  border-radius: 6.5px;
+  height: 2px;
+}
+
+main,
+section {
+  &:focus {
+    outline: none;
+  }
+}

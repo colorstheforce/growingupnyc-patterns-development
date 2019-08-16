@@ -2,7 +2,7 @@
  * Dependencies
  */
 
-const package = require(`${process.env.PWD}/node_modules/@nycopportunity/patterns-framework/package.json`);
+const package = require(`${process.env.PWD}/package.json`);
 const tailwindcss = require('tailwindcss'); // utility framework/management
 const autoprefixer = require('autoprefixer'); // adds vendor spec prefixes
 const cssnano = require('cssnano'); // modern css compiling/minification

@@ -3,5 +3,5 @@
  */
 
 module.exports = {
-  'production': 'https://github.com/CityOfNewYork/nyco-patterns-framework.git'
+  'production': 'https://github.com/CityOfNewYork/growingupnyc-patterns.git'
 };

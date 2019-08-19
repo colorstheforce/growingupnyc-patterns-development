@@ -7,14 +7,15 @@
 /**
  * Config
  */
-
 const sass = {
   sourceMapEmbed: true,
   precision: 2,
   includePaths: [
     './node_modules/nyco-patterns/src/',
     './src',
-    './node_modules'
+    './node_modules',
+    './node_modules/bourbon/core',
+    './node_modules/bourbon-neat/core',
   ]
 };
 

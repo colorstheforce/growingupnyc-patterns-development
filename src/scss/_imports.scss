@@ -41,6 +41,8 @@
 // manage dependencies (recommended). Dependency examples include Bootstrap,
 // Material Components Web, etc.
 
+@import 'bourbon';
+@import 'neat';
 // global - end
 
 /**********
@@ -84,4 +86,5 @@
 
 @import 'utilities/color/color';
 @import 'utilities/font/font';
+
 // utilities - end

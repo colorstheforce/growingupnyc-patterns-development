@@ -23,5 +23,9 @@
       "number-leading-zero": "never",
       "selector-pseudo-element-colon-notation": null
     }
+  },
+  "dependencies": {
+    "bourbon": "^6.0.0",
+    "bourbon-neat": "^4.0.0"
   }
 }

@@ -9,7 +9,7 @@
 html,
 body {
   height: 100%;
-  font-family: map-get(map-get($variables, 'fonts'), 'default-sans');
+  // font-family: map-get(map-get($variables, 'fonts'), 'default-sans');
 }
 
 svg {
@@ -34,7 +34,7 @@ a {
 }
 
 hr {
-  background: map-get(map-get($variables, 'colors'), 'very-light-gray');
+  background: map-get(map-get($variables, 'colors'), 'color-gray-light');
   border-radius: 6.5px;
   height: 2px;
 }

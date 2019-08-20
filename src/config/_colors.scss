@@ -7,7 +7,34 @@
 
 // Declarations
 $colors: map-get($variables, 'colors');
+$combinations: map-get($variables, 'color-combinations');
+$colors-default: map-get($variables, 'colors-default');
 
 // Variables
-$color-bright-blue: map-get($colors, 'bright-blue');
-$very-light-gray: map-get($colors, 'very-light-gray');
+$color-black: map-get($colors, 'color-black');
+$color-white: map-get($colors, 'color-white');
+$color-gray-light: map-get($colors, 'color-gray-light');
+$color-gray: map-get($colors, 'color-gray');
+$color-gray-mid: map-get($colors, 'color-gray-mid');
+$color-gray-dark: map-get($colors, 'color-gray-dark');
+$color-dark-gray: map-get($colors, 'color-dark-gray');
+$color-dark-gray-mid: map-get($colors, 'color-dark-gray-mid');
+$color-dark-gray-dark: map-get($colors, 'color-dark-gray-dark');
+$color-blue-lightest: map-get($colors, 'color-blue-lightest');
+$color-blue-light: map-get($colors, 'color-blue-light');
+$color-blue: map-get($colors, 'color-blue');
+$color-blue-mid: map-get($colors, 'color-blue-mid');
+$color-blue-dark: map-get($colors, 'color-blue-dark');
+$color-red: map-get($colors, 'color-red');
+$color-pink: map-get($colors, 'color-pink');
+$color-pink-dark: map-get($colors, 'color-pink-dark');
+$color-green: map-get($colors, 'color-green');
+$color-green-dark: map-get($colors, 'color-green-dark');
+$color-orange-light: map-get($colors, 'color-orange-light');
+$color-orange: map-get($colors, 'color-orange');
+$color-purple: map-get($colors, 'color-purple');
+$color-purple-dark: map-get($colors, 'color-purple-dark');
+
+$color-primary: map-get($colors, map-get($colors-default, 'color-primary'));
+$color-secondary: map-get($colors, map-get($colors-default, 'color-secondary'));
+

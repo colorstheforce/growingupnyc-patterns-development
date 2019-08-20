@@ -1,0 +1,3 @@
+= mixin('demo-specs', 'text');
+  div
+    = 'md{{' + this.text + ' }}'

@@ -1,0 +1,15 @@
+= extend('layouts/default')
+
+- title = 'Colors'
+
+/ Partials
+= partial('partials/head.mixin.slm');
+= partial('partials/content-header.mixin.slm');
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('content')
+  = mixin('content-header', title);
+  

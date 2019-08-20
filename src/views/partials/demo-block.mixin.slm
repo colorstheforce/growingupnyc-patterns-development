@@ -1,0 +1,5 @@
+= mixin('demo-block', 'markup', 'layout = columns', 'grid = false');
+
+  div
+    pre
+      = 'code{{ '+ this.markup +' }}';

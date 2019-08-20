@@ -1,0 +1,22 @@
+= extend('layouts/default')
+
+- title = 'Typography'
+
+/ Partials
+= partial('partials/head.mixin.slm');
+= partial('partials/content-header.mixin.slm');
+= partial('partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('content')
+  = mixin('content-header', title);
+  = mixin('section', 'Heading 1', 'utilities/typography/typography-h1');
+  = mixin('section', 'Heading 2', 'utilities/typography/typography-h2');
+  = mixin('section', 'Heading 3', 'utilities/typography/typography-h3');
+  = mixin('section', 'Heading 4', 'utilities/typography/typography-h4');
+  = mixin('section', 'Heading 5', 'utilities/typography/typography-h5');
+  = mixin('section', 'Heading 6', 'utilities/typography/typography-h6');

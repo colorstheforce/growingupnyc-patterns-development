@@ -1,0 +1,31 @@
+//
+// Variables
+//
+
+// Dependencies
+@import 'config/variables';
+
+
+// Declarations
+$screen-mobile: #{map-get(map-get($variables, 'screens'), 'screen-mobile')}px;
+$screen-tablet: #{map-get(map-get($variables, 'screens'), 'screen-tablet')}px;
+$screen-desktop: #{map-get(map-get($variables, 'screens'), 'screen-desktop')}px;
+$screen-desktop-large: #{map-get(map-get($variables, 'screens'), 'screen-desktop-large')}px;
+
+$bp-x-small: (media: "screen and (max-width: " + $screen-mobile + ")");
+$bp-small: (media: "screen and (min-width: " + $screen-mobile + ")");
+$bp-medium: (media: "screen and (min-width: " + $screen-tablet + ")");
+$bp-large: (media: "screen and (min-width: " + $screen-desktop + ")");
+$bp-xlarge: (media: "screen and (min-width: " + $screen-desktop-large + ")");
+
+@mixin screens($screens: map-get($variables, 'screens')) {
+  $variant: '' !global; // !global allows us to "pass" $variant to the @content
+  @content; // mobile first... then other breakpoints
+  @each $screen, $s in $screens {
+    @media (min-width: #{$s}px) {
+      $variant: $screen + '\\:' !global;
+      @content;
+    }
+  }
+  $variant: '' !global;
+}

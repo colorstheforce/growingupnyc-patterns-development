@@ -1,0 +1,17 @@
+
+= partial('demo-specs.mixin.slm');
+= partial('demo-block.mixin.slm');
+
+= mixin('section', 'title', 'path', 'layout = columns', 'grid = false', 'specs = true', 'code = true');
+  h1
+    = this.title
+  
+  - if (this.specs != 'false')
+  div
+    = mixin('demo-specs', this.path + '.md');
+
+  div
+    = partial(`../${this.path}.slm`);
+
+    - if (this.code != 'false')
+        = mixin('demo-block', this.path + '.slm', this.layout, this.grid);

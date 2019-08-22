@@ -61,21 +61,35 @@ $variables:(
     color-background-footer: color-primary,
     color-error: strong-pink
   ),
-  colors-ages: (
-    color-baby: color-pink,
-    color-baby-secondary: color-pink-dark,
-    color-toddler: color-orange,
-    color-toddler-secondary: color-red,
-    color-pre-schooler: color-orange-light,
-    color-pre-schooler-secondary: color-orange,
-    color-grade-schooler: color-green,
-    color-grade-schooler-secondary: color-green-dark,
-    color-pre-teen: color-blue,
-    color-pre-teen-secondary: color-blue-dark,
-    color-teen: color-purple,
-    color-teen-secondary: color-purple-dark,
-    color-young-adult: color-dark-gray,
-    color-young-adult-secondary: color-dark-gray-mid
+  milestones: (
+    baby: (
+      color-primary: color-pink,
+      color-secondary: color-pink-dark
+    ),
+    toddler: (
+      color-primary: color-orange,
+      color-secondary: color-red
+    ),
+    pre-schooler: (
+      color-primary: color-orange-light,
+      color-secondary: color-orange
+    ),
+    grade-schooler: (
+      color-primary: color-green,
+      color-secondary: color-green-dark
+    ),
+    pre-teen: (
+      color-primary: color-blue,
+      color-secondary: color-blue-dark
+    ),
+    teen: (
+      color-primary: color-purple,
+      color-secondary: color-purple-dark
+    ),
+    young-adult: (
+      color-primary: color-dark-gray,
+      color-secondary: color-dark-gray-mid
+    )
   ),
   transitions: (
     button-transition: all ease-in-out .15s,

@@ -8,5 +8,5 @@
 = content('head');
   = mixin('head');
 
-= content('content');
+= content('main');
   p The pattern library for Growing Up NYC.

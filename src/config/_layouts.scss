@@ -1,0 +1,21 @@
+//
+// Variables
+//
+
+// Dependencies
+@import 'config/media';
+
+// Declarations
+// $var
+
+@mixin layout-inner-left-edge {
+  left: $outer-gutter;
+
+  @include media($bp-small) {
+    left: $outer-gutter-small;
+  }
+
+  @include media($bp-large) {
+    left: $outer-gutter-large;
+  }
+}

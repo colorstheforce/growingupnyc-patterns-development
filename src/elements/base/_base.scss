@@ -33,11 +33,11 @@ a {
   position: relative;
 }
 
-hr {
-  background: map-get(map-get($variables, 'colors'), 'color-gray-light');
-  border-radius: 6.5px;
-  height: 2px;
-}
+// hr {
+//   background: map-get(map-get($variables, 'colors'), 'color-gray-light');
+//   border-radius: 6.5px;
+//   height: 2px;
+// }
 
 main,
 section {

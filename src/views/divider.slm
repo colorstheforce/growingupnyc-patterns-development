@@ -1,0 +1,17 @@
+= extend('layouts/default')
+
+- title = 'Divider'
+
+/ Partials
+= partial('partials/head.mixin.slm');
+= partial('partials/content-header.mixin.slm');
+= partial('partials/section.mixin.slm');
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  = mixin('section', false, 'elements/divider/divider');
+  = mixin('section', 'Light', 'elements/divider/divider-light');

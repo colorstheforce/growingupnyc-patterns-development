@@ -9,4 +9,4 @@ html lang='en'
       = partial('/partials/nav.slm');
 
     main
-      = content('content');
+      = content('main');

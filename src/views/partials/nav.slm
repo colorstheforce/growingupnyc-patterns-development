@@ -2,3 +2,5 @@ nav
   a href='index' Home
   a href='colors' Colors
   a href='typography' Typography
+  a href='layouts' Layouts
+  a href='divider' Divider

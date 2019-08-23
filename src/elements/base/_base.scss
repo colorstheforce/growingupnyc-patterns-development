@@ -33,15 +33,14 @@ a {
   position: relative;
 }
 
-// hr {
-//   background: map-get(map-get($variables, 'colors'), 'color-gray-light');
-//   border-radius: 6.5px;
-//   height: 2px;
-// }
-
 main,
 section {
   &:focus {
     outline: none;
   }
+}
+
+* {
+	margin: 0;
+	padding: 0;
 }

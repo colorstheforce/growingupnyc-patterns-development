@@ -79,6 +79,10 @@
 // application and some will require their own Objects. Object namespaces are
 // prefixed with 'o-'.
 
+@import 'objects/navigation/navigation';
+@import 'objects/inline-list/inline-list';
+@import 'objects/container/container';
+
 // objects - end
 
 /************

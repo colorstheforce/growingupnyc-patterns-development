@@ -37,4 +37,6 @@ $color-purple-dark: map-get($colors, 'color-purple-dark');
 
 $color-primary: map-get($colors, map-get($colors-default, 'color-primary'));
 $color-secondary: map-get($colors, map-get($colors-default, 'color-secondary'));
+$color-background: map-get($colors, map-get($colors-default, 'color-background'));
+$color-shadow: map-get($colors, 'color-shadow');
 

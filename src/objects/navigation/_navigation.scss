@@ -1,0 +1,182 @@
+/**
+ * Navigation
+ */
+
+// Dependencies
+// This is where variables, mixins, or functions are imported that the
+// pattern depends on. It's helpful to import dependencies into each
+// pattern so that they can be exported individually and it's clear
+// where the pattern is getting variables from. You can create a
+// pattern specific SASS configuration in the /src/config directory, or
+// add configuration to the /config/variables.js object (which is
+// to SASS during the compilation process).
+@import 'config/variables';
+@import 'config/media';
+@import 'config/colors';
+@import 'config/fonts';
+@import 'config/typography';
+@import 'config/layouts';
+
+$z-index-header: map-get(map-get($variables, 'z-index'), 'z-index-header');
+$height-banner-large: map-get(map-get($variables, 'heights'), 'height-banner-large');
+
+$height-banner-logo: map-get(map-get($variables, 'heights'), 'height-banner-logo');
+
+$width-banner-logo: map-get(map-get($variables, 'widths'), 'width-banner-logo');
+
+$height-banner-logo-small: $height-banner-logo * 1.66666;
+$height-banner-logo-large: $height-banner-logo * 2.4;
+$width-banner-logo-small: $width-banner-logo * 1.33333;
+$width-banner-logo-large: $width-banner-logo * 2.4;
+
+// Declarations
+// .o-navigation { }
+
+// .c-banner {
+.o-navigation {
+  background: $color-background;
+  box-shadow: 0 4px 4px 0 $color-shadow;
+  height: auto;
+  position: relative;
+  z-index: $z-index-header;
+
+  @include grid-media($bp-medium) {
+    height: rem-calc($height-banner-large);
+  }
+}
+
+.o-navigation__logo-wrapper {
+  background: $color-background;
+  box-shadow: 0 0 4px 0 $color-shadow;
+  display: block;
+  height: rem-calc($height-banner-logo);
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+
+  @include layout-inner-left-edge;
+
+  padding: 0 5px 6px;
+  position: absolute;
+  top: rem-calc(-35);
+  width: rem-calc($width-banner-logo);
+
+  @include grid-media($bp-small) {
+    height: rem-calc($height-banner-logo-small);
+    width: rem-calc($width-banner-logo-small);
+  }
+
+  @include grid-media($bp-medium) {
+    height: rem-calc($height-banner-logo-large);
+    padding: 0 16px 15px 14px;
+    width: rem-calc($width-banner-logo-large);
+  }
+
+  @include grid-media($bp-large) {
+    top: rem-calc(-38px);
+  }
+}
+
+.o-navigation__logo-wrapper-no-menu {
+  top: 0 !important;
+  @include grid-media($bp-small) {
+    height: rem-calc(80px);
+  }
+  
+  @include grid-media($bp-medium) {
+    height: rem-calc(144px);
+  }
+}
+
+// Banner Logo
+.o-navigation__logo {
+  background-image: url('/images/logo-color@150px.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+
+  height: 100%;
+  width: 100%;
+
+  image-rendering: -webkit-optimize-contrast; // Chrome
+  image-rendering: optimizequality; // FF
+  @include retina {
+    background-image: url('/images/logo-color@300px.png');
+  }
+}
+
+.o-navigation__nav {
+  float: right;
+  line-height: 1;
+  padding-top: rem-calc(30px);
+  padding-bottom: rem-calc(6px);
+
+  li {
+    margin-left: 0;
+    margin-right: rem-calc(6px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      padding: rem(3 0);
+      display: inline-block;
+    }
+  }
+
+  @include grid-media($bp-small) {
+    padding-top: rem-calc(18px);
+    padding-bottom: rem-calc(18px);
+  }
+
+  @include grid-media($bp-medium) {
+    padding-top: rem-calc(20px);
+    padding-bottom: 0;
+
+    li {
+      margin-right: 0;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      @include grid-media($bp-small) {
+        margin-left: rem-calc(16px);
+      }
+      @include grid-media($bp-large) {
+        margin-left: rem-calc(56px);
+      }
+    }
+  }
+}
+
+
+.o-navigation__nav-link {
+  color: $color-primary;
+  font-family: $font-family-display;
+  font-size: rem-calc(12px);
+  font-weight: $font-weight-extrablack;
+  position: relative;
+  text-decoration: none;
+
+  @include text-uppercase;
+
+  &:focus {
+    color: $color-secondary;
+  }
+
+  .no-touchevents & {
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+
+  @include grid-media($bp-medium) {
+    font-size: rem-calc($font-size-small);
+    letter-spacing: 1.1px;
+  }
+}

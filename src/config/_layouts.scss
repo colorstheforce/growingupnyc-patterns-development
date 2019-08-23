@@ -8,14 +8,19 @@
 // Declarations
 // $var
 
+$outer-gutter: map-get(map-get($variables, 'dimensions'), 'outer-gutter');
+$outer-gutter-small: map-get(map-get($variables, 'dimensions'), 'outer-gutter-small');
+$outer-gutter-large: map-get(map-get($variables, 'dimensions'), 'outer-gutter-large');
+
+
 @mixin layout-inner-left-edge {
   left: $outer-gutter;
 
-  @include media($bp-small) {
+  @include grid-media($bp-small) {
     left: $outer-gutter-small;
   }
 
-  @include media($bp-large) {
+  @include grid-media($bp-large) {
     left: $outer-gutter-large;
   }
 }

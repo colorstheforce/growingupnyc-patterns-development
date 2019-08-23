@@ -1,0 +1,40 @@
+/**
+ * Container
+ */
+
+// Dependencies
+// This is where variables, mixins, or functions are imported that the
+// pattern depends on. It's helpful to import dependencies into each
+// pattern so that they can be exported individually and it's clear
+// where the pattern is getting variables from. You can create a
+// pattern specific SASS configuration in the /src/config directory, or
+// add configuration to the /config/variables.js object (which is
+// to SASS during the compilation process).
+// @import 'config/variables';
+@import 'config/container';
+
+// Declarations
+$max-width-med: map-get(map-get($variables, 'padding'), 'max-width-med');
+
+
+.o-container {
+  @include outer-container;
+  padding-left: rem-calc($outer-gutter);
+  padding-right: rem-calc($outer-gutter);
+  position: relative;
+
+  @include grid-media($bp-small) {
+    padding-left: rem-calc($outer-gutter-small);
+    padding-right: rem-calc($outer-gutter-small);
+  }
+
+  @include grid-media($bp-large) {
+    padding-left: rem-calc($outer-gutter-large);
+    padding-right: rem-calc($outer-gutter-large);
+  }
+}
+
+.o-container-med {
+  @extend .o-container;
+  max-width: $max-width-med;
+}

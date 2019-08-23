@@ -3,10 +3,7 @@ html lang='en'
   = content('head');
 
   body
-    h1 WIP Growing Up NYC Patterns
-
-    div
-      = partial('/partials/nav.slm');
+    = partial('/partials/nav.slm');
 
     main
       = content('main');

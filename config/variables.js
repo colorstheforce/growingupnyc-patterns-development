@@ -75,7 +75,7 @@ const variables = {
   'colors-default': {
     'color-primary': 'color-blue-light',
     'color-secondary': 'strong-blue',
-    'color-background': 'white',
+    'color-background': 'color-white',
     'color-background-shade': 'color-gray-light',
     'color-text': 'color-dark-gray-dark',
     'color-text-invert': 'white',
@@ -133,10 +133,10 @@ const variables = {
     'grid-columns': '12',
     'max-width-med': '900px',
     'max-width': '80em',
-    'outer-gutter': '15',
-    'outer-gutter-small': '20',
-    'outer-gutter-medium': '30',
-    'outer-gutter-large': '40',
+    'outer-gutter': '15px',
+    'outer-gutter-small': '20px',
+    'outer-gutter-medium': '30px',
+    'outer-gutter-large': '40px',
     'horizontal-gutter': '20px'
   },
   'screens': {
@@ -158,9 +158,9 @@ const variables = {
     'horizontal-gutter': '20px'
   } ,
   'heights': {
-    'height-banner': '50',
-    'height-banner-large': '60',
-    'height-banner-logo': '60',
+    'height-banner': '50px',
+    'height-banner-large': '60px',
+    'height-banner-logo': '60px',
   },
   'widths': {
     'width-banner-logo': '75px',

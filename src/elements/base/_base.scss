@@ -4,12 +4,14 @@
 
 // Dependencies
 @import 'config/variables';
+@import 'config/sanitize';
 
 // Declarations
 html,
 body {
   height: 100%;
-  // font-family: map-get(map-get($variables, 'fonts'), 'default-sans');
+  min-height: 100%;
+
 }
 
 svg {
@@ -38,9 +40,4 @@ section {
   &:focus {
     outline: none;
   }
-}
-
-* {
-	margin: 0;
-	padding: 0;
 }

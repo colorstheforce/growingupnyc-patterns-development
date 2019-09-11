@@ -77,6 +77,19 @@ rollup.dist = [
  */
 const modules = [
   {
+    input: './src/js/main.js',
+    output: {
+      name: 'GUNYC',
+      file: `./dist/scripts/growingup-nyc.js`,
+      sourcemap: (process.env.NODE_ENV === 'production')
+        ? false : rollup.sourcemap,
+      format: rollup.format,
+      strict: rollup.strict,
+      globals: rollup.globals
+    },
+    plugins: rollup.local
+  },
+  {
     input: `${process.env.PWD}/node_modules/@nycopportunity/patterns-framework/src/utilities/forms/forms.js`,
     plugins: rollup.dist,
     output: [
@@ -93,7 +106,43 @@ const modules = [
         strict: rollup.strict
       }
     ]
-  }
+  },
+  {
+    input: `${process.env.PWD}/node_modules/@nycopportunity/patterns-framework/src/utilities/icons/icons.js`,
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'Icons',
+        file: `./dist/elements/icons/icons.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'Icons',
+        file: `./dist/elements/icons/icons.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
+  },
+  {
+    input: './src/objects/navigation/Navigation.js',
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'InputAutocomplete',
+        file: `./dist/objects/navigation/Navigation.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'InputAutocomplete',
+        file: `./dist/objects/navigation/Navigation.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
+  },
 ];
 
 export default modules;

@@ -16,16 +16,40 @@
 / other Elements/Components/Objects, the symbol should be set to false
 / and the instance should be set to the pattern's path.
 
-header class='o-navigation'
-  div class='o-container'
-    a href="#" class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu"
-      span class="o-navigation__logo"
-        = 'Growing Up NYC'
-    nav class='o-navigation__nav'
-      ul class='o-inline'
-        li class='o-inline__item'
-          a class='o-navigation__nav-link' href='#' 
-            = 'Programs'
-        li class='o-inline__item'
-          a class='o-navigation__nav-link' href='#' 
-            = 'Events'
+div class="o-offcanvas js-offcanvas" id="offcanvas-ages"
+  nav class="o-offcanvas__side js-offcanvas__side" id="ages" role="navigation" aria-label="ages-heading"
+    h2 id="ages-heading" class="show-for-screen-reader"
+      = 'Resources by Age'
+    button data-js="offcanvas-ages" class="o-offcanvas__close button--text"
+      svg class="icon--small" role="img"
+        title 
+          = 'Close Resources by Age'
+        use xlink:href="#icon-close"
+    ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true"
+      li class="c-list-box__item"
+        h3 class="js-accordion__header c-list-box__heading" id="ages-heading-baby" tabindex="0"
+          = 'Baby'
+          ol class="js-accordion__content c-list-box__content" id="ages-panel-baby"
+            li
+              a href="#" class="c-list-box__subitem"
+                = '0 months'
+
+  div class='o-offcanvas__main'
+    header class='o-navigation'
+      div class='o-container'
+        a href="#" class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu"
+          span class="o-navigation__logo"
+            = 'Growing Up NYC'
+        nav class='o-navigation__nav'
+          ul class='o-inline'
+            li class='o-inline__item'
+              a class='o-navigation__nav-link' href='#' 
+                = 'Programs'
+            li class='o-inline__item'
+              a class='o-navigation__nav-link' href='#' 
+                = 'Events'
+            li class='o-inline__item'
+              a class='o-navigation__nav-link js-offcanvas' href='#ages' data-js="offcanvas-ages"
+                = 'Ages'
+  a class="o-offcanvas__overlay" data-js="offcanvas-ages" aria-hidden="true"
+

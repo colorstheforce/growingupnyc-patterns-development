@@ -3,7 +3,19 @@ html lang='en'
   = content('head');
 
   body
-    = partial('/partials/nav.slm');
+    div class="o-offcanvas js-offcanvas" id="offcanvas-patterns"
+      = partial('/partials/nav-offcanvas.slm');
 
-    main
-      = content('main');
+      div class='o-offcanvas__main'
+        = partial('/partials/nav.slm');
+        main
+          = content('main');
+
+    script src='scripts/growingup-nyc.js'
+
+    javascript:
+      var gunyc = new GUNYC();
+      gunyc.navigation();
+      gunyc.icons();
+
+    = content('script');

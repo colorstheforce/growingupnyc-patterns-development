@@ -1,0 +1,153 @@
+/**
+ * Offcanvas
+ */
+
+// Dependencies
+// This is where variables, mixins, or functions are imported that the
+// pattern depends on. It's helpful to import dependencies into each
+// pattern so that they can be exported individually and it's clear
+// where the pattern is getting variables from. You can create a
+// pattern specific SASS configuration in the /src/config directory, or
+// add configuration to the /config/variables.js object (which is
+// to SASS during the compilation process).
+@import 'config/variables';
+@import 'config/colors';
+
+$z-index-offcanvas-side: map-get(map-get($variables, 'z-index'), 'z-index-offcanvas-side');
+$z-index-offcanvas-main: map-get(map-get($variables, 'z-index'), 'z-index-offcanvas-main');
+$z-index-offcanvas-overlay: map-get(map-get($variables, 'z-index'), 'z-index-offcanvas-overlay');
+$width-offcanvas-side: map-get(map-get($variables, 'widths'), 'width-offcanvas-side');
+$width-offcanvas-side-large: map-get(map-get($variables, 'widths'), 'width-offcanvas-side-large');
+
+
+// Declarations
+.o-offcanvas {
+  min-height: 100%;
+  z-index: 1;
+}
+
+.o-offcanvas__heading {
+  @include grid-media($bp-small) {
+    display: none !important;
+  }
+}
+
+// Off-Canvas Side
+//
+// The content that is initially offcanvas and then revealed
+.o-offcanvas__side {
+  background: $color-background;
+  width: $width-offcanvas-side;
+
+  @include grid-media($bp-large) {
+    width: $width-offcanvas-side-large;
+  }
+}
+
+.o-offcanvas__side {
+  @include grid-media($bp-small) {
+    float: right;
+    height: 100%;
+  }
+}
+
+.o-offcanvas__side {
+  min-height: 100%;
+  overflow: hidden;
+  padding-top: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all .5s;
+  visibility: hidden;
+  z-index: 1;
+
+  @include grid-media($bp-large) {
+    padding-top: 60px;
+  }
+}
+
+.is-open .o-offcanvas__side {
+  overflow: auto;
+  transition: transform .5s;
+  visibility: visible;
+  z-index: $z-index-offcanvas-side;
+}
+
+.o-offcanvas__side {
+  &:after {
+    background: rgba(0, 0, 0, .4);
+    content: '';
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity .5s;
+    width: 100%;
+  }
+}
+
+.is-open .o-offcanvas__side {
+  &:after {
+    height: 0;
+    opacity: 0;
+    transition: opacity .5s, width .1s .5s, height .1s .5s;
+    width: 0;
+  }
+}
+
+// Off-Canvas Close Button
+//
+// Closes the offcanvas nav.
+.o-offcanvas__close {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+}
+
+// Off-Canvas Main
+//
+// The content that slides over to make room for the offcanvas content
+.o-offcanvas__main {
+  background: $color-background !important;
+  backface-visibility: hidden;
+  height: 100%;
+  right: 0;
+  position: relative;
+  transition: right .5s;
+  z-index: $z-index-offcanvas-main;
+}
+
+.is-open .o-offcanvas__main {
+  position: fixed;
+  right: $width-offcanvas-side;
+  width: 100%;
+
+  @include grid-media($bp-large) {
+    right: $width-offcanvas-side-large;
+  }
+}
+
+// Off-Canvas Overlay
+//
+// Overlay on main content when offcanvas content is visible
+.o-offcanvas__overlay {
+  background: rgba(0, 0, 0, .4);
+  display: block;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: opacity .5s, width .1s .5s, height .1s .5s;
+  width: 0;
+}
+
+.is-open .o-offcanvas__overlay {
+  height: 100%;
+  opacity: 1;
+  transition: opacity .5s;
+  width: 100%;
+  z-index: $z-index-offcanvas-overlay;
+}

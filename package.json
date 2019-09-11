@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "bourbon": "^6.0.0",
-    "bourbon-neat": "^4.0.0"
+    "bourbon-neat": "^4.0.0",
+    "lodash": "^4.17.15"
   }
 }

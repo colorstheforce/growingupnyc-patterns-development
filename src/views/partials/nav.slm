@@ -1,25 +1,12 @@
 header class='o-navigation'
   div class='o-container'
-    a href="/" class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu"
+    a href="#" class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu"
       span class="o-navigation__logo"
         = 'Growing Up NYC'
     nav class='o-navigation__nav'
       ul class='o-inline'
         li class='o-inline__item'
-          a class='o-navigation__nav-link' href='colors' 
-            = 'Colors'
-        li class='o-inline__item'
-          a class='o-navigation__nav-link' href='typography' 
-            = 'Typography'
-        li class='o-inline__item'
-          a class='o-navigation__nav-link' href='layouts' 
-            = 'Layouts'
-        li class='o-inline__item'
-          a class='o-navigation__nav-link' href='divider' 
-            = 'Dividers'
-        li class='o-inline__item'
-          a class='o-navigation__nav-link' href='navigation' 
-            = 'Navigation'
-        li class='o-inline__item'
-          a class='o-navigation__nav-link' href='inline-list' 
-            = 'Inline List'
+          a class='o-navigation__nav-link js-offcanvas' href='#patterns' data-js="offcanvas-patterns"
+            = 'Patterns'
+
+a class="o-offcanvas__overlay" data-js="offcanvas-patterns" aria-hidden="true"

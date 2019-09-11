@@ -59,14 +59,15 @@
 // elements - end
 
 /*************
- * Components
- *************/
+* Components
+*************/
 
 // Components are elements that require isolated styling. Examples include
 // buttons, textfields, select boxes, grouped navigation, dropdowns, etc. They
 // may include utilities within them. Not all components are required for each
 // application. Component namespaces are prefixed with 'c-'.
 
+@import 'components/hero/hero';
 // components - end
 
 /**********
@@ -92,5 +93,7 @@
 @import 'utilities/color/color';
 @import 'utilities/font/font';
 @import 'utilities/typography/typography';
+@import 'utilities/accessibility/accessibility';
+@import 'utilities/offcanvas/offcanvas';
 
 // utilities - end

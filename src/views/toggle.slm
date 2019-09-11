@@ -1,0 +1,5 @@
+= extend('layouts/default')
+
+- title = 'Toggle'
+
+= content('main')

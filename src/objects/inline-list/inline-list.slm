@@ -16,7 +16,7 @@
 / other Elements/Components/Objects, the symbol should be set to false
 / and the instance should be set to the pattern's path.
 
-div 
+div
   ul class='o-inline'
     li class='o-line__item'
       = 'Baby'

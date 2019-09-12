@@ -7,7 +7,7 @@
 
 // Declarations
 $colors: map-get($variables, 'colors');
-$combinations: map-get($variables, 'color-combinations');
+// $combinations: map-get($variables, 'color-combinations');
 $colors-default: map-get($variables, 'colors-default');
 
 // Variables
@@ -40,4 +40,3 @@ $color-secondary: map-get($colors, map-get($colors-default, 'color-secondary'));
 $color-background: map-get($colors, map-get($colors-default, 'color-background'));
 $color-text: map-get($colors, map-get($colors-default, 'color-text'));
 $color-shadow: map-get($colors, 'color-shadow');
-

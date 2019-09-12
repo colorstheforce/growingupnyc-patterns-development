@@ -10,4 +10,5 @@
       = mixin('demo-specs', this.path + '.md');
 
       - if (this.code != 'false')
-          = mixin('demo-block', this.path + '.slm', this.layout, this.grid);
+        = mixin('demo-block', this.path + '.slm', this.layout, this.grid);
+         

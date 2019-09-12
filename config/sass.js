@@ -28,7 +28,23 @@ const modules = [
     precision: sass.precision,
     includePaths: sass.includePaths,
     devModule: true
-  }
+  },
+  {
+    file: './src/utilities/tailwind/_tailwind.scss',
+    outDir: './dist/styles/',
+    outFile: 'tailwind.css',
+    precision: sass.precision,
+    includePaths: sass.includePaths,
+    // devModule: true
+  },
+  {
+    file: './src/utilities/tailwind/_tailwind.scss',
+    outDir: './dist/styles/',
+    outFile: '_tailwind.scss',
+    precision: sass.precision,
+    includePaths: sass.includePaths,
+    // devModule: true
+  },
 ];
 
 module.exports = modules;

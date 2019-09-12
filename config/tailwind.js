@@ -2,7 +2,7 @@
  * Dependencies
  */
 
-const defaultConfig = require('tailwindcss/defaultConfig');
+// const defaultConfig = require('tailwindcss/defaultConfig');
 const variables = require('./variables.js');
 
 /**
@@ -10,6 +10,11 @@ const variables = require('./variables.js');
  */
 
 module.exports = {
-  colors: variables.colors,
-  fonts: variables.fonts
+  theme: {
+    colors: variables.colors,
+    textColor: variables.colors,
+    backgroundColor: variables.colors,
+    borderColor: variables.colors,
+    fonts: variables.fonts
+  }
 };

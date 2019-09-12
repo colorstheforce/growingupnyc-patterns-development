@@ -59,12 +59,12 @@ h1, .h1, .type-h1 {
 
 h2, .h2, .type-h2 {
   @include font-size-xx-large;
-  margin: rem(0 0 20);
+  margin: rem-calc(0 0 20);
 }
 
 h3, .h3, .type-h3 {
   @include font-size-large;
-  margin: rem(0 0 15);
+  margin: rem-calc(0 0 15);
 }
 
 a {

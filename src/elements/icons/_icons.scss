@@ -12,7 +12,7 @@
 // to SASS during the compilation process).
 // @import 'config/variables';
 @import 'config/media';
-
+@import 'scss/functions/rem-calc';
 
 // Declarations
 // .icons { }
@@ -38,8 +38,8 @@
 }
 
 .icon--small {
-  height: rem-calc(22px);
-  width: rem-calc(22px);
+  height: rem-calc(22);
+  width: rem-calc(22);
 }
 
 .icon--xsmall {
@@ -63,7 +63,7 @@
 
 .icon--nyc {
   height: rem-calc(21);
-  margin: rem(0 3);
+  margin: rem-calc(0 3);
   position: relative;
   top: rem-calc(-3);
   width: rem-calc(63);

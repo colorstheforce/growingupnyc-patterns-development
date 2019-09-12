@@ -109,6 +109,7 @@ const modules = [
   },
   {
     input: `${process.env.PWD}/node_modules/@nycopportunity/patterns-framework/src/utilities/icons/icons.js`,
+    // input: `./src/elements/icons/icons.js`,
     plugins: rollup.dist,
     output: [
       {

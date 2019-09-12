@@ -21,8 +21,8 @@ class main {
     return (settings) ? new Navigation(settings) : new Navigation();
   }
 
-  icons() {
-    return new Icons('icons.svg');
+  icons(path) {
+    return new Icons(path);
   }
 }
 

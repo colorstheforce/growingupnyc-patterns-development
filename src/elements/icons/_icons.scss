@@ -1,0 +1,82 @@
+/**
+ * Icons
+ */
+
+// Dependencies
+// This is where variables, mixins, or functions are imported that the
+// pattern depends on. It's helpful to import dependencies into each
+// pattern so that they can be exported individually and it's clear
+// where the pattern is getting variables from. You can create a
+// pattern specific SASS configuration in the /src/config directory, or
+// add configuration to the /config/variables.js object (which is
+// to SASS during the compilation process).
+// @import 'config/variables';
+@import 'config/media';
+
+
+// Declarations
+// .icons { }
+
+.icon--large {
+  height: rem-calc(37);
+  width: rem-calc(37);
+
+  @include grid-media($bp-large) {
+    height: rem-calc(50);
+    width: rem-calc(50);
+  }
+}
+
+.icon--medium {
+  height: rem-calc(37);
+  width: rem-calc(37);
+
+  @include grid-media($bp-medium) {
+    height: rem-calc(35);
+    width: rem-calc(35);
+  }
+}
+
+.icon--small {
+  height: rem-calc(22px);
+  width: rem-calc(22px);
+}
+
+.icon--xsmall {
+  height: 1em;
+  width: 1em;
+  vertical-align: top;
+}
+
+.icon--xxsmall {
+  height: rem-calc(13);
+  position: relative;
+  top: rem-calc(3);
+  width: rem-calc(13);
+  vertical-align: top;
+
+  @include grid-media($bp-small) {
+    height: rem-calc(15);
+    width: rem-calc(15);
+  }
+}
+
+.icon--nyc {
+  height: rem-calc(21);
+  margin: rem(0 3);
+  position: relative;
+  top: rem-calc(-3);
+  width: rem-calc(63);
+}
+
+// Align the caret with the text it's next to
+.icon--caret {
+  @extend .icon--small;
+  margin-top: rem-calc(-3);
+}
+
+.icon--caret--xxsmall {
+  @extend .icon--xxsmall;
+  margin-top: rem-calc(-3);
+  margin-right: rem-calc(-4);
+}

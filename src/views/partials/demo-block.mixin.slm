@@ -1,5 +1,14 @@
 = mixin('demo-block', 'markup', 'layout = columns', 'grid = false');
 
   div
-    pre
-      = 'code{{ '+ this.markup +' }}';
+    - if (typeof this.grid === 'object')
+      - let keys = Object.keys(this.grid)
+
+    - for (key in this.grid)
+      - value = this.grid[key];
+        div
+          = partial('../' + this.markup);
+        
+    div
+      pre
+        = 'code{{ '+ this.markup +' }}';

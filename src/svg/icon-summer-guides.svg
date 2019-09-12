@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-12.000000, -12.000000)">
+    <g transform="translate(12.000000, 12.000000)">
+      <circle stroke="#000" stroke-width="2" cx="28.5" cy="27.5" r="13.5"></circle>
+      <rect fill="#000" x="27" y="0" width="2" height="9"></rect>
+      <rect fill="#000" x="27" y="47" width="2" height="9"></rect>
+      <rect fill="#000" transform="translate(4.500000, 28.000000) rotate(-90.000000) translate(-4.500000, -28.000000) " x="3.5" y="23.5" width="2" height="9"></rect>
+      <rect fill="#000" transform="translate(51.500000, 28.000000) rotate(-90.000000) translate(-51.500000, -28.000000) " x="50.5" y="23.5" width="2" height="9"></rect>
+      <rect fill="#000" transform="translate(11.106602, 11.106602) rotate(-45.000000) translate(-11.106602, -11.106602) " x="10.1066017" y="6.29898987" width="2" height="9.61522369"></rect>
+      <rect fill="#000" transform="translate(43.889087, 43.889087) rotate(-45.000000) translate(-43.889087, -43.889087) " x="42.8890873" y="39.3890873" width="2" height="9"></rect>
+      <rect fill="#000" transform="translate(11.237721, 43.770619) rotate(-135.000000) translate(-11.237721, -43.770619) " x="10.2377215" y="38.9630074" width="2" height="9.61522369"></rect>
+      <rect fill="#000" transform="translate(44.020207, 11.988134) rotate(-135.000000) translate(-44.020207, -11.988134) " x="43.020207" y="7.48813364" width="2" height="9"></rect>
+    </g>
+  </g>
+</svg>

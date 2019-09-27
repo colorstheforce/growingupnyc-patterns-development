@@ -10,6 +10,7 @@ const variables = require('./variables.js');
  */
 
 module.exports = {
+  important: true,
   theme: {
     colors: variables.colors,
     textColor: variables.colors,

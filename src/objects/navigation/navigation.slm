@@ -22,9 +22,8 @@ div class="o-offcanvas js-offcanvas" id="offcanvas-ages"
       = 'Resources by Age'
     button data-js="offcanvas-ages" class="o-offcanvas__close button--text"
       svg class="icon--small" role="img"
-        title 
-          = 'Close Resources by Age'
-        use xlink:href="#close"
+        title = 'Close Resources by Age'
+        use xlink:href="#icon-close"
     ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true"
       li class="c-list-box__item"
         h3 class="js-accordion__header c-list-box__heading" id="ages-heading-baby" tabindex="0"

@@ -1,5 +1,4 @@
 'use strict';
-
 // Utilities
 
 // Elements
@@ -9,6 +8,7 @@
 
 // Objects
 import Navigation from '../objects/navigation/Navigation';
+import Accordion from '../objects/accordion/Accordion';
 import Icons from '../../node_modules/@nycopportunity/patterns-framework/src/utilities/icons/icons';
 /** import components here as they are written. */
 
@@ -23,6 +23,10 @@ class main {
 
   icons(path) {
     return new Icons(path);
+  }
+
+  accordion() {
+    return new Accordion();
   }
 }
 

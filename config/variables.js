@@ -78,7 +78,7 @@ const variables = {
     'color-background': 'color-white',
     'color-background-shade': 'color-gray-light',
     'color-text': 'color-dark-gray-dark',
-    'color-text-invert': 'white',
+    'color-text-invert': 'color-white',
     'color-text-weak': 'gray',
     'color-text-link': 'color-primary',
     'color-background-footer': 'color-primary',

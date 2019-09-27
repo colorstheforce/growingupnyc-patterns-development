@@ -12,7 +12,8 @@
   "author": "Mayor's Office for Economic Opportunity",
   "license": "ISC",
   "devDependencies": {
-    "@nycopportunity/patterns-framework": "0.0.10-alpha"
+    "@nycopportunity/patterns-framework": "0.0.10-alpha",
+    "jquery": "^3.4.1"
   },
   "stylelintConfig": {
     "extends": "stylelint-config-standard",

@@ -1,0 +1,34 @@
+ol class="js-accordion c-list-box c-list-box--primary" data-multiselectable="true"
+  li class="c-list-box__item"
+    h3 class="js-accordion__header c-list-box__heading bg-color-pink" id="ages-heading-baby" tabindex="0"
+      = 'Baby'
+      span class="c-list-box__subheading" 
+        = '0-11 months'
+    ol class="js-accordion__content c-list-box__content bg-color-pink" id="ages-panel-baby"
+      li class="c-list-box__subitem"
+        a href="#" class="button--full-width button--primary text-color-white"
+          = '0 months'
+      li class="c-list-box__subitem"
+        a href="#" class="button--full-width button--primary text-color-white"
+          = '4 months'
+      li class="c-list-box__subitem"
+        a href="#" class="button--full-width button--primary text-color-white"
+          = '6 months'
+      li class="c-list-box__subitem"
+        a href="#" class="button--full-width button--primary text-color-white"
+          = '9 months'
+  li class="c-list-box__item"
+    h3 class="js-accordion__header c-list-box__heading bg-color-orange" id="ages-heading-toddler" tabindex="0"
+      = 'Toddler'
+      span class="c-list-box__subheading" 
+        = '1-3 years'
+    ol class="js-accordion__content c-list-box__content bg-color-orange" id="ages-panel-toddler"
+      li class="c-list-box__subitem"
+        a href="#" class="button--full-width button--primary text-color-white"
+          = '1 years'
+      li class="c-list-box__subitem"
+        a href="#" class="button--full-width button--primary text-color-white"
+          = '2 years'
+      li class="c-list-box__subitem"
+        a href="#" class="button--full-width button--primary text-color-white"
+          = '3 years'

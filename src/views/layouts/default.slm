@@ -16,6 +16,7 @@ html lang='en'
     javascript:
       var gunyc = new GUNYC();
       gunyc.navigation();
+      gunyc.accordion();
       gunyc.icons();
 
     = content('script');

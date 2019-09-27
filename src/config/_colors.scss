@@ -34,9 +34,15 @@ $color-orange-light: map-get($colors, 'color-orange-light');
 $color-orange: map-get($colors, 'color-orange');
 $color-purple: map-get($colors, 'color-purple');
 $color-purple-dark: map-get($colors, 'color-purple-dark');
+$color-shadow: map-get($colors, 'color-shadow');
 
 $color-primary: map-get($colors, map-get($colors-default, 'color-primary'));
 $color-secondary: map-get($colors, map-get($colors-default, 'color-secondary'));
 $color-background: map-get($colors, map-get($colors-default, 'color-background'));
+$color-background-shade: map-get($colors, map-get($colors-default, 'color-background-shade'));
+$color-background-footer: map-get($colors, map-get($colors-default, 'color-background-footer'));
 $color-text: map-get($colors, map-get($colors-default, 'color-text'));
-$color-shadow: map-get($colors, 'color-shadow');
+$color-text-invert: map-get($colors, map-get($colors-default, 'color-text-invert'));
+$color-text-link: map-get($colors, map-get($colors-default, 'color-text-link'));
+$color-text-weak: map-get($colors, map-get($colors-default, 'color-text-weak'));
+$color-error: map-get($colors, map-get($colors-default, 'color-error'));

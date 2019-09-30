@@ -2,4 +2,16 @@
 
 - title = 'Input'
 
+/ Partials
+= partial('partials/head.mixin.slm');
+= partial('partials/content-header.mixin.slm');
+= partial('partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
 = content('main')
+  = mixin('content-header', title);
+  = mixin('section', 'Input', 'elements/input/input');

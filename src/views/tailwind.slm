@@ -1,11 +1,12 @@
 = extend('layouts/default')
 
-- title = 'Hero'
+- title = 'Tailwind'
 
 / Partials
 = partial('partials/head.mixin.slm');
 = partial('partials/content-header.mixin.slm');
 = partial('partials/section.mixin.slm');
+
 
 / Content blocks
 = content('head');
@@ -14,8 +15,5 @@
 = content('main')
   = mixin('content-header', title);
   div
-    = mixin('section', 'Hero', 'components/hero/hero');
-    = mixin('section', 'Hero Light', 'components/hero/hero-light');
-  
-  javascript:
-    document.querySelector('.c-hero').style.background = 'url(/images/splatter.svg)';
+    = mixin('section', 'Tailwind', 'utilities/tailwind/tailwind');
+

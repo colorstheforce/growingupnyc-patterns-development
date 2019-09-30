@@ -1,0 +1,1 @@
+The container object is used to wrap groups of elements and components.

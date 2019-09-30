@@ -1,0 +1,1 @@
+The hero component can be used to set an introductory image at the top of the page. The user is able to set an image, a heading, and subheading. To set the background image, the user will need to add `.c-hero { background: url(<path to image>);}` to the head of the page.

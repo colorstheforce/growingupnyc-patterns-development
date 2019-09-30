@@ -1,6 +1,6 @@
 header class='o-navigation'
   div class='o-container'
-    a href="#" class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu"
+    a href="/" class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu"
       span class="o-navigation__logo"
         = 'Growing Up NYC'
     nav class='o-navigation__nav'

@@ -1,0 +1,11 @@
+//
+// Variables
+//
+
+// Dependencies
+@import 'config/variables';
+
+// Declarations
+$dimensions: map-get($variables, 'dimensions');
+$outer-gutter-medium: map-get($dimensions, 'outer-gutter-medium');
+$outer-gutter-small: map-get($dimensions, 'outer-gutter-small');

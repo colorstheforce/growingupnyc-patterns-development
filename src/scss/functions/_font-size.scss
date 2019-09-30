@@ -47,7 +47,7 @@
 @mixin font-size-xxx-large {
   font-size: rem-calc($font-size-xxx-large-mobile);
 
-  @include media($bp-medium) {
+  @include grid-media($bp-medium) {
     font-size: rem-calc($font-size-xxx-large);
   }
 }

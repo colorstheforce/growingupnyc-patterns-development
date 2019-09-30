@@ -16,4 +16,4 @@
 / other Elements/Components/Objects, the symbol should be set to false
 / and the instance should be set to the pattern's path.
 
-div class="input" data-sketch-symbol=symbol data-sketch-symbol-instance=instance
+div class="input"

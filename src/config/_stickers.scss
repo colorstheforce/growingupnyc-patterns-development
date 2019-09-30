@@ -1,0 +1,10 @@
+//
+// Variables
+//
+
+// Dependencies
+@import 'config/variables';
+
+// Declarations
+$stickers: map-get($variables, 'stickers');
+$sticker-size-mobile: map-get($stickers, 'sticker-size-mobile');

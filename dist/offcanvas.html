@@ -146,93 +146,19 @@
         <main>
           <header>
             <div>
-              <h1>Navigation</h1>
+              <h1>Offcanvas</h1>
             </div>
           </header>
           <div>
             <div class="o-container">
-              <h1 class="type-h1"></h1>
+              <h1 class="type-h1">Offcanvas</h1>
               <div>
-                <div><p>The navigation object can be used to define the paths to different parts of the user&#39;s application. The user also has an option to append an off-canvas navigation which will toggle open from right to left to display additional information.</p></div>
+                <div></div>
                 <div>
                   <div>
-                    <div class="o-offcanvas js-offcanvas" id="offcanvas-ages">
-                      <nav aria-label="ages-heading" class="o-offcanvas__side js-offcanvas__side" id="ages" role="navigation">
-                        <h2 class="show-for-screen-reader" id="ages-heading">Resources by Age</h2><button class="o-offcanvas__close button--text" data-js="offcanvas-ages"><svg class="icon--small" role="img">
-                            <title>Close Resources by Age</title>
-                            <use xlink:href="#icon-close"></use>
-                          </svg></button>
-                        <ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true">
-                          <li class="c-list-box__item">
-                            <h3 class="js-accordion__header c-list-box__heading" id="baby-heading" tabindex="0">Baby</h3>
-                            <ol class="js-accordion__content c-list-box__content">
-                              <li><a class="c-list-box__subitem" href="#">2 months</a></li>
-                            </ol>
-                            <ol class="js-accordion__content c-list-box__content">
-                              <li><a class="c-list-box__subitem" href="#">4 months</a></li>
-                            </ol>
-                            <ol class="js-accordion__content c-list-box__content">
-                              <li><a class="c-list-box__subitem" href="#">6 months</a></li>
-                            </ol>
-                            <ol class="js-accordion__content c-list-box__content">
-                              <li><a class="c-list-box__subitem" href="#">9 months</a></li>
-                            </ol>
-                          </li>
-                        </ol>
-                      </nav>
-                      <div class="o-offcanvas__main">
-                        <header class="o-navigation">
-                          <div class="o-container"><a class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu" href="#"><span class="o-navigation__logo">Growing Up NYC</span></a>
-                            <nav class="o-navigation__nav">
-                              <ul class="o-inline">
-                                <li class="o-inline__item"><a class="o-navigation__nav-link" href="#">Programs</a></li>
-                                <li class="o-inline__item"><a class="o-navigation__nav-link" href="#">Events</a></li>
-                                <li class="o-inline__item"><a class="o-navigation__nav-link js-offcanvas" data-js="offcanvas-ages" href="#ages">Ages</a></li>
-                              </ul>
-                            </nav>
-                          </div>
-                        </header>
-                      </div><a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-ages"></a>
-                    </div>
+                    <div class="offcanvas"></div>
                   </div>
-                  <div><pre>&lt;div class=&quot;o-offcanvas js-offcanvas&quot; id=&quot;offcanvas-ages&quot;&gt;
-  &lt;nav aria-label=&quot;ages-heading&quot; class=&quot;o-offcanvas__side js-offcanvas__side&quot; id=&quot;ages&quot; role=&quot;navigation&quot;&gt;
-    &lt;h2 class=&quot;show-for-screen-reader&quot; id=&quot;ages-heading&quot;&gt;Resources by Age&lt;/h2&gt;&lt;button class=&quot;o-offcanvas__close button--text&quot; data-js=&quot;offcanvas-ages&quot;&gt;&lt;svg class=&quot;icon--small&quot; role=&quot;img&quot;&gt;
-        &lt;title&gt;Close Resources by Age&lt;/title&gt;
-        &lt;use xlink:href=&quot;#icon-close&quot;&gt;&lt;/use&gt;
-      &lt;/svg&gt;&lt;/button&gt;
-    &lt;ol class=&quot;js-accordion c-list-box c-list-box--secondary&quot; data-multiselectable=&quot;true&quot;&gt;
-      &lt;li class=&quot;c-list-box__item&quot;&gt;
-        &lt;h3 class=&quot;js-accordion__header c-list-box__heading&quot; id=&quot;baby-heading&quot; tabindex=&quot;0&quot;&gt;Baby&lt;/h3&gt;
-        &lt;ol class=&quot;js-accordion__content c-list-box__content&quot;&gt;
-          &lt;li&gt;&lt;a class=&quot;c-list-box__subitem&quot; href=&quot;#&quot;&gt;2 months&lt;/a&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;ol class=&quot;js-accordion__content c-list-box__content&quot;&gt;
-          &lt;li&gt;&lt;a class=&quot;c-list-box__subitem&quot; href=&quot;#&quot;&gt;4 months&lt;/a&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;ol class=&quot;js-accordion__content c-list-box__content&quot;&gt;
-          &lt;li&gt;&lt;a class=&quot;c-list-box__subitem&quot; href=&quot;#&quot;&gt;6 months&lt;/a&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;ol class=&quot;js-accordion__content c-list-box__content&quot;&gt;
-          &lt;li&gt;&lt;a class=&quot;c-list-box__subitem&quot; href=&quot;#&quot;&gt;9 months&lt;/a&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/nav&gt;
-  &lt;div class=&quot;o-offcanvas__main&quot;&gt;
-    &lt;header class=&quot;o-navigation&quot;&gt;
-      &lt;div class=&quot;o-container&quot;&gt;&lt;a class=&quot;o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;o-navigation__logo&quot;&gt;Growing Up NYC&lt;/span&gt;&lt;/a&gt;
-        &lt;nav class=&quot;o-navigation__nav&quot;&gt;
-          &lt;ul class=&quot;o-inline&quot;&gt;
-            &lt;li class=&quot;o-inline__item&quot;&gt;&lt;a class=&quot;o-navigation__nav-link&quot; href=&quot;#&quot;&gt;Programs&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;o-inline__item&quot;&gt;&lt;a class=&quot;o-navigation__nav-link&quot; href=&quot;#&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;o-inline__item&quot;&gt;&lt;a class=&quot;o-navigation__nav-link js-offcanvas&quot; data-js=&quot;offcanvas-ages&quot; href=&quot;#ages&quot;&gt;Ages&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/nav&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-  &lt;/div&gt;&lt;a aria-hidden=&quot;true&quot; class=&quot;o-offcanvas__overlay&quot; data-js=&quot;offcanvas-ages&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;</pre>
+                  <div><pre>&lt;div class=&quot;offcanvas&quot;&gt;&lt;/div&gt;</pre>
                   </div>
                 </div>
               </div>

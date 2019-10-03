@@ -18,4 +18,5 @@
     = mixin('section', 'Hero Light', 'components/hero/hero-light');
   
   javascript:
-    document.querySelector('.c-hero').style.background = 'url(/images/splatter.svg)';
+    let url = document.location.href;
+    document.querySelector('.c-hero').style.background = 'url(' + url.substring(0, url.lastIndexOf('/')) + '/images/splatter.svg)';

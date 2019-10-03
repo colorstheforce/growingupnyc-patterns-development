@@ -196,7 +196,8 @@
             </div>
           </div>
           <script type="text/javascript">
-            document.querySelector('.c-hero').style.background = 'url(/images/splatter.svg)';
+            let url = document.location.href;
+            document.querySelector('.c-hero').style.background = 'url(' + url.substring(0, url.lastIndexOf('/')) + '/images/splatter.svg)';
           </script>
         </main>
       </div>

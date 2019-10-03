@@ -8,3 +8,4 @@
 // Declarations
 $stickers: map-get($variables, 'stickers');
 $sticker-size-mobile: map-get($stickers, 'sticker-size-mobile');
+$sticker-size: map-get($stickers, 'sticker-size');

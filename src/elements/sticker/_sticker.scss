@@ -1,0 +1,70 @@
+/**
+ * Sticker
+ */
+
+// Dependencies
+// This is where variables, mixins, or functions are imported that the
+// pattern depends on. It's helpful to import dependencies into each
+// pattern so that they can be exported individually and it's clear
+// where the pattern is getting variables from. You can create a
+// pattern specific SASS configuration in the /src/config directory, or
+// add configuration to the /config/variables.js object (which is
+// to SASS during the compilation process).
+@import 'config/variables';
+@import 'config/fonts';
+@import 'config/stickers';
+@import 'scss/functions/font-size';
+@import 'scss/functions/rem-calc';
+
+// Declarations
+// Stickers
+//
+// markup:
+// <div class="sticker" aria-hidden="true">Text</div>
+// <div class="sticker" aria-hidden="true"><svg class="icon--large"><use xlink:href="assets/img/svg-sprite.svg#book"></use></svg></div>
+//
+.sticker {
+  background: $color-primary;
+  border-radius: rem-calc($sticker-size-mobile);
+  color: $color-white;
+  display: block;
+  font-family: $font-family-display;
+  @include font-size(13, 11.375);
+  height: rem-calc($sticker-size-mobile);
+  text-align: center;
+  text-decoration: none;
+  @include text-uppercase;
+  white-space: nowrap;
+  width: rem-calc($sticker-size-mobile);
+  //override text-uppercase
+  line-height: rem-calc($sticker-size-mobile);
+
+  @include grid-media($bp-large) {
+    border-radius: rem-calc($sticker-size);
+    height: rem-calc($sticker-size);
+    line-height: rem-calc($sticker-size);
+    width: rem-calc($sticker-size);
+  }
+}
+
+a.sticker {
+  &:focus {
+    background: $color-secondary;
+    color: $color-white;
+  }
+}
+
+.no-touchevents a.sticker {
+  &:hover {
+    background: $color-secondary;
+    color: $color-white;
+  }
+}
+
+.flexbox .sticker {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}

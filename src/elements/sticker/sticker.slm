@@ -1,5 +1,5 @@
 /
-/ Icons
+/ Sticker
 / The Sketch attributes expose the markup to HTML Sketch App and should
 / be included by default. They should only be set before the include
 / statement of this partial. There should only be one Symbol definition
@@ -15,9 +15,7 @@
 / Basically, if you are building an Object or a Component and including
 / other Elements/Components/Objects, the symbol should be set to false
 / and the instance should be set to the pattern's path.
-- if (typeof value !== 'undefined')
-  p
-    = value
-  div class="sticker"
-    svg class="icon--large" role="img"
-      use xlink:href="#${value}"
+
+div class="sticker"
+  svg class="icon--large" role="img" aria-hidden="true"
+    use xlink:href="#icon-cash-expenses"

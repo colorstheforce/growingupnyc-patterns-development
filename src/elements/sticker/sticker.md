@@ -1,0 +1,1 @@
+The sticker element is a circular decorator that is used to display an icon representing the category or brand of the current page.

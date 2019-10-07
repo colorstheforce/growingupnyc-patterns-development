@@ -1,0 +1,2 @@
+button class="button--simple button--simple--alt"
+  = 'Sign Up'

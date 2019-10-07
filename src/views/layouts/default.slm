@@ -9,7 +9,8 @@ html lang='en'
       div class='o-offcanvas__main'
         = partial('/partials/nav.slm');
         main
-          = content('main');
+          div class='o-content-container'
+            = content('main');
 
     script src='scripts/growingup-nyc.js'
 

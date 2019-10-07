@@ -1,0 +1,5 @@
+button class="button--text"
+  svg class="icon--small"
+    title
+      = 'Close Resources by Age'
+    use xlink:href="#icon-close"

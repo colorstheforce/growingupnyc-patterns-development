@@ -1,0 +1,257 @@
+/**
+ * Button
+ */
+
+// Dependencies
+// This is where variables, mixins, or functions are imported that the
+// pattern depends on. It's helpful to import dependencies into each
+// pattern so that they can be exported individually and it's clear
+// where the pattern is getting variables from. You can create a
+// pattern specific SASS configuration in the /src/config directory, or
+// add configuration to the /config/variables.js object (which is
+// to SASS during the compilation process).
+@import 'config/colors';
+@import 'config/transitions';
+
+// Declarations
+// .button { }
+
+// Base Elements
+//
+
+// Buttons
+//
+
+// Common styles across buttons
+%button-base {
+  border: 2px solid $color-text-invert;
+  border-radius: rem-calc(25);
+  display: inline-block;
+  font-family: $font-family-display;
+  @include font-size-regular;
+  font-weight: $font-weight-extrablack;
+  line-height: 1;
+  min-width: rem-calc(125);
+  padding: rem-calc(14 30);
+  text-align: center;
+  text-decoration: none;
+  transition: $button-transition;
+
+  @include grid-media($bp-small) {
+    min-width: rem-calc(150);
+  }
+}
+
+// Primary button
+//
+// Primary button. Solid color initially and turns ghosty on hover
+//
+// .button--primary - Primary button
+// .button--full-width - Button spans width of parent
+//
+// markup:
+// <a class="button--primary {$modifiers}">Button</a>
+// <button class="button--primary {$modifiers}">Button</button>
+//
+.button--primary {
+  @extend %button-base;
+  background: $color-text-invert;
+  color: $color-text;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  &:focus {
+    background: transparent;
+    color: $color-text-invert;
+  }
+
+  &:hover {
+    background: transparent;
+    color: $color-text-invert !important;
+  }
+
+  &--blue {
+    color: $color-secondary;
+  }
+}
+
+// Outlined Button
+//
+// Secondary button. Ghosty initially and turns solid on hover
+//
+// .button--outline--gray - Grey outline
+// .button--outline--white - White outline
+//
+// markup:
+// <a class="button--outline {$modifiers}">Button</a>
+// <button class="button--outline {$modifiers}">Button</button>
+//
+.button--outline {
+  @extend %button-base;
+  background: transparent;
+  letter-spacing: 1px;
+
+  &--gray {
+    border-color: $color-text;
+    color: $color-text;
+    opacity: .7;
+
+    &:focus {
+      color: $color-text;
+      opacity: 1;
+    }
+
+    &:hover {
+      color: $color-text;
+      opacity: 1;
+    }
+  }
+
+  &--white {
+    border-color: $color-text-invert;
+    color: $color-text-invert;
+
+    &:focus {
+      background: $color-text-invert;
+      color: $color-primary;
+    }
+
+    &:hover {
+      background: $color-text-invert;
+      color: $color-primary;
+    }
+  }
+
+}
+
+// Pill button
+//
+// Pill button. Used primarily for tags
+//
+// .button--pill - Standard, primary-colored version
+// .button--pill--alt - Darker-colored version
+//
+// markup:
+// <button class="button--pill {$modifiers}">Button Text</button>
+//
+.button--pill {
+  @extend %button-base;
+  background: $color-primary;
+  border: 0;
+  border-radius: rem-calc(15);
+  color: $color-text-invert;
+  @include font-size($font-size-xx-small);
+  margin: rem-calc(0 2 4 0);
+  min-width: 0;
+  padding: rem-calc(10 17);
+  @include text-uppercase;
+
+  &:focus {
+    background: $color-secondary;
+    color: $color-text-invert;
+  }
+
+  &:hover {
+    background: $color-secondary;
+    color: $color-text-invert;
+  }
+
+  @include grid-media($bp-small) {
+    min-width: 0;
+  }
+}
+
+.button--pill--alt {
+  background: $color-secondary;
+
+  &:focus {
+    background: $color-blue-dark;
+  }
+
+  &:hover {
+    background: $color-blue-dark;
+  }
+}
+
+.button--pill--es {
+  background: $color-purple;
+
+  &:focus {
+    background: $color-purple-dark;
+  }
+
+  &:hover {
+    background: $color-purple-dark;
+  }
+}
+
+// Simple Button
+//
+// Basic blue button used for links within a detail page
+//
+// .button--simple - Simple button
+// .button--simple--alt - Alternate, darker blue version
+//
+// markup:
+// <a class="button--simple {$modifiers}">Button</a>
+// <button class="button--simple">Button</button>
+//
+.button--simple {
+  @extend %button-base;
+  background: $color-primary;
+  border: none;
+  color: $color-text-invert;
+
+  &:focus {
+    background: $color-secondary;
+    color: $color-text-invert;
+    outline: none;
+  }
+
+  &:hover {
+    background: $color-secondary;
+    color: $color-text-invert;
+    outline: none;
+  }
+}
+
+.button--simple--alt {
+  background: $color-secondary;
+
+  &:focus {
+    background: $color-blue-dark;
+  }
+
+  &:hover {
+    background: $color-blue-dark;
+  }
+}
+
+// Size Variations
+
+// Full-width
+.button--full-width {
+  width: 100%;
+}
+
+// Text-only button
+//
+// Button styled to look like a text link.
+// Can also be used with an SVG icon for an icon-only button
+//
+// markup:
+// <button class="button--text">Button Text</button>
+//
+.button--text {
+  color: $color-primary;
+  min-height: 0;
+
+  &:focus {
+    color: $color-secondary;
+    outline: none;
+  }
+
+  &:hover {
+    color: $color-secondary;
+  }
+}

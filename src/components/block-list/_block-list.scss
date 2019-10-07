@@ -1,0 +1,125 @@
+/**
+ * Block-list
+ */
+
+// Dependencies
+// This is where variables, mixins, or functions are imported that the
+// pattern depends on. It's helpful to import dependencies into each
+// pattern so that they can be exported individually and it's clear
+// where the pattern is getting variables from. You can create a
+// pattern specific SASS configuration in the /src/config directory, or
+// add configuration to the /config/variables.js object (which is
+// to SASS during the compilation process).
+@import 'config/variables';
+@import 'config/colors';
+@import 'config/fonts';
+@import 'scss/functions/font-size';
+@import 'scss/functions/rem-calc';
+
+// Declarations
+// .c-block-list { }
+// Block List
+//
+// A list of block items, such as content touts
+//
+// .c-block-list--shade - Block List with a shaded background
+//
+// markup:
+// <div class="c-block-list o-content-container {$modifiers}">
+//   <sg-insert>3.2.1</sg-insert>
+//   <p class="c-block-list__text">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+//   <div class="c-block-list__inner">
+//     <div class="c-block-list__item"><div style="background:white;height:100px"></div></div>
+//     <div class="c-block-list__item"><div style="background:white;height:100px"></div></div>
+//     <div class="c-block-list__item"><div style="background:white;height:100px"></div></div>
+//   </div>
+// </div>
+//
+.c-block-list {
+  position: relative;
+}
+
+.c-block-list--shade {
+  background: $color-background-shade;
+}
+
+.c-block-list--blue {
+  display: none;
+  background: $color-gray;
+  position: fixed;
+  margin-bottom: 0 !important;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+  padding: rem-calc(16 0);
+  @include grid-media($bp-large) {
+    background: $color-blue-light;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    bottom: auto;
+    display: none;
+  }
+}
+
+// Block List Heading
+//
+// .c-block-list__heading - Standard block list heading
+//
+// markup:
+// <h2 class="c-block-list__heading {$modifiers}">
+//   Heading
+//   <a href="#" class="c-block-list__link">link</a>
+// </h2>
+//
+.c-block-list__heading {
+  color: $color-dark-gray-dark;
+  @include font-size-small;
+  margin-bottom: rem-calc(-20);
+  @include text-uppercase;
+}
+
+// Block List Text
+//
+// Content that appears before the block list
+.c-block-list--shade .c-block-list__text {
+  color: $color-gray-dark;
+}
+
+// Block List Link
+.c-block-list__link {
+  float: right;
+  text-decoration: none;
+  text-transform: none;
+
+  &:focus {
+    color: $color-blue;
+  }
+
+  .no-touchevents & {
+    &:hover {
+      color: $color-blue;
+    }
+  }
+}
+
+// Block List Inner
+//
+// Inner container within a block list
+.c-block-list__inner {
+  margin-bottom: rem-calc(35);
+  margin-top: rem-calc(35);
+
+  @include grid-media($bp-medium) {
+    margin-bottom: rem-calc(30);
+    margin-top: rem-calc(30);
+  }
+}
+
+// Block List Item
+//
+// Individual item within the list
+.c-block-list__item {
+  padding: rem-calc(8 0);
+}

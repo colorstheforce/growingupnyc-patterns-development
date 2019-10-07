@@ -1,0 +1,2 @@
+button class="button--primary bg-color-blue text-color-white"
+  = 'Primary'

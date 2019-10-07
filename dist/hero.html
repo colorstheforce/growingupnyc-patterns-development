@@ -62,6 +62,9 @@
           <li class="c-list-box__item">
             <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Elements</h3>
             <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="button">Button</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
               <li><a class="c-list-box__subitem" href="hero">Hero</a></li>
             </ol>
             <ol class="js-accordion__content c-list-box__content">
@@ -77,6 +80,12 @@
             <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Components</h3>
             <ol class="js-accordion__content c-list-box__content">
               <li><a class="c-list-box__subitem" href="base">Base</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="block-list">Block List</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="card">Card</a></li>
             </ol>
             <ol class="js-accordion__content c-list-box__content">
               <li><a class="c-list-box__subitem" href="divider">Divider</a></li>
@@ -106,6 +115,9 @@
             </ol>
             <ol class="js-accordion__content c-list-box__content">
               <li><a class="c-list-box__subitem" href="container">Container</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="content">Content</a></li>
             </ol>
             <ol class="js-accordion__content c-list-box__content">
               <li><a class="c-list-box__subitem" href="inline-list">Inline List</a></li>
@@ -147,61 +159,63 @@
           </div>
         </header><a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
         <main>
-          <header>
-            <div>
-              <h1>Hero</h1>
-            </div>
-          </header>
-          <div>
-            <div class="o-container">
-              <h1 class="type-h1">Hero</h1>
+          <div class="o-content-container">
+            <header>
               <div>
-                <div><p>The hero component can be used to set an introductory image at the top of the page. The user is able to set an image, a heading, and subheading. To set the background image, the user will need to add <code>.c-hero { background: url(&lt;path to image&gt;);}</code> to the head of the page.</p></div>
+                <h1>Hero</h1>
+              </div>
+            </header>
+            <div>
+              <div class="o-container">
+                <h1 class="type-h1">Hero</h1>
                 <div>
+                  <div><p>The hero component can be used to set an introductory image at the top of the page. The user is able to set an image, a heading, and subheading. To set the background image, the user will need to add <code>.c-hero { background: url(&lt;path to image&gt;);}</code> to the head of the page.</p></div>
                   <div>
-                    <div class="c-hero bg-color-blue-light">
-                      <div class="o-container js-parallax-text">
-                        <h1 class="c-hero__title">Programs</h1>
-                        <p class="c-hero__tagline">Discover over 70 easy-to-read education, health, and recreation programs, benefits, and resources in NYC.</p>
+                    <div>
+                      <div class="c-hero bg-color-blue-light">
+                        <div class="o-container js-parallax-text">
+                          <h1 class="c-hero__title">Programs</h1>
+                          <p class="c-hero__tagline">Discover over 70 easy-to-read education, health, and recreation programs, benefits, and resources in NYC.</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div><pre>&lt;div class=&quot;c-hero bg-color-blue-light&quot;&gt;
+                    <div><pre>&lt;div class=&quot;c-hero bg-color-blue-light&quot;&gt;
   &lt;div class=&quot;o-container js-parallax-text&quot;&gt;
     &lt;h1 class=&quot;c-hero__title&quot;&gt;Programs&lt;/h1&gt;
     &lt;p class=&quot;c-hero__tagline&quot;&gt;Discover over 70 easy-to-read education, health, and recreation programs, benefits, and resources in NYC.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="o-container">
-              <h1 class="type-h1">Hero Light</h1>
-              <div>
-                <div></div>
+              <div class="o-container">
+                <h1 class="type-h1">Hero Light</h1>
                 <div>
+                  <div></div>
                   <div>
-                    <div class="c-hero--light">
-                      <div class="o-container js-parallax-text">
-                        <h1 class="c-hero__title">Study Hour</h1>
+                    <div>
+                      <div class="c-hero--light">
+                        <div class="o-container js-parallax-text">
+                          <h1 class="c-hero__title">Study Hour</h1>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div><pre>&lt;div class=&quot;c-hero--light&quot;&gt;
+                    <div><pre>&lt;div class=&quot;c-hero--light&quot;&gt;
   &lt;div class=&quot;o-container js-parallax-text&quot;&gt;
     &lt;h1 class=&quot;c-hero__title&quot;&gt;Study Hour&lt;/h1&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <script type="text/javascript">
+              let url = document.location.href;
+              document.querySelector('.c-hero').style.background = 'url(' + url.substring(0, url.lastIndexOf('/')) + '/images/splatter.svg)';
+            </script>
           </div>
-          <script type="text/javascript">
-            let url = document.location.href;
-            document.querySelector('.c-hero').style.background = 'url(' + url.substring(0, url.lastIndexOf('/')) + '/images/splatter.svg)';
-          </script>
         </main>
       </div>
     </div>

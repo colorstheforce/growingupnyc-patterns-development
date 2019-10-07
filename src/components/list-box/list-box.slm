@@ -1,28 +1,37 @@
 /
 / List-box
 / List styled as colorful boxes. Often used with the accordion pattern.
-ul class="c-list-box bg-color-pink"
+ol class="c-list-box c-list-box--primary" data-multiselectable="true"
   li class="c-list-box__item"
-    h3 class="c-list-box__heading"
+    h3 class="c-list-box__heading bg-color-pink" id="ages-heading-baby" tabindex="0"
       = 'Baby'
-    ul class="c-list-box__content"
+      span class="c-list-box__subheading" 
+        = '0-11 months'
+    ol class="js-accordion__content c-list-box__content bg-color-pink" id="ages-panel-baby"
       li class="c-list-box__subitem"
-        = '2 months'
+        a href="#" class="button--full-width button--primary text-color-pink"
+          = '0 months'
       li class="c-list-box__subitem"
-        = '4 months'
+        a href="#" class="button--full-width button--primary text-color-pink"
+          = '4 months'
       li class="c-list-box__subitem"
-        = '6 months'
+        a href="#" class="button--full-width button--primary text-color-pink"
+          = '6 months'
       li class="c-list-box__subitem"
-        = '9 months'
-ul class="c-list-box bg-color-orange"
+        a href="#" class="button--full-width button--primary text-color-pink"
+          = '9 months'
   li class="c-list-box__item"
-    h3 class="c-list-box__heading"
+    h3 class="c-list-box__heading bg-color-orange" id="ages-heading-toddler" tabindex="0"
       = 'Toddler'
-    ul class="c-list-box__content"
+      span class="c-list-box__subheading" 
+        = '1-3 years'
+    ol class="c-list-box__content bg-color-orange" id="ages-panel-toddler"
       li class="c-list-box__subitem"
-        = '1 year'
+        a href="#" class="button--full-width button--primary text-color-orange"
+          = '1 years'
       li class="c-list-box__subitem"
-        = '2 years'
+        a href="#" class="button--full-width button--primary text-color-orange"
+          = '2 years'
       li class="c-list-box__subitem"
-        = '3 years'
-      
+        a href="#" class="button--full-width button--primary text-color-orange"
+          = '3 years'

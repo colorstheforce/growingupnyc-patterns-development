@@ -5,15 +5,15 @@
 @mixin font-size($large, $mobile: null) {
   @if $mobile {
     font-size: rem-calc($mobile);
-    @include grid-media($bp-large) {
-      font-size: rem-calc($large);
-    }
+    // @include grid-media($bp-large) {
+    //   font-size: rem-calc($large);
+    // }
   }
   @else if $large > 16 {
     font-size: rem-calc($large * $font-size-ratio);
-    @include grid-media($bp-large) {
-      font-size: rem-calc($large);
-    }
+    // @include grid-media($bp-large) {
+    //   font-size: rem-calc($large);
+    // }
   }
   @else {
     font-size: rem-calc($large);

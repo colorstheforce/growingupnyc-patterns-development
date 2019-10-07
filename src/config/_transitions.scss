@@ -1,0 +1,2 @@
+$transitions: map-get($variables, 'transitions');
+$button-transition: map-get($transitions, 'button-transition');

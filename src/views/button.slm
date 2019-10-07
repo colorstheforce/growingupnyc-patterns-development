@@ -1,0 +1,23 @@
+= extend('layouts/default')
+
+- title = 'Button'
+
+/ Partials
+= partial('partials/head.mixin.slm');
+= partial('partials/content-header.mixin.slm');
+= partial('partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  = mixin('section', 'Button Primary', 'elements/button/button--primary');
+  = mixin('section', 'Button Pill', 'elements/button/button--pill');
+  = mixin('section', 'Button Pill, Alternative', 'elements/button/button--pill--alt');
+  = mixin('section', 'Button Pill, Spanish', 'elements/button/button--pill--es');
+  = mixin('section', 'Button Simple', 'elements/button/button--simple');
+  = mixin('section', 'Button, Fully Width', 'elements/button/button--full-width');
+  = mixin('section', 'Button Text', 'elements/button/button--text');

@@ -74,15 +74,15 @@ const variables = {
   },
   'colors-default': {
     'color-primary': 'color-blue-light',
-    'color-secondary': 'strong-blue',
+    'color-secondary': 'color-blue',
     'color-background': 'color-white',
     'color-background-shade': 'color-gray-light',
     'color-text': 'color-dark-gray-dark',
     'color-text-invert': 'color-white',
-    'color-text-weak': 'gray',
+    'color-text-weak': 'color-gray',
     'color-text-link': 'color-primary',
     'color-background-footer': 'color-primary',
-    'color-error': 'strong-pink',
+    'color-error': 'color-pink',
   },
   'milestones': {
     'baby': {

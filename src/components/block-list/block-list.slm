@@ -1,0 +1,63 @@
+/
+/ Block-list
+
+
+div class="c-block-list"
+
+div class="o-content-container c-block-list c-block-list--shade"
+  h2
+    = 'Other Child Care Programs'
+  div class="c-block-list__inner"
+    div class="c-block-list__item"
+      div class="c-card"
+        a href="#"
+          div class="c-card__sticker sticker" aria-hidden="true"
+            svg class="icon--large"
+              title = 'Child Care'
+              use xlink:href="#icon-child-care"
+        h3 class="c-card__title"
+          a href="#" title="Child care for babies & toddlers" rel="bookmark"
+            = 'Child care for babies & toddlers'
+
+        div class="c-card__subtitle"
+          p
+            strong = 'EarlyLearn NYC Child Care'
+          p = 'NYC Department of Education'
+
+        div class="c-card__tags"
+          a href="#" class="button--pill"
+           = 'Child Care'
+          a href="#" class="button--pill button--pill--alt"
+           = 'Baby'
+          a href="#" class="button--pill button--pill--alt"
+           = 'Toddler'
+          a href="#" class="button--pill button--pill--alt"
+           = 'Pre-School'
+
+        div class="c-card__body"
+          = 'Early child care and education services for up to 10 hours a day.'
+    div class="c-block-list__item"
+      div class="c-card"
+        a href="#"
+          div class="c-card__sticker sticker" aria-hidden="true"
+            svg class="icon--large"
+              title = 'Child Care'
+              use xlink:href="#icon-child-care"
+        h3 class="c-card__title"
+          a href="#" title="Head start for 3 & 4 year olds" rel="bookmark"
+            = 'Head start for 3 & 4 year olds'
+        div class="c-card__subtitle"
+          p
+            strong = 'EarlyLearn NYC Head Start'
+          p = 'NYC Department of Education'
+
+        div class="c-card__tags"
+          a href="#" class="button--pill"
+           = 'Child Care'
+          a href="#" class="button--pill button--pill--alt"
+           = 'Toddler'
+          a href="#" class="button--pill button--pill--alt"
+           = 'Pre-School'
+
+        div class="c-card__body"
+          = 'Early child care and education services for up to 10 hours a day.'

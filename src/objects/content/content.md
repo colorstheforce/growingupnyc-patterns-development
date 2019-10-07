@@ -1,0 +1,1 @@
+The content object wraps the content in the page with padding.

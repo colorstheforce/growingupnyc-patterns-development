@@ -2,17 +2,7 @@
  * Color
  */
 
-// Dependencies
-// This is where variables, mixins, or functions are imported that the
-// pattern depends on. It's helpful to import dependencies into each
-// pattern so that they can be exported individually and it's clear
-// where the pattern is getting variables from. You can create a
-// pattern specific SASS configuration in the /src/config directory, or
-// add configuration to the /config/variables.js object (which is
-// to SASS during the compilation process).
-// @import 'config/variables';
 @import 'config/colors';
-
 
 // Declarations
 
@@ -22,3 +12,345 @@
 //     @include combination($selector, $c, $colors, map-get($c, 'font-smooth'));
 //   }
 // }
+
+// Utility classes for applying milestone-specific coloring to elements
+// Hover/focus styling is applied only to elements that are clickable (links and buttons)
+
+.bg-baby--primary {
+  background-color: $color-baby-primary !important;
+}
+
+button.bg-baby--primary,
+a.bg-baby--primary {
+  transition: background-color 250ms linear;
+  &:focus,
+  &.is-active {
+    background-color: $color-baby-secondary !important;
+    border-color: $color-baby-secondary !important;
+    outline: none;
+  }
+}
+
+.border-baby--primary {
+  border-color: $color-baby-primary !important;
+}
+
+.bg-baby--secondary {
+  background-color: $color-baby-secondary !important;
+  border-color: $color-baby-secondary !important;
+}
+
+button.bg-baby--secondary,
+a.bg-baby--secondary {
+  &:focus,
+  &.is-active {
+    background-color: $color-baby-primary !important;
+    border-color: $color-baby-primary !important;
+    outline: none;
+  }
+}
+
+.text-baby--primary {
+  color: $color-baby-primary;
+}
+
+.svg-baby {
+  .stop1 {
+    stop-color: $color-baby-secondary;
+  }
+  .stop2 {
+    stop-color: $color-baby-primary;
+  }
+}
+
+.bg-toddler--primary {
+  background-color: $color-toddler-primary !important;
+}
+
+button.bg-toddler--primary,
+a.bg-toddler--primary {
+  transition: background-color 250ms linear;
+  &:focus,
+  &.is-active {
+    background-color: $color-toddler-secondary !important;
+    border-color: $color-toddler-secondary !important;
+    outline: none;
+  }
+}
+
+.bg-toddler--secondary {
+  background-color: $color-toddler-secondary !important;
+}
+
+button.bg-toddler--secondary,
+a.bg-toddler--secondary {
+  &:focus,
+  &.is-active {
+    background-color: $color-toddler-primary !important;
+    border-color: $color-toddler-primary !important;
+    outline: none;
+  }
+}
+
+.border-toddler--primary {
+  border-color: $color-toddler-primary !important;
+}
+
+.border-toddler--secondary {
+  border-color: $color-toddler-secondary !important;
+}
+
+.text-toddler--primary {
+  color: $color-toddler-primary;
+}
+
+.svg-toddler {
+  .stop1 {
+    stop-color: $color-toddler-secondary;
+  }
+  .stop2 {
+    stop-color: $color-toddler-primary;
+  }
+}
+
+.bg-pre-schooler--primary {
+  background-color: $color-pre-schooler-primary !important;
+}
+
+button.bg-pre-schooler--primary,
+a.bg-pre-schooler--primary {
+  transition: background-color 250ms linear;
+  &:focus,
+  &.is-active {
+    background-color: $color-pre-schooler-secondary !important;
+    border-color: $color-pre-schooler-secondary !important;
+    outline: none;
+  }
+}
+
+.bg-pre-schooler--secondary {
+  background-color: $color-pre-schooler-secondary !important;
+}
+
+button.bg-pre-schooler--secondary,
+a.bg-pre-schooler--secondary {
+  &:hover,
+  &:focus,
+  &.is-active {
+    background-color: $color-pre-schooler-primary !important;
+    border-color: $color-pre-schooler-primary !important;
+    outline: none;
+  }
+}
+
+.border-pre-schooler--primary {
+  border-color: $color-pre-schooler-primary !important;
+}
+
+.border-pre-schooler--secondary {
+  border-color: $color-pre-schooler-secondary !important;
+}
+
+.text-pre-schooler--primary {
+  color: $color-pre-schooler-primary;
+}
+
+.svg-pre-schooler {
+  .stop1 {
+    stop-color: $color-pre-schooler-secondary;
+  }
+  .stop2 {
+    stop-color: $color-pre-schooler-primary;
+  }
+}
+
+.bg-grade-schooler--primary {
+  background-color: $color-grade-schooler-primary !important;
+}
+
+button.bg-grade-schooler--primary,
+a.bg-grade-schooler--primary {
+  transition: background-color 250ms linear;
+  &:focus,
+  &.is-active {
+    background-color: $color-grade-schooler-secondary !important;
+    border-color: $color-grade-schooler-secondary !important;
+    outline: none;
+  }
+}
+
+.bg-grade-schooler--secondary {
+  background-color: $color-grade-schooler-secondary !important;
+}
+
+button.bg-grade-schooler--secondary,
+a.bg-grade-schooler--secondary {
+  &:focus,
+  &.is-active {
+    background-color: $color-grade-schooler-primary !important;
+    border-color: $color-grade-schooler-primary !important;
+    outline: none;
+  }
+}
+
+.border-grade-schooler--primary {
+  border-color: $color-grade-schooler-primary !important;
+}
+
+.border-grade-schooler--secondary {
+  border-color: $color-grade-schooler-secondary !important;
+}
+
+.text-grade-schooler--primary {
+  color: $color-grade-schooler-primary;
+}
+
+.svg-grade-schooler {
+  .stop1 {
+    stop-color: $color-grade-schooler-secondary;
+  }
+  .stop2 {
+    stop-color: $color-grade-schooler-primary;
+  }
+}
+
+.bg-pre-teen--primary {
+  background-color: $color-pre-teen-primary !important;
+}
+
+button.bg-pre-teen--primary,
+a.bg-pre-teen--primary {
+  transition: background-color 250ms linear;
+  &:focus,
+  &.is-active {
+    background-color: $color-pre-teen-secondary !important;
+    border-color: $color-pre-teen-secondary !important;
+    outline: none;
+  }
+}
+
+.bg-pre-teen--secondary {
+  background-color: $color-pre-teen-secondary !important;
+  border-color: $color-pre-teen-secondary !important;
+}
+
+button.bg-pre-teen--secondary,
+a.bg-pre-teen--secondary {
+  &:focus,
+  &.is-active {
+    background-color: $color-pre-teen-primary !important;
+    border-color: $color-pre-teen-primary !important;
+    outline: none;
+  }
+}
+
+.border-pre-teen--primary {
+  border-color: $color-pre-teen-primary !important;
+}
+
+.text-pre-teen--primary {
+  color: $color-pre-teen-primary;
+}
+
+.svg-pre-teen {
+  .stop1 {
+    stop-color: $color-pre-teen-secondary;
+  }
+  .stop2 {
+    stop-color: $color-pre-teen-primary;
+  }
+}
+
+.bg-teen--primary {
+  background-color: $color-teen-primary !important;
+}
+
+button.bg-teen--primary,
+a.bg-teen--primary {
+  transition: background-color 250ms linear;
+  &:focus,
+  &.is-active {
+    background-color: $color-teen-secondary !important;
+    border-color: $color-teen-secondary !important;
+    outline: none;
+  }
+}
+
+.bg-teen--secondary {
+  background-color: $color-teen-secondary !important;
+  border-color: $color-teen-secondary !important;
+}
+
+button.bg-teen--secondary,
+a.bg-teen--secondary {
+  &:focus,
+  &.is-active {
+    background-color: $color-teen-primary !important;
+    border-color: $color-teen-primary !important;
+    outline: none;
+  }
+}
+
+.border-teen--primary {
+  border-color: $color-teen-primary !important;
+}
+
+.text-teen--primary {
+  color: $color-teen-primary;
+}
+
+.svg-teen {
+  .stop1 {
+    stop-color: $color-teen-secondary;
+  }
+  .stop2 {
+    stop-color: $color-teen-primary;
+  }
+}
+
+.bg-young-adult--primary {
+  background-color: $color-young-adult-primary !important;
+}
+
+button.bg-young-adult--primary,
+a.bg-young-adult--primary {
+  transition: background-color 250ms linear;
+  &:focus,
+  &.is-active {
+    background-color: $color-young-adult-secondary !important;
+    border-color: $color-young-adult-secondary !important;
+    outline: none;
+  }
+}
+
+.bg-young-adult--secondary {
+  background-color: $color-young-adult-secondary !important;
+  border-color: $color-young-adult-secondary !important;
+}
+
+button.bg-young-adult--secondary,
+a.bg-young-adult--secondary {
+  &:focus,
+  &.is-active {
+    background-color: $color-young-adult-primary !important;
+    border-color: $color-young-adult-primary !important;
+    outline: none;
+  }
+}
+
+.text-young-adult--primary {
+  color: $color-young-adult-primary;
+}
+
+.border-young-adult--primary {
+  border-color: $color-young-adult-primary;
+}
+
+.svg-young-adult {
+  .stop1 {
+    stop-color: $color-young-adult-secondary;
+  }
+  .stop2 {
+    stop-color: $color-young-adult-primary;
+  }
+}

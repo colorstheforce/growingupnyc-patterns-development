@@ -11,6 +11,7 @@
       div
         = partial('../' + this.markup);
     
-    div
-      pre
-        = 'code{{ '+ this.markup +' }}';
+    - if(this.grid === 'false')
+      div
+        pre
+          = 'code{{ '+ this.markup +' }}';

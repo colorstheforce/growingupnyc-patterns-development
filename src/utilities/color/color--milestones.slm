@@ -1,0 +1,70 @@
+div
+  p 
+    = 'Background'
+  code .bg-baby--primary
+  p 
+    = 'Border'
+  code .border-baby--primary
+  p 
+    = 'Text'
+  code .text-baby--primary
+div
+  p 
+    = 'Background'
+  code .bg-toddler--primary
+  p 
+    = 'Border'
+  code .border-toddler--primary
+  p 
+    = 'Text'
+  code .text-toddler--primary
+div
+  p 
+    = 'Background'
+  code .bg-pre-schooler--primary
+  p 
+    = 'Border'
+  code .border-pre-schooler--primary
+  p 
+    = 'Text'
+  code .text-pre-schooler--primary
+div
+  p 
+    = 'Background'
+  code .bg-grade-schooler--primary
+  p 
+    = 'Border'
+  code .border-grade-schooler--primary
+  p 
+    = 'Text'
+  code .text-grade-schooler--primary
+div
+  p 
+    = 'Background'
+  code .bg-pre-teen--primary
+  p 
+    = 'Border'
+  code .border-pre-teen--primary
+  p 
+    = 'Text'
+  code .text-pre-teen--primary
+div
+  p 
+    = 'Background'
+  code .bg-teen--primary
+  p 
+    = 'Border'
+  code .border-teen--primary
+  p 
+    = 'Text'
+  code .text-teen--primary
+div
+  p 
+    = 'Background'
+  code .bg---primary
+  p 
+    = 'Border'
+  code .border---primary
+  p 
+    = 'Text'
+  code .text---primary

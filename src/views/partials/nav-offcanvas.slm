@@ -52,6 +52,10 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
             = 'Fonts'
       ol class="js-accordion__content c-list-box__content"
         li
+          a href="footer" class="c-list-box__subitem"
+            = 'Footer'
+      ol class="js-accordion__content c-list-box__content"
+        li
           a href="icons" class="c-list-box__subitem"
             = 'Icons'
       ol class="js-accordion__content c-list-box__content"
@@ -102,7 +106,11 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
       /       = 'accessibility'
       ol class="js-accordion__content c-list-box__content"
         li
-          a href="colors" class="c-list-box__subitem"
+          a href="background-image" class="c-list-box__subitem"
+            = 'background image'
+      ol class="js-accordion__content c-list-box__content"
+        li
+          a href="color" class="c-list-box__subitem"
             = 'color'
       ol class="js-accordion__content c-list-box__content"
         li

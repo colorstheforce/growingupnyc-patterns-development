@@ -1,12 +1,11 @@
 = extend('layouts/default')
 
-- title = 'Colors'
+- title = 'Footer'
 
 / Partials
 = partial('partials/head.mixin.slm');
 = partial('partials/content-header.mixin.slm');
 = partial('partials/section.mixin.slm');
-
 
 / Content blocks
 = content('head');
@@ -14,4 +13,5 @@
 
 = content('main')
   = mixin('content-header', title);
-  = mixin('section', 'Color', 'utilities/color/color');
+  div
+    = mixin('section', 'Footer', 'components/footer/footer');

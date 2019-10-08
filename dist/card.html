@@ -94,6 +94,9 @@
               <li><a class="c-list-box__subitem" href="fonts">Fonts</a></li>
             </ol>
             <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="footer">Footer</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
               <li><a class="c-list-box__subitem" href="icons">Icons</a></li>
             </ol>
             <ol class="js-accordion__content c-list-box__content">
@@ -131,7 +134,10 @@
           <li class="c-list-box__item">
             <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Utilities</h3>
             <ol class="js-accordion__content c-list-box__content">
-              <li><a class="c-list-box__subitem" href="colors">color</a></li>
+              <li><a class="c-list-box__subitem" href="background-image">background image</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="color">color</a></li>
             </ol>
             <ol class="js-accordion__content c-list-box__content">
               <li><a class="c-list-box__subitem" href="fonts">Font</a></li>
@@ -159,12 +165,8 @@
           </div>
         </header><a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
         <main>
-          <div class="o-content-container">
-            <header>
-              <div>
-                <h1>Card</h1>
-              </div>
-            </header>
+          <div class="o-container">
+            <header></header>
             <div class="o-container">
               <h1 class="type-h1">Card</h1>
               <div>
@@ -204,10 +206,58 @@
                 </div>
               </div>
             </div>
+            <div class="o-container">
+              <h1 class="type-h1">Card with Hero</h1>
+              <div>
+                <div></div>
+                <div>
+                  <div>
+                    <div class="c-card c-card--hero gradient-baby"><a href="#">
+                        <div aria-hidden="true" class="c-card__sticker sticker"><svg class="icon--large">
+                            <title>Cash Expenses</title>
+                            <use xlink:href="#icon-child-care"></use>
+                          </svg></div>
+                      </a>
+                      <h3 class="c-card__title"><a href="#" rel="bookmark" title="Child care for babies &amp; toddlers">Child care for babies &amp; toddlers</a></h3>
+                      <div class="c-card__subtitle">
+                        <p><strong>Program Name</strong></p>
+                        <p>NYC Department of Education</p>
+                      </div>
+                      <div class="c-card__tags"><a class="button--pill button--pill--alt" href="#">Child Care</a></div>
+                      <div class="c-card__body">Early child care and education services for up to 10 hours a day.</div>
+                    </div>
+                  </div>
+                  <div><pre>&lt;div class=&quot;c-card c-card--hero gradient-baby&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+    &lt;div aria-hidden=&quot;true&quot; class=&quot;c-card__sticker sticker&quot;&gt;&lt;svg class=&quot;icon--large&quot;&gt;
+        &lt;title&gt;Cash Expenses&lt;/title&gt;
+        &lt;use xlink:href=&quot;#icon-child-care&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;&lt;/div&gt;
+  &lt;/a&gt;
+  &lt;h3 class=&quot;c-card__title&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;bookmark&quot; title=&quot;Child care for babies &amp;amp; toddlers&quot;&gt;Child care for babies &amp;amp; toddlers&lt;/a&gt;&lt;/h3&gt;
+  &lt;div class=&quot;c-card__subtitle&quot;&gt;
+    &lt;p&gt;&lt;strong&gt;Program Name&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;NYC Department of Education&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;c-card__tags&quot;&gt;&lt;a class=&quot;button--pill button--pill--alt&quot; href=&quot;#&quot;&gt;Child Care&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;c-card__body&quot;&gt;Early child care and education services for up to 10 hours a day.&lt;/div&gt;
+&lt;/div&gt;</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       </div>
     </div>
+    <footer class="c-footer">
+      <div class="o-container">
+        <div class="c-footer__section">
+          <div class="c-footer__logos">
+            <figure class="c-footer__logo"><img alt="Growing Up NYC" src="images/logo-gunyc-white@236px.png" width="118" /></figure>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="scripts/growingup-nyc.js"></script>
     <script type="text/javascript">
       var gunyc = new GUNYC();

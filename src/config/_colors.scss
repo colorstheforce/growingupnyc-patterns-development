@@ -10,7 +10,7 @@ $colors: map-get($variables, 'colors');
 // $combinations: map-get($variables, 'color-combinations');
 $colors-default: map-get($variables, 'colors-default');
 
-// Variables
+// Colors
 $color-black: map-get($colors, 'color-black');
 $color-white: map-get($colors, 'color-white');
 $color-gray-light: map-get($colors, 'color-gray-light');
@@ -46,3 +46,32 @@ $color-text-invert: map-get($colors, map-get($colors-default, 'color-text-invert
 $color-text-link: map-get($colors, map-get($colors-default, 'color-text-link'));
 $color-text-weak: map-get($colors, map-get($colors-default, 'color-text-weak'));
 $color-error: map-get($colors, map-get($colors-default, 'color-error'));
+
+// Milestones
+$colors-baby: map-get($variables, 'colors-baby');
+$color-baby-primary: map-get($colors, map-get($colors-baby, 'primary'));
+$color-baby-secondary: map-get($colors, map-get($colors-baby, 'secondary'));
+
+$colors-toddler: map-get($variables, 'colors-toddler');
+$color-toddler-primary: map-get($colors, map-get($colors-toddler, 'primary'));
+$color-toddler-secondary: map-get($colors, map-get($colors-toddler, 'secondary'));
+
+$colors-pre-schooler: map-get($variables, 'colors-pre-schooler');
+$color-pre-schooler-primary: map-get($colors, map-get($colors-pre-schooler, 'primary'));
+$color-pre-schooler-secondary: map-get($colors, map-get($colors-pre-schooler, 'secondary'));
+
+$colors-grade-schooler: map-get($variables, 'colors-grade-schooler');
+$color-grade-schooler-primary: map-get($colors, map-get($colors-grade-schooler, 'primary'));
+$color-grade-schooler-secondary: map-get($colors, map-get($colors-grade-schooler, 'secondary'));
+
+$colors-pre-teen: map-get($variables, 'colors-pre-teen');
+$color-pre-teen-primary: map-get($colors, map-get($colors-pre-teen, 'primary'));
+$color-pre-teen-secondary: map-get($colors, map-get($colors-pre-teen, 'secondary'));
+
+$colors-teen: map-get($variables, 'colors-teen');
+$color-teen-primary: map-get($colors, map-get($colors-teen, 'primary'));
+$color-teen-secondary: map-get($colors, map-get($colors-teen, 'secondary'));
+
+$colors-young-adult: map-get($variables, 'colors-young-adult');
+$color-young-adult-primary: map-get($colors, map-get($colors-young-adult, 'primary'));
+$color-young-adult-secondary: map-get($colors, map-get($colors-young-adult, 'secondary'));

@@ -94,6 +94,9 @@
               <li><a class="c-list-box__subitem" href="fonts">Fonts</a></li>
             </ol>
             <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="footer">Footer</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
               <li><a class="c-list-box__subitem" href="icons">Icons</a></li>
             </ol>
             <ol class="js-accordion__content c-list-box__content">
@@ -131,7 +134,10 @@
           <li class="c-list-box__item">
             <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Utilities</h3>
             <ol class="js-accordion__content c-list-box__content">
-              <li><a class="c-list-box__subitem" href="colors">color</a></li>
+              <li><a class="c-list-box__subitem" href="background-image">background image</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="color">color</a></li>
             </ol>
             <ol class="js-accordion__content c-list-box__content">
               <li><a class="c-list-box__subitem" href="fonts">Font</a></li>
@@ -159,21 +165,44 @@
           </div>
         </header><a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
         <main>
-          <div class="o-content-container">
-            <header>
-              <div>
-                <h1>Colors</h1>
-              </div>
-            </header>
+          <div class="o-container">
+            <header></header>
             <div class="o-container">
-              <h1 class="type-h1">Color</h1>
+              <h1 class="type-h1">Background Gradients</h1>
               <div>
                 <div></div>
                 <div>
                   <div>
-                    <div class="color"></div>
+                    <div class="c-card c-card--hero gradient-baby"></div>
+                    <div class="c-card c-card--hero gradient-toddler"></div>
+                    <div class="c-card c-card--hero gradient-pre-schooler"></div>
+                    <div class="c-card c-card--hero gradient-grade-schooler"></div>
+                    <div class="c-card c-card--hero gradient-pre-teen"></div>
+                    <div class="c-card c-card--hero gradient-teen"></div>
+                    <div class="c-card c-card--hero gradient-young-adult"></div>
                   </div>
-                  <div><pre>&lt;div class=&quot;color&quot;&gt;&lt;/div&gt;</pre>
+                  <div><pre>&lt;div class=&quot;c-card c-card--hero gradient-baby&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;c-card c-card--hero gradient-toddler&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;c-card c-card--hero gradient-pre-schooler&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;c-card c-card--hero gradient-grade-schooler&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;c-card c-card--hero gradient-pre-teen&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;c-card c-card--hero gradient-teen&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;c-card c-card--hero gradient-young-adult&quot;&gt;&lt;/div&gt;</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="o-container">
+              <h1 class="type-h1">Background Splatter</h1>
+              <div>
+                <div><p>You can assign a background color to complement the splatter</p></div>
+                <div>
+                  <div>
+                    <div class="c-hero c-hero--large c-hero--long-text splatter-blue"></div>
+                    <div class="c-hero c-hero--large c-hero--long-text bg-color-orange-light splatter-orange"></div>
+                  </div>
+                  <div><pre>&lt;div class=&quot;c-hero c-hero--large c-hero--long-text splatter-blue&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;c-hero c-hero--large c-hero--long-text bg-color-orange-light splatter-orange&quot;&gt;&lt;/div&gt;</pre>
                   </div>
                 </div>
               </div>
@@ -182,6 +211,15 @@
         </main>
       </div>
     </div>
+    <footer class="c-footer">
+      <div class="o-container">
+        <div class="c-footer__section">
+          <div class="c-footer__logos">
+            <figure class="c-footer__logo"><img alt="Growing Up NYC" src="images/logo-gunyc-white@236px.png" width="118" /></figure>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="scripts/growingup-nyc.js"></script>
     <script type="text/javascript">
       var gunyc = new GUNYC();

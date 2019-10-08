@@ -42,3 +42,15 @@ $bp-xlarge: (media: "screen and (min-width: " + $screen-desktop-large + ")");
   }
 
 }
+
+.o-0 {
+  opacity: 0;
+}
+
+.pe-none {
+  pointer-events: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}

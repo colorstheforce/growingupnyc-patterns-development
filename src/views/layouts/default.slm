@@ -9,9 +9,11 @@ html lang='en'
       div class='o-offcanvas__main'
         = partial('/partials/nav.slm');
         main
-          div class='o-content-container'
+          div class='o-container'
             = content('main');
 
+    = partial('/partials/footer.slm');
+    
     script src='scripts/growingup-nyc.js'
 
     javascript:

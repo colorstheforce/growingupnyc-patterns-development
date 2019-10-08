@@ -1,12 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+    <link href="styles/site-default.css" rel="stylesheet" />
+    <script type="text/javascript">
+      (function(d) {
+        var config = {
+            kitId: 'wyh7nce',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function() {
+            h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function() {
+          a = this.readyState;
+          if (f || a && a != "complete" && a != "loaded") return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config)
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s)
+      })(document);
+    </script>
+    <title>Growing Up NYC Patterns</title><noscript>
+      <style>
+        body {
+          visibility: visible !important;
+        }
+      </style>
+    </noscript>
+    <script type="text/javascript">
+      function load() {
+        document.body.style.visibility = 'visible'
+      };
+    </script>
+  </head>
+
   <body>
-    <h1>WIP Growing Up NYC Patterns</h1>
-    <div>
-      <nav><a href="index">Home</a></nav>
+    <div class="o-offcanvas js-offcanvas" id="offcanvas-patterns">
+      <nav aria-label="patterns-heading" class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation">
+        <h2 class="show-for-screen-reader" id="patterns-heading">Resources by Patterns</h2><button class="o-offcanvas__close button--text" data-js="offcanvas-patterns"><svg class="icon--small" role="img">
+            <title>Close Resources by Patterns</title>
+            <use xlink:href="#icon-close"></use>
+          </svg></button>
+        <ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true">
+          <li class="c-list-box__item">
+            <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Elements</h3>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="button">Button</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="hero">Hero</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="list-box">List Box</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="sticker">Sticker</a></li>
+            </ol>
+          </li>
+        </ol>
+        <ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true">
+          <li class="c-list-box__item">
+            <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Components</h3>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="base">Base</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="block-list">Block List</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="card">Card</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="divider">Divider</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="fonts">Fonts</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="footer">Footer</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="icons">Icons</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="input">Input</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="layouts">Layouts</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="lists">Lists</a></li>
+            </ol>
+          </li>
+        </ol>
+        <ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true">
+          <li class="c-list-box__item">
+            <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Objects</h3>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="accordion">Accordion</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="container">Container</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="content">Content</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="inline-list">Inline List</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="navigation">Navigation</a></li>
+            </ol>
+          </li>
+        </ol>
+        <ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true">
+          <li class="c-list-box__item">
+            <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Utilities</h3>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="background-image">background image</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="color">color</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="fonts">Font</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="offcanvas">Offcanvas</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="tailwind">Tailwind</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="typography">Typography</a></li>
+            </ol>
+          </li>
+        </ol>
+      </nav>
+      <div class="o-offcanvas__main">
+        <header class="o-navigation">
+          <div class="o-container"><a class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu" href="/"><span class="o-navigation__logo">Growing Up NYC</span></a>
+            <nav class="o-navigation__nav">
+              <ul class="o-inline">
+                <li class="o-inline__item"><a class="o-navigation__nav-link js-offcanvas" data-js="offcanvas-patterns" href="#patterns">Patterns</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header><a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
+        <main>
+          <div class="o-container">
+            <header></header>
+            <div class="o-container">
+              <h1 class="type-h1">Color</h1>
+              <div>
+                <div></div>
+                <div>
+                  <div>
+                    <div class="sticker bg-color-black"><svg class="icon--large" role="img">
+                        <use xlink:href="##000"></use>
+                      </svg></div>
+                    <p>color-black</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-white"><svg class="icon--large" role="img">
+                        <use xlink:href="##fff"></use>
+                      </svg></div>
+                    <p>color-white</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-gray-light"><svg class="icon--large" role="img">
+                        <use xlink:href="##eee"></use>
+                      </svg></div>
+                    <p>color-gray-light</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-gray"><svg class="icon--large" role="img">
+                        <use xlink:href="##999"></use>
+                      </svg></div>
+                    <p>color-gray</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-gray-mid"><svg class="icon--large" role="img">
+                        <use xlink:href="##838a97"></use>
+                      </svg></div>
+                    <p>color-gray-mid</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-gray-dark"><svg class="icon--large" role="img">
+                        <use xlink:href="##6a6a6a"></use>
+                      </svg></div>
+                    <p>color-gray-dark</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-dark-gray"><svg class="icon--large" role="img">
+                        <use xlink:href="##51596b"></use>
+                      </svg></div>
+                    <p>color-dark-gray</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-dark-gray-mid"><svg class="icon--large" role="img">
+                        <use xlink:href="##343e4c"></use>
+                      </svg></div>
+                    <p>color-dark-gray-mid</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-dark-gray-dark"><svg class="icon--large" role="img">
+                        <use xlink:href="##333"></use>
+                      </svg></div>
+                    <p>color-dark-gray-dark</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-blue-lightest"><svg class="icon--large" role="img">
+                        <use xlink:href="##eef3f7"></use>
+                      </svg></div>
+                    <p>color-blue-lightest</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-blue-light"><svg class="icon--large" role="img">
+                        <use xlink:href="##2793e0"></use>
+                      </svg></div>
+                    <p>color-blue-light</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-blue"><svg class="icon--large" role="img">
+                        <use xlink:href="##0055b8"></use>
+                      </svg></div>
+                    <p>color-blue</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-blue-mid"><svg class="icon--large" role="img">
+                        <use xlink:href="##184e9e"></use>
+                      </svg></div>
+                    <p>color-blue-mid</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-blue-dark"><svg class="icon--large" role="img">
+                        <use xlink:href="##00326d"></use>
+                      </svg></div>
+                    <p>color-blue-dark</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-red"><svg class="icon--large" role="img">
+                        <use xlink:href="##fb0000"></use>
+                      </svg></div>
+                    <p>color-red</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-pink"><svg class="icon--large" role="img">
+                        <use xlink:href="##d8006d"></use>
+                      </svg></div>
+                    <p>color-pink</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-pink-dark"><svg class="icon--large" role="img">
+                        <use xlink:href="##7f1c4e"></use>
+                      </svg></div>
+                    <p>color-pink-dark</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-green"><svg class="icon--large" role="img">
+                        <use xlink:href="##35c621"></use>
+                      </svg></div>
+                    <p>color-green</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-green-dark"><svg class="icon--large" role="img">
+                        <use xlink:href="##1d5d11"></use>
+                      </svg></div>
+                    <p>color-green-dark</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-orange-light"><svg class="icon--large" role="img">
+                        <use xlink:href="##ff9d00"></use>
+                      </svg></div>
+                    <p>color-orange-light</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-orange"><svg class="icon--large" role="img">
+                        <use xlink:href="##ff6100"></use>
+                      </svg></div>
+                    <p>color-orange</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-purple"><svg class="icon--large" role="img">
+                        <use xlink:href="##7735b2"></use>
+                      </svg></div>
+                    <p>color-purple</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-purple-dark"><svg class="icon--large" role="img">
+                        <use xlink:href="##3c036f"></use>
+                      </svg></div>
+                    <p>color-purple-dark</p>
+                  </div>
+                  <div>
+                    <div class="sticker bg-color-shadow"><svg class="icon--large" role="img">
+                        <use xlink:href="#rgba(0, 0, 0, .2)"></use>
+                      </svg></div>
+                    <p>color-shadow</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="o-container">
+              <h1 class="type-h1">Color Milestones</h1>
+              <div>
+                <div></div>
+                <div>
+                  <div>
+                    <div>
+                      <p>Background</p><code>.bg-baby--primary</code>
+                      <p>Border</p><code>.border-baby--primary</code>
+                      <p>Text</p><code>.text-baby--primary</code>
+                    </div>
+                    <div>
+                      <p>Background</p><code>.bg-toddler--primary</code>
+                      <p>Border</p><code>.border-toddler--primary</code>
+                      <p>Text</p><code>.text-toddler--primary</code>
+                    </div>
+                    <div>
+                      <p>Background</p><code>.bg-pre-schooler--primary</code>
+                      <p>Border</p><code>.border-pre-schooler--primary</code>
+                      <p>Text</p><code>.text-pre-schooler--primary</code>
+                    </div>
+                    <div>
+                      <p>Background</p><code>.bg-grade-schooler--primary</code>
+                      <p>Border</p><code>.border-grade-schooler--primary</code>
+                      <p>Text</p><code>.text-grade-schooler--primary</code>
+                    </div>
+                    <div>
+                      <p>Background</p><code>.bg-pre-teen--primary</code>
+                      <p>Border</p><code>.border-pre-teen--primary</code>
+                      <p>Text</p><code>.text-pre-teen--primary</code>
+                    </div>
+                    <div>
+                      <p>Background</p><code>.bg-teen--primary</code>
+                      <p>Border</p><code>.border-teen--primary</code>
+                      <p>Text</p><code>.text-teen--primary</code>
+                    </div>
+                    <div>
+                      <p>Background</p><code>.bg---primary</code>
+                      <p>Border</p><code>.border---primary</code>
+                      <p>Text</p><code>.text---primary</code>
+                    </div>
+                  </div>
+                  <div><pre>&lt;div&gt;
+  &lt;p&gt;Background&lt;/p&gt;&lt;code&gt;.bg-baby--primary&lt;/code&gt;
+  &lt;p&gt;Border&lt;/p&gt;&lt;code&gt;.border-baby--primary&lt;/code&gt;
+  &lt;p&gt;Text&lt;/p&gt;&lt;code&gt;.text-baby--primary&lt;/code&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;p&gt;Background&lt;/p&gt;&lt;code&gt;.bg-toddler--primary&lt;/code&gt;
+  &lt;p&gt;Border&lt;/p&gt;&lt;code&gt;.border-toddler--primary&lt;/code&gt;
+  &lt;p&gt;Text&lt;/p&gt;&lt;code&gt;.text-toddler--primary&lt;/code&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;p&gt;Background&lt;/p&gt;&lt;code&gt;.bg-pre-schooler--primary&lt;/code&gt;
+  &lt;p&gt;Border&lt;/p&gt;&lt;code&gt;.border-pre-schooler--primary&lt;/code&gt;
+  &lt;p&gt;Text&lt;/p&gt;&lt;code&gt;.text-pre-schooler--primary&lt;/code&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;p&gt;Background&lt;/p&gt;&lt;code&gt;.bg-grade-schooler--primary&lt;/code&gt;
+  &lt;p&gt;Border&lt;/p&gt;&lt;code&gt;.border-grade-schooler--primary&lt;/code&gt;
+  &lt;p&gt;Text&lt;/p&gt;&lt;code&gt;.text-grade-schooler--primary&lt;/code&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;p&gt;Background&lt;/p&gt;&lt;code&gt;.bg-pre-teen--primary&lt;/code&gt;
+  &lt;p&gt;Border&lt;/p&gt;&lt;code&gt;.border-pre-teen--primary&lt;/code&gt;
+  &lt;p&gt;Text&lt;/p&gt;&lt;code&gt;.text-pre-teen--primary&lt;/code&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;p&gt;Background&lt;/p&gt;&lt;code&gt;.bg-teen--primary&lt;/code&gt;
+  &lt;p&gt;Border&lt;/p&gt;&lt;code&gt;.border-teen--primary&lt;/code&gt;
+  &lt;p&gt;Text&lt;/p&gt;&lt;code&gt;.text-teen--primary&lt;/code&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;p&gt;Background&lt;/p&gt;&lt;code&gt;.bg---primary&lt;/code&gt;
+  &lt;p&gt;Border&lt;/p&gt;&lt;code&gt;.border---primary&lt;/code&gt;
+  &lt;p&gt;Text&lt;/p&gt;&lt;code&gt;.text---primary&lt;/code&gt;
+&lt;/div&gt;</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
     </div>
-    <main></main>
+    <footer class="c-footer">
+      <div class="o-container">
+        <div class="c-footer__section">
+          <div class="c-footer__logos">
+            <figure class="c-footer__logo"><img alt="Growing Up NYC" src="images/logo-gunyc-white@236px.png" width="118" /></figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/growingup-nyc.js"></script>
+    <script type="text/javascript">
+      var gunyc = new GUNYC();
+      gunyc.navigation();
+      gunyc.accordion();
+      gunyc.icons();
+    </script>
   </body>
 
 </html>

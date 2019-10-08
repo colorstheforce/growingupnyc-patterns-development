@@ -25,10 +25,3 @@
   border-top: 2px solid $color-white;
   padding-top: rem-calc(30);
 }
-
-*,
-::before,
-::after {
-  border-style: solid;
-  border-width: 0;
-}

@@ -1,4 +1,4 @@
 = mixin('content-header', 'title = Page Title');
   header
-    div 
-      h1 = this.title;
+    / div 
+    /   h1 = this.title;

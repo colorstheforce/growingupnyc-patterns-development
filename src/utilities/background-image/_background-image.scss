@@ -1,0 +1,54 @@
+/**
+ * Background-image
+ */
+
+// Dependencies
+// This is where variables, mixins, or functions are imported that the
+// pattern depends on. It's helpful to import dependencies into each
+// pattern so that they can be exported individually and it's clear
+// where the pattern is getting variables from. You can create a
+// pattern specific SASS configuration in the /src/config directory, or
+// add configuration to the /config/variables.js object (which is
+// to SASS during the compilation process).
+// @import 'config/variables';
+
+// Declarations
+// .background-image { }
+
+// gradients
+.gradient-baby {
+  background-image: url(/images/gradient-baby.png);
+}
+
+.gradient-toddler {
+  background-image: url(/images/gradient-toddler.png);
+}
+
+.gradient-pre-schooler {
+  background-image: url(/images/gradient-pre-schooler.png);
+}
+
+.gradient-grade-schooler {
+  background-image: url(/images/gradient-grade-schooler.png);
+}
+
+.gradient-pre-teen {
+  background-image: url(/images/gradient-pre-teen.png);
+}
+
+.gradient-teen {
+  background-image: url(/images/gradient-teen.png);
+}
+
+.gradient-young-adult {
+  background-image: url(/images/gradient-young-adult.png);
+}
+
+// splatter
+.splatter-orange {
+  background-image: url(/images/splatter-orange.svg);
+}
+
+.splatter-blue {
+  background-image: url(/images/splatter-blue.svg);
+}

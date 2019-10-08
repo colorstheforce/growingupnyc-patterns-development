@@ -80,39 +80,37 @@ const variables = {
     'color-text': 'color-dark-gray-dark',
     'color-text-invert': 'color-white',
     'color-text-weak': 'color-gray',
-    'color-text-link': 'color-primary',
-    'color-background-footer': 'color-primary',
+    'color-text-link': 'color-blue-light',
+    'color-background-footer': 'color-blue-light',
     'color-error': 'color-pink',
   },
-  'milestones': {
-    'baby': {
-      'color-primary': 'color-pink',
-      'color-secondary': 'color-pink-dark',
-    },
-    'toddler': {
-      'color-primary': 'color-orange',
-      'color-secondary': 'color-red',
-    },
-    'pre-schooler': {
-      'color-primary': 'color-orange-light',
-      'color-secondary': 'color-orange',
-    },
-    'grade-schooler': {
-      'color-primary': 'color-green',
-      'color-secondary': 'color-green-dark',
-    },
-    'pre-teen': {
-      'color-primary': 'color-blue',
-      'color-secondary': 'color-blue-dark',
-    },
-    'teen': {
-      'color-primary': 'color-purple',
-      'color-secondary': 'color-purple-dark',
-    },
-    'young-adult': {
-      'color-primary': 'color-dark-gray',
-      'color-secondary': 'color-dark-gray-mid',
-    }
+  'colors-baby': {
+    'primary': 'color-pink',
+    'secondary': 'color-pink-dark',
+  },
+  'colors-toddler': {
+    'primary': 'color-orange',
+    'secondary': 'color-red',
+  },
+  'colors-pre-schooler': {
+    'primary': 'color-orange-light',
+    'secondary': 'color-orange',
+  },
+  'colors-grade-schooler': {
+    'primary': 'color-green',
+    'secondary': 'color-green-dark',
+  },
+  'colors-pre-teen': {
+    'primary': 'color-blue',
+    'secondary': 'color-blue-dark',
+  },
+  'colors-teen': {
+    'primary': 'color-purple',
+    'secondary': 'color-purple-dark',
+  },
+  'colors-young-adult': {
+    'primary': 'color-dark-gray',
+    'secondary': 'color-dark-gray-mid',
   },
   'transitions': {
     'button-transition': 'all ease-in-out .15s',

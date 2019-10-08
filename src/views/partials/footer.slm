@@ -1,0 +1,6 @@
+footer class="c-footer" 
+  div class="o-container"
+    div class="c-footer__section"
+      div class="c-footer__logos"
+        figure class="c-footer__logo"
+          img alt="Growing Up NYC" src="images/logo-gunyc-white@236px.png" width="118"

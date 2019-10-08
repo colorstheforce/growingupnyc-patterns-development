@@ -1,0 +1,1 @@
+You can assign a background color to complement the splatter

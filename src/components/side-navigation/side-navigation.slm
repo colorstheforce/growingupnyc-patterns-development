@@ -1,0 +1,14 @@
+/
+/ Nav-list
+
+ol class="c-nav-list js-sticky js-section-set o-sticky-nav"
+  li class="c-nav-list__item"
+    a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" href="#section-details" data-section="section-details"
+      = "Details"
+      svg aria-hidden="true" class="icon--caret"
+        use xlink:href="#icon-caret-right"
+  li class="c-nav-list__item"
+    a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" href="#section-how-to-apple" data-section="section-how-to-apple"
+      = "How to Apply"
+      svg aria-hidden="true" class="icon--caret"
+        use xlink:href="#icon-caret-right"

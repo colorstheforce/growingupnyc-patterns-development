@@ -1,0 +1,12 @@
+/
+/ Side-hero
+
+div class="c-side-hero"
+
+section class="o-static-column o-static-column--left c-side-hero js-static"
+  div class="c-side-hero__image"
+  div class="c-side-hero__content"
+    h1 class="c-side-hero__title"
+      div class="c-side-hero__title__large rotating-text"
+          span class="rotating-text__entry"
+            = "Resources for parents"

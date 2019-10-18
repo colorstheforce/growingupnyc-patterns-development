@@ -16,4 +16,5 @@
   = mixin('content-header', title);
   div
     = mixin('section', false, 'elements/lists/lists');
+    = mixin('section', false, 'elements/lists/lists-unordered--check');
 

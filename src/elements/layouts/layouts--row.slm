@@ -1,0 +1,5 @@
+div class="layout--row text-center"
+  div class="p-4 bg-color-gray-light"
+    = "Row 1"  
+  div class="p-4 bg-color-gray text-color-white"  
+    = "Row 2"  

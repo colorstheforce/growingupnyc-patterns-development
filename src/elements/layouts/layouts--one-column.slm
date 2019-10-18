@@ -1,0 +1,4 @@
+div class="layout--one-column bg-color-gray-light text-center"
+  = "Column 1"
+  div class="p-4 bg-color-gray text-color-white"
+    = "Cell 1"

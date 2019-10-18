@@ -18,6 +18,8 @@ $bp-medium: (media: "screen and (min-width: " + $screen-tablet + ")");
 $bp-large: (media: "screen and (min-width: " + $screen-desktop + ")");
 $bp-xlarge: (media: "screen and (min-width: " + $screen-desktop-large + ")");
 
+$bp-mobile-only: (media: "screen and (max-width: " + $screen-desktop + ")");
+
 @mixin screens($screens: map-get($variables, 'screens')) {
   $variant: '' !global; // !global allows us to "pass" $variant to the @content
   @content; // mobile first... then other breakpoints

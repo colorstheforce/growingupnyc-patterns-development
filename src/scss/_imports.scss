@@ -57,6 +57,7 @@
 @import 'elements/base/base';
 @import 'elements/divider/divider';
 @import 'elements/icons/icons';
+@import 'elements/layouts/layouts';
 @import 'elements/lists/lists';
 @import 'elements/sticker/sticker';
 @import 'elements/button/button';
@@ -77,6 +78,8 @@
 @import 'components/card/card';
 @import 'components/block-list/block-list';
 @import 'components/footer/footer';
+@import 'components/side-navigation/side-navigation';
+@import 'components/side-hero/side-hero';
 // components - end
 
 /**********
@@ -107,6 +110,7 @@
 @import 'utilities/accessibility/accessibility';
 @import 'utilities/offcanvas/offcanvas';
 @import 'utilities/background-image/background-image';
+@import 'utilities/spacing/spacing';
 @import 'utilities/tailwind/tailwind';
 
 // utilities - end

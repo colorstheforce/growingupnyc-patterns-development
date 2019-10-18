@@ -1,0 +1,18 @@
+= extend('layouts/default')
+
+- title = 'Side Hero'
+
+/ Partials
+= partial('partials/head.mixin.slm');
+= partial('partials/content-header.mixin.slm');
+= partial('partials/section.mixin.slm');
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  div
+    = mixin('section', false, 'components/side-hero/side-hero');
+

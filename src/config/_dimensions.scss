@@ -7,5 +7,7 @@
 
 // Declarations
 $dimensions: map-get($variables, 'dimensions');
+$outer-gutter: map-get($dimensions, 'outer-gutter');
 $outer-gutter-medium: map-get($dimensions, 'outer-gutter-medium');
 $outer-gutter-small: map-get($dimensions, 'outer-gutter-small');
+$horizontal-gutter: map-get($dimensions, 'horizontal-gutter');

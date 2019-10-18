@@ -1,0 +1,89 @@
+/**
+ * Spacing
+ */
+
+// Dependencies
+// This is where variables, mixins, or functions are imported that the
+// pattern depends on. It's helpful to import dependencies into each
+// pattern so that they can be exported individually and it's clear
+// where the pattern is getting variables from. You can create a
+// pattern specific SASS configuration in the /src/config directory, or
+// add configuration to the /config/variables.js object (which is
+// to SASS during the compilation process).
+// @import 'config/variables';
+@import 'config/dimensions';
+
+// Declarations
+// .spacing { }
+
+// Horizontal gutter
+.u-sm-gutter {
+  margin-bottom: $horizontal-gutter;
+}
+
+.u-lg-gutter {
+  margin-bottom: #{$outer-gutter}px;
+
+  @include grid-media($bp-small) {
+    margin-bottom: #{$outer-gutter-small}px;
+  }
+
+  @include grid-media($bp-medium) {
+    margin-bottom: #{$outer-gutter-medium}px;
+  }
+
+  @include grid-media($bp-large) {
+    margin-bottom: #{$outer-gutter-large}px;
+  }
+}
+
+// Extra top padding
+.u-top-spacing-large {
+  padding-top: 75px;
+}
+
+.u-top-spacing {
+  padding-top: 45px;
+
+  @include grid-media($bp-large) {
+    padding-top: 60px;
+  }
+}
+
+.u-top-spacing-small {
+  padding-top: 30px;
+
+  @include grid-media($bp-small) {
+    padding-top: 35px;
+  }
+
+  @include grid-media($bp-large) {
+    padding-top: #{$outer-gutter-large}px;
+  }
+}
+
+// Extra bottom padding
+.u-bottom-spacing {
+  padding-bottom: 45px;
+
+  @include grid-media($bp-large) {
+    padding-bottom: 60px;
+  }
+}
+
+.u-bottom-spacing-small {
+  padding-bottom: 30px;
+
+  @include grid-media($bp-small) {
+    padding-bottom: 35px;
+  }
+
+  @include grid-media($bp-large) {
+    padding-bottom: #{$outer-gutter-large}px;
+  }
+}
+
+// Pull an element up to overlap with the one above it
+.u-shift-up {
+  margin-top: $horizontal-gutter * -2;
+}

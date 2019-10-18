@@ -1,0 +1,5 @@
+div class="list-unordered--check"
+  ul 
+    li = "Children are 6-weeks to 4-years old"
+    li = "Meet income guidelines"
+    li = "Working and non-working families may be eligible"

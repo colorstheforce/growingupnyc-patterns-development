@@ -1,10 +1,10 @@
 header class='o-navigation'
   div class='o-container'
-    a href="/" class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu"
-      span class="o-navigation__logo"
-        = 'Growing Up NYC'
+    / a href="/" class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu"
+    /   span class="o-navigation__logo"
+    /     = 'Growing Up NYC'
     nav class='o-navigation__nav'
-      ul class='o-inline'
+      ul class='o-inline text-left'
         li class='o-inline__item'
           a class='o-navigation__nav-link js-offcanvas' href='#patterns' data-js="offcanvas-patterns"
             = 'Patterns'

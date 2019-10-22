@@ -29,7 +29,7 @@
 
 // If @font-face is used it needs to be imported before all other declarations.
 
-@import 'elements/fonts/fonts';
+// @import 'elements/fonts/fonts';
 
 /************************
  * External Dependencies
@@ -55,12 +55,13 @@
 // namespace prefixes based on their attributes.
 
 @import 'elements/base/base';
+@import 'elements/button/button';
 @import 'elements/divider/divider';
 @import 'elements/icons/icons';
 @import 'elements/layouts/layouts';
 @import 'elements/lists/lists';
 @import 'elements/sticker/sticker';
-@import 'elements/button/button';
+@import 'elements/table/table';
 
 // elements - end
 
@@ -73,13 +74,17 @@
 // may include utilities within them. Not all components are required for each
 // application. Component namespaces are prefixed with 'c-'.
 
+@import 'components/arrow-pager/arrow-pager';
+@import 'components/block-list/block-list';
+@import 'components/card/card';
+@import 'components/details-list/details-list';
+@import 'components/footer/footer';
 @import 'components/hero/hero';
 @import 'components/list-box/list-box';
-@import 'components/card/card';
-@import 'components/block-list/block-list';
-@import 'components/footer/footer';
 @import 'components/side-navigation/side-navigation';
 @import 'components/side-hero/side-hero';
+@import 'components/tout/tout';
+@import 'components/tip/tip';
 // components - end
 
 /**********
@@ -92,11 +97,14 @@
 // application and some will require their own Objects. Object namespaces are
 // prefixed with 'o-'.
 
-@import 'objects/navigation/navigation';
-@import 'objects/inline-list/inline-list';
-@import 'objects/container/container';
 @import 'objects/accordion/accordion';
+@import 'objects/article/article';
+@import 'objects/container/container';
 @import 'objects/content/content';
+@import 'objects/feature-photo/feature-photo';
+@import 'objects/inline-list/inline-list';
+@import 'objects/navigation/navigation';
+@import 'objects/static-column/static-column';
 
 // objects - end
 

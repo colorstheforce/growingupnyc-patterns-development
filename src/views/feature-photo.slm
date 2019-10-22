@@ -1,0 +1,16 @@
+= extend('layouts/default')
+
+- title = 'Feature Photo'
+
+/ Partials
+= partial('partials/head.mixin.slm');
+= partial('partials/content-header.mixin.slm');
+= partial('partials/section.mixin.slm');
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  = mixin('section', 'Feature Photo', 'objects/feature-photo/feature-photo', 'gutter', 'images/demo-image.jpg');

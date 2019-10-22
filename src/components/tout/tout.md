@@ -1,0 +1,1 @@
+The Tout component is a block of content that consists of a title, subtitle and link.

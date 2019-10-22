@@ -1,0 +1,16 @@
+/
+/ Tip
+
+aside class="c-tip o-content-container"
+  div class="c-tip__sticker sticker" aria-hidden="true"
+    svg class="icon--large"
+      use xlink:href="#icon-lightbulb"
+  div class="c-tip__inner"
+    p class="c-tip__content"
+      = 'Be sure your baby has simple and soft toys to stimulate his sense of sight, sound and touch. Naming the toys helps to develop his language skills.'
+    footer class="c-tip__footer"
+      p
+        = 'For more information, you can check out these resources:'
+      p
+        a href="#" class="c-tip__link"
+          = 'Resource Link'

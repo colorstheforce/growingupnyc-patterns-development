@@ -8,6 +8,7 @@
           div
             = partial('../' + this.markup);
     - if (typeof this.grid === 'string')
+      - value = this.grid;
       div
         = partial('../' + this.markup);
     

@@ -1,0 +1,17 @@
+/
+/ Details-list
+
+
+dl class="c-details-list"
+  dt class="c-details-list__term"
+   = 'Term'
+  dd class="c-details-list__descr"
+   = 'Description'
+  dt class="c-details-list__term"
+   = 'Term'
+  dd class="c-details-list__descr"
+   = 'Description'
+  dt class="c-details-list__term"
+   = 'Term'
+  dd class="c-details-list__descr"
+   = 'Description'

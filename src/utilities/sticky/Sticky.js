@@ -1,6 +1,6 @@
 'use strict';
 
-class Font {
+class Sticky {
   /**
    * @param  {object} settings This could be some configuration options.
    *                           for the pattern module.
@@ -14,4 +14,4 @@ class Font {
   }
 }
 
-export default Font;
+export default Sticky;

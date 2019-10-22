@@ -1,0 +1,6 @@
+/
+/ Feature-photo
+
+- if (typeof value !== 'undefined')
+  figure class="o-feature-photo"
+    img src="${value}" alt="photo" class="o-feature-photo__photo"

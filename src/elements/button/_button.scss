@@ -12,6 +12,9 @@
 // to SASS during the compilation process).
 @import 'config/colors';
 @import 'config/transitions';
+@import 'config/fonts';
+@import 'scss/functions/font-size';
+@import 'scss/functions/rem-calc';
 
 // Declarations
 // .button { }

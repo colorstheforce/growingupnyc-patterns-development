@@ -1,0 +1,39 @@
+/**
+ * Arrow-pager
+ */
+
+// Dependencies
+// This is where variables, mixins, or functions are imported that the
+// pattern depends on. It's helpful to import dependencies into each
+// pattern so that they can be exported individually and it's clear
+// where the pattern is getting variables from. You can create a
+// pattern specific SASS configuration in the /src/config directory, or
+// add configuration to the /config/variables.js object (which is
+// to SASS during the compilation process).
+// @import 'config/variables';
+
+// Declarations
+
+.c-arrow-pager {
+  font-family: $font-family-display;
+  font-weight: $font-weight-extrablack;
+  @include font-size-x-large;
+  padding-top: 10px;
+  margin: 0 0 35px;
+  text-align: center;
+  @include text-uppercase;
+
+  @include grid-media($bp-large) {
+    padding-top: 0;
+  }
+}
+
+.c-arrow-pager__arrow {
+  color: $color-gray-mid;
+  text-decoration: none;
+}
+
+// .previous {
+//   float: left;
+//   padding-right: 5px;
+// }

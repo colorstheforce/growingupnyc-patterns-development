@@ -13,4 +13,10 @@
 // @import 'config/variables';
 
 // Declarations
-// .font { }
+.font-sans--primary { 
+  font-family: map-get(map-get($variables, 'fonts'), 'display-sans');
+}
+
+.font-sans--secondary { 
+  font-family: map-get(map-get($variables, 'fonts'), 'text-sans');
+}

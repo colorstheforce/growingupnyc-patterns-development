@@ -1,0 +1,1 @@
+The Arrow Pager component allows for simple navigation wrapped around a string.

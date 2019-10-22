@@ -1,5 +1,5 @@
 /
 / Container
 
-div class="o-container"
+div class="o-container bg-color-gray-light"
   h1 = 'Programs'

@@ -43,6 +43,9 @@
 
 @import 'bourbon';
 @import 'neat';
+@import "fontawesome";
+@import "solid";
+
 // global - end
 
 /**********
@@ -80,6 +83,7 @@
 @import 'components/details-list/details-list';
 @import 'components/footer/footer';
 @import 'components/hero/hero';
+@import 'components/language-switcher/language-switcher';
 @import 'components/list-box/list-box';
 @import 'components/side-navigation/side-navigation';
 @import 'components/side-hero/side-hero';

@@ -27,6 +27,10 @@ const variables = {
     'display-sans': [
       '"museo-sans-rounded"',
       'sans-serif'
+    ],
+    'icons': [
+      '"FontAwesome"',
+      'sans-serif'
     ]
   },
   'font-weights': {

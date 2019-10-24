@@ -20,3 +20,7 @@
 .font-sans--secondary { 
   font-family: map-get(map-get($variables, 'fonts'), 'text-sans');
 }
+
+.font-icons { 
+  font-family: map-get(map-get($variables, 'fonts'), 'icons');
+}

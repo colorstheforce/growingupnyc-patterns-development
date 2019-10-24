@@ -12,8 +12,12 @@
   "author": "Mayor's Office for Economic Opportunity",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "@nycopportunity/patterns-framework": "0.0.10-alpha",
-    "jquery": "^3.4.1"
+    "bourbon": "^6.0.0",
+    "bourbon-neat": "^4.0.0",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15"
   },
   "stylelintConfig": {
     "extends": "stylelint-config-standard",
@@ -25,9 +29,5 @@
       "selector-pseudo-element-colon-notation": null
     }
   },
-  "dependencies": {
-    "bourbon": "^6.0.0",
-    "bourbon-neat": "^4.0.0",
-    "lodash": "^4.17.15"
-  }
+  "dependencies": {}
 }

@@ -16,6 +16,7 @@ const sass = {
     './node_modules',
     './node_modules/bourbon/core',
     './node_modules/bourbon-neat/core',
+    './node_modules/@fortawesome/fontawesome-free/scss',
   ]
 };
 

@@ -1,0 +1,61 @@
+/**
+ * Language-switcher
+ */
+
+// Dependencies
+@import 'scss/functions/rem-calc';
+
+// Declarations
+
+.c-language-switcher {
+  text-align: right;
+  z-index: 1;
+
+  a {
+    @extend .font-sans--secondary;
+  }
+}
+.c-language-switcher__horizontal {
+  padding: 7px 0 0;
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    margin-right: rem-calc(5);
+    &:last-child {
+      margin-right: 0;
+      a {
+        padding-right: 0;
+      }
+    }
+    a {
+      font-size: rem-calc(11);
+      color: $color-gray;
+      padding: 5px 8px;
+      text-decoration: none;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    &.c-language-switcher__current {
+      @extend %fa-icon;
+      @extend .fas;
+
+      a {
+        color: $color-primary;
+        &:before {
+          content: fa-content($fa-var-check);
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          font-style: normal;
+          position: relative;
+          top: rem-calc(2);
+          margin-right: rem-calc(3);
+        }
+      }
+    }
+
+  }
+}

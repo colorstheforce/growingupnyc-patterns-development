@@ -62,5 +62,12 @@ div class="o-offcanvas js-offcanvas" id="offcanvas-ages"
             li class='o-inline__item'
               a class='o-navigation__nav-link js-offcanvas' href='#ages' data-js="offcanvas-ages"
                 = 'Ages'
+            li class='o-inline__item'
+              a class='o-navigation__nav-link' href='#search'
+                svg class="o-navigation__icon o-navigation__icon__search" role="img"
+                  title
+                    = 'Search'
+                  use xlink:href="#icon-search"
+
   a class="o-offcanvas__overlay" data-js="offcanvas-ages" aria-hidden="true"
 

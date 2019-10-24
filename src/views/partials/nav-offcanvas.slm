@@ -80,6 +80,10 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
             = 'Input'
       ol class="js-accordion__content c-list-box__content"
         li
+          a href="language-switcher" class="c-list-box__subitem"
+            = 'language switcher'
+      ol class="js-accordion__content c-list-box__content"
+        li
           a href="lists" class="c-list-box__subitem"
             = 'Lists'
       ol class="js-accordion__content c-list-box__content"

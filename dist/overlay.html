@@ -206,29 +206,28 @@
         <main class="pt-32">
           <div class="o-container">
             <header></header>
-            <div class="o-container">
-              <h1 class="type-h1">Details List</h1>
-              <div>
-                <div></div>
+            <div>
+              <div class="o-container">
+                <h1 class="type-h1">Overlay</h1>
                 <div>
+                  <div><p>The overlay object is a container that floats above existing patterns when made visible. This object is dependent on the Toggle Utility from the NYCO Patterns Framework.</p></div>
                   <div>
-                    <dl class="c-details-list">
-                      <dt class="c-details-list__term">Term</dt>
-                      <dd class="c-details-list__descr">Description</dd>
-                      <dt class="c-details-list__term">Term</dt>
-                      <dd class="c-details-list__descr">Description</dd>
-                      <dt class="c-details-list__term">Term</dt>
-                      <dd class="c-details-list__descr">Description</dd>
-                    </dl>
-                  </div>
-                  <div><pre>&lt;dl class=&quot;c-details-list&quot;&gt;
-  &lt;dt class=&quot;c-details-list__term&quot;&gt;Term&lt;/dt&gt;
-  &lt;dd class=&quot;c-details-list__descr&quot;&gt;Description&lt;/dd&gt;
-  &lt;dt class=&quot;c-details-list__term&quot;&gt;Term&lt;/dt&gt;
-  &lt;dd class=&quot;c-details-list__descr&quot;&gt;Description&lt;/dd&gt;
-  &lt;dt class=&quot;c-details-list__term&quot;&gt;Term&lt;/dt&gt;
-  &lt;dd class=&quot;c-details-list__descr&quot;&gt;Description&lt;/dd&gt;
-&lt;/dl&gt;</pre>
+                    <div><a data-js="toggle-search" href="#search" onclick="return false;"><svg class="icon--small" role="img">
+                          <title>Search</title>
+                          <use xlink:href="#icon-search"></use>
+                        </svg></a>
+                      <div aria-hidden="true" class="o-overlay hidden p-4" id="search">
+                        <p>Overlay content.</p>
+                      </div>
+                    </div>
+                    <div><pre>&lt;a data-js=&quot;toggle-search&quot; href=&quot;#search&quot; onclick=&quot;return false;&quot;&gt;&lt;svg class=&quot;icon--small&quot; role=&quot;img&quot;&gt;
+    &lt;title&gt;Search&lt;/title&gt;
+    &lt;use xlink:href=&quot;#icon-search&quot;&gt;&lt;/use&gt;
+  &lt;/svg&gt;&lt;/a&gt;
+&lt;div aria-hidden=&quot;true&quot; class=&quot;o-overlay hidden p-4&quot; id=&quot;search&quot;&gt;
+  &lt;p&gt;Overlay content.&lt;/p&gt;
+&lt;/div&gt;</pre>
+                    </div>
                   </div>
                 </div>
               </div>

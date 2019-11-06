@@ -1,0 +1,1 @@
+The overlay object is a container that floats above existing patterns when made visible. This object is dependent on the Toggle Utility from the NYCO Patterns Framework.

@@ -137,6 +137,10 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
             = 'Navigation'
       ol class="js-accordion__content c-list-box__content"
         li
+          a href="overlay" class="c-list-box__subitem"
+            = 'overlay'
+      ol class="js-accordion__content c-list-box__content"
+        li
           a href="static-column" class="c-list-box__subitem"
             = 'static column'
 

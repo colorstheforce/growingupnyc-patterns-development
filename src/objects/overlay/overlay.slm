@@ -1,0 +1,12 @@
+/
+/ Overlay
+
+
+a data-js="toggle-search" href="#search" onclick="return false;"
+  svg class="icon--small" role="img"
+    title
+      = 'Search'
+    use xlink:href="#icon-search"
+
+div id="search" class="o-overlay hidden p-4" aria-hidden='true'
+  p = "Overlay content."

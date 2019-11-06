@@ -70,4 +70,3 @@ div class="o-offcanvas js-offcanvas" id="offcanvas-ages"
                   use xlink:href="#icon-search"
 
   a class="o-offcanvas__overlay" data-js="offcanvas-ages" aria-hidden="true"
-

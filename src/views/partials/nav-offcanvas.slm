@@ -174,6 +174,10 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
             = 'spacing'
       ol class="js-accordion__content c-list-box__content"
         li
+          a href="sticky" class="c-list-box__subitem"
+            = 'sticky'
+      ol class="js-accordion__content c-list-box__content"
+        li
           a href="tailwind" class="c-list-box__subitem"
             = 'Tailwind'
       ol class="js-accordion__content c-list-box__content"

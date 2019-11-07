@@ -1,6 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+    <link href="styles/site-default.css" rel="stylesheet" />
+    <script type="text/javascript">
+      (function(d) {
+        var config = {
+            kitId: 'wyh7nce',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function() {
+            h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function() {
+          a = this.readyState;
+          if (f || a && a != "complete" && a != "loaded") return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config)
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s)
+      })(document);
+    </script>
+    <title>Growing Up NYC Patterns</title><noscript>
+      <style>
+        body {
+          visibility: visible !important;
+        }
+      </style>
+    </noscript>
+    <script type="text/javascript">
+      function load() {
+        document.body.style.visibility = 'visible'
+      };
+    </script>
+  </head>
+
   <body>
     <div class="o-offcanvas js-offcanvas" id="offcanvas-patterns">
       <nav aria-label="patterns-heading" class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation">
@@ -135,6 +185,9 @@
               <li><a class="c-list-box__subitem" href="spacing">spacing</a></li>
             </ol>
             <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="sticky">sticky</a></li>
+            </ol>
+            <ol class="js-accordion__content c-list-box__content">
               <li><a class="c-list-box__subitem" href="tailwind">Tailwind</a></li>
             </ol>
             <ol class="js-accordion__content c-list-box__content">
@@ -154,7 +207,80 @@
           </div>
         </header><a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
         <main class="pt-32">
-          <div class="o-container"></div>
+          <div class="o-container">
+            <header></header>
+            <div>
+              <div class="o-container">
+                <h1 class="type-h1"></h1>
+                <div>
+                  <div><p>The Sticky Utility is used to create a sticky side navigation.</p></div>
+                  <div>
+                    <div>
+                      <div class="bg-color-blue-light p-8"></div>
+                      <article class="o-container js-sticky-container">
+                        <div class="o-article-sidebar">
+                          <div class="o-content-container--compact u-shift-up">
+                            <ol class="c-nav-list js-sticky js-section-set o-sticky-nav" data-js="sticky">
+                              <li class="c-nav-list__item"><a class="js-section c-nav-list__link" data-section="section-events" href="#section-events">Events<svg aria-hidden="true" class="icon--caret">
+                                    <use xlink:href="#icon-caret-right"></use>
+                                  </svg></a></li>
+                              <li class="c-nav-list__item"><a class="js-section c-nav-list__link" data-section="section-programs" href="#section-programs">Programs<svg aria-hidden="true" class="icon--caret">
+                                    <use xlink:href="#icon-caret-right"></use>
+                                  </svg></a></li>
+                              <li class="c-nav-list__item"><a class="js-section c-nav-list__link" data-section="section-milestones" href="#section-milestones">Milestones<svg aria-hidden="true" class="icon--caret">
+                                    <use xlink:href="#icon-caret-right"></use>
+                                  </svg></a></li>
+                            </ol>
+                          </div>
+                        </div>
+                        <div class="o-article js-sticky-article">
+                          <section class="c-block-list o-content-container pt-12" id="section-events">
+                            <h2>Events</h2>
+                          </section>
+                          <section class="c-block-list o-content-container pt-12" id="section-programs">
+                            <h2>Programs</h2>
+                          </section>
+                          <section class="c-block-list o-content-container pt-12" id="section-milestones">
+                            <h2>Milestones</h2>
+                          </section>
+                        </div>
+                      </article>
+                    </div>
+                    <div><pre>&lt;div class=&quot;bg-color-blue-light p-8&quot;&gt;&lt;/div&gt;
+&lt;article class=&quot;o-container js-sticky-container&quot;&gt;
+  &lt;div class=&quot;o-article-sidebar&quot;&gt;
+    &lt;div class=&quot;o-content-container--compact u-shift-up&quot;&gt;
+      &lt;ol class=&quot;c-nav-list js-sticky js-section-set o-sticky-nav&quot; data-js=&quot;sticky&quot;&gt;
+        &lt;li class=&quot;c-nav-list__item&quot;&gt;&lt;a class=&quot;js-section c-nav-list__link&quot; data-section=&quot;section-events&quot; href=&quot;#section-events&quot;&gt;Events&lt;svg aria-hidden=&quot;true&quot; class=&quot;icon--caret&quot;&gt;
+              &lt;use xlink:href=&quot;#icon-caret-right&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;c-nav-list__item&quot;&gt;&lt;a class=&quot;js-section c-nav-list__link&quot; data-section=&quot;section-programs&quot; href=&quot;#section-programs&quot;&gt;Programs&lt;svg aria-hidden=&quot;true&quot; class=&quot;icon--caret&quot;&gt;
+              &lt;use xlink:href=&quot;#icon-caret-right&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;c-nav-list__item&quot;&gt;&lt;a class=&quot;js-section c-nav-list__link&quot; data-section=&quot;section-milestones&quot; href=&quot;#section-milestones&quot;&gt;Milestones&lt;svg aria-hidden=&quot;true&quot; class=&quot;icon--caret&quot;&gt;
+              &lt;use xlink:href=&quot;#icon-caret-right&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;o-article js-sticky-article&quot;&gt;
+    &lt;section class=&quot;c-block-list o-content-container pt-12&quot; id=&quot;section-events&quot;&gt;
+      &lt;h2&gt;Events&lt;/h2&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;c-block-list o-content-container pt-12&quot; id=&quot;section-programs&quot;&gt;
+      &lt;h2&gt;Programs&lt;/h2&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;c-block-list o-content-container pt-12&quot; id=&quot;section-milestones&quot;&gt;
+      &lt;h2&gt;Milestones&lt;/h2&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
       </div>
     </div>
@@ -174,6 +300,7 @@
       gunyc.toggle();
       gunyc.accordion();
       gunyc.icons();
+      gunyc.sticky();
     </script>
   </body>
 

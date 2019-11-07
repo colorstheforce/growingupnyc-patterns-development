@@ -1,0 +1,1 @@
+The Sticky Utility is used to create a sticky side navigation.

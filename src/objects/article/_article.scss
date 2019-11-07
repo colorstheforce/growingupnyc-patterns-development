@@ -27,6 +27,11 @@
   @include grid-media($bp-large) {
     margin-left: 0;
     margin-right: 0;
+    display: block;
+    float: left;
+    margin-right: 0;
+    width: 65%;
+
     // @include span-columns(8);
     // @include omega;
   }
@@ -35,21 +40,25 @@
 .o-article-sidebar {
   margin-left: -#{rem-calc($outer-gutter)};
   margin-right: -#{rem-calc($outer-gutter)};
-
+  
   @include grid-media($bp-small) {
     margin-left: -#{rem-calc($outer-gutter-small)};
     margin-right: -#{rem-calc($outer-gutter-small)};
   }
-
+  
   @include grid-media($bp-large) {
+    display: block;
+    float: left;
     margin-left: 0;
     margin-right: 0;
+    width: 35%;
     // @include span-columns(4);
+    
   }
 }
 
 .o-article--shift {
   @include grid-media($bp-large) {
-    @include grid-shift(4);
+    margin-left: 35%;
   }
 }

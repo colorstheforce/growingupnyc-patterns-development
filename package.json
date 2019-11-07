@@ -16,6 +16,7 @@
     "@nycopportunity/patterns-framework": "0.0.10-alpha",
     "bourbon": "^6.0.0",
     "bourbon-neat": "^4.0.0",
+    "imagesready": "^0.2.2",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15"
   },

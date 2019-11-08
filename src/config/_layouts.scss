@@ -6,11 +6,11 @@
 @import 'config/media';
 
 // Declarations
-// $var
 
 $outer-gutter: map-get(map-get($variables, 'dimensions'), 'outer-gutter');
 $outer-gutter-small: map-get(map-get($variables, 'dimensions'), 'outer-gutter-small');
 $outer-gutter-large: map-get(map-get($variables, 'dimensions'), 'outer-gutter-large');
+$horizontal-gutter: map-get(map-get($variables, 'dimensions'), 'horizontal-gutter');
 
 
 @mixin layout-inner-left-edge {

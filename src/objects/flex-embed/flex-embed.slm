@@ -1,0 +1,20 @@
+/
+/ Flex-embed
+/ The Sketch attributes expose the markup to HTML Sketch App and should
+/ be included by default. They should only be set before the include
+/ statement of this partial. There should only be one Symbol definition
+/ library and all others should be Symbol Instances.
+/ data-sketch-symbol - Defines markup as a new Sketch Symbol
+/ data-sketch-symbol-instance - Relates the markup to a previously defined Symbol
+/
+/ ex;
+/ - symbol = false;
+/ - instance = 'elements/checkboxes/checkboxes';
+/ = partial(`../../${instance}.slm`);
+/
+/ Basically, if you are building an Object or a Component and including
+/ other Elements/Components/Objects, the symbol should be set to false
+/ and the instance should be set to the pattern's path.
+
+div id="tribe-events-gmap" class="o-flex-embed"
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.1234450658194!2d-73.98887848490908!3d40.693278846698156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a4bb73fe8bb%3A0x94b8416798901863!2s1%20MetroTech%20Center%2C%20Brooklyn%2C%20NY%2011201!5e0!3m2!1sen!2sus!4v1573247543152!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>

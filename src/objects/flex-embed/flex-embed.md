@@ -1,0 +1,1 @@
+The Flex Embed object is a wrapper for embedded content. On Growing Up NYC, the Flex Embed is used to wrap Google Maps embeds for Event locations where applicable.

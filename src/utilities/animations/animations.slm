@@ -1,0 +1,13 @@
+/
+/ Animations
+
+div class="rotating-text"
+  span data-js="rotate-text" class="rotating-text__entry hidden"
+    = "Learning"
+  span data-js="rotate-text" class="rotating-text__entry hidden"
+    = "Playing"
+  span data-js="rotate-text" class="rotating-text__entry hidden"
+    = "Making"
+  span data-js="rotate-text" class="rotating-text__entry hidden"
+    = "Growing"
+  span data-js="rotate-controller" id="rotate"

@@ -14,6 +14,7 @@ import Icons from '../../node_modules/@nycopportunity/patterns-framework/src/uti
 import Toggle from '../utilities/toggle/Toggle';
 import Sticky from '../utilities/sticky/Sticky';
 import AlertBanner from '../objects/alert-banner/AlertBanner';
+import Animations from '../utilities/animations/Animations';
 /** import components here as they are written. */
 
 /**
@@ -47,6 +48,10 @@ class main {
 
   alertBanner() {
     return new AlertBanner();
+  }
+
+  animations() {
+    return new Animations();
   }
 
 }

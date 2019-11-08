@@ -173,6 +173,10 @@ const variables = {
     'sticker-size-mobile': '80',
     'sticker-size': '100',
   },
+  'animations': {
+    'speed': '.75s',
+    'timing': 'cubic-bezier(.23, 1, .32, 1)'
+  },
   'icons': [
     'icon-afterschool-guides',
     'icon-arrow-right',

@@ -95,6 +95,9 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
           a href="alert-banner" class="c-list-box__subitem"
             = 'alert banner'
         li
+          a href="animations" class="c-list-box__subitem"
+            = 'animations'
+        li
           a href="article" class="c-list-box__subitem"
             = 'article'
         li
@@ -124,6 +127,9 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
       h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0"
         = 'Utilities'
       ol class="js-accordion__content c-list-box__content"
+        li
+          a href="animations" class="c-list-box__subitem"
+            = 'animations'
         li
           a href="background-image" class="c-list-box__subitem"
             = 'background image'

@@ -1,0 +1,5 @@
+@import 'config/variables';
+$animations: map-get($variables, 'animations');
+
+$animate-scss-speed: map-get($animations, 'speed');
+$animate-timing-function: map-get($animations, 'timing');

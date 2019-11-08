@@ -131,6 +131,9 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
         = 'Utilities'
       ol class="js-accordion__content c-list-box__content"
         li
+          a href="accessibility" class="c-list-box__subitem"
+            = 'accessibility'
+        li
           a href="animations" class="c-list-box__subitem"
             = 'animations'
         li

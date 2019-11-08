@@ -1,6 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+    <link href="styles/site-default.css" rel="stylesheet" />
+    <script type="text/javascript">
+      (function(d) {
+        var config = {
+            kitId: 'wyh7nce',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function() {
+            h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function() {
+          a = this.readyState;
+          if (f || a && a != "complete" && a != "loaded") return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config)
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s)
+      })(document);
+    </script>
+    <title>Growing Up NYC Patterns</title><noscript>
+      <style>
+        body {
+          visibility: visible !important;
+        }
+      </style>
+    </noscript>
+    <script type="text/javascript">
+      function load() {
+        document.body.style.visibility = 'visible'
+      };
+    </script>
+  </head>
+
   <body>
     <div class="o-offcanvas js-offcanvas" id="offcanvas-patterns">
       <nav aria-label="patterns-heading" class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation">
@@ -67,6 +117,7 @@
           <li class="c-list-box__item">
             <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Utilities</h3>
             <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="accessibility">accessibility</a></li>
               <li><a class="c-list-box__subitem" href="animations">animations</a></li>
               <li><a class="c-list-box__subitem" href="background-image">background image</a></li>
               <li><a class="c-list-box__subitem" href="color">color</a></li>
@@ -91,7 +142,36 @@
           </div>
         </header><a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
         <main class="pt-32">
-          <div class="o-container"></div>
+          <div class="o-container">
+            <header></header>
+            <div>
+              <div class="o-container">
+                <h1 class="type-h1">Accessibility</h1>
+                <div>
+                  <div><p>The Accessibility utility is to highlight elements that contain information that should be read by a screen reader and well as a keyboard short cut that can be used to skip to different areas of content.</p></div>
+                  <div>
+                    <div>
+                      <div class="p-4">
+                        <p>Content that is visible to users with and without a screen reader</p>
+                        <p class="show-for-screen-reader">Content read by screen reader</p>
+                      </div>
+                      <div class="p-4">
+                        <p>Tab to reveal the Skip to main content link</p><a class="show-for-keyboard" href="#main">Skip to main content</a>
+                      </div>
+                    </div>
+                    <div><pre>&lt;div class=&quot;p-4&quot;&gt;
+  &lt;p&gt;Content that is visible to users with and without a screen reader&lt;/p&gt;
+  &lt;p class=&quot;show-for-screen-reader&quot;&gt;Content read by screen reader&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;p-4&quot;&gt;
+  &lt;p&gt;Tab to reveal the Skip to main content link&lt;/p&gt;&lt;a class=&quot;show-for-keyboard&quot; href=&quot;#main&quot;&gt;Skip to main content&lt;/a&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
       </div>
     </div>

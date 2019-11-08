@@ -187,7 +187,6 @@
     &:last-child {
       padding-bottom: rem-calc(40);
     }
-
   }
 }
 
@@ -197,12 +196,10 @@
   &:focus {
     background: $color-secondary;
   }
-
-  .no-touchevents & {
-    &:hover {
-      background: $color-secondary;
-      color: inherit;
-    }
+ 
+  &:hover {
+    background: $color-secondary;
+    color: inherit;
   }
 }
 

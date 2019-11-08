@@ -1,0 +1,15 @@
+/
+/ Alert-banner
+
+
+div data-js="alert-banner-notification" class="o-alert-banner hidden" data-alert="notification" id="banner-notification" role="dialog" aria-labelledby="dialog-title-notification" aria-describedby="dialog-desc-notification"
+  div class="show-for-screen-reader" id="dialog-title-notification"
+    = "Notification Banner"
+  div class="o-alert-banner__content" id="dialog-desc-notification"
+    div class="o-container"
+      = "Alert Content"
+  button data-js="alert-controller" type="button" class="o-alert__button" data-toggle="banner-notification" aria-label="close"
+    svg role="img" class="icon--small"
+      title
+        = "Close"
+      use xlink:href="#icon-close"

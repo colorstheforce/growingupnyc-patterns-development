@@ -13,6 +13,7 @@ import Accordion from '../objects/accordion/Accordion';
 import Icons from '../../node_modules/@nycopportunity/patterns-framework/src/utilities/icons/icons';
 import Toggle from '../utilities/toggle/Toggle';
 import Sticky from '../utilities/sticky/Sticky';
+import AlertBanner from '../objects/alert-banner/AlertBanner';
 /** import components here as they are written. */
 
 /**
@@ -42,6 +43,10 @@ class main {
   
   sticky() {
     Sticky();
+  }
+
+  alertBanner() {
+    return new AlertBanner();
   }
 
 }

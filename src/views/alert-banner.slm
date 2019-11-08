@@ -1,6 +1,6 @@
 = extend('layouts/default')
 
-- title = 'Sticky'
+- title = 'Alert Banner'
 
 / Partials
 = partial('partials/head.mixin.slm');
@@ -15,10 +15,10 @@
 = content('main')
   = mixin('content-header', title);
   div
-    = mixin('section', '', 'utilities/sticky/sticky');
+    = mixin('section', 'Alert Banner', 'objects/alert-banner/alert-banner');
 
 = content('script')
   javascript:
-    gunyc.sticky();
+    gunyc.alertBanner();
 
 

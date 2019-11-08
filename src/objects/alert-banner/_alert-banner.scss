@@ -1,0 +1,79 @@
+/**
+ * Alert-banner
+ */
+
+// Dependencies
+// This is where variables, mixins, or functions are imported that the
+// pattern depends on. It's helpful to import dependencies into each
+// pattern so that they can be exported individually and it's clear
+// where the pattern is getting variables from. You can create a
+// pattern specific SASS configuration in the /src/config directory, or
+// add configuration to the /config/variables.js object (which is
+// to SASS during the compilation process).
+// @import 'config/variables';
+
+// Declarations
+// .o-alert-banner { }
+
+// Alert Banner
+//
+// markup:
+// <div class="c-alert is-open">
+//   <div class="c-alert__banner">
+//     <button type="button" class="c-alert__button"><svg role="img" class="icon--small"><title>Close</title><use xlink:href="assets/img/svg-sprite.svg#close"></use></svg></button>
+//     <div class="o-container">
+//       <p>Lorem ipsum set dolor amet</p>
+//     </div>
+//   </div>
+// </div>
+//
+// .o-alert {
+//   display: none;
+// }
+
+// .js .o-alert.is-open {
+.o-alert-banner {
+  background: $color-white;
+  bottom: 0;
+  display: block;
+  left: 0;
+  padding: 0 4px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 4;
+
+  p + p {
+    margin-top: 0;
+  }
+}
+
+// Inner banner content
+// .o-alert__banner {
+.o-alert-banner__content {
+  background: $color-dark-gray-dark;
+  border-radius: 3px 3px 0 0;
+  color: $color-white;
+  font-family: $font-family-display;
+  @include font-size-large;
+  font-weight: $font-weight-extrablack;
+  padding: 25px 0;
+}
+
+// Alert Banner Button
+.o-alert__button {
+  color: $color-white;
+  position: absolute;
+  right: 10px;
+  top: 0;
+
+  &:focus {
+    color: darken($color-white, 15%);
+  }
+
+  .no-touchevents & {
+    &:hover {
+      color: darken($color-white, 15%);
+    }
+  }
+}

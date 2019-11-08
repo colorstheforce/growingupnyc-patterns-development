@@ -30,5 +30,7 @@
       "selector-pseudo-element-colon-notation": null
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "js-cookie": "^2.2.1"
+  }
 }

@@ -140,19 +140,33 @@
         <main class="pt-32">
           <div class="o-container">
             <header></header>
-            <div class="o-container">
-              <h1 class="type-h1"></h1>
-              <div>
-                <div><p>The container object is used to wrap groups of elements and components.</p></div>
+            <div>
+              <div class="o-container">
+                <h1 class="type-h1">Alert Banner</h1>
                 <div>
+                  <div><p>The Alert Banner Object is a fixed container that contains a string, notifying the user of temporary information about programs, events, etc. A cookie for the notification is created when a user closes the object. The alert will therefore not expire until the cookie has expired in 360 days.</p></div>
                   <div>
-                    <div class="o-container bg-color-gray-light">
-                      <h1>Programs</h1>
+                    <div>
+                      <div aria-describedby="dialog-desc-notification" aria-labelledby="dialog-title-notification" class="o-alert-banner hidden" data-alert="notification" data-js="alert-banner-notification" id="banner-notification" role="dialog">
+                        <div class="show-for-screen-reader" id="dialog-title-notification">Notification Banner</div>
+                        <div class="o-alert-banner__content" id="dialog-desc-notification">
+                          <div class="o-container">Alert Content</div>
+                        </div><button aria-label="close" class="o-alert__button" data-js="alert-controller" data-toggle="banner-notification" type="button"><svg class="icon--small" role="img">
+                            <title>Close</title>
+                            <use xlink:href="#icon-close"></use>
+                          </svg></button>
+                      </div>
                     </div>
-                  </div>
-                  <div><pre>&lt;div class=&quot;o-container bg-color-gray-light&quot;&gt;
-  &lt;h1&gt;Programs&lt;/h1&gt;
+                    <div><pre>&lt;div aria-describedby=&quot;dialog-desc-notification&quot; aria-labelledby=&quot;dialog-title-notification&quot; class=&quot;o-alert-banner hidden&quot; data-alert=&quot;notification&quot; data-js=&quot;alert-banner-notification&quot; id=&quot;banner-notification&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;show-for-screen-reader&quot; id=&quot;dialog-title-notification&quot;&gt;Notification Banner&lt;/div&gt;
+  &lt;div class=&quot;o-alert-banner__content&quot; id=&quot;dialog-desc-notification&quot;&gt;
+    &lt;div class=&quot;o-container&quot;&gt;Alert Content&lt;/div&gt;
+  &lt;/div&gt;&lt;button aria-label=&quot;close&quot; class=&quot;o-alert__button&quot; data-js=&quot;alert-controller&quot; data-toggle=&quot;banner-notification&quot; type=&quot;button&quot;&gt;&lt;svg class=&quot;icon--small&quot; role=&quot;img&quot;&gt;
+      &lt;title&gt;Close&lt;/title&gt;
+      &lt;use xlink:href=&quot;#icon-close&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;&lt;/button&gt;
 &lt;/div&gt;</pre>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -177,6 +191,9 @@
       gunyc.toggle();
       gunyc.accordion();
       gunyc.icons();
+    </script>
+    <script type="text/javascript">
+      gunyc.alertBanner();
     </script>
   </body>
 

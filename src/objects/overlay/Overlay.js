@@ -13,10 +13,8 @@ class Overlay {
   constructor() {
     // this.data = data;
     // this.settings = settings;
-    console.log("HELLO")
 
     const overlay = document.querySelectorAll('.js-overlay');
-    console.log(overlay)
     if (overlay) {
       forEach(overlay, function (overlayElem) {
         /**

@@ -15,6 +15,7 @@ import Toggle from '../utilities/toggle/Toggle';
 import Sticky from '../utilities/sticky/Sticky';
 import AlertBanner from '../objects/alert-banner/AlertBanner';
 import Animations from '../utilities/animations/Animations';
+import Form from '../components/form/Form';
 /** import components here as they are written. */
 
 /**
@@ -52,6 +53,10 @@ class main {
 
   animations() {
     return new Animations();
+  }
+
+  form() {
+    return new Form();
   }
 
 }

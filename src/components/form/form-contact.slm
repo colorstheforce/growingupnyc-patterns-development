@@ -1,0 +1,83 @@
+
+/ contact form
+div class='p-4'
+	form action="" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="guny-contact" target="_blank" data-js="form-contact"
+    div class="signup-form-intro"
+      div class="text-center"
+        h2 
+          = 'Contact Us'
+    img src="" class="signup-form-logo"
+    = 'Reach out to us for more information.'
+    div class="mc-field-group"
+      label for="mce-EMAIL"
+        = 'Email'
+      div class="guny-error-detailed"
+      input type="email" value="" name="EMAIL" class="email form-field signup-form__field-blue" id="mce-EMAIL" required="true"
+    div class="mc-field-group"
+      label for="mce-FNAME"
+        = 'First Name'
+      div class="guny-error-detailed"
+      input type="text" value="" name="FNAME" class="form-field signup-form__field-blue" id="mce-FNAME" required="true"
+    div class="mc-field-group"
+      label for="mce-LNAME"
+        = 'Last Name'
+      div class="guny-error-detailed"
+      input type="text" value="" name="LNAME" class="form-field signup-form__field-blue" id="mce-LNAME" required="true"
+    div class="mc-field-group"
+      label for="mce-ZIP"
+        = 'Zip Code'
+      div class="guny-error-detailed"
+      input type="text" value="" name="ZIP" class="form-field signup-form__field-blue" id="mce-ZIP" required="true"
+    div class="mc-field-group"
+      label for="mce-PHONENUM"
+        = 'Phone Number'
+      div class="guny-error-detailed"
+      input type="text" value="" name="PHONENUM" class=" form-field signup-form__field-blue" id="mce-PHONENUM" required="true"
+    div class="mc-field-group"
+      label for="mce-ORGWEBSITE"
+        = 'Organization Website'
+      input type="url" value="" name="ORGWEBSITE" class="url form-field signup-form__field-blue" id="mce-ORGWEBSITE"
+
+    fieldset class="mc-field-group input-group"
+      legend
+        =  "I'd like to:"
+      div class="guny-error-detailed"
+      p class="signup-form__checkbox-list"
+        label class="checkbox" for="mce-group[3433]-3433-0"
+          input type="checkbox" value="1" class="checkbox__field" name="group[3433][1]" id="mce-group[3433]-3433-0" required="true"
+          svg class="checkbox__indicator-blue"
+            use xlink:href="#icon-check"
+          = 'Invite Growing Up NYC to an event'
+      p class="signup-form__checkbox-list"
+        label class="checkbox" for="mce-group[3433]-3433-1"
+          input type="checkbox" value="2" class="checkbox__field" name="group[3433][2]" id="mce-group[3433]-3433-1" required="true"
+          svg class="checkbox__indicator-blue"
+            use xlink:href="#icon-check"
+          = 'Request materials to pick up'
+      p class="signup-form__checkbox-list"
+        label class="checkbox" for="mce-group[3433]-3433-2"
+          input type="checkbox" value="4" class="checkbox__field" name="group[3433][4]" id="mce-group[3433]-3433-2" required="true"
+          svg class="checkbox__indicator-blue"
+            use xlink:href="#icon-check"
+          = 'Partner with Growing Up NYC'
+      p class="signup-form__checkbox-list"
+        label class="checkbox" for="mce-group[3433]-3433-3"
+          input type="checkbox" value="8" class="checkbox__field" name="group[3433][8]" id="mce-group[3433]-3433-3" required="true"
+          svg class="checkbox__indicator-blue"
+            use xlink:href="#icon-check"
+          = 'General Inquiry'
+      p class="signup-form__checkbox-list"
+        label class="checkbox" for="mce-group[3433]-3433-4"
+          input type="checkbox" value="16" class="checkbox__field" name="group[3433][16]" id="mce-group[3433]-3433-4" required="true"
+          svg class="checkbox__indicator-blue"
+            use xlink:href="#icon-check"
+          = 'Get updates about the Early Childhood Development project'
+      div class="mc-field-group"
+        label for="mce-MESSAGE"
+        = 'Message (limit 255 characters)'
+        div class="guny-error-detailed"
+        textarea type="text" value="" name="MESSAGE" class="form-field signup-form__field-blue textarea" id="mce-MESSAGE" required="true"
+        p class="char-count text-right"
+    button id="mc-embedded-contact" class="signup-form__button button--simple button--simple--alt" type="submit"
+      = 'Submit'
+

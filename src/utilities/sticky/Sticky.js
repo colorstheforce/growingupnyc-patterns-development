@@ -15,7 +15,6 @@ import imagesReady from 'imagesready/dist/imagesready.js';
 * @param {object} $elemArticle - Content next to the sticky nav
 */
 function stickyNav($elem, $elemContainer, $elemArticle) {
-  console.log('in sticky nav')
   // Module settings
   const settings = {
     stickyClass: 'is-sticky',
@@ -83,8 +82,6 @@ function stickyNav($elem, $elemContainer, $elemArticle) {
   * @param {boolean} forceClear - Flag to clear set values regardless of sticky status
   */
   function updateDimensions(forceClear) {
-    console.log('updateDimensions')
-
     if (isSticky && !forceClear) {
       $elem.css({
         left: leftOffset + 'px',

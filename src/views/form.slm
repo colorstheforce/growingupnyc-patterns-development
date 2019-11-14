@@ -1,6 +1,6 @@
 = extend('layouts/default')
 
-- title = 'Input'
+- title = 'Form'
 
 / Partials
 = partial('partials/head.mixin.slm');
@@ -14,5 +14,10 @@
 
 = content('main')
   = mixin('content-header', title);
-  = mixin('section', 'Input', 'elements/input/input');
-  = mixin('section', 'Input Search', 'elements/input/input-search');
+  div
+    = mixin('section', 'Form', 'components/form/form');
+    = mixin('section', false, 'components/form/form-contact');
+
+= content('script')
+  javascript:
+    gunyc.form();

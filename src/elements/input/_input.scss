@@ -2,15 +2,111 @@
  * Input
  */
 
-// Dependencies
-// This is where variables, mixins, or functions are imported that the
-// pattern depends on. It's helpful to import dependencies into each
-// pattern so that they can be exported individually and it's clear
-// where the pattern is getting variables from. You can create a
-// pattern specific SASS configuration in the /src/config directory, or
-// add configuration to the /config/variables.js object (which is
-// to SASS during the compilation process).
-// @import 'config/variables';
+.input {
+  appearance: none;
+  background: $color-white;
+  border: 1px solid transparent;
+  border-radius: rem-calc(3);
+  color: $color-text;
+  @include font-size-small;
+  font-weight: $font-weight-semibold;
+  padding: rem-calc(10 15);
 
-// Declarations
-// .input { }
+  &.is-error {
+    border-color: $color-pink;
+  }
+}
+
+input[type="search"].form-field {
+  appearance: none;
+}
+
+// Size Variations
+
+// Large
+.input--large {
+  @include font-size-x-large;
+  line-height: normal;
+  padding: rem-calc(10 75 10 20);
+
+  @include grid-media($bp-medium) {
+    padding: rem-calc(20 95 20 25);
+  }
+}
+
+.input--full-width {
+  width: 100%;
+}
+
+// ICON
+.input__icon-container {
+  position: relative;
+}
+
+.input__icon {
+  display: block;
+  color: $color-primary;
+  cursor: pointer;
+  // height: rem-calc(20);
+  height: 100%;
+  // margin-top: rem-calc(-10);
+  position: absolute;
+  right: rem-calc(15);
+  top: 0;
+  width: rem-calc(20);
+
+  // @include grid-media($bp-medium) {
+  //   right: rem-calc(25);
+  // }
+
+  &:focus {
+    color: $color-secondary;
+  }
+
+  // .no-touchevents & {
+  //   &:hover {
+  //     color: $color-secondary;
+  //   }
+  // }
+
+  + .input__icon {
+    right: rem-calc(50);
+
+    @include grid-media($bp-medium) {
+      right: rem-calc(55);
+    }
+  }
+}
+
+// .input__icon--weak {
+//   color: $color-text-weak;
+
+//   &:focus {
+//     color: $color-text;
+//   }
+
+//   // .no-touchevents & {
+//   //   &:hover {
+//   //     color: $color-text;
+//   //   }
+//   // }
+// }
+
+// // Icon Size Variations
+
+// // Large
+// .input__icon--large {
+//   // height: rem-calc(20);
+//   // margin-top: rem-calc(-15);
+//   width: rem-calc(20);
+
+//   @include grid-media($bp-medium) {
+//     // height: rem-calc(30);
+//     // margin-top: rem-calc(-15);
+//     width: rem-calc(30);
+
+//     + .input__icon--large {
+//       right: rem-calc(65);
+//     }
+//   }
+// }

@@ -1,0 +1,8 @@
+
+div class="input input-search"
+  div class="input__icon-container"
+    input type="search" name="s" value="" class="input input--full-width border-color-gray" placeholder="Search" data-js="search"
+      button type="submit" class="input__icon"
+        svg class="icon--small"
+          title = 'Search' 
+          use xlink:href="#icon-search"

@@ -238,7 +238,7 @@
 }
 
 .checkbox__field:focus + .checkbox__indicator {
-  border-color: $color-gray-dark;
+  border-color: $color-gray-dark !important;
 }
 
 .checkbox__field.is-error + .checkbox__indicator {

@@ -36,6 +36,38 @@ input[type="search"].form-field {
 
 .input--full-width {
   width: 100%;
+  // @include grid-media($bp-medium) {
+  //   width: rem-calc(240);
+  // }
+}
+
+
+.signup-form__input {
+  display: inline-block;
+  margin: rem-calc(24) 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.signup-form__input--long {
+  width: 100%;
+
+  @include grid-media($bp-medium) {
+    width: rem-calc(240);
+  }
+}
+
+.signup-form__input--short {
+  width: 100%;
+  @include grid-media($bp-medium) {
+    max-width: rem-calc(170);
+    min-width: rem-calc(100);
+    width: calc(100% - 15.3125rem);
+  }
+}
+
+.signup-form__input--full {
+  width: 100%;
 }
 
 // ICON

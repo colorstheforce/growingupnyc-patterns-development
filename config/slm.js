@@ -17,7 +17,7 @@ const site = {
     production: 'https://cityofnewyork.github.io/growingupnyc-patterns',
     cdn: '"https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns@v' + version + '/dist"'
   },
-  newsletter: {
+  forms: {
     url: '',
     borough: {
       id: 'mce-BOROUGH',
@@ -71,40 +71,71 @@ const site = {
       {
         id: 'mce-group[3429]-3429-1',
         name: 'group[3429][1]',
-        value: '1',
+        value: '2',
         label: 'Toddler'
       },
       {
         id: 'mce-group[3429]-3429-2',
         name: 'group[3429][1]',
-        value: '1',
+        value: '4',
         label: 'Pre-Schooler'
       },
       {
         id: 'mce-group[3429]-3429-3',
         name: 'group[3429][1]',
-        value: '1',
+        value: '8',
         label: 'Grade-Schooler'
       },
       {
         id: 'mce-group[3429]-3429-4',
         name: 'group[3429][1]',
-        value: '1',
+        value: '16',
         label: 'Pre-Teen'
       },
       {
         id: 'mce-group[3429]-3429-5',
         name: 'group[3429][1]',
-        value: '1',
+        value: '32',
         label: 'Teen'
       },
       {
         id: 'mce-group[3429]-3429-6',
         name: 'group[3429][1]',
-        value: '1',
+        value: '64',
         label: 'Young Adult'
       },
-
+    ],
+    requestType: [
+      {
+        id: 'mce-group[3433]-3433-0',
+        name: 'group[3433][1]',
+        value: '1',
+        label: 'Invite Growing Up NYC to an event'
+      },
+      {
+        id: 'mce-group[3433]-3433-1',
+        name: 'group[3433][2]',
+        value: '2',
+        label: 'Request materials to pick up'
+      },
+      {
+        id: 'mce-group[3433]-3433-2',
+        name: 'group[3433][4]',
+        value: '4',
+        label: 'Partner with Growing Up NYC'
+      },
+      {
+        id: 'mce-group[3433]-3433-3',
+        name: 'group[3433][8]',
+        value: '8',
+        label: 'General Inquiry'
+      },
+      {
+        id: 'mce-group[3433]-3433-4',
+        name: 'group[3433][16]',
+        value: '16',
+        label: 'Get updates about the Early Childhood Development project'
+      },
     ]
   }
 };

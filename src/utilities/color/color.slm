@@ -1,8 +1,14 @@
 /
 / Color
 
-div class="sticker bg-${key}"
-  svg class="icon--large" role="img"
-    use xlink:href="#${value}"
-p
-  = key
+div class="border-color-gray-light border-2 m-2"
+  div class="p-4 bg-${key}"
+  div class="p-4"
+    p
+      = "name: " 
+      span
+        = key
+    p
+      = "hex: "
+      span
+        = value

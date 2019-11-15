@@ -14,8 +14,14 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
           a href="button" class="c-list-box__subitem"
             = 'Button'
         li
+          a href="divider" class="c-list-box__subitem"
+            = 'Divider'
+        li
           a href="hero" class="c-list-box__subitem"
             = 'Hero'
+        li
+          a href="icons" class="c-list-box__subitem"
+            = 'Icons'
         li
           a href="layouts" class="c-list-box__subitem"
             = 'Layouts'
@@ -50,23 +56,23 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
           a href="details-list" class="c-list-box__subitem"
             = 'Details List'
         li
-          a href="divider" class="c-list-box__subitem"
-            = 'Divider'
-        li
           a href="fonts" class="c-list-box__subitem"
             = 'Fonts'
         li
           a href="footer" class="c-list-box__subitem"
             = 'Footer'
         li
-          a href="icons" class="c-list-box__subitem"
-            = 'Icons'
+          a href="hero" class="c-list-box__subitem"
+            = 'hero'
         li
           a href="input" class="c-list-box__subitem"
             = 'Input'
         li
           a href="language-switcher" class="c-list-box__subitem"
             = 'language switcher'
+        li
+          a href="list-box" class="c-list-box__subitem"
+            = 'List Box'
         li
           a href="lists" class="c-list-box__subitem"
             = 'Lists'

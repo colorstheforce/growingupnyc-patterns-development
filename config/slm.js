@@ -13,6 +13,13 @@ const site = {
   versions: {
     package: version
   },
+  prettier: {
+    parser: 'html',
+    printWidth: 2000,
+    singleQuote: true,
+    jsxBracketSameLine: true,
+    htmlWhitespaceSensitivity: 'ignore'
+  },
   urls: {
     production: 'https://cityofnewyork.github.io/growingupnyc-patterns',
     cdn: '"https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns@v' + version + '/dist"'

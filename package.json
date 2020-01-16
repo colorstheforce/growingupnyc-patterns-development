@@ -7,13 +7,14 @@
     "start": "cross-env NODE_ENV=development cross-env PORT=7070 concurrently \"pttrn default -w\" \"pttrn serve -w\" -p \"none\"",
     "preversion": "cross-env NODE_ENV=production pttrn default",
     "prepublishOnly": "cross-env NODE_ENV=production pttrn default",
-    "publish": "cross-env NODE_ENV=production pttrn publish"
+    "publish": "cross-env NODE_ENV=production pttrn publish",
+    "pttrn": "pttrn"
   },
   "author": "Mayor's Office for Economic Opportunity",
   "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
-    "@nycopportunity/patterns-framework": "0.0.10-alpha",
+    "@nycopportunity/patterns-framework": "0.0.23",
     "bourbon": "^6.0.0",
     "bourbon-neat": "^4.0.0",
     "imagesready": "^0.2.2",

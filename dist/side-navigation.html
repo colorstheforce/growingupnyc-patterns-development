@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
@@ -16,28 +15,29 @@
           },
           h = d.documentElement,
           t = setTimeout(function() {
-            h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            h.className = h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
           }, config.scriptTimeout),
-          tk = d.createElement("script"),
+          tk = d.createElement('script'),
           f = false,
-          s = d.getElementsByTagName("script")[0],
+          s = d.getElementsByTagName('script')[0],
           a;
-        h.className += " wf-loading";
+        h.className += ' wf-loading';
         tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
         tk.async = true;
         tk.onload = tk.onreadystatechange = function() {
           a = this.readyState;
-          if (f || a && a != "complete" && a != "loaded") return;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
           f = true;
           clearTimeout(t);
           try {
-            Typekit.load(config)
+            Typekit.load(config);
           } catch (e) {}
         };
-        s.parentNode.insertBefore(tk, s)
+        s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
-    <title>Growing Up NYC Patterns</title><noscript>
+    <title>Growing Up NYC Patterns</title>
+    <noscript>
       <style>
         body {
           visibility: visible !important;
@@ -46,18 +46,20 @@
     </noscript>
     <script type="text/javascript">
       function load() {
-        document.body.style.visibility = 'visible'
-      };
+        document.body.style.visibility = 'visible';
+      }
     </script>
   </head>
-
   <body>
     <div class="o-offcanvas js-offcanvas" id="offcanvas-patterns">
       <nav aria-label="patterns-heading" class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation">
-        <h2 class="show-for-screen-reader" id="patterns-heading">Resources by Patterns</h2><button class="o-offcanvas__close button--text" data-js="offcanvas-patterns"><svg class="icon--small" role="img">
+        <h2 class="show-for-screen-reader" id="patterns-heading">Resources by Patterns</h2>
+        <button class="o-offcanvas__close button--text" data-js="offcanvas-patterns">
+          <svg class="icon--small" role="img">
             <title>Close Resources by Patterns</title>
             <use xlink:href="#icon-close"></use>
-          </svg></button>
+          </svg>
+        </button>
         <ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true">
           <li class="c-list-box__item">
             <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Elements</h3>
@@ -135,14 +137,16 @@
       </nav>
       <div class="o-offcanvas__main">
         <header class="o-navigation">
-          <div class="o-container"><a class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu" href="/"><span class="o-navigation__logo">Growing Up NYC</span></a>
+          <div class="o-container">
+            <a class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu" href="/"><span class="o-navigation__logo">Growing Up NYC</span></a>
             <nav class="o-navigation__nav">
               <ul class="o-inline text-left">
                 <li class="o-inline__item"><a class="o-navigation__nav-link js-offcanvas" data-js="offcanvas-patterns" href="#patterns">Patterns</a></li>
               </ul>
             </nav>
           </div>
-        </header><a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
+        </header>
+        <a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
         <main class="pt-32">
           <div class="o-container">
             <header></header>
@@ -150,27 +154,40 @@
               <div class="o-container">
                 <h1 class="type-h1"></h1>
                 <div>
-                  <div><p>The Side Navigation component is a left-side navigation of a single page that allows the user to jump to specific sections in the content. This component is typically used together with the Sticky Utility.</p></div>
+                  <div><p>The Side Navigation component is a left-side navigation of a single page that allows the user to jump to specific sections in the content. This component is typically used together with the Sticky Utility.</p>
+</div>
                   <div>
                     <div>
                       <ol class="c-nav-list js-sticky js-section-set o-sticky-nav">
-                        <li class="c-nav-list__item"><a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" data-section="section-details" href="#section-details">Details<svg aria-hidden="true" class="icon--caret">
-                              <use xlink:href="#icon-caret-right"></use>
-                            </svg></a></li>
-                        <li class="c-nav-list__item"><a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" data-section="section-how-to-apple" href="#section-how-to-apple">How to Apply<svg aria-hidden="true" class="icon--caret">
-                              <use xlink:href="#icon-caret-right"></use>
-                            </svg></a></li>
+                        <li class="c-nav-list__item">
+                          <a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" data-section="section-details" href="#section-details">
+                            Details
+                            <svg aria-hidden="true" class="icon--caret"><use xlink:href="#icon-caret-right"></use></svg>
+                          </a>
+                        </li>
+                        <li class="c-nav-list__item">
+                          <a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" data-section="section-how-to-apple" href="#section-how-to-apple">
+                            How to Apply
+                            <svg aria-hidden="true" class="icon--caret"><use xlink:href="#icon-caret-right"></use></svg>
+                          </a>
+                        </li>
                       </ol>
                     </div>
                     <div><pre>&lt;ol class=&quot;c-nav-list js-sticky js-section-set o-sticky-nav&quot;&gt;
-  &lt;li class=&quot;c-nav-list__item&quot;&gt;&lt;a class=&quot;js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue&quot; data-section=&quot;section-details&quot; href=&quot;#section-details&quot;&gt;Details&lt;svg aria-hidden=&quot;true&quot; class=&quot;icon--caret&quot;&gt;
-        &lt;use xlink:href=&quot;#icon-caret-right&quot;&gt;&lt;/use&gt;
-      &lt;/svg&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;c-nav-list__item&quot;&gt;&lt;a class=&quot;js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue&quot; data-section=&quot;section-how-to-apple&quot; href=&quot;#section-how-to-apple&quot;&gt;How to Apply&lt;svg aria-hidden=&quot;true&quot; class=&quot;icon--caret&quot;&gt;
-        &lt;use xlink:href=&quot;#icon-caret-right&quot;&gt;&lt;/use&gt;
-      &lt;/svg&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</pre>
-                    </div>
+  &lt;li class=&quot;c-nav-list__item&quot;&gt;
+    &lt;a class=&quot;js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue&quot; data-section=&quot;section-details&quot; href=&quot;#section-details&quot;&gt;
+      Details
+      &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon--caret&quot;&gt;&lt;use xlink:href=&quot;#icon-caret-right&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;c-nav-list__item&quot;&gt;
+    &lt;a class=&quot;js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue&quot; data-section=&quot;section-how-to-apple&quot; href=&quot;#section-how-to-apple&quot;&gt;
+      How to Apply
+      &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon--caret&quot;&gt;&lt;use xlink:href=&quot;#icon-caret-right&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</pre></div>
                   </div>
                 </div>
               </div>
@@ -197,5 +214,4 @@
       gunyc.icons();
     </script>
   </body>
-
 </html>

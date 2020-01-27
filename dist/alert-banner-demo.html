@@ -136,72 +136,26 @@
         </ol>
       </nav>
       <div class="o-offcanvas__main">
-        <header class="o-navigation">
-          <div class="o-container">
-            <a class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu" href="/"><span class="o-navigation__logo">Growing Up NYC</span></a>
-            <nav class="o-navigation__nav">
-              <ul class="o-inline text-left">
-                <li class="o-inline__item"><a class="o-navigation__nav-link js-offcanvas" data-js="offcanvas-patterns" href="#patterns">Patterns</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-        <a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
         <main class="pt-32">
           <div class="o-container">
-            <header></header>
-            <div class="o-container">
-              <h1 class="type-h1">Language Switcher</h1>
-              <div>
-                <div></div>
-                <div>
-                  <div>
-                    <div class="c-language-switcher-wrapper">
-                      <div class="o-container c-language-switcher">
-                        <div class="c-language-switcher__horizontal">
-                          <ul>
-                            <li class="c-language-switcher__current">
-                              <a href="" title="English"><span>English</span></a>
-                            </li>
-                            <li>
-                              <a href="" title="Spanish"><span>Spanish</span></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div><pre>&lt;div class=&quot;c-language-switcher-wrapper&quot;&gt;
-  &lt;div class=&quot;o-container c-language-switcher&quot;&gt;
-    &lt;div class=&quot;c-language-switcher__horizontal&quot;&gt;
-      &lt;ul&gt;
-        &lt;li class=&quot;c-language-switcher__current&quot;&gt;
-          &lt;a href=&quot;&quot; title=&quot;English&quot;&gt;&lt;span&gt;English&lt;/span&gt;&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;a href=&quot;&quot; title=&quot;Spanish&quot;&gt;&lt;span&gt;Spanish&lt;/span&gt;&lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</pre></div>
-                </div>
-              </div>
+            <div class="remove-cookie">
+              <button class="button--primary bg-color-blue text-color-white" id="cookie-remover-button" type="button">Remove Cookie</button>
+              <div class="my-4 text-center"><a href="/alert-banner">Back to Alert Banner</a></div>
+            </div>
+            <div aria-describedby="dialog-desc-notification" aria-labelledby="dialog-title-notification" class="o-alert-banner hidden" data-alert="notification" data-js="alert-banner-notification" id="banner-notification" role="dialog">
+              <div class="show-for-screen-reader" id="dialog-title-notification">Notification Banner</div>
+              <div class="o-alert-banner__content" id="dialog-desc-notification"><div class="o-container">Alert Content</div></div>
+              <button aria-label="close" class="o-alert__button" data-js="alert-controller" data-toggle="banner-notification" type="button">
+                <svg class="icon--small" role="img">
+                  <title>Close</title>
+                  <use xlink:href="#icon-close"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </main>
       </div>
     </div>
-    <footer class="c-footer">
-      <div class="o-container">
-        <div class="c-footer__section">
-          <div class="c-footer__logos">
-            <figure class="c-footer__logo"><img alt="Growing Up NYC" src="images/logo-gunyc-white@236px.png" width="118" /></figure>
-          </div>
-        </div>
-      </div>
-    </footer>
     <script src="scripts/growingup-nyc.js"></script>
     <script type="text/javascript">
       var gunyc = new GUNYC();
@@ -209,6 +163,14 @@
       gunyc.toggle();
       gunyc.accordion();
       gunyc.icons();
+    </script>
+    <script type="text/javascript">
+      var alertBanner = gunyc.alertBanner();
+      console.log(alertBanner);
+
+      // a method for removing cookie
+      // provide cookie name as an argument, if no argument is specified the expiration will be defaulted to 360days
+      alertBanner.removeCookie('notification');
     </script>
   </body>
 </html>

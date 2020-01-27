@@ -1,0 +1,3 @@
+div class="remove-cookie"
+  button type="button" class="button--primary bg-color-blue text-color-white" id="cookie-remover-button"
+        = "Remove Cookie"

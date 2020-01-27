@@ -1,0 +1,50 @@
+= extend('layouts/demo-default')
+
+- title = 'Alert Banner Demo'
+
+/ Partials
+= partial('partials/head.mixin.slm');
+= partial('partials/content-header.mixin.slm');
+= partial('partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  / = mixin('content-header', title);
+  div class="remove-cookie"
+    button type="button" class="button--primary bg-color-blue text-color-white" id="cookie-remover-button"
+          = "Remove Cookie"
+    div class="my-4 text-center"
+        a href="/alert-banner"
+          = "Back to Alert Banner"
+              
+
+  div data-js="alert-banner-notification" class="o-alert-banner hidden" data-alert="notification" id="banner-notification" role="dialog" aria-labelledby="dialog-title-notification" aria-describedby="dialog-desc-notification"
+    div class="show-for-screen-reader" id="dialog-title-notification"
+      = "Notification Banner"
+    div class="o-alert-banner__content" id="dialog-desc-notification"
+      div class="o-container"
+        = "Alert Content"
+    button data-js="alert-controller" type="button" class="o-alert__button" data-toggle="banner-notification" aria-label="close"
+      svg role="img" class="icon--small"
+        title
+          = "Close"
+        use xlink:href="#icon-close"
+
+
+
+
+
+= content('script')
+  javascript:
+    var alertBanner = gunyc.alertBanner();
+    console.log(alertBanner)
+    
+    
+
+    // a method for removing cookie
+    // provide cookie name as an argument, if no argument is specified the expiration will be defaulted to 360days
+     alertBanner.removeCookie('notification');

@@ -2,7 +2,7 @@
 // Utilities
 
 // Elements
-
+ 
 // Components
 
 
@@ -16,6 +16,7 @@ import Sticky from '../utilities/sticky/Sticky';
 import AlertBanner from '../objects/alert-banner/AlertBanner';
 import Animations from '../utilities/animations/Animations';
 import Form from '../components/form/Form';
+
 /** import components here as they are written. */
 
 /**
@@ -47,8 +48,8 @@ class main {
     Sticky();
   }
 
-  alertBanner() {
-    return new AlertBanner();
+  alertBanner(expirationDays) {
+    return new AlertBanner(expirationDays);
   }
 
   animations() {

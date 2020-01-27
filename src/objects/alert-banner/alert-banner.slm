@@ -1,8 +1,6 @@
 /
 / Alert-banner
-div class="my-4"
-  a href="/alert-banner-demo"
-    = "Click here for a Demo"
+
 
 div data-js="alert-banner-notification" class="o-alert-banner hidden" data-alert="notification" id="banner-notification" role="dialog" aria-labelledby="dialog-title-notification" aria-describedby="dialog-desc-notification"
   div class="show-for-screen-reader" id="dialog-title-notification"

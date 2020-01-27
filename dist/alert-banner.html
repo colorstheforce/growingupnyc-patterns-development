@@ -154,11 +154,15 @@
               <div class="o-container">
                 <h1 class="type-h1">Alert Banner</h1>
                 <div>
-                  <div><p>The Alert Banner Object is a fixed container that contains a string, notifying the user of temporary information about programs, events, etc. A cookie for the notification is created when a user closes the object. The alert will therefore not expire until the cookie has expired in 360 days.</p>
+                  <div><p>
+  The Alert Banner Object is a fixed container that contains a string, notifying the user of temporary information about programs, events, etc. A cookie for the notification is created when a user closes the object. The alert will therefore not expire until the cookie has expired, based on the number of days you set, if you did not specify the number of days through an argument to the
+  <strong>*alertBanner()</strong>
+  * class, the cookie expiration date with be defaulted to 360 days.
+  <a href="/alert-banner-demo">Click here for a demo page to clear the cookie and show the banner incase you closed the alert banner.</a>
+</p>
 </div>
                   <div>
                     <div>
-                      <div class="my-4"><a href="/alert-banner-demo">Click here for a Demo</a></div>
                       <div aria-describedby="dialog-desc-notification" aria-labelledby="dialog-title-notification" class="o-alert-banner hidden" data-alert="notification" data-js="alert-banner-notification" id="banner-notification" role="dialog">
                         <div class="show-for-screen-reader" id="dialog-title-notification">Notification Banner</div>
                         <div class="o-alert-banner__content" id="dialog-desc-notification"><div class="o-container">Alert Content</div></div>
@@ -170,8 +174,7 @@
                         </button>
                       </div>
                     </div>
-                    <div><pre>&lt;div class=&quot;my-4&quot;&gt;&lt;a href=&quot;/alert-banner-demo&quot;&gt;Click here for a Demo&lt;/a&gt;&lt;/div&gt;
-&lt;div aria-describedby=&quot;dialog-desc-notification&quot; aria-labelledby=&quot;dialog-title-notification&quot; class=&quot;o-alert-banner hidden&quot; data-alert=&quot;notification&quot; data-js=&quot;alert-banner-notification&quot; id=&quot;banner-notification&quot; role=&quot;dialog&quot;&gt;
+                    <div><pre>&lt;div aria-describedby=&quot;dialog-desc-notification&quot; aria-labelledby=&quot;dialog-title-notification&quot; class=&quot;o-alert-banner hidden&quot; data-alert=&quot;notification&quot; data-js=&quot;alert-banner-notification&quot; id=&quot;banner-notification&quot; role=&quot;dialog&quot;&gt;
   &lt;div class=&quot;show-for-screen-reader&quot; id=&quot;dialog-title-notification&quot;&gt;Notification Banner&lt;/div&gt;
   &lt;div class=&quot;o-alert-banner__content&quot; id=&quot;dialog-desc-notification&quot;&gt;&lt;div class=&quot;o-container&quot;&gt;Alert Content&lt;/div&gt;&lt;/div&gt;
   &lt;button aria-label=&quot;close&quot; class=&quot;o-alert__button&quot; data-js=&quot;alert-controller&quot; data-toggle=&quot;banner-notification&quot; type=&quot;button&quot;&gt;
@@ -208,11 +211,7 @@
       gunyc.icons();
     </script>
     <script type="text/javascript">
-      var alertBanner = gunyc.alertBanner();
-      console.log(alertBanner);
-
-      // a method for removing cookie
-      // provide cookie name as an argument, if no argument is specified the expiration will be defaulted to 360days
+      var alertBanner = gunyc.alertBanner(10);
     </script>
   </body>
 </html>

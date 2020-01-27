@@ -14,8 +14,8 @@
 
 = content('main')
   / = mixin('content-header', title);
-  div class="remove-cookie"
-    button type="button" class="button--primary bg-color-blue text-color-white" id="cookie-remover-button"
+  div class="o-container bg-color-gray-light flex flex-col content-center items-center py-8"
+    button type="button" class="button--primary bg-color-blue text-color-white text-center" id="cookie-remover-button"
           = "Remove Cookie"
     div class="my-4 text-center"
         a href="/alert-banner"
@@ -33,8 +33,6 @@
         title
           = "Close"
         use xlink:href="#icon-close"
-
-
 
 
 

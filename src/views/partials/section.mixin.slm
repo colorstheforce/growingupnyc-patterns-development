@@ -3,12 +3,12 @@
 = partial('demo-block.mixin.slm');
 
 = mixin('section', 'title', 'path', 'layout = columns', 'grid = false', 'specs = true', 'code = true');
-  div class='o-container'
+  div class='o-container px-64'
     h1 class='type-h1'
       = this.title
-    div
+    div class="html-tag my-8"
       = mixin('demo-specs', this.path + '.md');
-      
+    div class="my-8 py-4 px-4 bg-color-gray-light"  
       - if (this.code === 'true')
         = mixin('demo-block', this.path + '.slm', this.layout, this.grid);
          

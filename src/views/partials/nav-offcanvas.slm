@@ -29,11 +29,17 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
           a href="list-box" class="c-list-box__subitem"
             = 'List Box'
         li
+          a href="lists" class="c-list-box__subitem"
+            = 'Lists'
+        li
           a href="sticker" class="c-list-box__subitem"
             = 'Sticker'
         li
           a href="table" class="c-list-box__subitem"
             = 'table'
+        li
+          a href="inline-list" class="c-list-box__subitem"
+            = 'Inline List'
 
   ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true"
     li class='c-list-box__item'
@@ -73,9 +79,6 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
         li
           a href="list-box" class="c-list-box__subitem"
             = 'List Box'
-        li
-          a href="lists" class="c-list-box__subitem"
-            = 'Lists'
         li
           a href="side-hero" class="c-list-box__subitem"
             = 'Side hero'
@@ -118,9 +121,6 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
         li
           a href="flex-embed" class="c-list-box__subitem"
             = 'flex embed'
-        li
-          a href="inline-list" class="c-list-box__subitem"
-            = 'Inline List'
         li
           a href="navigation" class="c-list-box__subitem"
             = 'Navigation'

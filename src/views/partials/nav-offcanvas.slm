@@ -155,9 +155,6 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
           a href="offcanvas" class="c-list-box__subitem"
             = 'Offcanvas'
         li
-          a href="spacing" class="c-list-box__subitem"
-            = 'spacing'
-        li
           a href="sticky" class="c-list-box__subitem"
             = 'sticky'
         li

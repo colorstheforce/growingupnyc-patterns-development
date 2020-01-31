@@ -33,6 +33,7 @@
     width: 65%;
 
     // @include span-columns(8);
+    @include grid-column(8);
     // @include omega;
   }
 }
@@ -54,7 +55,7 @@
     margin-right: 0;
     width: 35%;
     // @include span-columns(4);
-    
+    @include grid-column(4);
   }
 }
 

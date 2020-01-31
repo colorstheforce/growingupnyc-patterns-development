@@ -1,0 +1,104 @@
+= extend('layouts/demo-default')
+
+- title = 'Alert Banner Demo'
+
+/ Partials
+= partial('partials/head.mixin.slm');
+= partial('partials/content-header.mixin.slm');
+= partial('partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  / = mixin('content-header', title);
+		div
+			div class="o-offcanvas js-offcanvas is-open bg-color-black" id="offcanvas-ages"
+				nav class="o-offcanvas__side js-offcanvas__side"
+					button data-toggle="offcanvas-ages" class="o-offcanvas__close button--text is-active"
+							svg class="icon--small" role="img"
+									title = "Close Resources by Age"
+									use xlink:href="#icon-close"
+					ol class="js-accordion c-list-box c-list-box--secondary o-accordion" data-multiselectable="true" role="presentation" aria-multiselectable="true"
+							li class="c-list-box__item o-accordion__item is-collapsed"
+									button class="js-accordion__header c-list-box__heading o-accordion__header" tabindex="0" type="button" aria-selected="false" aria-controls="ages-panel-1" aria-expanded="false"
+											= "Baby"
+									svg class="o-accordion__caret icon" aria-hidden="true"
+									ol class="js-accordion__content c-list-box__content o-accordion__content" id="ages-panel-1" aria-hidden="true" role="region" aria-labelledby="ages-heading-1"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "2 Months"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "3 Months"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "4 Months"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "5 Months"
+							li class="c-list-box__item o-accordion__item is-collapsed"
+									button class="js-accordion__header c-list-box__heading o-accordion__header" tabindex="0" type="button" aria-selected="false" aria-controls="ages-panel-1" aria-expanded="false"
+											= "Toddler"
+									svg class="o-accordion__caret icon" aria-hidden="true"
+									ol class="js-accordion__content c-list-box__content o-accordion__content" id="ages-panel-1" aria-hidden="true" role="region" aria-labelledby="ages-heading-1"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "2 Months"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "3 Months"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "4 Months"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "5 Months"
+							li class="c-list-box__item o-accordion__item is-collapsed"
+									button class="js-accordion__header c-list-box__heading o-accordion__header" tabindex="0" type="button" aria-selected="false" aria-controls="ages-panel-1" aria-expanded="false"
+											= "Baby"
+									svg class="o-accordion__caret icon" aria-hidden="true"
+									ol class="js-accordion__content c-list-box__content o-accordion__content" id="ages-panel-1" aria-hidden="true" role="region" aria-labelledby="ages-heading-1"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "2 Months"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "3 Months"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "4 Months"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "5 Months"
+							li class="c-list-box__item o-accordion__item is-collapsed"
+									button class="js-accordion__header c-list-box__heading o-accordion__header" tabindex="0" type="button" aria-selected="false" aria-controls="ages-panel-1" aria-expanded="false"
+											= "Baby"
+									svg class="o-accordion__caret icon" aria-hidden="true"
+									ol class="js-accordion__content c-list-box__content o-accordion__content" id="ages-panel-1" aria-hidden="true" role="region" aria-labelledby="ages-heading-1"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "2 Months"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "3 Months"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "4 Months"
+											li 
+													a class="c-list-box__subitem" tabindex="0"
+															= "5 Months"
+					div class="o-offcanvas__main"
+
+
+
+= content('script')
+  javascript:
+   
+    
+
+    // a method for removing cookie
+    // provide cookie name as an argument, if no argument is specified the expiration will be defaulted to 360days
+     

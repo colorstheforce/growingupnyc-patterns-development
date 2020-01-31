@@ -1,12 +1,12 @@
 /
-/ Static-column
+Static-column
 
-/ div class='o-container'
-/   section class="o-static-column bg-color-gray-light p-4"
+div class='o-container'
+  section class="o-static-column bg-color-gray-light p-4"
 
-/ div class='o-container'
-/   section class="o-static-column o-static-column--left bg-color-blue-light p-4"
+div class='o-container'
+  section class="o-static-column o-static-column--left bg-color-blue-light p-4"
 
-/ div class='o-container'
-/   section class="o-static-column o-static-column--right bg-color-blue-light p-4"
+div class='o-container'
+  section class="o-static-column o-static-column--right bg-color-blue-light p-4"
 

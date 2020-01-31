@@ -1,11 +1,12 @@
 = extend('layouts/default')
 
-- title = 'Container'
+- title = 'Layouts'
 
 / Partials
 = partial('partials/head.mixin.slm');
 = partial('partials/content-header.mixin.slm');
 = partial('partials/section.mixin.slm');
+
 
 / Content blocks
 = content('head');
@@ -13,4 +14,5 @@
 
 = content('main')
   = mixin('content-header', title);
-  = mixin('section', 'Container', 'objects/container/container');
+  / = mixin('section', 'Layout', 'elements/layouts/layouts');
+  = mixin('section', 'Grid Layout', 'elements/gridlayout/gridlayout');

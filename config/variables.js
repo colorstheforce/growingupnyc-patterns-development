@@ -177,6 +177,30 @@ const variables = {
     'speed': '.75s',
     'timing': 'cubic-bezier(.23, 1, .32, 1)'
   },
+	'large-desktop-grid': {
+    'columns': 12,
+    'sideMargin': '50px',
+		'gutter': '40px',
+    'breakpoint': '1040px'
+  },
+	'desktop-grid': {
+    'columns': 12,
+    'sideMargin': '1px',
+		'gutter': '30px',
+    'breakpoint': '700px'
+  },
+	'tablet-grid': {
+    'columns': 12,
+    'sideMargin': '40px',
+		'gutter': '30px',
+    'breakpoint': '375px'
+  },
+	'mobile-grid': {
+    'columns': 6,
+    'sideMargin': '20px',
+		'gutter': '20px',
+    'breakpoint': '375px'
+  },
   'icons': [
     'icon-afterschool-guides',
     'icon-arrow-right',

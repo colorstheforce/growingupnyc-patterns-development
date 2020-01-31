@@ -13,6 +13,6 @@
         = partial('../' + this.markup);
     
     - if(this.grid === 'false')
-      div
+      div class="mt-6 bg-color-gray-light py-8 px-4"
         pre
           = 'code{{ '+ this.markup +' }}';

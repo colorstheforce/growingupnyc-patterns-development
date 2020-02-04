@@ -37,25 +37,25 @@
 
 // large desktop grid
 $grid-large-desktop-columns: 12;
-$grid-large-desktop-sideMargin: 150px;
+$grid-large-desktop-sideMargin: 0px;
 $grid-large-desktop-gutter: 10px;
 $grid-large-desktop-breakpoint: 1040px;
 
 // desktop grid
 $grid-desktop-columns: 12;
-$grid-desktop-sideMargin: 100px;
+$grid-desktop-sideMargin: 0px;
 $grid-desktop-gutter: 10px;
 $grid-desktop-breakpoint: 700px;
 
 // tablet grid
 $grid-tablet-columns: 12;
-$grid-tablet-sideMargin: 20px;
+$grid-tablet-sideMargin: 0px;
 $grid-tablet-gutter: 10px;
 $grid-tablet-breakpoint: 375px;
 
 // mobile grid
 $grid-mobile-columns: 4;
-$grid-mobile-sideMargin: 150px;
+$grid-mobile-sideMargin: 100px;
 $grid-mobile-gutter: 10px;
 $grid-mobile-breakpoint: 375px;
 

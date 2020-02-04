@@ -29,12 +29,12 @@
     backface-visibility: hidden;
     height: 100vh;
     margin: 0;
-    max-height: 100%;
+    // max-height: 100%;
     overflow: hidden;
     padding: 0;
-    position: absolute;
+    // position: absolute;
     top: 0;
-    width: 60%;
+    // width: 60%;
   }
 }
 
@@ -66,10 +66,11 @@
 
   // Scroll Column
   .o-scroll-column {
-    width: 40%;
+    // width: 40%;
+		// background-color: #ccc;
   }
 
   .o-scroll-column--right {
-    margin-left: 60%;
+    // margin-left: 60%;
   }
 }

@@ -14,7 +14,7 @@
 
 = content('main')
   / = mixin('content-header', title);
-  div class="grid border-color-gray-mid p-4 mt-20"
+  div class="grid border-color-gray-mid mt-20"
     div class="col-la-desk-12 col-desk-12 col-tab-12 col-mob-4 p-5 mb-3 bg-color-gray"
       p class="text-center"
        = 'col-la-desk-12 col-desk-6 col-tab-6 col-mob-4'
@@ -56,6 +56,7 @@
     div class="col-la-desk-2 col-desk-2 col-tab-2 col-mob-4 p-5 mb-3 bg-color-gray-light"
       p class="text-center"
        = 'col-la-desk-2 col-desk-2 col-tab-2 col-mob-4'
+    
     div class="col-la-desk-1 col-desk-1 col-tab-1 col-mob-2 p-5 mb-3 bg-color-gray-light"
     div class="col-la-desk-1 col-desk-1 col-tab-1 col-mob-2 p-5 mb-3 bg-color-gray"
     div class="col-la-desk-1 col-desk-1 col-tab-1 col-mob-2 p-5 mb-3 bg-color-gray-light"

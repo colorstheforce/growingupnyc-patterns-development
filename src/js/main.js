@@ -16,7 +16,7 @@ import Sticky from '../utilities/sticky/Sticky';
 import AlertBanner from '../objects/alert-banner/AlertBanner';
 import Animations from '../utilities/animations/Animations';
 import Form from '../components/form/Form';
-import StaticColumn from '../objects/static-column/staticColumnClass'
+import StaticColumn from '../objects/static-column/staticColumn'
 
 /** import components here as they are written. */
 

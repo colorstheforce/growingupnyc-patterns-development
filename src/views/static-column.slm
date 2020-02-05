@@ -16,3 +16,6 @@
   = mixin('content-header', title);
   = mixin('section', 'Static Column', 'objects/static-column/static-column');
 
+= content('script')
+  javascript:
+   var staticColumn = gunyc.staticColumn();

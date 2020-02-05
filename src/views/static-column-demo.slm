@@ -13,13 +13,14 @@
   = mixin('head');
 
 = content('main')
-  header class="c-banner grid"
-   div class="col-la-desk-12 bg-color-gray-dark py-12"
-  main id="main" role="main" class="grid" 
-   section class="col-la-desk-7 js-static bg-color-blue-light o-static-column"
-    div
-     = "Hello from Static"
-   section class="col-la-desk-5 o-scroll-column bg-color-gray-light"
+  header class="c-banner py-12 bg-color-gray-dark"
+   div class=" bg-color-gray-dark"
+  main id="main" role="main" class="grid-0" 
+   section class="js-static o-static-column o-static-column--left bg-color-blue-light"
+    div 
+     h1 class="text-white"
+      = "Static Column"
+   section class="o-scroll-column o-scroll-column--right bg-color-gray-light p-4"
     div
      p 
       = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
@@ -60,8 +61,10 @@
      p 
       = "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin."
  
-   footer class="col-la-desk-12 c-footer py-48 bg-color-gray-dark grid"
-  /  div class=" col-la-desk-8 bg-color-gray-light"
+  footer class="col-la-desk-12 c-footer py-48 bg-color-gray-dark grid"
+   div class="my-4 text-center m-auto"
+    a href="/static-column" class="text-color-white"
+     = "Back to Static Column"
 
 
 = content('script')

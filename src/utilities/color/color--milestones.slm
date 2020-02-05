@@ -1,14 +1,17 @@
-div
-  p 
-    = 'Background'
-  code .bg-baby--primary
-  p 
-    = 'Border'
-  code .border-baby--primary
-  p 
-    = 'Text'
-  code .text-baby--primary
-div
+div class="grid"
+  div class="bg-baby--primary border-2 la-desk-col-2 p-4"
+   p class="py-2"
+     = 'Background'
+   code .bg-baby--primary
+  div class="border-baby--primary border-2 la-desk-col-2 p-4"
+   p class="py-2"
+     = 'Border'
+   code .border-baby--primary
+  div class="border-color-gray-light border-2 la-desk-col-4 p-4"
+   p class="py-2 text-baby--primary"
+     = 'Text'
+   code .text-baby--primary
+div class="grid"
   p 
     = 'Background'
   code .bg-toddler--primary

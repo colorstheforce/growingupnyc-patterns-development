@@ -147,12 +147,12 @@
         </header>
         <a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
         <main class="pt-32">
-          <div class="o-container">
+          <div>
             <header></header>
-            <div class="o-container">
+            <div class="grid">
               <h1 class="type-h1">Color</h1>
               <div class="html-tag my-8"><div></div></div>
-              <div class="my-8 py-4 px-4">
+              <div class="my-8 py-4 px-4 overflow-hidden">
                 <div>
                   <div>
                     <div class="border-color-gray-light border-2 m-2">
@@ -517,21 +517,27 @@
                 </div>
               </div>
             </div>
-            <div class="o-container">
+            <div class="grid">
               <h1 class="type-h1">Color Milestones</h1>
               <div class="html-tag my-8"><div></div></div>
-              <div class="my-8 py-4 px-4">
+              <div class="my-8 py-4 px-4 overflow-hidden">
                 <div>
                   <div>
-                    <div>
-                      <p>Background</p>
-                      <code>.bg-baby--primary</code>
-                      <p>Border</p>
-                      <code>.border-baby--primary</code>
-                      <p>Text</p>
-                      <code>.text-baby--primary</code>
+                    <div class="grid">
+                      <div class="bg-baby--primary border-2 la-desk-col-2 p-4">
+                        <p class="py-2">Background</p>
+                        <code>.bg-baby--primary</code>
+                      </div>
+                      <div class="border-baby--primary border-2 la-desk-col-2 p-4">
+                        <p class="py-2">Border</p>
+                        <code>.border-baby--primary</code>
+                      </div>
+                      <div class="border-color-gray-light border-2 la-desk-col-4 p-4">
+                        <p class="py-2 text-baby--primary">Text</p>
+                        <code>.text-baby--primary</code>
+                      </div>
                     </div>
-                    <div>
+                    <div class="grid">
                       <p>Background</p>
                       <code>.bg-toddler--primary</code>
                       <p>Border</p>
@@ -580,15 +586,21 @@
                       <code>.text---primary</code>
                     </div>
                   </div>
-                  <div class="mt-6 bg-color-gray-light py-8 px-4"><pre>&lt;div&gt;
-  &lt;p&gt;Background&lt;/p&gt;
-  &lt;code&gt;.bg-baby--primary&lt;/code&gt;
-  &lt;p&gt;Border&lt;/p&gt;
-  &lt;code&gt;.border-baby--primary&lt;/code&gt;
-  &lt;p&gt;Text&lt;/p&gt;
-  &lt;code&gt;.text-baby--primary&lt;/code&gt;
+                  <div class="mt-6 bg-color-gray-light py-8 px-4"><pre>&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;bg-baby--primary border-2 la-desk-col-2 p-4&quot;&gt;
+    &lt;p class=&quot;py-2&quot;&gt;Background&lt;/p&gt;
+    &lt;code&gt;.bg-baby--primary&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;border-baby--primary border-2 la-desk-col-2 p-4&quot;&gt;
+    &lt;p class=&quot;py-2&quot;&gt;Border&lt;/p&gt;
+    &lt;code&gt;.border-baby--primary&lt;/code&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;border-color-gray-light border-2 la-desk-col-4 p-4&quot;&gt;
+    &lt;p class=&quot;py-2 text-baby--primary&quot;&gt;Text&lt;/p&gt;
+    &lt;code&gt;.text-baby--primary&lt;/code&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;
+&lt;div class=&quot;grid&quot;&gt;
   &lt;p&gt;Background&lt;/p&gt;
   &lt;code&gt;.bg-toddler--primary&lt;/code&gt;
   &lt;p&gt;Border&lt;/p&gt;

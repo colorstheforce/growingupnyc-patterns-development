@@ -9,7 +9,7 @@ html lang='en'
       div class='o-offcanvas__main'
         = partial('/partials/nav.slm');
         main class="pt-32"
-          div class='o-container'
+          div class=''
             = content('main');
 
     = partial('/partials/footer.slm');

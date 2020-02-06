@@ -1,20 +1,43 @@
+/ Baby
 div class="grid-0"
+  h2 class="col-la-desk-12 col-desk-12 col-tab-12 col-mob-4 p-2"
+    = "Baby"
   div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
-   div class="bg-baby--primary py-12 text-center w-full"
-    p class="py-2 text-color-white text-center"
-      = 'Baby Background Primary'
-    code class="text-color-white text-center" .bg-baby--primary
+    div class="bg-baby--primary py-12 text-center w-full"
+      p class="py-2 text-color-white text-center"
+       = 'Baby Background Primary'
+      code class="text-color-white text-center" .bg-baby--primary
   div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
-   div class="border border-baby--primary py-12 text-center w-full"
-    p class="py-2"
-     = 'Border'
-    code .border-baby--primary
+    div class="border border-baby--primary py-12 text-center w-full"
+      p class="py-2"
+       = 'Border'
+      code .border-baby--primary
   div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
-   div class="py-12 w-full text-center text-center"
-    p class="py-2 text-baby--primary text-center"
-     = 'Text'
-    code class="text-baby--primary text-center" .text-baby--primary
+    div class="py-12 w-full text-center text-center"
+      p class="py-2 text-baby--primary text-center"
+        = 'Text'
+      code class="text-baby--primary text-center" .text-baby--primary
+
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="bg-baby--secondary py-12 text-center w-full"
+      p class="py-2 text-color-white text-center"
+        = 'Baby Background secondary'
+      code class="text-color-white text-center" .bg-baby--secondary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="border border-baby--secondary py-12 text-center w-full"
+      p class="py-2"
+        = 'Border'
+      code .border-baby--secondary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="py-12 w-full text-center text-center"
+      p class="py-2 text-baby--secondary text-center"
+        = 'Text'
+      code class="text-baby--secondary text-center" .text-baby--secondary
+
+/ Toddler 
 div class="grid-0"
+  h2 class="col-la-desk-12 col-desk-12 col-tab-12 col-mob-4 p-2"
+    = "Toddler"
   div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
    div class="bg-toddler--primary py-12 text-center"
     p class="py-2 text-color-white text-center"
@@ -30,7 +53,43 @@ div class="grid-0"
     p class="py-2 text-toddler--primary text-center"
      = 'Text'
     code class="text-toddler--primary text-center" .text-toddler--primary
+
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="bg-toddler--secondary py-12 text-center w-full"
+      p class="py-2 text-color-white text-center"
+        = 'Toddler Background secondary'
+      code class="text-color-white text-center" .bg-toddler--secondary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="border border-toddler--secondary py-12 text-center w-full"
+      p class="py-2"
+        = 'Border'
+      code .border-toddler--secondary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="py-12 w-full text-center text-center"
+      p class="py-2 text-toddler--secondary text-center"
+        = 'Text'
+      code class="text-toddler--secondary text-center" .text-toddler--secondary
+
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="bg-toddler--tertiary py-12 text-center w-full"
+      p class="py-2 text-color-white text-center"
+        = 'Toddler Background Tertiary'
+      code class="text-color-white text-center" .bg-toddler--tertiary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="border border-toddler--tertiary py-12 text-center w-full"
+      p class="py-2"
+        = 'Border'
+      code .border-toddler--tertiary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="py-12 w-full text-center text-center"
+      p class="py-2 text-toddler--tertiary text-center"
+        = 'Text'
+      code class="text-toddler--tertiary text-center" .text-toddler--tertiary
+
+/ Pre Schooler 
 div class="grid-0"
+  h2 class="col-la-desk-12 col-desk-12 col-tab-12 col-mob-4 p-2"
+    = "Pre Schooler"
   div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
    div class="bg-pre-schooler--primary py-12 text-center"
     p class="py-2 text-color-white text-center"
@@ -39,14 +98,50 @@ div class="grid-0"
   div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
    div class="border border-pre-schooler--primary py-12 text-center"
     p class="py-2"
-     = 'Pre Schooler Border'
+     = 'Border'
     code .border-pre-schooler--primary
   div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
    div class="py-12 text-center text-center"
     p class="py-2 text-pre-schooler--primary text-center"
      = 'Text'
     code class="text-pre-schooler--primary text-center" .text-pre-schooler--primary
+
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="bg-pre-schooler--secondary py-12 text-center w-full"
+      p class="py-2 text-color-white text-center"
+        = 'Pre Schooler Background secondary'
+      code class="text-color-white text-center" .bg-pre-schooler--secondary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="border border-pre-schooler--secondary py-12 text-center w-full"
+      p class="py-2"
+        = 'Border'
+      code .border-pre-schooler--secondary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="py-12 w-full text-center text-center"
+      p class="py-2 text-pre-schooler--secondary text-center"
+        = 'Text'
+      code class="text-pre-schooler--secondary text-center" .text-pre-schooler--secondary
+
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="bg-pre-schooler--tertiary py-12 text-center w-full"
+      p class="py-2 text-color-white text-center"
+        = 'Pre Schooler Background Tertiary'
+      code class="text-color-white text-center" .bg-pre-schooler--tertiary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="border border-pre-schooler--tertiary py-12 text-center w-full"
+      p class="py-2"
+        = 'Border'
+      code .border-pre-schooler--tertiary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="py-12 w-full text-center text-center"
+      p class="py-2 text-pre-schooler--tertiary text-center"
+        = 'Text'
+      code class="text-pre-schooler--tertiary text-center" .text-pre-schooler--tertiary
+
+/ Grade Schooler 
 div class="grid-0"
+  h2 class="col-la-desk-12 col-desk-12 col-tab-12 col-mob-4 p-2"
+    = "Grade Schooler"
   div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
    div class="bg-grade-schooler--primary py-12 text-center"
     p class="py-2 text-color-white text-center"
@@ -55,14 +150,51 @@ div class="grid-0"
   div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
    div class="border border-grade-schooler--primary py-12 text-center"
     p class="py-2"
-     = 'Grade Schooler Border'
+     = 'Border'
     code .border-grade-schooler--primary
   div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
    div class="py-12 text-center text-center"
     p class="py-2 text-grade-schooler--primary text-center"
      = 'Text'
     code class="text-grade-schooler--primary text-center" .text-grade-schooler--primary
+
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="bg-grade-schooler--secondary py-12 text-center w-full"
+      p class="py-2 text-color-white text-center"
+        = 'Grade Schooler Background secondary'
+      code class="text-color-white text-center" .bg-grade-schooler--secondary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="border border-grade-schooler--secondary py-12 text-center w-full"
+      p class="py-2"
+        = 'Border'
+      code .border-grade-schooler--secondary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="py-12 w-full text-center text-center"
+      p class="py-2 text-grade-schooler--secondary text-center"
+        = 'Text'
+      code class="text-grade-schooler--secondary text-center" .text-grade-schooler--secondary
+
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="bg-grade-schooler--tertiary py-12 text-center w-full"
+      p class="py-2 text-color-white text-center"
+        = 'Grade Schooler Background Tertiary'
+      code class="text-color-white text-center" .bg-grade-schooler--tertiary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="border border-grade-schooler--tertiary py-12 text-center w-full"
+      p class="py-2"
+        = 'Border'
+      code .border-grade-schooler--tertiary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+    div class="py-12 w-full text-center text-center"
+      p class="py-2 text-grade-schooler--tertiary text-center"
+        = 'Text'
+      code class="text-grade-schooler--tertiary text-center" .text-grade-schooler--tertiary
+
+
+/ Pre Teen
 div class="grid-0"
+  h2 class="col-la-desk-12 col-desk-12 col-tab-12 col-mob-4 p-2"
+    = "Pre Teen Primary"
   div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
    div class="bg-pre-teen--primary py-12 text-center"
     p class="py-2 text-color-white text-center"
@@ -78,7 +210,27 @@ div class="grid-0"
     p class="py-2 text-pre-teen--primary text-center"
      = 'Text'
     code class="text-pre-teen--primary text-center" .text-pre-teen--primary
+
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+   div class="bg-pre-teen--secondary py-12 text-center"
+    p class="py-2 text-color-white text-center"
+      = 'Pre Teen Background Secondary'
+    code class="text-color-white text-center" .bg-pre-teen--secondary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+   div class="border pre-teen-schooler--primary py-12 text-center"
+    p class="py-2"
+     = 'Pre Teen Border'
+    code .border-pre-teen--secondary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+   div class="py-12 text-center text-center"
+    p class="py-2 text-pre-teen--secondary text-center"
+     = 'Text'
+    code class="text-pre-teen--secondary text-center" .text-pre-teen--secondary
+
+/ Teen
 div class="grid-0"
+  h2 class="col-la-desk-12 col-desk-12 col-tab-12 col-mob-4 p-2"
+    = "Teen"
   div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
    div class="bg-teen--primary py-12 text-center"
     p class="py-2 text-color-white text-center"
@@ -94,14 +246,34 @@ div class="grid-0"
     p class="py-2 text-teen--primary text-center"
      = 'Text'
     code class="text-teen--primary text-center" .text-teen--primary
-div class="grid-0"
+
   div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
-   div class="bg---primary py-12 text-center"
+   div class="bg-teen--secondary py-12 text-center"
+    p class="py-2 text-color-white text-center"
+      = 'Teen Background Secondary'
+    code class="text-color-white text-center" .bg-teen--secondary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+   div class="border teen-schooler--primary py-12 text-center"
+    p class="py-2"
+     = 'Teen Border'
+    code .border-teen--secondary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+   div class="py-12 text-center text-center"
+    p class="py-2 text-teen--secondary text-center"
+     = 'Text'
+    code class="text-teen--secondary text-center" .text-teen--secondary
+
+/ Primary
+div class="grid-0"
+  h2 class="col-la-desk-12 col-desk-12 col-tab-12 col-mob-4 p-2"
+    = "Primary"
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+   div class="bg--primary py-12 text-center"
     p class="py-2 text-color-black text-center"
       = 'Background Primary'
     code class="text-color-black text-center" .bg--primary
   div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
-   div class="border border---primary py-12 text-center"
+   div class="border border--primary py-12 text-center"
     p class="py-2"
      = 'Primary Border'
     code .border--primary
@@ -111,7 +283,25 @@ div class="grid-0"
      = 'Text'
     code class="text--primary text-center" .text--primary
 
-
+/ Secondary
+div class="grid-0"
+  h2 class="col-la-desk-12 col-desk-12 col-tab-12 col-mob-4 p-2"
+    = "Secodary"
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+   div class="bg--secondary py-12 text-center"
+    p class="py-2 text-color-white text-center"
+      = 'Background Secondary'
+    code class="text-color-white text-center" .bg--secondary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+   div class="border border--secondary py-12 text-center"
+    p class="py-2"
+     = 'secondary Border'
+    code .border--secondary
+  div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4 p-2"
+   div class="py-12 text-center text-center"
+    p class="py-2 text--secondary text-center"
+     = 'Text'
+    code class="text--secondary text-center" .text--secondary
 
 
 

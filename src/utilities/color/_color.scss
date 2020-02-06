@@ -16,8 +16,17 @@
 // Utility classes for applying milestone-specific coloring to elements
 // Hover/focus styling is applied only to elements that are clickable (links and buttons)
 
+// Baby
 .bg-baby--primary {
   background-color: $color-baby-primary !important;
+}
+
+.border-baby--primary {
+  border-color: $color-baby-primary !important;
+}
+
+.text-baby--primary {
+  color: $color-baby-primary;
 }
 
 button.bg-baby--primary,
@@ -31,13 +40,18 @@ a.bg-baby--primary {
   }
 }
 
-.border-baby--primary {
-  border-color: $color-baby-primary !important;
-}
 
 .bg-baby--secondary {
   background-color: $color-baby-secondary !important;
+  // border-color: $color-baby-secondary !important;
+}
+
+.border-baby--secondary {
   border-color: $color-baby-secondary !important;
+}
+
+.text-baby--secondary {
+  color: $color-baby-secondary;
 }
 
 button.bg-baby--secondary,
@@ -50,10 +64,6 @@ a.bg-baby--secondary {
   }
 }
 
-.text-baby--primary {
-  color: $color-baby-primary;
-}
-
 .svg-baby {
   .stop1 {
     stop-color: $color-baby-secondary;
@@ -63,8 +73,18 @@ a.bg-baby--secondary {
   }
 }
 
+// Toddler ------
+// Toddler Primary
 .bg-toddler--primary {
   background-color: $color-toddler-primary !important;
+}
+
+.text-toddler--primary {
+  color: $color-toddler-primary;
+}
+
+.border-toddler--primary {
+  border-color: $color-toddler-primary !important;
 }
 
 button.bg-toddler--primary,
@@ -78,8 +98,13 @@ a.bg-toddler--primary {
   }
 }
 
+// Toddler Secondary
 .bg-toddler--secondary {
   background-color: $color-toddler-secondary !important;
+}
+
+.border-toddler--secondary {
+  border-color: $color-toddler-secondary !important;
 }
 
 button.bg-toddler--secondary,
@@ -92,18 +117,21 @@ a.bg-toddler--secondary {
   }
 }
 
-.border-toddler--primary {
-  border-color: $color-toddler-primary !important;
+// Toddler Tertiary
+.bg-toddler--tertiary {
+  background-color: $color-toddler-tertiary !important;
 }
 
-.border-toddler--secondary {
-  border-color: $color-toddler-secondary !important;
+.text-toddler--tertiary {
+  color: $color-toddler-tertiary;
 }
 
-.text-toddler--primary {
-  color: $color-toddler-primary;
+.border-toddler--tertiary {
+  border-color: $color-toddler-tertiary !important;
 }
 
+
+// Todler svg
 .svg-toddler {
   .stop1 {
     stop-color: $color-toddler-secondary;
@@ -113,8 +141,19 @@ a.bg-toddler--secondary {
   }
 }
 
+
+// Pre Schooler ----
+// Pre Schooler Primary
 .bg-pre-schooler--primary {
   background-color: $color-pre-schooler-primary !important;
+}
+
+.border-pre-schooler--primary {
+  border-color: $color-pre-schooler-primary !important;
+}
+
+.text-pre-schooler--primary {
+  color: $color-pre-schooler-primary;
 }
 
 button.bg-pre-schooler--primary,
@@ -128,10 +167,7 @@ a.bg-pre-schooler--primary {
   }
 }
 
-.bg-pre-schooler--secondary {
-  background-color: $color-pre-schooler-secondary !important;
-}
-
+// Pre Schooler Secondary
 button.bg-pre-schooler--secondary,
 a.bg-pre-schooler--secondary {
   &:hover,
@@ -143,18 +179,33 @@ a.bg-pre-schooler--secondary {
   }
 }
 
-.border-pre-schooler--primary {
-  border-color: $color-pre-schooler-primary !important;
+.bg-pre-schooler--secondary {
+  background-color: $color-pre-schooler-secondary !important;
 }
 
 .border-pre-schooler--secondary {
   border-color: $color-pre-schooler-secondary !important;
 }
 
-.text-pre-schooler--primary {
-  color: $color-pre-schooler-primary;
+.text-pre-schooler--secondary {
+  color: $color-pre-schooler-secondary;
 }
 
+
+// Preschooler Tertiary
+.bg-pre-schooler--tertiary {
+  background-color: $color-pre-schooler-tertiary !important;
+}
+
+.text-pre-schooler--tertiary {
+  color: $color-pre-schooler-tertiary;
+}
+
+.border-pre-schooler--tertiary {
+  border-color: $color-pre-schooler-tertiary !important;
+}
+
+// Pre Schooler Svg
 .svg-pre-schooler {
   .stop1 {
     stop-color: $color-pre-schooler-secondary;
@@ -164,8 +215,19 @@ a.bg-pre-schooler--secondary {
   }
 }
 
+
+// Grade Schooler ----
+// Grade Schooler Primary
 .bg-grade-schooler--primary {
   background-color: $color-grade-schooler-primary !important;
+}
+
+.border-grade-schooler--primary {
+  border-color: $color-grade-schooler-primary !important;
+}
+
+.text-grade-schooler--primary {
+  color: $color-grade-schooler-primary;
 }
 
 button.bg-grade-schooler--primary,
@@ -179,8 +241,17 @@ a.bg-grade-schooler--primary {
   }
 }
 
+// Grade Schooler Secondary
 .bg-grade-schooler--secondary {
   background-color: $color-grade-schooler-secondary !important;
+}
+
+.border-grade-schooler--secondary {
+  border-color: $color-grade-schooler-secondary !important;
+}
+
+.text-grade-schooler--secondary {
+  color: $color-grade-schooler-secondary;
 }
 
 button.bg-grade-schooler--secondary,
@@ -193,18 +264,20 @@ a.bg-grade-schooler--secondary {
   }
 }
 
-.border-grade-schooler--primary {
-  border-color: $color-grade-schooler-primary !important;
+// Grade Schooler Tertiary
+.bg-grade-schooler--tertiary {
+  background-color: $color-grade-schooler-tertiary !important;
 }
 
-.border-grade-schooler--secondary {
-  border-color: $color-grade-schooler-secondary !important;
+.border-grade-schooler--tertiary {
+  border-color: $color-grade-schooler-tertiary !important;
 }
 
-.text-grade-schooler--primary {
-  color: $color-grade-schooler-primary;
+.text-grade-schooler--tertiary {
+  color: $color-grade-schooler-tertiary;
 }
 
+// Grade Schooler svg
 .svg-grade-schooler {
   .stop1 {
     stop-color: $color-grade-schooler-secondary;
@@ -214,8 +287,18 @@ a.bg-grade-schooler--secondary {
   }
 }
 
+// Pre Teen
+// Pre Teen Primary
 .bg-pre-teen--primary {
   background-color: $color-pre-teen-primary !important;
+}
+
+.border-pre-teen--primary {
+  border-color: $color-pre-teen-primary !important;
+}
+
+.text-pre-teen--primary {
+  color: $color-pre-teen-primary;
 }
 
 button.bg-pre-teen--primary,
@@ -229,9 +312,18 @@ a.bg-pre-teen--primary {
   }
 }
 
+// Pre Teen Secondary
 .bg-pre-teen--secondary {
   background-color: $color-pre-teen-secondary !important;
+  // border-color: $color-pre-teen-secondary !important;
+}
+
+.border-pre-teen--secondary {
   border-color: $color-pre-teen-secondary !important;
+}
+
+.text-pre-teen--secondary {
+  color: $color-pre-teen-secondary;
 }
 
 button.bg-pre-teen--secondary,
@@ -244,14 +336,7 @@ a.bg-pre-teen--secondary {
   }
 }
 
-.border-pre-teen--primary {
-  border-color: $color-pre-teen-primary !important;
-}
-
-.text-pre-teen--primary {
-  color: $color-pre-teen-primary;
-}
-
+// Pre teen svg
 .svg-pre-teen {
   .stop1 {
     stop-color: $color-pre-teen-secondary;
@@ -261,8 +346,19 @@ a.bg-pre-teen--secondary {
   }
 }
 
+
+// Teen
+// Teen Primary
 .bg-teen--primary {
   background-color: $color-teen-primary !important;
+}
+
+.border-teen--primary {
+  border-color: $color-teen-primary !important;
+}
+
+.text-teen--primary {
+  color: $color-teen-primary;
 }
 
 button.bg-teen--primary,
@@ -276,9 +372,18 @@ a.bg-teen--primary {
   }
 }
 
+// Teen Secondary
 .bg-teen--secondary {
   background-color: $color-teen-secondary !important;
+  // border-color: $color-teen-secondary !important;
+}
+
+.border-teen--secondary {
   border-color: $color-teen-secondary !important;
+}
+
+.text-teen--secondary {
+  color: $color-teen-secondary;
 }
 
 button.bg-teen--secondary,
@@ -291,14 +396,7 @@ a.bg-teen--secondary {
   }
 }
 
-.border-teen--primary {
-  border-color: $color-teen-primary !important;
-}
-
-.text-teen--primary {
-  color: $color-teen-primary;
-}
-
+// Teen svg
 .svg-teen {
   .stop1 {
     stop-color: $color-teen-secondary;
@@ -308,8 +406,19 @@ a.bg-teen--secondary {
   }
 }
 
+
+// Young Adult
+// Young Adult Primary
 .bg-young-adult--primary {
   background-color: $color-young-adult-primary !important;
+}
+
+.text-young-adult--primary {
+  color: $color-young-adult-primary;
+}
+
+.border-young-adult--primary {
+  border-color: $color-young-adult-primary;
 }
 
 button.bg-young-adult--primary,
@@ -323,10 +432,20 @@ a.bg-young-adult--primary {
   }
 }
 
+// Young adult seconda
 .bg-young-adult--secondary {
   background-color: $color-young-adult-secondary !important;
-  border-color: $color-young-adult-secondary !important;
+  // border-color: $color-young-adult-secondary !important;
 }
+
+.text-young-adult--secondary {
+  color: $color-young-adult-secondary;
+}
+
+.border-young-adult--secondary {
+  border-color: $color-young-adult-secondary;
+}
+
 
 button.bg-young-adult--secondary,
 a.bg-young-adult--secondary {
@@ -338,14 +457,7 @@ a.bg-young-adult--secondary {
   }
 }
 
-.text-young-adult--primary {
-  color: $color-young-adult-primary;
-}
-
-.border-young-adult--primary {
-  border-color: $color-young-adult-primary;
-}
-
+// Young Adult svg
 .svg-young-adult {
   .stop1 {
     stop-color: $color-young-adult-secondary;
@@ -353,4 +465,31 @@ a.bg-young-adult--secondary {
   .stop2 {
     stop-color: $color-young-adult-primary;
   }
+}
+
+
+// Primary
+.bg--primary {
+  background-color: $color-primary !important;
+}
+
+.text--primary {
+  color: $color-primary;
+}
+
+.border--primary {
+  border-color: $color-primary;
+}
+
+// Primary
+.bg--secondary {
+  background-color: $color-secondary !important;
+}
+
+.text--secondary {
+  color: $color-secondary;
+}
+
+.border--secondary {
+  border-color: $color-secondary;
 }

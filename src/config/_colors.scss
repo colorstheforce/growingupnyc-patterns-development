@@ -55,14 +55,19 @@ $color-baby-secondary: map-get($colors, map-get($colors-baby, 'secondary'));
 $colors-toddler: map-get($variables, 'colors-toddler');
 $color-toddler-primary: map-get($colors, map-get($colors-toddler, 'primary'));
 $color-toddler-secondary: map-get($colors, map-get($colors-toddler, 'secondary'));
+$color-toddler-tertiary: map-get($colors, map-get($colors-toddler, 'tertiary'));
 
 $colors-pre-schooler: map-get($variables, 'colors-pre-schooler');
 $color-pre-schooler-primary: map-get($colors, map-get($colors-pre-schooler, 'primary'));
 $color-pre-schooler-secondary: map-get($colors, map-get($colors-pre-schooler, 'secondary'));
+$color-pre-schooler-tertiary: map-get($colors, map-get($colors-pre-schooler, 'tertiary'));
+
 
 $colors-grade-schooler: map-get($variables, 'colors-grade-schooler');
 $color-grade-schooler-primary: map-get($colors, map-get($colors-grade-schooler, 'primary'));
 $color-grade-schooler-secondary: map-get($colors, map-get($colors-grade-schooler, 'secondary'));
+$color-grade-schooler-tertiary: map-get($colors, map-get($colors-grade-schooler, 'tertiary'));
+
 
 $colors-pre-teen: map-get($variables, 'colors-pre-teen');
 $color-pre-teen-primary: map-get($colors, map-get($colors-pre-teen, 'primary'));

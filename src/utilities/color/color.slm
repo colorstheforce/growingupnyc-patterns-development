@@ -1,14 +1,14 @@
 /
 / Color
-
-div class="border-color-gray-light border-2 m-2"
-  div class="p-4 bg-${key}"
-  div class="p-4"
-    p
-      = "name: " 
-      span
-        = key
-    p
-      = "hex: "
-      span
-        = value
+div class=""
+  div class="border-color-gray-light border-2 m-2"
+    div class="p-4 bg-${key}"
+    div class="p-4"
+      p
+        = "name: " 
+        span
+          = key
+      p
+        = "hex: "
+        span
+          = value

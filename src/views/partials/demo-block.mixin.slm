@@ -1,18 +1,18 @@
 = mixin('demo-block', 'markup', 'layout = columns', 'grid = false');
-  div
+  div class="grid-0"
     - if (typeof this.grid === 'object')
       - let keys = Object.keys(this.grid)
 
       - for (key in this.grid)
         - value = this.grid[key];
-          div
+          div class="col-la-desk-4 col-desk-4 col-tab-12 col-mob-4"
             = partial('../' + this.markup);
     - if (typeof this.grid === 'string')
       - value = this.grid;
-      div
+      div class="grid-0"
         = partial('../' + this.markup);
     
     - if(this.grid === 'false')
-      div class="mt-6 bg-color-gray-light py-8 px-4"
+      div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden grid-0"
         pre
           = 'code{{ '+ this.markup +' }}';

@@ -14,93 +14,55 @@
 
 = content('main')
   / = mixin('content-header', title);
+  div class="js-parallax p-10"
   article class="o-container js-sticky-container"
     div class="o-article-sidebar"
       div class="o-content-container--compact u-shift-up"
         ol class="c-nav-list js-sticky js-section-set o-sticky-nav"
           li class="c-nav-list__item"
-            a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" href="#section-events" data-section="section-details"
+            a href="#section-events" class="scroll c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue"  data-section="section-details"
               = "Events"
               svg aria-hidden="true" class="icon--caret"
                 use xlink:href="#icon-caret-right"
           li class="c-nav-list__item"
-            a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" href="#section-programs" data-section="section-how-to-apple"
+            a href="#section-programs"class="scroll c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue"  data-section="section-how-to-apple"
               = "Programs"
               svg aria-hidden="true" class="icon--caret"
                 use xlink:href="#icon-caret-right"
+
     div class="o-article js-sticky-article"
       section class="o-content-container--compact u-top-spacing u-bottom-spacing"
         h2 = "What To Expect"
         p = "Your baby is already learning and growing! Expect your child to begin smiling at people, notice sounds, pay attention to faces, and sleep a lot – up to 18 hours per day! If you need more support, the City’s Newborn Home Visiting Program is available to help with the adjustment to parenthood. Scroll down to find out more!"
+      
       section class="c-block-list c-block-list--shade o-content-container" data-id="section-event" id="section-events"
         h2 
           = "Event"
-        div class="c-block-list__inner"
-          div class="c-block-list__item"
-            div class="c-card c-card--subtitle-first"
-              h3 class="c-card__title"
-                = "Brooklyn Children’s Museum – Pay as You Wish"
-              div class="c-card__body"
-                = "Take your kids to visit the Brooklyn Children's Museum to enjoy fun, educational exhibits. Pay as you wish on Thursday and Sunday afternoons!"
-      aside class="c-tip u-sm-gutter baby-secondary o-content-container" id="tip-2-Months"
-        div class="c-tip__sticker sticker baby-secondary"
-          svg class="icon--large"
-        h3 class="c-tip__content text-center"
-          = "Quick Tip"
-        p class="c-tip__content"
-          = "Be sure your baby has simple and soft toys to stimulate his sense of sight, sound and touch. Naming the toys helps to develop his language skills."
+        p
+         = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Dignissim convallis aenean et tortor at. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Risus feugiat in ante metus dictum at tempor. Sit amet nisl purus in mollis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Ornare arcu odio ut sem nulla pharetra diam. Consequat interdum varius sit amet mattis. Netus et malesuada fames ac turpis egestas."
+        p
+         = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Dignissim convallis aenean et tortor at. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Risus feugiat in ante metus dictum at tempor. Sit amet nisl purus in mollis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Ornare arcu odio ut sem nulla pharetra diam. Consequat interdum varius sit amet mattis. Netus et malesuada fames ac turpis egestas."
+        p
+         = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Dignissim convallis aenean et tortor at. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Risus feugiat in ante metus dictum at tempor. Sit amet nisl purus in mollis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Ornare arcu odio ut sem nulla pharetra diam. Consequat interdum varius sit amet mattis. Netus et malesuada fames ac turpis egestas."
+        p
+         = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Dignissim convallis aenean et tortor at. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Risus feugiat in ante metus dictum at tempor. Sit amet nisl purus in mollis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Ornare arcu odio ut sem nulla pharetra diam. Consequat interdum varius sit amet mattis. Netus et malesuada fames ac turpis egestas."
+        p
+         = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Dignissim convallis aenean et tortor at. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Risus feugiat in ante metus dictum at tempor. Sit amet nisl purus in mollis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Ornare arcu odio ut sem nulla pharetra diam. Consequat interdum varius sit amet mattis. Netus et malesuada fames ac turpis egestas."
+      
       section class="c-block-list c-block-list--shade o-content-container" data-id="section-programs" id="section-programs"
         h2 
           = "Programs"
-        div class="c-block-list__inner"
-          div class="c-block-list__item"
-            div class="c-card c-card--hero baby-gradient"
-              h3 class="c-card__title"
-                a = "Home visits for new moms"
-              div class="c-card__subtitle"
-                p 
-                  strong = "Newborn Home Visiting Program (NHVP)"
-                p = "NYC Department of Health & Mental Hygiene"
-          div class="c-block-list__item"
-            div class="c-card c-card--hero baby-gradient"
-              h3 class="c-card__title"
-                a = "Home visits for new moms"
-              div class="c-card__subtitle"
-                p 
-                  strong = "Newborn Home Visiting Program (NHVP)"
-                p = "NYC Department of Health & Mental Hygiene"
-          div class="c-block-list__item"
-            div class="c-card c-card--hero baby-gradient"
-              h3 class="c-card__title"
-                a = "Home visits for new moms"
-              div class="c-card__subtitle"
-                p 
-                  strong = "Newborn Home Visiting Program (NHVP)"
-                p = "NYC Department of Health & Mental Hygiene"
-          div class="c-block-list__item"
-            div class="c-card c-card--hero baby-gradient"
-              h3 class="c-card__title"
-                a = "Home visits for new moms"
-              div class="c-card__subtitle"
-                p 
-                  strong = "Newborn Home Visiting Program (NHVP)"
-                p = "NYC Department of Health & Mental Hygiene"
-          div class="c-block-list__item"
-            div class="c-card c-card--hero baby-gradient"
-              h3 class="c-card__title"
-                a = "Home visits for new moms"
-              div class="c-card__subtitle"
-                p 
-                  strong = "Newborn Home Visiting Program (NHVP)"
-                p = "NYC Department of Health & Mental Hygiene"
-          div class="c-block-list__item"
-            div class="c-card c-card--hero baby-gradient"
-              h3 class="c-card__title"
-                a = "Home visits for new moms"
-              div class="c-card__subtitle"
-                p 
-                  strong = "Newborn Home Visiting Program (NHVP)"
-                p = "NYC Department of Health & Mental Hygiene"
+        p
+          = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Dignissim convallis aenean et tortor at. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Risus feugiat in ante metus dictum at tempor. Sit amet nisl purus in mollis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Ornare arcu odio ut sem nulla pharetra diam. Consequat interdum varius sit amet mattis. Netus et malesuada fames ac turpis egestas."
+        p
+          = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Dignissim convallis aenean et tortor at. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Risus feugiat in ante metus dictum at tempor. Sit amet nisl purus in mollis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Ornare arcu odio ut sem nulla pharetra diam. Consequat interdum varius sit amet mattis. Netus et malesuada fames ac turpis egestas."
+        p
+          = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Dignissim convallis aenean et tortor at. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Risus feugiat in ante metus dictum at tempor. Sit amet nisl purus in mollis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Ornare arcu odio ut sem nulla pharetra diam. Consequat interdum varius sit amet mattis. Netus et malesuada fames ac turpis egestas."
+        p
+          = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Dignissim convallis aenean et tortor at. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Risus feugiat in ante metus dictum at tempor. Sit amet nisl purus in mollis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Ornare arcu odio ut sem nulla pharetra diam. Consequat interdum varius sit amet mattis. Netus et malesuada fames ac turpis egestas."
+        p
+          = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Dignissim convallis aenean et tortor at. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Risus feugiat in ante metus dictum at tempor. Sit amet nisl purus in mollis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Ornare arcu odio ut sem nulla pharetra diam. Consequat interdum varius sit amet mattis. Netus et malesuada fames ac turpis egestas."
+       
   div class="my-10 text-center"
     a href="/side-navigation"
       = "Back to Side Navigation"            
@@ -110,8 +72,7 @@
 
 = content('script')
   javascript:
-    
-    
+    var scroll = gunyc.scroll();
     
 
     // a method for removing cookie

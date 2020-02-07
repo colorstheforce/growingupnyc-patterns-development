@@ -17,6 +17,8 @@ import AlertBanner from '../objects/alert-banner/AlertBanner';
 import Animations from '../utilities/animations/Animations';
 import Form from '../components/form/Form';
 import StaticColumn from '../objects/static-column/staticColumn'
+import Scroll from '../components/side-navigation/Scroll'
+
 
 /** import components here as they are written. */
 
@@ -55,6 +57,10 @@ class main {
   
 	staticColumn() {
     return new StaticColumn();
+  }
+
+	scroll() {
+    return new Scroll();
   }
 
   animations() {

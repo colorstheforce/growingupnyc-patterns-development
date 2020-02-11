@@ -16,13 +16,31 @@
 // .sticky { }
 
 .o-sticky-nav {
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  &.is-sticky {
-    position: fixed;
-    top: 20px;
-  }
-  &.is-stuck {
-    position: absolute;
-  }
+		transform: translate3d(0, 0, 0);
+		backface-visibility: hidden;
+}
+
+@include grid-media($bp-large) {
+	.o-sticky-nav {
+			width: 295px;
+
+		&.is-sticky {
+			position: fixed;
+			top: 20px;
+			// left: 40px;
+			width: 295px;
+		}
+		&.is-stuck {
+			position: absolute;
+		}
+	}
+}
+@include grid-media($bp-xlarge) {
+	.o-sticky-nav {
+		width: 414px;
+
+		&.is-sticky {
+			width: 414px;
+		}
+	}
 }

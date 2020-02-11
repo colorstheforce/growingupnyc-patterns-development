@@ -1,1 +1,1 @@
-The Sticky Utility is used to create a sticky side navigation.
+The Sticky Utility is used to create a sticky side navigation. [Click here for a demo page.](/sticky-demo)

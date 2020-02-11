@@ -12,13 +12,13 @@ import Accordion from '../objects/accordion/Accordion';
 // import Overlay from '../objects/overlay/Overlay';
 import Icons from '../../node_modules/@nycopportunity/patterns-framework/src/utilities/icons/icons';
 import Toggle from '../utilities/toggle/Toggle';
-import Sticky from '../utilities/sticky/Sticky';
+// import Sticky from '../utilities/sticky/Sticky';
 import AlertBanner from '../objects/alert-banner/AlertBanner';
 import Animations from '../utilities/animations/Animations';
 import Form from '../components/form/Form';
 import StaticColumn from '../objects/static-column/staticColumn'
 import Scroll from '../components/side-navigation/Scroll'
-
+import StickyVanilla from '../utilities/sticky/StickyVanilla'
 
 /** import components here as they are written. */
 
@@ -47,9 +47,9 @@ class main {
     return new Accordion();
   }
   
-  sticky() {
-    Sticky();
-  }
+  // sticky() {
+  //   Sticky();
+  // }
 
   alertBanner(expirationDays) {
     return new AlertBanner(expirationDays);
@@ -57,6 +57,10 @@ class main {
   
 	staticColumn() {
     return new StaticColumn();
+  }
+
+	stickyVanilla() {
+    return new StickyVanilla();
   }
 
 	scroll() {

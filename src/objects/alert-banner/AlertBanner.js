@@ -17,16 +17,13 @@ class AlertBanner {
       remover: AlertBanner.remover,
       cookieName: AlertBanner.cookieName
     };
-    console.log(control);
     
     
     control.addEventListener('click', (event) => {
       this.assignCookie(el);
-
     });
     
     this.checkAlertCookie(el);
-    console.log()
   }
   
   checkAlertCookie(element){

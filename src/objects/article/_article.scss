@@ -45,7 +45,7 @@
   @include grid-media($bp-small) {
     margin-left: -#{rem-calc($outer-gutter-small)};
     margin-right: -#{rem-calc($outer-gutter-small)};
-    margin-left: 49px;
+    // margin-left: 49px;
   }
   
   @include grid-media($bp-large) {

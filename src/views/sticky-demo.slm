@@ -1,12 +1,22 @@
-/
-/ Sticky
+= extend('layouts/demo-default')
 
-/ div class="bg-color-blue-light p-8"
+- title = 'Static Column Demo'
 
-header class="c-banner py-24 bg-color-gray-dark"
-  div class=" bg-color-gray-dark"
-main id="main" role="main" class="" 
-  article class="o-container js-sticky-container"
+/ Partials
+= partial('partials/head.mixin.slm');
+= partial('partials/content-header.mixin.slm');
+= partial('partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  header class="c-banner py-24 bg-color-gray-dark"
+   div class=" bg-color-gray-dark"
+  main id="main" role="main" class="" 
+   article class="o-container js-sticky-container"
     div class="o-article-sidebar"
       div class="o-content-container--compact u-shift-up"
         ol class="c-nav-list js-sticky js-section-set o-sticky-nav" data-js="sticky"
@@ -75,3 +85,14 @@ main id="main" role="main" class=""
           p 
             = "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin."
           
+      
+  footer class="c-footer py-48 bg-color-gray-dark"
+   div class="my-4 text-center m-auto"
+    a href="/sticky" class="text-color-white"
+     = "Back to Sticky"
+
+
+= content('script')
+  javascript:
+   var stickyVanilla = gunyc.stickyVanilla();
+   

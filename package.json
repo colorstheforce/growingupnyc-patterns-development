@@ -32,7 +32,9 @@
     }
   },
   "dependencies": {
+    "animate.css": "^3.7.2",
     "js-cookie": "^2.2.1",
+    "smoothscroll-polyfill": "^0.4.4",
     "sticky-js": "^1.2.2"
   }
 }

@@ -11,27 +11,24 @@
 // add configuration to the /config/variables.js object (which is
 // to SASS during the compilation process).
 // @import 'config/variables';
-@import 'config/animations';
-
+@import 'config/animate';
+@import 'animate.scss/vendor/assets/stylesheets/animate/fadeInUp';
+@import 'animate.scss/vendor/assets/stylesheets/animate/fadeIn';
 // Declarations
 // .animations { }
 
-@mixin animate($animation: none, $speed: $animate-scss-speed) {
-  @if $animation != none {
-    animation-name: $animation;
-  }
-  animation-duration: $speed;
-  animation-fill-mode: both;
-  animation-timing-function: $animate-timing-function;
+.animated {
+	@include animate();
 }
+
 
 body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
   -webkit-backface-visibility: hidden;
 }
 
-.animated {
-  @include animate();
-}
+// .animated {
+//   @include animate();
+// }
 
 // Rotating Text
 .rotating-text {

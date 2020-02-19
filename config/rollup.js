@@ -125,6 +125,19 @@ const modules = [
         strict: rollup.strict
       }
     ]
+	},
+	{
+    input: `${process.env.PWD}/node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js`,
+    output: {
+      name: 'Polyfills',
+      file: `./dist/scripts/polyfills.js`,
+      sourcemap: (process.env.NODE_ENV === 'production')
+        ? false : rollup.sourcemap,
+      format: rollup.format,
+      strict: rollup.strict,
+      globals: rollup.globals
+    },
+    plugins: rollup.local
   },
   {
     input: './src/objects/navigation/Navigation.js',

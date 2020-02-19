@@ -13,8 +13,6 @@ html lang='en'
 
     javascript:
       var gunyc = new GUNYC();
-      gunyc.navigation();
-      gunyc.toggle();
       gunyc.accordion();
       gunyc.icons();
 

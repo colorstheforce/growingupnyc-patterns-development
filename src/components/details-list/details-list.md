@@ -1,0 +1,1 @@
+The details list component is used to list detailed information about an event. The component contains information regarding Date, Time, Location, Cost and Link to additional information. The component is currently being used at the Growing Up NYC single event page.

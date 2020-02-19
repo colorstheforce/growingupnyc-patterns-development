@@ -14,7 +14,6 @@ class StickyVanilla {
   constructor() {
     // const el = document.querySelector(AlertBanner.selector);
     // const control = document.querySelector(AlertBanner.controller);
-	console.log("Hi from Sticky Vanilla");
 	
 		const stickyContent = document.querySelectorAll('.js-sticky');
 
@@ -69,7 +68,6 @@ assignStickyFeature(stickyContent) {
 
 	let elemTop = stickyContentElem.parentElement.getBoundingClientRect().top;
 	let isPastBottom = window.innerHeight - stickyContentElem.parentElement.clientHeight - stickyContentElem.parentElement.getBoundingClientRect().top < 50;
-	console.log(stickyContentElem.getBoundingClientRect().bottom);
 	
 	// Sets element to position absolute if not scrolled to yet.
 	// Absolutely positioning only when necessary and not by default prevents flickering

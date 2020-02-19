@@ -154,9 +154,9 @@
                 <h1 class="type-h1 col-la-desk-12 col-desk-12 col-tab-12 col-mob-4">Overlay</h1>
                 <div class="html-tag my-8 col-la-desk-12 col-desk-12 col-tab-12 col-mob-4"><div><p>The overlay object is a container that floats above existing patterns when made visible. This object is dependent on the Toggle Utility from the NYCO Patterns Framework.</p>
 </div></div>
-                <div class="my-8 py-4 overflow-hidden">
-                  <div class="grid-0">
-                    <div class="grid-0">
+                <div class="my-8 py-4 overflow-hidden col-la-desk-12">
+                  <div>
+                    <div>
                       <a data-js="toggle-search" href="#search" onclick="return false;">
                         <svg class="icon--small" role="img">
                           <title>Search</title>
@@ -165,14 +165,6 @@
                       </a>
                       <div aria-hidden="true" class="o-overlay hidden p-4" id="search"><p>Overlay content.</p></div>
                     </div>
-                    <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden grid-0"><pre>&lt;a data-js=&quot;toggle-search&quot; href=&quot;#search&quot; onclick=&quot;return false;&quot;&gt;
-  &lt;svg class=&quot;icon--small&quot; role=&quot;img&quot;&gt;
-    &lt;title&gt;Search&lt;/title&gt;
-    &lt;use xlink:href=&quot;#icon-search&quot;&gt;&lt;/use&gt;
-  &lt;/svg&gt;
-&lt;/a&gt;
-&lt;div aria-hidden=&quot;true&quot; class=&quot;o-overlay hidden p-4&quot; id=&quot;search&quot;&gt;&lt;p&gt;Overlay content.&lt;/p&gt;&lt;/div&gt;
-</pre></div>
                   </div>
                 </div>
               </div>
@@ -194,7 +186,6 @@
     <script type="text/javascript">
       var gunyc = new GUNYC();
       gunyc.navigation();
-      gunyc.toggle();
       gunyc.accordion();
       gunyc.icons();
     </script>

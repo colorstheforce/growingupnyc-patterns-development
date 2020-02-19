@@ -15,7 +15,6 @@ class Navigation {
       selector: Navigation.selector,
       namespace: Navigation.namespace,
       inactiveClass: Navigation.inactiveClass
-
     });
     return this;
   }

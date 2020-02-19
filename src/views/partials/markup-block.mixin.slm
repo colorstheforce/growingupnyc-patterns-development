@@ -1,0 +1,6 @@
+= mixin('markup-block', 'markup', 'layout = columns', 'grid = false');
+  div class=""
+    - if(this.grid === 'false')
+      div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"
+        pre
+          = 'code{{ '+ this.markup +' }}';

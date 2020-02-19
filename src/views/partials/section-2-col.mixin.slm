@@ -1,0 +1,17 @@
+
+= partial('demo-specs.mixin.slm');
+= partial('demo-block.mixin.slm');
+= partial('markup-block.mixin.slm');
+
+= mixin('section-2-col', 'title', 'path', 'layout = columns', 'grid = false', 'specs = true', 'code = true');
+  div class="grid"
+    h1 class='type-h1 col-la-desk-12 col-desk-12 col-tab-12 col-mob-4'
+      = this.title
+    div class="my-8 py-4 overflow-hidden col-la-desk-6 col-desk-6 col-tab-12 col-mob-4"
+      - if (this.code === 'true')
+        = mixin('demo-block', this.path + '.slm', this.layout, this.grid);
+    div class="html-tag my-8 col-la-desk-6 col-desk-6 col-tab-12 col-mob-4 py-4"
+      = mixin('demo-specs', this.path + '.md');
+    div class="py-4 overflow-hidden col-la-desk-12 col-desk-12 col-tab-12 col-mob-4 mb-10"
+      - if (this.code === 'true')
+        = mixin('markup-block', this.path + '.slm', this.layout, this.grid);

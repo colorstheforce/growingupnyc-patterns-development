@@ -8,6 +8,6 @@
       = this.title
     div class="html-tag my-8 col-la-desk-12 col-desk-12 col-tab-12 col-mob-4"
       = mixin('demo-specs', this.path + '.md');
-    div class="my-8 py-4 overflow-hidden"  
+    div class="my-8 py-4 overflow-hidden col-la-desk-12"  
       - if (this.code === 'true')
         = mixin('demo-block', this.path + '.slm', this.layout, this.grid);

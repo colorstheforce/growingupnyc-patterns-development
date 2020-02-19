@@ -16,7 +16,7 @@
 / other Elements/Components/Objects, the symbol should be set to false
 / and the instance should be set to the pattern's path.
 div 
-    div class="o-offcanvas js-offcanvas is-open bg-color-black" id="offcanvas-ages"
+    div class="o-offcanvas js-offcanvas bg-color-black" id="offcanvas-ages"
         nav class="o-offcanvas__side js-offcanvas__side"
             button data-toggle="offcanvas-ages" class="o-offcanvas__close button--text is-active"
                 svg class="icon--small" role="img"

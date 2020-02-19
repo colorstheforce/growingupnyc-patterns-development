@@ -16,6 +16,8 @@
 @import 'config/fonts';
 @import 'config/typography';
 @import 'config/layouts';
+// @import 'animate.scss/vendor/assets/stylesheets/animate/fadeInUp';
+
 
 $z-index-header: map-get(map-get($variables, 'z-index'), 'z-index-header');
 $height-banner-large: map-get(map-get($variables, 'heights'), 'height-banner-large');

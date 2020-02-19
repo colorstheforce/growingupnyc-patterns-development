@@ -2,23 +2,27 @@
 // Utilities
 
 // Elements
- 
+
 // Components
 
 
 // Objects
 import Navigation from '../objects/navigation/Navigation';
 import Accordion from '../objects/accordion/Accordion';
-// import Overlay from '../objects/overlay/Overlay';
+import Overlay from '../objects/overlay/Overlay';
 import Icons from '../../node_modules/@nycopportunity/patterns-framework/src/utilities/icons/icons';
-import Toggle from '../utilities/toggle/Toggle';
+// import Toggle from '../utilities/toggle/Toggle';
 // import Sticky from '../utilities/sticky/Sticky';
 import AlertBanner from '../objects/alert-banner/AlertBanner';
 import Animations from '../utilities/animations/Animations';
 import Form from '../components/form/Form';
 import StaticColumn from '../objects/static-column/staticColumn'
 import Scroll from '../components/side-navigation/Scroll'
-import StickyVanilla from '../utilities/sticky/StickyVanilla'
+import Sticky from '../utilities/sticky/Sticky'
+import Offcanvas from '../utilities/offcanvas/Offcanvas'
+import OffcanvasToggle from '../utilities/offcanvas/OffcanvasToggle'
+import AnotherJs from '../utilities/offcanvas/AnotherJs'
+// import ShareForm from '../components/tip/ShareForm'
 
 /** import components here as they are written. */
 
@@ -30,14 +34,18 @@ class main {
   navigation(settings = false) {
     return (settings) ? new Navigation(settings) : new Navigation();
   }
-
-  // overlay() {
-  //   return new Overlay();
-  // }
-
-  toggle() {
-    return new Toggle();
+	
+	offCanvas(settings = false) {
+    return (settings) ? new Offcanvas(settings) : new Offcanvas();
   }
+	
+  overlay() {
+    return new Overlay();
+  }
+
+  // toggle() {
+  //   return new Toggle();
+  // }
 
   icons(path) {
     return new Icons(path);
@@ -46,26 +54,34 @@ class main {
   accordion() {
     return new Accordion();
   }
-  
-  // sticky() {
-  //   Sticky();
+
+	// offCanvas() {
+  //   return new Offcanvas();
   // }
+
+	anotherJs() {
+    return new AnotherJs();
+  }
 
   alertBanner(expirationDays) {
     return new AlertBanner(expirationDays);
   }
-  
+
 	staticColumn() {
     return new StaticColumn();
   }
 
-	stickyVanilla() {
-    return new StickyVanilla();
+	sticky() {
+    return new Sticky();
   }
 
 	scroll() {
     return new Scroll();
   }
+
+	// shareFrom() {
+  //   return new ShareForm();
+  // }
 
   animations() {
     return new Animations();

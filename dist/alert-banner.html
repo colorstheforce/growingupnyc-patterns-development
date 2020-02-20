@@ -173,6 +173,17 @@
                         </button>
                       </div>
                     </div>
+                    <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"><pre>&lt;div aria-describedby=&quot;dialog-desc-notification&quot; aria-labelledby=&quot;dialog-title-notification&quot; class=&quot;o-alert-banner hidden&quot; data-alert=&quot;notification&quot; data-js=&quot;alert-banner-notification&quot; id=&quot;banner-notification&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;show-for-screen-reader&quot; id=&quot;dialog-title-notification&quot;&gt;Notification Banner&lt;/div&gt;
+  &lt;div class=&quot;o-alert-banner__content&quot; id=&quot;dialog-desc-notification&quot;&gt;&lt;div class=&quot;o-container&quot;&gt;Alert Content&lt;/div&gt;&lt;/div&gt;
+  &lt;button aria-label=&quot;close&quot; class=&quot;o-alert__button&quot; data-js=&quot;alert-controller&quot; data-toggle=&quot;banner-notification&quot; type=&quot;button&quot;&gt;
+    &lt;svg class=&quot;icon--small&quot; role=&quot;img&quot;&gt;
+      &lt;title&gt;Close&lt;/title&gt;
+      &lt;use xlink:href=&quot;#icon-close&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+</pre></div>
                   </div>
                 </div>
               </div>
@@ -194,8 +205,8 @@
     <script type="text/javascript">
       var gunyc = new GUNYC();
       gunyc.navigation();
-      gunyc.accordion();
       gunyc.icons();
+      gunyc.accordionToggle();
     </script>
     <script type="text/javascript">
       var alertBanner = gunyc.alertBanner(10);

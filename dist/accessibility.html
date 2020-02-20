@@ -166,6 +166,15 @@
                         <a class="show-for-keyboard" href="#main">Skip to main content</a>
                       </div>
                     </div>
+                    <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"><pre>&lt;div class=&quot;p-4&quot;&gt;
+  &lt;p&gt;Content that is visible to users with and without a screen reader&lt;/p&gt;
+  &lt;p class=&quot;show-for-screen-reader&quot;&gt;Content read by screen reader&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;p-4&quot;&gt;
+  &lt;p&gt;Tab to reveal the Skip to main content link&lt;/p&gt;
+  &lt;a class=&quot;show-for-keyboard&quot; href=&quot;#main&quot;&gt;Skip to main content&lt;/a&gt;
+&lt;/div&gt;
+</pre></div>
                   </div>
                 </div>
               </div>
@@ -187,8 +196,8 @@
     <script type="text/javascript">
       var gunyc = new GUNYC();
       gunyc.navigation();
-      gunyc.accordion();
       gunyc.icons();
+      gunyc.accordionToggle();
     </script>
   </body>
 </html>

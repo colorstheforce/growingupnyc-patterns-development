@@ -22,6 +22,7 @@ import Sticky from '../utilities/sticky/Sticky'
 import Offcanvas from '../utilities/offcanvas/Offcanvas'
 import OffcanvasToggle from '../utilities/offcanvas/OffcanvasToggle'
 import AnotherJs from '../utilities/offcanvas/AnotherJs'
+import AccordionToggle from '../objects/accordion/AccordionToggle'
 // import ShareForm from '../components/tip/ShareForm'
 
 /** import components here as they are written. */
@@ -38,14 +39,14 @@ class main {
 	offCanvas(settings = false) {
     return (settings) ? new Offcanvas(settings) : new Offcanvas();
   }
-	
+
   overlay() {
     return new Overlay();
   }
 
-  // toggle() {
-  //   return new Toggle();
-  // }
+  accordionToggle() {
+    return new AccordionToggle();
+  }
 
   icons(path) {
     return new Icons(path);

@@ -165,6 +165,14 @@
                       </a>
                       <div aria-hidden="true" class="o-overlay hidden p-4" id="search"><p>Overlay content.</p></div>
                     </div>
+                    <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"><pre>&lt;a data-js=&quot;toggle-search&quot; href=&quot;#search&quot; onclick=&quot;return false;&quot;&gt;
+  &lt;svg class=&quot;icon--small&quot; role=&quot;img&quot;&gt;
+    &lt;title&gt;Search&lt;/title&gt;
+    &lt;use xlink:href=&quot;#icon-search&quot;&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+&lt;/a&gt;
+&lt;div aria-hidden=&quot;true&quot; class=&quot;o-overlay hidden p-4&quot; id=&quot;search&quot;&gt;&lt;p&gt;Overlay content.&lt;/p&gt;&lt;/div&gt;
+</pre></div>
                   </div>
                 </div>
               </div>
@@ -186,8 +194,8 @@
     <script type="text/javascript">
       var gunyc = new GUNYC();
       gunyc.navigation();
-      gunyc.accordion();
       gunyc.icons();
+      gunyc.accordionToggle();
     </script>
   </body>
 </html>

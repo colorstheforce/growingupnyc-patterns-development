@@ -142,3 +142,50 @@ input[type="search"].form-field {
 //     }
 //   }
 // }
+
+
+
+
+// .signup-form__input--mid {
+//   width: 100%;
+//   @include media($bp-medium) {
+//     width: 60%;
+//   }
+// }
+
+// // Signup Form Field
+// //
+// // .is-error - Error state
+// //
+// // Text input field
+// .signup-form__field {
+//   border: 2px solid transparent;
+//   width: 100%;
+
+//   &:focus {
+//     border-color: $dark-gray;
+//     outline: none;
+//   }
+
+//   &.is-error {
+//     border-color: $color-error;
+//   }
+// }
+
+// .signup-form__field-blue {
+//   @extend .signup-form__field;
+//   border: 2px solid $bright-blue;
+// }
+
+// .signup-form__field-purple {
+//   @extend .signup-form__field;
+//   border: 2px solid $purple;
+// }
+
+// // Signup Form Label
+// .signup-form__label {
+//   overflow: hidden;
+//   padding: 0 rem-calc(15);
+//   position: absolute;
+//   width: 100%;
+// }

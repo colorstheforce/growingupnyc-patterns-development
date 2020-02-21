@@ -49,14 +49,14 @@ $grid-desktop-breakpoint: 700px;
 
 // tablet grid
 $grid-tablet-columns: 12;
-$grid-tablet-sideMargin: 10px;
+$grid-tablet-sideMargin: 100px;
 $grid-tablet-gutter: 10px;
 $grid-tablet-breakpoint: 375px;
 
 // mobile grid
 $grid-mobile-columns: 4;
-$grid-mobile-sideMargin: 40px;
-$grid-mobile-gutter: 10px;
+$grid-mobile-sideMargin: 100px;
+$grid-mobile-gutter: 20px;
 $grid-mobile-breakpoint: 375px;
 
 

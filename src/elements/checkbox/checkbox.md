@@ -1,0 +1,1 @@
+Checkbox element used together with subscribe form at the footer.

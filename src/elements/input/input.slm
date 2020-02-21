@@ -7,3 +7,4 @@ div class="input"
       = 'Email'
       
   input type="email" value="" name="EMAIL" class="input border-color-gray" id="mce-EMAIL"
+  

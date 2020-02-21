@@ -2,4 +2,16 @@
 
 - title = 'Checkbox'
 
+/ Partials
+= partial('partials/head.mixin.slm');
+= partial('partials/content-header.mixin.slm');
+= partial('partials/section-2-col-checkbox.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
 = content('main')
+  = mixin('content-header', title);
+  = mixin('section-2-col-checkbox', 'Checkbox', 'elements/checkbox/checkbox');

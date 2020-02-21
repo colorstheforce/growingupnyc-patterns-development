@@ -1,5 +1,5 @@
 /
-/ Checkbox
+/ Select
 / The Sketch attributes expose the markup to HTML Sketch App and should
 / be included by default. They should only be set before the include
 / statement of this partial. There should only be one Symbol definition
@@ -16,9 +16,4 @@
 / other Elements/Components/Objects, the symbol should be set to false
 / and the instance should be set to the pattern's path.
 
-
-label class="checkbox" for="mce-group[3429]-3429-0" 
-  input class="checkbox__field" id="mce-group[3429]-3429-0" name="group[3429][1]" required="" type="checkbox" value="1"
-  svg class="checkbox__indicator"
-    use xlink:href="#icon-check" 
-  = "Baby"
+div class="select" data-sketch-symbol=symbol data-sketch-symbol-instance=instance

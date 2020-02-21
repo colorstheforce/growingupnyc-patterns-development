@@ -16,3 +16,4 @@
   = mixin('content-header', title);
   = mixin('section', 'Input', 'elements/input/input');
   = mixin('section', 'Input Search', 'elements/input/input-search');
+  = mixin('section', 'Input Share', 'elements/input/input-share');

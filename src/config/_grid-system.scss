@@ -1,31 +1,31 @@
 // // FLEXBOX CSS GRID
 // // by Laptev Pavel
 
-// VARiABLES
-@import 'config/variables';
+// tokens
+@import 'config/tokens';
 
-// $grid-large-desktop-columns: {map-get(map-get($variables, 'large-desktop-grid'), 'columns')};
-// $grid-large-desktop-sideMargin: {map-get(map-get($variables, 'large-desktop-grid'), 'sideMargin')};
-// $grid-large-desktop-gutter: {map-get(map-get($variables, 'large-desktop-grid'), 'gutter')};
-// $grid-large-desktop-breakpoint: {map-get(map-get($variables, 'large-desktop-grid'), 'breakpoint')};
-
-
-// $grid-desktop-columns: {map-get(map-get($variables, 'desktop-grid'), 'columns')};
-// $grid-desktop-sideMargin: {map-get(map-get($variables, 'desktop-grid'), 'sideMargin')};
-// $grid-desktop-gutter: {map-get(map-get($variables, 'desktop-grid'), 'gutter')};
-// $grid-desktop-breakpoint: {map-get(map-get($variables, 'desktop-grid'), 'breakpoint')};
+// $grid-large-desktop-columns: {map-get(map-get($tokens, 'large-desktop-grid'), 'columns')};
+// $grid-large-desktop-sideMargin: {map-get(map-get($tokens, 'large-desktop-grid'), 'sideMargin')};
+// $grid-large-desktop-gutter: {map-get(map-get($tokens, 'large-desktop-grid'), 'gutter')};
+// $grid-large-desktop-breakpoint: {map-get(map-get($tokens, 'large-desktop-grid'), 'breakpoint')};
 
 
-// $grid-tablet-columns: {map-get(map-get($variables, 'tablet-grid'), 'columns')};
-// $grid-tablet-sideMargin: {map-get(map-get($variables, 'tablet-grid'), 'sideMargin')};
-// $grid-tablet-gutter: {map-get(map-get($variables, 'tablet-grid'), 'gutter')};
-// $grid-tablet-breakpoint: {map-get(map-get($variables, 'tablet-grid'), 'breakpoint')};
+// $grid-desktop-columns: {map-get(map-get($tokens, 'desktop-grid'), 'columns')};
+// $grid-desktop-sideMargin: {map-get(map-get($tokens, 'desktop-grid'), 'sideMargin')};
+// $grid-desktop-gutter: {map-get(map-get($tokens, 'desktop-grid'), 'gutter')};
+// $grid-desktop-breakpoint: {map-get(map-get($tokens, 'desktop-grid'), 'breakpoint')};
 
 
-// $grid-mobile-columns: {map-get(map-get($variables, 'mobile-grid'), 'columns')};
-// $grid-mobile-sideMargin: {map-get(map-get($variables, 'mobile-grid'), 'sideMargin')};
-// $grid-mobile-gutter: {map-get(map-get($variables, 'mobile-grid'), 'gutter')};
-// $grid-mobile-breakpoint: {map-get(map-get($variables, 'mobile-grid'), 'breakpoint')};
+// $grid-tablet-columns: {map-get(map-get($tokens, 'tablet-grid'), 'columns')};
+// $grid-tablet-sideMargin: {map-get(map-get($tokens, 'tablet-grid'), 'sideMargin')};
+// $grid-tablet-gutter: {map-get(map-get($tokens, 'tablet-grid'), 'gutter')};
+// $grid-tablet-breakpoint: {map-get(map-get($tokens, 'tablet-grid'), 'breakpoint')};
+
+
+// $grid-mobile-columns: {map-get(map-get($tokens, 'mobile-grid'), 'columns')};
+// $grid-mobile-sideMargin: {map-get(map-get($tokens, 'mobile-grid'), 'sideMargin')};
+// $grid-mobile-gutter: {map-get(map-get($tokens, 'mobile-grid'), 'gutter')};
+// $grid-mobile-breakpoint: {map-get(map-get($tokens, 'mobile-grid'), 'breakpoint')};
 
 
 
@@ -33,7 +33,7 @@
 // FLEXBOX CSS GRID
 // by Laptev Pavel
 
-// VARiABLES
+// tokens
 
 // large desktop grid
 $grid-large-desktop-columns: 12;
@@ -61,7 +61,7 @@ $grid-mobile-breakpoint: 375px;
 
 
 
-// pixels to % variables
+// pixels to % tokens
 // $mob-grid-width: 100% -
 //   (($grid-mobile-sideMargin * 2 / $grid-mobile-breakpoint) * 100%);
 $mob-grid-width: 100% -
@@ -183,7 +183,7 @@ $large-desktop-gutter: (
 
 
 
-// // pixels to % variables
+// // pixels to % tokens
 // $mob-grid-width: 100% -
 // 	calc(($grid-mobile-sideMargin * 2 / $grid-mobile-breakpoint) * 100%);
 

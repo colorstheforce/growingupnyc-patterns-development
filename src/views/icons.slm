@@ -14,4 +14,4 @@
 = content('main')
   = mixin('content-header', title);
   div
-    = mixin('section', 'Icons', 'elements/icons/icons', 'gutter', this.variables['icons']);
+    = mixin('section', 'Icons', 'elements/icons/icons', 'gutter', this.tokens['icons']);

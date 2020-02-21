@@ -10,7 +10,7 @@
 // pattern specific SASS configuration in the /src/config directory, or
 // add configuration to the /config/variables.js object (which is
 // to SASS during the compilation process).
-@import 'config/variables';
+@import 'config/tokens';
 @import 'config/fonts';
 @import 'config/stickers';
 @import 'scss/functions/font-size';

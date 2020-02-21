@@ -25,3 +25,7 @@ html lang='en'
 
 
     = content('script');
+
+    / The reload script. This is reserved for development only.
+    - if this.env.NODE_ENV === 'development'
+      script src='/reload/reload.js'

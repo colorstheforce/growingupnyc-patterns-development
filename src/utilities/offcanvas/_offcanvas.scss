@@ -3,21 +3,21 @@
  */
 
 // Dependencies
-// This is where variables, mixins, or functions are imported that the
+// This is where tokens, mixins, or functions are imported that the
 // pattern depends on. It's helpful to import dependencies into each
 // pattern so that they can be exported individually and it's clear
-// where the pattern is getting variables from. You can create a
+// where the pattern is getting tokens from. You can create a
 // pattern specific SASS configuration in the /src/config directory, or
-// add configuration to the /config/variables.js object (which is
+// add configuration to the /config/tokens.js object (which is
 // to SASS during the compilation process).
-@import 'config/variables';
+@import 'config/tokens';
 @import 'config/colors';
 
-$z-index-offcanvas-side: map-get(map-get($variables, 'z-index'), 'z-index-offcanvas-side');
-$z-index-offcanvas-main: map-get(map-get($variables, 'z-index'), 'z-index-offcanvas-main');
-$z-index-offcanvas-overlay: map-get(map-get($variables, 'z-index'), 'z-index-offcanvas-overlay');
-$width-offcanvas-side: map-get(map-get($variables, 'widths'), 'width-offcanvas-side');
-$width-offcanvas-side-large: map-get(map-get($variables, 'widths'), 'width-offcanvas-side-large');
+$z-index-offcanvas-side: map-get(map-get($tokens, 'z-index'), 'z-index-offcanvas-side');
+$z-index-offcanvas-main: map-get(map-get($tokens, 'z-index'), 'z-index-offcanvas-main');
+$z-index-offcanvas-overlay: map-get(map-get($tokens, 'z-index'), 'z-index-offcanvas-overlay');
+$width-offcanvas-side: map-get(map-get($tokens, 'widths'), 'width-offcanvas-side');
+$width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanvas-side-large');
 
 
 // Declarations

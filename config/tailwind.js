@@ -16,6 +16,7 @@ module.exports = {
     textColor: variables.colors,
     backgroundColor: variables.colors,
     borderColor: variables.colors,
-    fontFamily: variables.fonts
+		fontFamily: variables.fonts,
+		screens: variables.screens
   }
 };

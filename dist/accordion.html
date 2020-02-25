@@ -147,14 +147,15 @@
           </div>
         </header>
         <a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
-        <main class="pt-32">
+        <main class="pt-12 mobile:pt-20 tablet:pt-32">
           <div>
             <header></header>
-            <div>
-              <div class="grid">
-                <h1 class="type-h1 col-la-desk-12 col-desk-12 col-tab-12 col-mob-4"></h1>
-                <div class="html-tag my-8 col-la-desk-12 col-desk-12 col-tab-12 col-mob-4"><div></div></div>
-                <div class="my-8 py-4 overflow-hidden col-la-desk-12">
+            <div class="xdesk:w-8/12 desk:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
+              <div class="flex flex-wrap xdesk:mb-20 desk:mb-10 w-full"><h1 class="type-h1 w-full ">Accordion</h1></div>
+              <div class="flex desk:flex-row-reverse xdesk:flex-row-reverse desk:mb-10 flex-wrap xdesk:-mx-2 desk:-mx-2">
+                <div class="html-tag mt-8 mb-2 desk:px-2 xdesk:w-3/6 xdesk:px-2 desk:w-2/4 w-full"><div><p>The accordion is used to toggle the age range buttons withnin an age group. It is currently being used at the front page.</p>
+</div></div>
+                <div class="mt-8 mb-2 py-4  overflow-hidden xdesk:w-3/6 xdesk:px-2 xdesk:py-0 desk:w-2/4 desk:px-2 desk:py-0 w-full ">
                   <div>
                     <div>
                       <ol class="js-accordion c-list-box c-list-box--primary" data-multiselectable="true">
@@ -185,6 +186,12 @@
                         </li>
                       </ol>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-wrap">
+                <div class="py-4 overflow-hidden w-full mb-10">
+                  <div>
                     <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"><pre>&lt;ol class=&quot;js-accordion c-list-box c-list-box--primary&quot; data-multiselectable=&quot;true&quot;&gt;
   &lt;li class=&quot;c-list-box__item&quot;&gt;
     &lt;h3 aria-controls=&quot;toggle-target-baby&quot; aria-expanded=&quot;true&quot; class=&quot;js-accordion__header c-list-box__heading bg-color-pink active&quot; data-js=&quot;toggle&quot; id=&quot;ages-heading-baby&quot; tabindex=&quot;0&quot;&gt;

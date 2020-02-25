@@ -5,7 +5,7 @@
 / Partials
 = partial('partials/head.mixin.slm');
 = partial('partials/content-header.mixin.slm');
-= partial('partials/section.mixin.slm');
+= partial('partials/section-2-col.mixin.slm');
 
 
 / Content blocks
@@ -14,6 +14,5 @@
 
 = content('main')
   = mixin('content-header', title);
-  div
-    = mixin('section', false, 'objects/accordion/accordion');
+  = mixin('section-2-col', 'Accordion', 'objects/accordion/accordion');
 

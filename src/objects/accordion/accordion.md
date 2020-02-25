@@ -1,0 +1,1 @@
+The accordion is used to toggle the age range buttons withnin an age group. It is currently being used at the front page. 

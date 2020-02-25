@@ -147,30 +147,33 @@
           </div>
         </header>
         <a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
-        <main class="pt-32">
+        <main class="pt-12 mobile:pt-20 tablet:pt-32">
           <div>
             <header></header>
-            <div class="grid">
-              <h1 class="type-h1 col-la-desk-12 col-desk-12 col-tab-12 col-mob-4">Details List</h1>
-              <div class="my-8 py-4 overflow-hidden col-la-desk-6 col-desk-6 col-tab-12 col-mob-4">
-                <div>
+            <div class="xdesk:w-8/12 desk:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
+              <div class="flex flex-wrap xdesk:mb-20 desk:mb-10 w-full"><h1 class="type-h1 w-full ">Details List</h1></div>
+              <div class="flex desk:flex-row-reverse xdesk:flex-row-reverse desk:mb-10 flex-wrap xdesk:-mx-2 desk:-mx-2">
+                <div class="html-tag mt-8 mb-2 desk:px-2 xdesk:w-3/6 xdesk:px-2 desk:w-2/4 w-full"><div><p>The details list component is used to list detailed information about an event. The component contains information regarding Date, Time, Location, Cost and Link to additional information. The component is currently being used at the Growing Up NYC single event page.</p>
+</div></div>
+                <div class="mt-8 mb-2 py-4  overflow-hidden xdesk:w-3/6 xdesk:px-2 xdesk:py-0 desk:w-2/4 desk:px-2 desk:py-0 w-full ">
                   <div>
-                    <dl class="c-details-list">
-                      <dt class="c-details-list__term">Term</dt>
-                      <dd class="c-details-list__descr">Description</dd>
-                      <dt class="c-details-list__term">Term</dt>
-                      <dd class="c-details-list__descr">Description</dd>
-                      <dt class="c-details-list__term">Term</dt>
-                      <dd class="c-details-list__descr">Description</dd>
-                    </dl>
+                    <div>
+                      <dl class="c-details-list">
+                        <dt class="c-details-list__term">Term</dt>
+                        <dd class="c-details-list__descr">Description</dd>
+                        <dt class="c-details-list__term">Term</dt>
+                        <dd class="c-details-list__descr">Description</dd>
+                        <dt class="c-details-list__term">Term</dt>
+                        <dd class="c-details-list__descr">Description</dd>
+                      </dl>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="html-tag my-8 py-4 col-la-desk-6 col-desk-6 col-tab-12 col-mob-4"><div><p>The details list component is used to list detailed information about an event. The component contains information regarding Date, Time, Location, Cost and Link to additional information. The component is currently being used at the Growing Up NYC single event page.</p>
-</div></div>
-              <div class="py-4 overflow-hidden col-la-desk-12 col-desk-12 col-tab-12 col-mob-4 mb-10">
-                <div>
-                  <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"><pre>&lt;dl class=&quot;c-details-list&quot;&gt;
+              <div class="flex flex-wrap">
+                <div class="py-4 overflow-hidden w-full mb-10">
+                  <div>
+                    <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"><pre>&lt;dl class=&quot;c-details-list&quot;&gt;
   &lt;dt class=&quot;c-details-list__term&quot;&gt;Term&lt;/dt&gt;
   &lt;dd class=&quot;c-details-list__descr&quot;&gt;Description&lt;/dd&gt;
   &lt;dt class=&quot;c-details-list__term&quot;&gt;Term&lt;/dt&gt;
@@ -179,6 +182,7 @@
   &lt;dd class=&quot;c-details-list__descr&quot;&gt;Description&lt;/dd&gt;
 &lt;/dl&gt;
 </pre></div>
+                  </div>
                 </div>
               </div>
             </div>

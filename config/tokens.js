@@ -173,10 +173,10 @@ const tokens = {
     'animate-timing-function': 'cubic-bezier(0.23, 1, 0.32, 1)'
   },
   'screens': {
-    'screen-mobile': '375', //screen-small
-    'screen-tablet': '700', //screen-medium
-    'screen-desktop': '1024', //screen-large
-    'screen-desktop-large': '1200', //screen-xlarge
+    'mobile': '375px', //screen-small
+    'tablet': '700px', //screen-medium
+    'desk': '1024px', //screen-large
+    'xdesk': '1200px'
   },
   'padding': {
     'column': '70px',
@@ -207,30 +207,6 @@ const tokens = {
   'animations': {
     'speed': '.75s',
     'timing': 'cubic-bezier(.23, 1, .32, 1)'
-  },
-  'large-desktop-grid': {
-    'columns': 12,
-    'sideMargin': '50px',
-    'gutter': '40px',
-    'breakpoint': '1040px'
-  },
-  'desktop-grid': {
-    'columns': 12,
-    'sideMargin': '1px',
-    'gutter': '30px',
-    'breakpoint': '700px'
-  },
-  'tablet-grid': {
-    'columns': 12,
-    'sideMargin': '40px',
-    'gutter': '30px',
-    'breakpoint': '375px'
-  },
-  'mobile-grid': {
-    'columns': 6,
-    'sideMargin': '20px',
-    'gutter': '20px',
-    'breakpoint': '375px'
   },
   'icons': [
     'icon-afterschool-guides',

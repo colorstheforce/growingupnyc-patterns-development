@@ -14,5 +14,5 @@
 
 = content('main')
   = mixin('content-header', title);
-  = mixin('section', 'Color', 'utilities/color/color', 'gutter', this.variables['colors'], false);
+  = mixin('section', 'Color', 'utilities/color/color', 'gutter', this.tokens['colors'], false);
   = mixin('section', 'Color Milestones', 'utilities/color/color--milestones', false);

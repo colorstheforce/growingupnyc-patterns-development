@@ -5,9 +5,26 @@
 const package = require('../package.json');
 const version = process.env.V || package.version;
 
-const variables = {
-  'version': `"${version}"`,
-  'cdn': `"https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns@v${version}/dist/"`,
+const tokens = {
+  /**
+   * Possiple opts (and their defaults) to pass to json-to-scss
+   * @param  {Source}  url  https://github.com/rlapoele/json-to-scss
+   */
+  opts: {
+    output: '"./src/config/_tokens.scss"',
+    // prefix: '$tokens:',
+    // suffix: ';',
+    // format: '.scss',
+    // indentationText: '  ',
+    // indentationSize: 1,
+    // emptyString: '""',
+    // noUnderscore: true,
+    // mergeSourceFiles: false,
+    // mergeSassObjects: false,
+    // keys: 'auto',
+    // values: 'auto'
+    // stringKeys: 'family,font-family,fontfamily,font-stack,fontstack,font-face,fontface'
+  },
   'fonts': {
     'system': [
       '-apple-system',
@@ -70,13 +87,13 @@ const variables = {
     'color-pink-dark': '#7f1c4e',
     'color-green': '#21ad0e',
     'color-green-dark': '#1d5d11',
-		'color-green-light': '#7fe62d',
-		'color-light-green': '#02A586',
+    'color-green-light': '#7fe62d',
+    'color-light-green': '#02A586',
     'color-light-green-dark': '#015948',
-		'color-light-green-light': '#42D1B5',
+    'color-light-green-light': '#42D1B5',
     'color-orange-light': '#ffb900',
     'color-orange': '#ff6100',
-		'color-orange-dark': '#bc3b09',
+    'color-orange-dark': '#bc3b09',
     'color-purple': '#7735b2',
     'color-purple-dark': '#3c036f',
     'color-shadow': 'rgba(0, 0, 0, .2)',
@@ -100,17 +117,17 @@ const variables = {
   'colors-toddler': {
     'primary': 'color-orange',
     'secondary': 'color-orange-dark',
-		'tertiary': 'color-orange-light',
+    'tertiary': 'color-orange-light',
   },
   'colors-pre-schooler': {
     'primary': 'color-green',
     'secondary': 'color-green-dark',
-		'tertiary': 'color-green-light',
+    'tertiary': 'color-green-light',
   },
   'colors-grade-schooler': {
     'primary': 'color-light-green',
     'secondary': 'color-light-green-dark',
-		'tertiary': 'color-light-green-light',
+    'tertiary': 'color-light-green-light',
   },
   'colors-pre-teen': {
     'primary': 'color-blue',
@@ -148,8 +165,8 @@ const variables = {
     'outer-gutter-medium': '30',
     'outer-gutter-large': '40',
     'horizontal-gutter': '20px'
-	},
-	'animate': {
+  },
+  'animate': {
     'ease-in-quint': 'cubic-bezier(0.755, 0.05, 0.855, 0.06)',
     'ease-out-quint': 'cubic-bezier(0.23, 1, 0.32, 1)',
     'animate-scss-speed': '0.75s',
@@ -172,7 +189,7 @@ const variables = {
     'outer-gutter-medium': '30',
     'outer-gutter-large': '40',
     'horizontal-gutter': '20px'
-  } ,
+  },
   'heights': {
     'height-banner': '50',
     'height-banner-large': '60',
@@ -191,28 +208,28 @@ const variables = {
     'speed': '.75s',
     'timing': 'cubic-bezier(.23, 1, .32, 1)'
   },
-	'large-desktop-grid': {
+  'large-desktop-grid': {
     'columns': 12,
     'sideMargin': '50px',
-		'gutter': '40px',
+    'gutter': '40px',
     'breakpoint': '1040px'
   },
-	'desktop-grid': {
+  'desktop-grid': {
     'columns': 12,
     'sideMargin': '1px',
-		'gutter': '30px',
+    'gutter': '30px',
     'breakpoint': '700px'
   },
-	'tablet-grid': {
+  'tablet-grid': {
     'columns': 12,
     'sideMargin': '40px',
-		'gutter': '30px',
+    'gutter': '30px',
     'breakpoint': '375px'
   },
-	'mobile-grid': {
+  'mobile-grid': {
     'columns': 6,
     'sideMargin': '20px',
-		'gutter': '20px',
+    'gutter': '20px',
     'breakpoint': '375px'
   },
   'icons': [
@@ -251,7 +268,9 @@ const variables = {
     'icon-topic',
     'icon-work',
     'icon-young-adult'
-  ]
+  ],
+  version: `"${version}"`,
+  cdn: `"https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns@v${version}/dist/"`
 };
 
-module.exports = variables;
+module.exports = tokens;

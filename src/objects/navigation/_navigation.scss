@@ -3,14 +3,14 @@
  */
 
 // Dependencies
-// This is where variables, mixins, or functions are imported that the
+// This is where tokens, mixins, or functions are imported that the
 // pattern depends on. It's helpful to import dependencies into each
 // pattern so that they can be exported individually and it's clear
-// where the pattern is getting variables from. You can create a
+// where the pattern is getting tokens from. You can create a
 // pattern specific SASS configuration in the /src/config directory, or
-// add configuration to the /config/variables.js object (which is
+// add configuration to the /config/tokens.js object (which is
 // to SASS during the compilation process).
-@import 'config/variables';
+@import 'config/tokens';
 @import 'config/media';
 @import 'config/colors';
 @import 'config/fonts';
@@ -19,12 +19,12 @@
 // @import 'animate.scss/vendor/assets/stylesheets/animate/fadeInUp';
 
 
-$z-index-header: map-get(map-get($variables, 'z-index'), 'z-index-header');
-$height-banner-large: map-get(map-get($variables, 'heights'), 'height-banner-large');
+$z-index-header: map-get(map-get($tokens, 'z-index'), 'z-index-header');
+$height-banner-large: map-get(map-get($tokens, 'heights'), 'height-banner-large');
 
-$height-banner-logo: map-get(map-get($variables, 'heights'), 'height-banner-logo');
+$height-banner-logo: map-get(map-get($tokens, 'heights'), 'height-banner-logo');
 
-$width-banner-logo: map-get(map-get($variables, 'widths'), 'width-banner-logo');
+$width-banner-logo: map-get(map-get($tokens, 'widths'), 'width-banner-logo');
 
 $height-banner-logo-small: $height-banner-logo * 1.66666;
 $height-banner-logo-large: $height-banner-logo * 2.4;

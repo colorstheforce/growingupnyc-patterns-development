@@ -41,12 +41,12 @@
 // manage dependencies (recommended). Dependency examples include Bootstrap,
 // Material Components Web, etc.
 
-@import 'config/variables';
+@import 'config/tokens';
 
 
 $neat-grid: (
-  columns: map-get(map-get($variables, 'dimensions'), 'grid-columns'),
-  gutter: map-get(map-get($variables, 'dimensions'), 'gutter'),
+  columns: map-get(map-get($tokens, 'dimensions'), 'grid-columns'),
+  gutter: map-get(map-get($tokens, 'dimensions'), 'gutter'),
 );
 
 @import 'bourbon';

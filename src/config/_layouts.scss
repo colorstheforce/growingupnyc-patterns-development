@@ -1,5 +1,5 @@
 //
-// Variables
+// tokens
 //
 
 // Dependencies
@@ -7,10 +7,10 @@
 
 // Declarations
 
-$outer-gutter: map-get(map-get($variables, 'dimensions'), 'outer-gutter');
-$outer-gutter-small: map-get(map-get($variables, 'dimensions'), 'outer-gutter-small');
-$outer-gutter-large: map-get(map-get($variables, 'dimensions'), 'outer-gutter-large');
-$horizontal-gutter: map-get(map-get($variables, 'dimensions'), 'horizontal-gutter');
+$outer-gutter: map-get(map-get($tokens, 'dimensions'), 'outer-gutter');
+$outer-gutter-small: map-get(map-get($tokens, 'dimensions'), 'outer-gutter-small');
+$outer-gutter-large: map-get(map-get($tokens, 'dimensions'), 'outer-gutter-large');
+$horizontal-gutter: map-get(map-get($tokens, 'dimensions'), 'horizontal-gutter');
 
 
 @mixin layout-inner-left-edge {

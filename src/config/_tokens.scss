@@ -1,6 +1,7 @@
-$variables:(
-  version: "0.0.1-alpha",
-  cdn: "https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns@v0.0.1-alpha/dist/",
+$tokens:(
+  opts: (
+    output: "./src/config/_tokens.scss"
+  ),
   fonts: (
     system: (-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif),
     text-sans: ("Open Sans", sans-serif),
@@ -189,5 +190,7 @@ $variables:(
     gutter: 20px,
     breakpoint: 375px
   ),
-  icons: (icon-afterschool-guides, icon-arrow-right, icon-baby, icon-book, icon-caret-down, icon-caret-left, icon-caret-right, icon-cash-expenses, icon-check, icon-check-outlined, icon-child-care, icon-city-id-card, icon-clock-o, icon-close, icon-education, icon-enrichment, icon-envelope-o, icon-family-services, icon-food, icon-grade-schooler, icon-health-care, icon-housing, icon-lightbulb, icon-map-marker, icon-nyc-logo, icon-people-with-disabilities, icon-pre-schooler, icon-pre-teen, icon-search, icon-summer-guides, icon-teen, icon-toddler, icon-topic, icon-work, icon-young-adult)
+  icons: (icon-afterschool-guides, icon-arrow-right, icon-baby, icon-book, icon-caret-down, icon-caret-left, icon-caret-right, icon-cash-expenses, icon-check, icon-check-outlined, icon-child-care, icon-city-id-card, icon-clock-o, icon-close, icon-education, icon-enrichment, icon-envelope-o, icon-family-services, icon-food, icon-grade-schooler, icon-health-care, icon-housing, icon-lightbulb, icon-map-marker, icon-nyc-logo, icon-people-with-disabilities, icon-pre-schooler, icon-pre-teen, icon-search, icon-summer-guides, icon-teen, icon-toddler, icon-topic, icon-work, icon-young-adult),
+  version: "0.0.1-alpha",
+  cdn: "https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns@v0.0.1-alpha/dist/"
 );

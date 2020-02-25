@@ -1,15 +1,15 @@
 //
-// Variables
+// tokens
 //
 
 // Dependencies
-@import 'config/variables';
+@import 'config/tokens';
 
 // Declarations
 
-$fonts: map-get($variables, 'fonts');
-$font-sizes: map-get($variables, 'font-sizes');
-$font-weights: map-get($variables, 'font-weights');
+$fonts: map-get($tokens, 'fonts');
+$font-sizes: map-get($tokens, 'font-sizes');
+$font-weights: map-get($tokens, 'font-weights');
 $font-size-ratio: map-get($font-sizes, 'font-size-ratio');
 
 $font-size-xx-small: map-get($font-sizes, 'font-size-xx-small');

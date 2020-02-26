@@ -2,14 +2,6 @@ var Icons = (function () {
   'use strict';
 
   /**
-   * The Utility class
-   * @class
-   */
-  var Utility = function Utility() {
-    return this;
-  };
-
-  /**
    * The Icon module
    * @class
    */
@@ -22,11 +14,13 @@ var Icons = (function () {
           { return response.text(); }
         else
           // eslint-disable-next-line no-console
-          if (Utility.debug()) { console.dir(response); }
+          if (process.env.NODE_ENV !== 'production')
+            { console.dir(response); }
       })
       .catch(function (error) {
         // eslint-disable-next-line no-console
-        if (Utility.debug()) { console.dir(error); }
+        if (process.env.NODE_ENV !== 'production')
+          { console.dir(error); }
       })
       .then(function (data) {
         var sprite = document.createElement('div');

@@ -9,6 +9,20 @@ var Forms = function Forms(form) {
 
   this.FORM = form;
 
+  this.strings = Forms.strings;
+
+  this.submit = Forms.submit;
+
+  this.classes = Forms.classes;
+
+  this.markup = Forms.markup;
+
+  this.selectors = Forms.selectors;
+
+  this.attrs = Forms.attrs;
+
+  this.FORM.setAttribute('novalidate', true);
+
   return this;
 };
 
@@ -50,7 +64,7 @@ Forms.prototype.joinValues = function joinValues (event) {
  */
 Forms.prototype.valid = function valid (event) {
   var validity = event.target.checkValidity();
-  var elements = event.target.querySelectorAll(Forms.selectors.REQUIRED);
+  var elements = event.target.querySelectorAll(this.selectors.REQUIRED);
 
   for (var i = 0; i < elements.length; i++) {
     // Remove old messaging if it exists
@@ -79,7 +93,7 @@ Forms.prototype.watch = function watch (form) {
 
   this.FORM = (form) ? form : this.FORM;
 
-  var elements = this.FORM.querySelectorAll(Forms.selectors.REQUIRED);
+  var elements = this.FORM.querySelectorAll(this.selectors.REQUIRED);
 
   /** Watch Individual Inputs */
   var loop = function ( i ) {
@@ -117,12 +131,21 @@ Forms.prototype.watch = function watch (form) {
  * @return{class}     The form class
  */
 Forms.prototype.reset = function reset (el) {
-  var container = el.parentNode;
-  var message = container.querySelector('.' + Forms.classes.ERROR_MESSAGE);
+  var container = (this.selectors.ERROR_MESSAGE_PARENT)
+    ? el.closest(this.selectors.ERROR_MESSAGE_PARENT) : el.parentNode;
+
+  var message = container.querySelector('.' + this.classes.ERROR_MESSAGE);
 
   // Remove old messaging if it exists
-  container.classList.remove(Forms.classes.ERROR_CONTAINER);
+  container.classList.remove(this.classes.ERROR_CONTAINER);
   if (message) { message.remove(); }
+
+  // Remove error class from the form
+  container.closest('form').classList.remove(this.classes.ERROR_CONTAINER);
+
+  // Remove dynamic attributes from the input
+  el.removeAttribute(this.attrs.ERROR_INPUT[0]);
+  el.removeAttribute(this.attrs.ERROR_LABEL);
 
   return this;
 };
@@ -137,30 +160,39 @@ Forms.prototype.reset = function reset (el) {
  * @return{class}     The form class
  */
 Forms.prototype.highlight = function highlight (el) {
-  var container = el.parentNode;
-  var message = container.querySelector('.' + Forms.classes.ERROR_MESSAGE);
+  var container = (this.selectors.ERROR_MESSAGE_PARENT)
+    ? el.closest(this.selectors.ERROR_MESSAGE_PARENT) : el.parentNode;
 
   // Create the new error message.
-  message = document.createElement(Forms.markup.ERROR_MESSAGE);
+  var message = document.createElement(this.markup.ERROR_MESSAGE);
+  var id = (el.getAttribute('id')) + "-" + (this.classes.ERROR_MESSAGE);
 
   // Get the error message from localized strings (if set).
-  if (el.validity.valueMissing && Forms.strings.VALID_REQUIRED)
-    { message.innerHTML = Forms.strings.VALID_REQUIRED; }
+  if (el.validity.valueMissing && this.strings.VALID_REQUIRED)
+    { message.innerHTML = this.strings.VALID_REQUIRED; }
   else if (!el.validity.valid &&
-    Forms.strings[("VALID_" + (el.type.toUpperCase()) + "_INVALID")]) {
+    this.strings[("VALID_" + (el.type.toUpperCase()) + "_INVALID")]) {
     var stringKey = "VALID_" + (el.type.toUpperCase()) + "_INVALID";
-    message.innerHTML = Forms.strings[stringKey];
+    message.innerHTML = this.strings[stringKey];
   } else
     { message.innerHTML = el.validationMessage; }
 
   // Set aria attributes and css classes to the message
-  message.setAttribute(Forms.attrs.ERROR_MESSAGE[0],
-    Forms.attrs.ERROR_MESSAGE[1]);
-  message.classList.add(Forms.classes.ERROR_MESSAGE);
+  message.setAttribute('id', id);
+  message.setAttribute(this.attrs.ERROR_MESSAGE[0],
+    this.attrs.ERROR_MESSAGE[1]);
+  message.classList.add(this.classes.ERROR_MESSAGE);
 
   // Add the error class and error message to the dom.
-  container.classList.add(Forms.classes.ERROR_CONTAINER);
+  container.classList.add(this.classes.ERROR_CONTAINER);
   container.insertBefore(message, container.childNodes[0]);
+
+  // Add the error class to the form
+  container.closest('form').classList.add(this.classes.ERROR_CONTAINER);
+
+  // Add dynamic attributes to the input
+  el.setAttribute(this.attrs.ERROR_INPUT[0], this.attrs.ERROR_INPUT[1]);
+  el.setAttribute(this.attrs.ERROR_LABEL, id);
 
   return this;
 };
@@ -175,27 +207,31 @@ Forms.prototype.highlight = function highlight (el) {
 Forms.strings = {};
 
 /** Placeholder for the submit function */
-Forms.submit = function () {};
+Forms.submit = function() {};
 
 /** Classes for various containers */
 Forms.classes = {
   'ERROR_MESSAGE': 'error-message', // error class for the validity message
-  'ERROR_CONTAINER': 'error' // class for the validity message parent
+  'ERROR_CONTAINER': 'error', // class for the validity message parent
+  'ERROR_FORM': 'error'
 };
 
 /** HTML tags and markup for various elements */
 Forms.markup = {
-  'ERROR_MESSAGE': 'div'
+  'ERROR_MESSAGE': 'div',
 };
 
 /** DOM Selectors for various elements */
 Forms.selectors = {
-  'REQUIRED': '[required="true"]' // Selector for required input elements
+  'REQUIRED': '[required="true"]', // Selector for required input elements
+  'ERROR_MESSAGE_PARENT': false
 };
 
 /** Attributes for various elements */
 Forms.attrs = {
-  'ERROR_MESSAGE': ['aria-live', 'polite'] // Attribute for valid error message
+  'ERROR_MESSAGE': ['aria-live', 'polite'], // Attribute for valid error message
+  'ERROR_INPUT': ['aria-invalid', 'true'],
+  'ERROR_LABEL': 'aria-describedby'
 };
 
 module.exports = Forms;

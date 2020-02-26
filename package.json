@@ -14,7 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
-    "@nycopportunity/patterns-framework": "git+git@github.com:CityOfNewYork/nyco-patterns-framework.git#update/slm-chokidar",
+    "@nycopportunity/patterns-framework": "git+ssh://git@github.com/CityOfNewYork/nyco-patterns-framework.git#fix/publish",
     "bourbon": "^6.0.0",
     "bourbon-neat": "^4.0.0",
     "imagesready": "^0.2.2",

@@ -2,25 +2,28 @@
 / Footer
 
 footer class="c-footer" 
-  div class="o-container"
-    div class="c-footer__section"
-      div class="c-footer__logos"
-        figure class="c-footer__logo"
+  div class="o-container flex flex-wrap "
+    div class="c-footer__section w-full large:w-1/2 flex-col flex-wrap"
+      div class="c-footer__logos flex flex-wrap"
+        figure class="c-footer__logo w-1/2"
           img alt="Growing Up NYC" src="images/logo-gunyc-white@236px.png" width="118"
-        / figure class="c-footer__logo"
-        /   img alt="Link to NYC Children's Cabinet" src="images/NYC-childrens-cabinet.svg" height="69" width="157"
-    nav role="navigation" class="c-footer__nav" aria-label="Secondary"
-      ul class="c-footer__column"
-        li class="c-footer__nav-item"
-          a class="c-footer__link" href="#"
-            = 'Home'
-        li class="c-footer__nav-item"
-          a class="c-footer__link" href="#"
-            = 'Events'
-      ul class="c-footer__column"
-        li class="c-footer__nav-item"
-          a class="c-footer__link" href="#"
-            = 'Generation NYC'
-        li class="c-footer__nav-item"
-          a class="c-footer__link" href="#"
-            = 'NYC Social Media'
+        figure class="c-footer__logo w-1/2"
+          img alt="Link to NYC Children's Cabinet" src="images/NYC-childrens-cabinet.svg" height="69" width="157"
+      nav role="navigation" class="c-footer__nav flex flex-wrap" aria-label="Secondary"
+        ul class="c-footer__column w-1/2"
+          li class="c-footer__nav-item"
+            a class="c-footer__link" href="#"
+              = 'Home'
+          li class="c-footer__nav-item"
+            a class="c-footer__link" href="#"
+              = 'Events'
+        ul class="c-footer__column w-1/2"
+          li class="c-footer__nav-item"
+            a class="c-footer__link" href="#"
+              = 'Generation NYC'
+          li class="c-footer__nav-item"
+            a class="c-footer__link" href="#"
+              = 'NYC Social Media'
+    div class="c-footer__signup w-full large:mt-0 large:w-1/2 "
+      h2
+        = "Get Updates"

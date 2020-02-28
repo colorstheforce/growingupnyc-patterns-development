@@ -131,10 +131,10 @@ $tokens:(
     animate-timing-function: cubic-bezier(0.23, 1, 0.32, 1)
   ),
   screens: (
-    mobile: 375px,
-    tablet: 700px,
-    desk: 1024px,
-    xdesk: 1200px
+    small: 375px,
+    medium: 700px,
+    large: 1024px,
+    xlarge: 1200px
   ),
   padding: (
     column: 70px,

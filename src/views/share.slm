@@ -1,6 +1,6 @@
 = extend('layouts/default')
 
-- title = 'Alert Banner'
+- title = 'Share'
 
 / Partials
 = partial('partials/head.mixin.slm');
@@ -15,9 +15,9 @@
 = content('main')
   = mixin('content-header', title);
   div
-    = mixin('section', 'Alert Banner', 'objects/alert-banner/alert-banner');
+    = mixin('section', "Share", 'components/share/share');
 
 
-= content('script')
-  javascript:
-    var alertBanner = gunyc.alertBanner(10);
+/ = content('script')
+/   javascript:
+/     var share = gunyc.share();

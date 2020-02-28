@@ -3,8 +3,8 @@
 = partial('demo-block.mixin.slm');
 
 = mixin('section', 'title', 'path', 'layout = columns', 'grid = false', 'specs = true', 'code = true');
-  div class="xdesk:w-8/12 desk:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto"
-    div class="flex flex-wrap xdesk:mb-20 desk:mb-10"
+  div class="xlarge:w-8/12 large:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto"
+    div class="flex flex-wrap xlarge:mb-20 large:mb-10"
       h1 class='type-h1 '
         = this.title
     div class="html-tag my-8"

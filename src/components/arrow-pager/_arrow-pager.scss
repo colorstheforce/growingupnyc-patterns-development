@@ -23,9 +23,9 @@
   text-align: center;
   @include text-uppercase;
 
-  @include grid-media($bp-large) {
-    padding-top: 0;
-  }
+  // @include grid-media($bp-large) {
+  //   padding-top: 0;
+  // }
 }
 
 .c-arrow-pager__arrow {

@@ -21,8 +21,10 @@ import Scroll from '../components/side-navigation/Scroll'
 import Sticky from '../utilities/sticky/Sticky'
 import Offcanvas from '../utilities/offcanvas/Offcanvas'
 import OffcanvasToggle from '../utilities/offcanvas/OffcanvasToggle'
-import AnotherJs from '../utilities/offcanvas/AnotherJs'
+// import AnotherJs from '../utilities/offcanvas/AnotherJs'
 import AccordionToggle from '../objects/accordion/AccordionToggle'
+// import Share from '../components/share/Share'
+
 // import ShareForm from '../components/tip/ShareForm'
 
 /** import components here as they are written. */
@@ -35,7 +37,7 @@ class main {
   navigation(settings = false) {
     return (settings) ? new Navigation(settings) : new Navigation();
   }
-	
+
 	offCanvas(settings = false) {
     return (settings) ? new Offcanvas(settings) : new Offcanvas();
   }
@@ -56,13 +58,17 @@ class main {
     return new Accordion();
   }
 
+	// share() {
+  //   return new Share();
+  // }
+
 	// offCanvas() {
   //   return new Offcanvas();
   // }
 
-	anotherJs() {
-    return new AnotherJs();
-  }
+	// anotherJs() {
+  //   return new AnotherJs();
+  // }
 
   alertBanner(expirationDays) {
     return new AlertBanner(expirationDays);

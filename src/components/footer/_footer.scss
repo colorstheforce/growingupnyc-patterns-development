@@ -34,9 +34,9 @@
 
 // Footer Section
 .c-footer__section {
-  @include grid-media($bp-large) {
-    @include grid-column(6);
-  }
+  // @include grid-media($bp-large) {
+  //   @include grid-column(6);
+  // }
 }
 
 // Footer Logos
@@ -70,19 +70,21 @@
 
 // Individual Footer Logo
 .c-footer__logo {
-  @include grid-column(6);
+  // @include grid-column(6);
 
   + .c-footer__logo {
     // @include omega;
     margin-right: 0;
-  }
-  @include grid-media($bp-medium) {
-    @include grid-column(4 of 12);
+    margin-left: 0;
 
-    // + .c-footer__logo {
-    //   @include shift(2);
-    // }
   }
+  // @include grid-media($bp-medium) {
+  //   @include grid-column(4 of 12);
+
+  //   // + .c-footer__logo {
+  //   //   @include shift(2);
+  //   // }
+  // }
 }
 
 // Footer Logo Image
@@ -93,9 +95,9 @@
   image-rendering: -webkit-optimize-contrast; // Chrome
   image-rendering: optimizequality; // FF
 
-  @include grid-media($bp-medium) {
-    max-height: none;
-  }
+  // @include grid-media($bp-medium) {
+  //   max-height: none;
+  // }
 }
 
 // Footer Navigation
@@ -130,14 +132,14 @@
     clear:both;
   }
 
-  @include grid-media($bp-large) {
-    padding-top: 40px;
-  }
+  // @include grid-media($bp-large) {
+  //   padding-top: 40px;
+  // }
 }
 
 // Footer Navigation Column
 .c-footer__column {
-  @include grid-column(6 of 12);
+  // @include grid-column(6 of 12);
   // @include omega(even);
   margin-right: 0;
 }
@@ -179,11 +181,11 @@
 .c-footer__signup {
   margin-top: 80px;
 
-  @include grid-media($bp-large) {
-    margin-top: 0;
-    @include grid-column(5);
-    // @include shift(1);
-  }
+  // @include grid-media($bp-large) {
+  //   margin-top: 0;
+  //   @include grid-column(5);
+  //   // @include shift(1);
+  // }
 }
 
 // Footer of the footer component itself

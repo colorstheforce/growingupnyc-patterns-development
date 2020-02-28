@@ -7,10 +7,10 @@
 
 
 // // Declarations
-$screen-mobile: #{map-get(map-get($tokens, 'screens'), 'mobile')};
-$screen-tablet: #{map-get(map-get($tokens, 'screens'), 'tablet')};
-$screen-desktop: #{map-get(map-get($tokens, 'screens'), 'desk')};
-$screen-desktop-large: #{map-get(map-get($tokens, 'screens'), 'xdesk')};
+$screen-mobile: #{map-get(map-get($tokens, 'screens'), 'small')};
+$screen-tablet: #{map-get(map-get($tokens, 'screens'), 'medium')};
+$screen-desktop: #{map-get(map-get($tokens, 'screens'), 'large')};
+$screen-desktop-large: #{map-get(map-get($tokens, 'screens'), 'xlarge')};
 
 $bp-x-small: (media: "screen and (max-width: " + $screen-mobile + ")");
 $bp-small: (media: "screen and (min-width: " + $screen-mobile + ")");

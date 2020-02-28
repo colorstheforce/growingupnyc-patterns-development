@@ -17,6 +17,12 @@ module.exports = {
     backgroundColor: variables.colors,
     borderColor: variables.colors,
 		fontFamily: variables.fonts,
-		screens: variables.screens
+		screens: {
+			'only-small': {'max': variables.screens.small}, //apply only to mobile
+			'small': {'min': variables.screens.small}, //screen-small
+			'medium': {'min': variables.screens.medium}, //screen-medium
+			'large': {'min': variables.screens.large}, //screen-large
+			'xlarge': {'min': variables.screens.xlarge} //screen-xtra large
+		}
   }
 };

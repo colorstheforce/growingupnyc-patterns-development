@@ -43,9 +43,9 @@
   line-height: 1.3;
   padding: rem-calc(15 20 0);
 
-  @include grid-media($bp-medium) {
-    padding: rem-calc(17 30 0);
-  }
+  // @include grid-media($bp-medium) {
+  //   padding: rem-calc(17 30 0);
+  // }
 }
 
 // Details List Description
@@ -57,9 +57,9 @@
     word-break: break-word;
   }
 
-  @include grid-media($bp-medium) {
-    padding: rem-calc(0 30 17);
-  }
+  // @include grid-media($bp-medium) {
+  //   padding: rem-calc(0 30 17);
+  // }
 }
 
 .c-details-list__descr + .c-details-list__term {

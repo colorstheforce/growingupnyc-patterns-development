@@ -173,10 +173,10 @@ const tokens = {
     'animate-timing-function': 'cubic-bezier(0.23, 1, 0.32, 1)'
   },
   'screens': {
-    'mobile': '375px', //screen-small
-    'tablet': '700px', //screen-medium
-    'desk': '1024px', //screen-large
-    'xdesk': '1200px'
+    'small': '375px', //screen-small
+    'medium': '700px', //screen-medium
+    'large': '1024px', //screen-large
+    'xlarge': '1200px'
   },
   'padding': {
     'column': '70px',

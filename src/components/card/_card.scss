@@ -42,11 +42,11 @@
   padding: rem-calc(25 ($sticker-size-mobile / 2) + 10 25 21);
   position: relative;
 
-  @include grid-media($bp-large) {
-    margin-right: rem-calc($sticker-size / 2);
-    padding: rem-calc(30);
-    padding-right: rem-calc(($sticker-size / 2) + 10);
-  }
+  // @include grid-media($bp-large) {
+  //   margin-right: rem-calc($sticker-size / 2);
+  //   padding: rem-calc(30);
+  //   padding-right: rem-calc(($sticker-size / 2) + 10);
+  // }
 }
 
 .c-card--hero {
@@ -102,9 +102,9 @@
   order: 3;
   text-decoration: underline;
 
-  @include grid-media($bp-small) {
-    font-size: 1.65rem;
-  }
+  // @include grid-media($bp-small) {
+  //   font-size: 1.65rem;
+  // }
 
   // @include grid-media(425px) {
   //   font-size: rem-calc($font-size-xx-large);

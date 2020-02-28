@@ -147,53 +147,57 @@
           </div>
         </header>
         <a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
-        <main class="pt-12 mobile:pt-20 tablet:pt-32">
+        <main class="pt-12 small:pt-20 medium:pt-32">
           <div>
             <header></header>
             <div>
-              <div class="xdesk:w-8/12 desk:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-                <div class="flex flex-wrap xdesk:mb-20 desk:mb-10"><h1 class="type-h1 ">Footer</h1></div>
+              <div class="xlarge:w-8/12 large:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
+                <div class="flex flex-wrap xlarge:mb-20 large:mb-10"><h1 class="type-h1 ">Footer</h1></div>
                 <div class="html-tag my-8"><div></div></div>
                 <div class="my-8 py-4">
                   <div>
                     <div>
                       <footer class="c-footer">
-                        <div class="o-container">
-                          <div class="c-footer__section">
-                            <div class="c-footer__logos">
-                              <figure class="c-footer__logo"><img alt="Growing Up NYC" src="images/logo-gunyc-white@236px.png" width="118" /></figure>
+                        <div class="o-container flex flex-wrap ">
+                          <div class="c-footer__section w-full large:w-1/2 flex-col flex-wrap">
+                            <div class="c-footer__logos flex flex-wrap">
+                              <figure class="c-footer__logo w-1/2"><img alt="Growing Up NYC" src="images/logo-gunyc-white@236px.png" width="118" /></figure>
+                              <figure class="c-footer__logo w-1/2"><img alt="Link to NYC Children's Cabinet" height="69" src="images/NYC-childrens-cabinet.svg" width="157" /></figure>
                             </div>
+                            <nav aria-label="Secondary" class="c-footer__nav flex flex-wrap" role="navigation">
+                              <ul class="c-footer__column w-1/2">
+                                <li class="c-footer__nav-item"><a class="c-footer__link" href="#">Home</a></li>
+                                <li class="c-footer__nav-item"><a class="c-footer__link" href="#">Events</a></li>
+                              </ul>
+                              <ul class="c-footer__column w-1/2">
+                                <li class="c-footer__nav-item"><a class="c-footer__link" href="#">Generation NYC</a></li>
+                                <li class="c-footer__nav-item"><a class="c-footer__link" href="#">NYC Social Media</a></li>
+                              </ul>
+                            </nav>
                           </div>
-                          <nav aria-label="Secondary" class="c-footer__nav" role="navigation">
-                            <ul class="c-footer__column">
-                              <li class="c-footer__nav-item"><a class="c-footer__link" href="#">Home</a></li>
-                              <li class="c-footer__nav-item"><a class="c-footer__link" href="#">Events</a></li>
-                            </ul>
-                            <ul class="c-footer__column">
-                              <li class="c-footer__nav-item"><a class="c-footer__link" href="#">Generation NYC</a></li>
-                              <li class="c-footer__nav-item"><a class="c-footer__link" href="#">NYC Social Media</a></li>
-                            </ul>
-                          </nav>
+                          <div class="c-footer__signup w-full large:mt-0 large:w-1/2 "><h2>Get Updates</h2></div>
                         </div>
                       </footer>
                     </div>
                     <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"><pre>&lt;footer class=&quot;c-footer&quot;&gt;
-  &lt;div class=&quot;o-container&quot;&gt;
-    &lt;div class=&quot;c-footer__section&quot;&gt;
-      &lt;div class=&quot;c-footer__logos&quot;&gt;
-        &lt;figure class=&quot;c-footer__logo&quot;&gt;&lt;img alt=&quot;Growing Up NYC&quot; src=&quot;images/logo-gunyc-white@236px.png&quot; width=&quot;118&quot; /&gt;&lt;/figure&gt;
+  &lt;div class=&quot;o-container flex flex-wrap &quot;&gt;
+    &lt;div class=&quot;c-footer__section w-full large:w-1/2 flex-col flex-wrap&quot;&gt;
+      &lt;div class=&quot;c-footer__logos flex flex-wrap&quot;&gt;
+        &lt;figure class=&quot;c-footer__logo w-1/2&quot;&gt;&lt;img alt=&quot;Growing Up NYC&quot; src=&quot;images/logo-gunyc-white@236px.png&quot; width=&quot;118&quot; /&gt;&lt;/figure&gt;
+        &lt;figure class=&quot;c-footer__logo w-1/2&quot;&gt;&lt;img alt=&quot;Link to NYC Children&#39;s Cabinet&quot; height=&quot;69&quot; src=&quot;images/NYC-childrens-cabinet.svg&quot; width=&quot;157&quot; /&gt;&lt;/figure&gt;
       &lt;/div&gt;
+      &lt;nav aria-label=&quot;Secondary&quot; class=&quot;c-footer__nav flex flex-wrap&quot; role=&quot;navigation&quot;&gt;
+        &lt;ul class=&quot;c-footer__column w-1/2&quot;&gt;
+          &lt;li class=&quot;c-footer__nav-item&quot;&gt;&lt;a class=&quot;c-footer__link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;c-footer__nav-item&quot;&gt;&lt;a class=&quot;c-footer__link&quot; href=&quot;#&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class=&quot;c-footer__column w-1/2&quot;&gt;
+          &lt;li class=&quot;c-footer__nav-item&quot;&gt;&lt;a class=&quot;c-footer__link&quot; href=&quot;#&quot;&gt;Generation NYC&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;c-footer__nav-item&quot;&gt;&lt;a class=&quot;c-footer__link&quot; href=&quot;#&quot;&gt;NYC Social Media&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
     &lt;/div&gt;
-    &lt;nav aria-label=&quot;Secondary&quot; class=&quot;c-footer__nav&quot; role=&quot;navigation&quot;&gt;
-      &lt;ul class=&quot;c-footer__column&quot;&gt;
-        &lt;li class=&quot;c-footer__nav-item&quot;&gt;&lt;a class=&quot;c-footer__link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;c-footer__nav-item&quot;&gt;&lt;a class=&quot;c-footer__link&quot; href=&quot;#&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;ul class=&quot;c-footer__column&quot;&gt;
-        &lt;li class=&quot;c-footer__nav-item&quot;&gt;&lt;a class=&quot;c-footer__link&quot; href=&quot;#&quot;&gt;Generation NYC&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;c-footer__nav-item&quot;&gt;&lt;a class=&quot;c-footer__link&quot; href=&quot;#&quot;&gt;NYC Social Media&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/nav&gt;
+    &lt;div class=&quot;c-footer__signup w-full large:mt-0 large:w-1/2 &quot;&gt;&lt;h2&gt;Get Updates&lt;/h2&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/footer&gt;
 </pre></div>

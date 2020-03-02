@@ -46,6 +46,9 @@
   // @include grid-media($bp-medium) {
   //   padding: rem-calc(17 30 0);
   // }
+	@media screen and (min-width: $screen-tablet) {
+    padding: rem-calc(17 30 0);
+  }
 }
 
 // Details List Description
@@ -60,6 +63,9 @@
   // @include grid-media($bp-medium) {
   //   padding: rem-calc(0 30 17);
   // }
+	@media screen and (min-width: $screen-tablet) {
+    padding: rem-calc(0 30 17);
+  }
 }
 
 .c-details-list__descr + .c-details-list__term {

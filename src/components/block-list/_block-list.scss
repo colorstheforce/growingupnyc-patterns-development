@@ -111,7 +111,11 @@
   margin-bottom: rem-calc(35);
   margin-top: rem-calc(35);
 
-  @include grid-media($bp-medium) {
+  // @include grid-media($bp-medium) {
+  //   margin-bottom: rem-calc(30);
+  //   margin-top: rem-calc(30);
+  // }
+	@media screen and (min-width: $screen-tablet) {
     margin-bottom: rem-calc(30);
     margin-top: rem-calc(30);
   }

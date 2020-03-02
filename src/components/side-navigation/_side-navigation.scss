@@ -71,7 +71,39 @@ $indicator-size: 10px;
     }
   }
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   padding: rem-calc(28);
+
+  //   &:focus,
+  //   &.is-active {
+  //     &:after {
+  //       content: '';
+  //       display: block;
+  //       border: $indicator-size solid transparent;
+  //       border-left-color: inherit;
+  //       margin-top: -#{$indicator-size};
+  //       position: absolute;
+  //       right: -#{$indicator-size * 2};
+  //       top: 50%;
+  //     }
+  //   }
+
+  //   .no-touchevents & {
+  //     &:hover {
+  //       &:after {
+  //         content: '';
+  //         display: block;
+  //         border: $indicator-size solid transparent;
+  //         border-left-color: inherit;
+  //         margin-top: -#{$indicator-size};
+  //         position: absolute;
+  //         right: -#{$indicator-size * 2};
+  //         top: 50%;
+  //       }
+  //     }
+  //   }
+  // }
+	@media screen and (min-width: $screen-desktop) {
     padding: rem-calc(28);
 
     &:focus,

@@ -44,9 +44,12 @@
   right: rem-calc(14);
   width: rem-calc(22);
 
-	@include grid-media($bp-large) {
+	// @include grid-media($bp-large) {
+  //     top: 13%;
+  // }
+	@media screen and (min-width: $screen-desktop) {
       top: 13%;
-  }
+	  }
 }
 
 .active .o-accordion__caret {

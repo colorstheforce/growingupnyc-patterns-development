@@ -1,9 +1,9 @@
 /
 / Article
+div class="o-article-sidebar large:w-4/12"
+  div class="p-4 bg-color-gray"
 
-div class="o-article"
+div class="o-article large:w-8/12"
   div class="p-4 bg-color-gray-light"
 
-div class="o-article-sidebar"
-  div class="p-4 bg-color-gray"
   

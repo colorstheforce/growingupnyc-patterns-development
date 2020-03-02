@@ -35,11 +35,19 @@ ol.o-inline {
     margin-left: 0;
   }
 
-  @include grid-media($bp-small) {
+  // @include grid-media($bp-small) {
+  //   margin-left: rem-calc(16);
+  // }
+	@media screen and (min-width: $screen-mobile) {
     margin-left: rem-calc(16);
   }
 
-  @include grid-media($bp-large) {
+
+  // @include grid-media($bp-large) {
+  //   margin-left: rem-calc(56);
+  // }
+	@media screen and (min-width: $screen-desktop) {
     margin-left: rem-calc(56);
   }
+
 }

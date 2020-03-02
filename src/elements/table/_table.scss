@@ -22,9 +22,12 @@
     margin-bottom: rem-calc(40px);
     max-width: 100%;
     text-align: right;
-    @include grid-media($bp-medium) {
+    // @include grid-media($bp-medium) {
+    //   font-size: rem-calc(18px);
+    // }
+		@media screen and (min-width: $screen-tablet) {
       font-size: rem-calc(18px);
-    }
+	  }
   }
 
   thead {
@@ -52,8 +55,11 @@
   td {
     padding: rem-calc(10px);
     word-break: normal;
-    @include grid-media($bp-medium) {
+    // @include grid-media($bp-medium) {
+    //   padding: rem-calc(10px 40px);
+    // }
+		@media screen and (min-width: $screen-tablet) {
       padding: rem-calc(10px 40px);
-    }
+	  }
   }
 }

@@ -8,18 +8,31 @@
 .o-content-container {
   padding: rem-calc(30 $outer-gutter 35);
 
-  @include grid-media($bp-small) {
+  // @include grid-media($bp-small) {
+  //   padding: rem-calc(35 $outer-gutter-small 40);
+  // }
+	@media screen and (min-width: $screen-mobile) {
     padding: rem-calc(35 $outer-gutter-small 40);
   }
 
-  @include grid-media($bp-medium) {
+
+  // @include grid-media($bp-medium) {
+  //   padding-left: rem-calc($outer-gutter-medium);
+  //   padding-right: rem-calc($outer-gutter-medium);
+  // }
+	@media screen and (min-width: $screen-tablet) {
     padding-left: rem-calc($outer-gutter-medium);
     padding-right: rem-calc($outer-gutter-medium);
   }
 
-  @include grid-media($bp-large) {
+
+  // @include grid-media($bp-large) {
+  //   padding: rem-calc($outer-gutter-large);
+  // }
+	@media screen and (min-width: $screen-desktop) {
     padding: rem-calc($outer-gutter-large);
   }
+
 }
 
 // Content container with reduced padding
@@ -27,22 +40,36 @@
   padding-left: rem-calc($outer-gutter-small);
   padding-right: rem-calc($outer-gutter-small);
 
-  @include grid-media($bp-medium) {
+  // @include grid-media($bp-medium) {
+  //   padding-left: rem-calc($outer-gutter-medium);
+  //   padding-right: rem-calc($outer-gutter-medium);
+  // }
+	@media screen and (min-width: $screen-tablet) {
     padding-left: rem-calc($outer-gutter-medium);
     padding-right: rem-calc($outer-gutter-medium);
   }
 
-  @include grid-media($bp-large) {
+
+  // @include grid-media($bp-large) {
+  //   padding-left: 0;
+  //   padding-right: 0;
+  // }
+	@media screen and (min-width: $screen-desktop) {
     padding-left: 0;
     padding-right: 0;
   }
+
 }
 
 .o-content-container--text {
   // Reduces width at the largest breakpoint to control line length
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   width: flex-grid(7, 8) + flex-gutter(8);
+  // }
+	@media screen and (min-width: $screen-desktop) {
     width: flex-grid(7, 8) + flex-gutter(8);
   }
+
 }
 
 .o-content-static--left {

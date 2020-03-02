@@ -50,9 +50,13 @@
   background-size: cover;
   height: 53.3333333vw;
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   height: 100%;
+  // }
+	@media screen and (min-width: $screen-desktop) {
     height: 100%;
   }
+	
 }
 
 .c-side-hero__content {
@@ -66,13 +70,26 @@
     z-index: 1;
   }
 
-  @include grid-media($bp-mobile-only) {
+  // @include grid-media($bp-mobile-only) {
+  //   background: $color-primary;
+  //   @include splatter(top, left);
+  //   @include splatter(bottom, right);
+  // }
+	@media screen and (max-width: $screen-mobile) {
     background: $color-primary;
     @include splatter(top, left);
     @include splatter(bottom, right);
   }
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   bottom: 0;
+  //   left: 0;
+  //   padding: rem-calc(60);
+  //   position: absolute;
+  //   width: 100%;
+  //   text-align: left;
+  // }
+	@media screen and (min-width: $screen-desktop) {
     bottom: 0;
     left: 0;
     padding: rem-calc(60);
@@ -82,7 +99,20 @@
   }
 }
 
-@include grid-media($bp-large) {
+// @include grid-media($bp-large) {
+//   .js {
+//     .c-side-hero__content {
+//       position: fixed;
+//     }
+
+//     .is-bottom .c-side-hero__content {
+//       left: rem-calc(-4); // accounts for border on container
+//       position: absolute;
+//       width: 100%;
+//     }
+//   }
+// }
+@media screen and (min-width: $screen-desktop) {
   .js {
     .c-side-hero__content {
       position: fixed;
@@ -94,14 +124,17 @@
       width: 100%;
     }
   }
-}
+  }
 
 .c-side-hero__title {
   @include font-size-x-large;
   line-height: 1.2;
   margin-bottom: rem-calc(10);
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   margin-bottom: rem-calc(20);
+  // }
+	@media screen and (min-width: $screen-desktop) {
     margin-bottom: rem-calc(20);
   }
 }
@@ -123,7 +156,10 @@
   margin-top: rem-calc(10);
   margin-bottom: rem-calc(15);
 
-  @include grid-media($bp-medium) {
+  // @include grid-media($bp-medium) {
+  //   font-size: rem-calc($font-size-xx-large);
+  // }
+	@media screen and (min-width: $screen-tablet) {
     font-size: rem-calc($font-size-xx-large);
   }
 }

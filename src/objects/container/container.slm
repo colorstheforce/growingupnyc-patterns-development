@@ -1,5 +1,5 @@
 /
 / Container
 
-div class="o-container bg-color-gray-light"
+div class="o-container bg-color-gray-light flex flex-wrap"
   h1 = 'Programs'

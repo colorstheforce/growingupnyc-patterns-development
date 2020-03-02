@@ -20,7 +20,22 @@
 		backface-visibility: hidden;
 }
 
-@include grid-media($bp-large) {
+// @include grid-media($bp-large) {
+// 	.o-sticky-nav {
+// 			width: 295px;
+
+// 		&.is-sticky {
+// 			position: fixed;
+// 			top: 20px;
+// 			// left: 40px;
+// 			width: 295px;
+// 		}
+// 		&.is-stuck {
+// 			position: absolute;
+// 		}
+// 	}
+// }
+@media screen and (min-width: $screen-desktop) {
 	.o-sticky-nav {
 			width: 295px;
 
@@ -35,7 +50,17 @@
 		}
 	}
 }
-@include grid-media($bp-xlarge) {
+
+// @include grid-media($bp-xlarge) {
+// 	.o-sticky-nav {
+// 		width: 414px;
+
+// 		&.is-sticky {
+// 			width: 414px;
+// 		}
+// 	}
+// }
+@media screen and (min-width: $screen-desktop-large) {
 	.o-sticky-nav {
 		width: 414px;
 
@@ -44,3 +69,4 @@
 		}
 	}
 }
+

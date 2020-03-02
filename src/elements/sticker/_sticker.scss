@@ -39,7 +39,13 @@
   //override text-uppercase
   line-height: rem-calc($sticker-size-mobile);
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   border-radius: rem-calc($sticker-size);
+  //   height: rem-calc($sticker-size);
+  //   line-height: rem-calc($sticker-size);
+  //   width: rem-calc($sticker-size);
+  // }
+	@media screen and (min-width: $screen-desktop) {
     border-radius: rem-calc($sticker-size);
     height: rem-calc($sticker-size);
     line-height: rem-calc($sticker-size);

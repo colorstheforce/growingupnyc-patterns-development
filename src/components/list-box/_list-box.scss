@@ -68,7 +68,10 @@
   @include text-uppercase;
   padding: rem-calc(12 20);
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   padding: rem-calc(28 40);
+  // }
+	@media screen and (min-width: $screen-desktop) {
     padding: rem-calc(28 40);
   }
 }
@@ -118,7 +121,10 @@
 }
 
 .c-list-box--quaternary .c-list-box__heading {
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   padding: rem-calc(28);
+  // }
+	@media screen and (min-width: $screen-desktop) {
     padding: rem-calc(28);
   }
 }
@@ -181,7 +187,14 @@
     padding-bottom: rem-calc(30);
   }
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   padding: rem-calc(3 40);
+
+  //   &:last-child {
+  //     padding-bottom: rem-calc(40);
+  //   }
+  // }
+	@media screen and (min-width: $screen-desktop) {
     padding: rem-calc(3 40);
 
     &:last-child {
@@ -224,7 +237,10 @@
     margin-top: rem-calc(2);
   }
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   padding-left: rem-calc(60);
+  // }
+	@media screen and (min-width: $screen-desktop) {
     padding-left: rem-calc(60);
   }
 }

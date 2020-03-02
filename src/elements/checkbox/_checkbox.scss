@@ -174,7 +174,11 @@
   width: rem-calc(15);
   vertical-align: middle;
   margin-right: 5px;
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   height: rem-calc(20);
+  //   width: rem-calc(20);
+  // }
+	@media screen and (min-width: $screen-desktop) {
     height: rem-calc(20);
     width: rem-calc(20);
   }

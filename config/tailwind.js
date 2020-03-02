@@ -23,6 +23,6 @@ module.exports = {
 			'medium': {'min': variables.screens.medium}, //screen-medium
 			'large': {'min': variables.screens.large}, //screen-large
 			'xlarge': {'min': variables.screens.xlarge} //screen-xtra large
-		}
+		},
   }
 };

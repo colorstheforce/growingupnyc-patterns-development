@@ -34,7 +34,12 @@
   @extend %column-base;
   padding-bottom: rem-calc(24);
 
-  @include grid-media($bp-medium) {
+  // @include grid-media($bp-medium) {
+  //   margin-right: rem-calc(-4);
+  //   padding: rem-calc(20);
+  //   width: 50%;
+  // }
+	@media screen and (min-width: $screen-tablet) {
     margin-right: rem-calc(-4);
     padding: rem-calc(20);
     width: 50%;
@@ -44,7 +49,10 @@
 %column-base-3 {
   @extend %column-base-2;
 
-  @include grid-media($bp-medium) {
+  // @include grid-media($bp-medium) {
+  //   width: (100% / 3);
+  // }
+	@media screen and (min-width: $screen-tablet) {
     width: (100% / 3);
   }
 }

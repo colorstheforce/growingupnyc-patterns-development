@@ -37,7 +37,11 @@
   position: relative;
   margin-top: rem-calc(($sticker-size-mobile / 2) + $horizontal-gutter);
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   padding-top: rem-calc($sticker-size / 2);
+  //   margin-top: rem-calc(($sticker-size / 2) + $horizontal-gutter);
+  // }
+	@media screen and (min-width: $screen-desktop) {
     padding-top: rem-calc($sticker-size / 2);
     margin-top: rem-calc(($sticker-size / 2) + $horizontal-gutter);
   }
@@ -59,7 +63,11 @@
   left: 50%;
   top: rem-calc($sticker-size-mobile / -2);
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   margin-left: rem-calc($sticker-size / -2);
+  //   top: rem-calc($sticker-size / -2);
+  // }
+	@media screen and (min-width: $screen-desktop) {
     margin-left: rem-calc($sticker-size / -2);
     top: rem-calc($sticker-size / -2);
   }

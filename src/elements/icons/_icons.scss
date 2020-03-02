@@ -21,7 +21,11 @@
   height: rem-calc(37);
   width: rem-calc(37);
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   height: rem-calc(50);
+  //   width: rem-calc(50);
+  // }
+	@media screen and (min-width: $screen-desktop) {
     height: rem-calc(50);
     width: rem-calc(50);
   }
@@ -31,7 +35,11 @@
   height: rem-calc(37);
   width: rem-calc(37);
 
-  @include grid-media($bp-medium) {
+  // @include grid-media($bp-medium) {
+  //   height: rem-calc(35);
+  //   width: rem-calc(35);
+  // }
+	@media screen and (min-width: $screen-tablet) {
     height: rem-calc(35);
     width: rem-calc(35);
   }
@@ -55,7 +63,11 @@
   width: rem-calc(13);
   vertical-align: top;
 
-  @include grid-media($bp-small) {
+  // @include grid-media($bp-small) {
+  //   height: rem-calc(15);
+  //   width: rem-calc(15);
+  // }
+	@media screen and (min-width: $screen-mobile) {
     height: rem-calc(15);
     width: rem-calc(15);
   }

@@ -23,15 +23,24 @@ $max-width-med: map-get(map-get($tokens, 'padding'), 'max-width-med');
   padding-right: rem-calc($outer-gutter);
   position: relative;
 
-  @include grid-media($bp-small) {
+  // @include grid-media($bp-small) {
+  //   padding-left: rem-calc($outer-gutter-small);
+  //   padding-right: rem-calc($outer-gutter-small);
+  // }
+	@media screen and (min-width: $screen-mobile) {
     padding-left: rem-calc($outer-gutter-small);
     padding-right: rem-calc($outer-gutter-small);
   }
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   padding-left: rem-calc($outer-gutter-large);
+  //   padding-right: rem-calc($outer-gutter-large);
+  // }
+		@media screen and (min-width: $screen-desktop) {
     padding-left: rem-calc($outer-gutter-large);
     padding-right: rem-calc($outer-gutter-large);
   }
+
 }
 
 .o-container-med {

@@ -19,43 +19,66 @@
   margin-left: -#{rem-calc($outer-gutter)};
   margin-right: -#{rem-calc($outer-gutter)};
 
-  @include grid-media($bp-small) {
+  // @include grid-media($bp-small) {
+  //   margin-left: -#{rem-calc($outer-gutter-small)};
+  //   margin-right: -#{rem-calc($outer-gutter-small)};
+  // }
+	@media screen and (min-width: $screen-mobile) {
     margin-left: -#{rem-calc($outer-gutter-small)};
     margin-right: -#{rem-calc($outer-gutter-small)};
-  }
+	  }
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   margin-left: 0;
+  //   margin-right: 0;
+  //   display: block;
+  //   float: left;
+  //   margin-right: 0;
+  //   width: 65%;
+
+  //   // @include span-columns(8);
+  //   @include grid-column(8);
+  //   // @include omega;
+  // }
+	@media screen and (min-width: $screen-desktop) {
     margin-left: 0;
     margin-right: 0;
     display: block;
     float: left;
     margin-right: 0;
     width: 65%;
-
-    // @include span-columns(8);
-    @include grid-column(8);
-    // @include omega;
-  }
+	  }
 }
 
 .o-article-sidebar {
   margin-left: -#{rem-calc($outer-gutter)};
   margin-right: -#{rem-calc($outer-gutter)};
-  
-  @include grid-media($bp-small) {
+  width: 100%;
+  // @include grid-media($bp-small) {
+  //   margin-left: -#{rem-calc($outer-gutter-small)};
+  //   margin-right: -#{rem-calc($outer-gutter-small)};
+  //   // margin-left: 49px;
+  // }
+	@media screen and (min-width: $screen-mobile) {
     margin-left: -#{rem-calc($outer-gutter-small)};
     margin-right: -#{rem-calc($outer-gutter-small)};
-    // margin-left: 49px;
-  }
+	}
   
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   display: block;
+  //   float: left;
+  //   margin-left: 0;
+  //   margin-right: 0;
+  //   width: 35%;
+  //   // @include span-columns(4);
+  //   // @include grid-column(4);
+  // }
+	@media screen and (min-width: $screen-desktop) {
     display: block;
     float: left;
     margin-left: 0;
     margin-right: 0;
     width: 35%;
-    // @include span-columns(4);
-    @include grid-column(4);
   }
 }
 

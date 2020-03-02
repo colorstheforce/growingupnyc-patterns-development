@@ -40,7 +40,10 @@
   text-decoration: none;
   transition: $button-transition;
 
-  @include grid-media($bp-small) {
+  // @include grid-media($bp-small) {
+  //   min-width: rem-calc(150);
+  // }
+	@media screen and (min-width: $screen-mobile) {
     min-width: rem-calc(150);
   }
 }

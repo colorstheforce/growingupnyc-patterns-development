@@ -27,7 +27,10 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
 }
 
 .o-offcanvas__heading {
-  @include grid-media($bp-small) {
+  // @include grid-media($bp-small) {
+  //   display: none !important;
+  // }
+	@media screen and (min-width: $screen-mobile) {
     display: none !important;
   }
 }
@@ -39,16 +42,25 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   background: $color-background;
   width: $width-offcanvas-side;
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   width: $width-offcanvas-side-large;
+  // }
+	@media screen and (min-width: $screen-desktop) {
     width: $width-offcanvas-side-large;
   }
+
 }
 
 .o-offcanvas__side {
-  @include grid-media($bp-small) {
+  // @include grid-media($bp-small) {
+  //   float: right;
+  //   height: 100%;
+  // }
+	@media screen and (min-width: $screen-mobile) {
     float: right;
     height: 100%;
   }
+
 }
 
 .o-offcanvas__side {
@@ -62,9 +74,13 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   visibility: hidden;
   z-index: 1;
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   padding-top: 60px;
+  // }
+	@media screen and (min-width: $screen-desktop) {
     padding-top: 60px;
   }
+
 }
 
 .is-open .o-offcanvas__side {
@@ -124,9 +140,13 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   right: $width-offcanvas-side;
   width: 100%;
 
-  @include grid-media($bp-large) {
+  // @include grid-media($bp-large) {
+  //   right: $width-offcanvas-side-large;
+  // }
+	@media screen and (min-width: $screen-desktop) {
     right: $width-offcanvas-side-large;
   }
+
 }
 
 // Off-Canvas Overlay

@@ -1,0 +1,14 @@
+
+= partial('demo-specs.mixin.slm');
+= partial('demo-block-icon.mixin.slm');
+
+= mixin('section', 'title', 'path', 'layout = columns', 'grid = false', 'specs = true', 'code = true');
+  div class="xlarge:w-8/12 large:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto"
+    div class="flex flex-wrap xlarge:mb-20 large:mb-10"
+      h1 class='type-h1 '
+        = this.title
+    div class="html-tag my-8"
+      = mixin('demo-specs', this.path + '.md');
+    div class="my-8 py-4"  
+      - if (this.code === 'true')
+        = mixin('demo-block', this.path + '.slm', this.layout, this.grid);

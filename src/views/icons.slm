@@ -5,7 +5,7 @@
 / Partials
 = partial('partials/head.mixin.slm');
 = partial('partials/content-header.mixin.slm');
-= partial('partials/section.mixin.slm');
+= partial('partials/section-icon.mixin.slm');
 
 / Content blocks
 = content('head');

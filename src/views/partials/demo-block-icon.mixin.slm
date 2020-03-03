@@ -1,0 +1,18 @@
+= mixin('demo-block', 'markup', 'layout = columns', 'grid = false');
+  div class="flex flex-wrap"
+    - if (typeof this.grid === 'object')
+      - let keys = Object.keys(this.grid)
+
+      - for (key in this.grid)
+        - value = this.grid[key];
+          div class="mb-10 w-1/2 small:w-1/2 medium:w-1/4 large:w-1/6 xlarge:w-1/8 "
+            = partial('../' + this.markup);
+    - if (typeof this.grid === 'string')
+      - value = this.grid;
+      div
+        = partial('../' + this.markup);
+
+    - if(this.grid === 'false')
+      div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"
+        pre
+          = 'code{{ '+ this.markup +' }}';

@@ -1,0 +1,1 @@
+These are collection of svg icons used throughout the website.

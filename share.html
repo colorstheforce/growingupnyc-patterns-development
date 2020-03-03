@@ -1,5 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+    <link href="styles/site-default.css" rel="stylesheet" />
+    <script type="text/javascript">
+      (function(d) {
+        var config = {
+            kitId: 'wyh7nce',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function() {
+            h.className = h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a;
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function() {
+          a = this.readyState;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <title>Growing Up NYC Patterns</title>
+    <noscript>
+      <style>
+        body {
+          visibility: visible !important;
+        }
+      </style>
+    </noscript>
+    <script type="text/javascript">
+      function load() {
+        document.body.style.visibility = 'visible';
+      }
+    </script>
+  </head>
   <body>
     <div class="o-offcanvas js-offcanvas" id="offcanvas-patterns">
       <nav aria-label="patterns-heading" class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation">
@@ -97,7 +147,72 @@
           </div>
         </header>
         <a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
-        <main class="pt-12 mobile:pt-20 tablet:pt-32"><div></div></main>
+        <main class="pt-12 small:pt-20 medium:pt-32">
+          <div>
+            <header></header>
+            <div>
+              <div class="xlarge:w-8/12 large:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
+                <div class="flex flex-wrap xlarge:mb-20 large:mb-10"><h1 class="type-h1 ">Share</h1></div>
+                <div class="html-tag my-8"><div></div></div>
+                <div class="my-8 py-4">
+                  <div>
+                    <div>
+                      <form action="" class="js-share-form js-needs-disclaimer is-active" method="post" novalidate="">
+                        <input name="action" type="hidden" value="" />
+                        <input name="sharetext" type="hidden" value="" />
+                        <input name="postid" type="hidden" value="" />
+                        <input name="template" type="hidden" value="" />
+                        <input name="lang" type="hidden" value="" />
+                        <input name="url" type="hidden" value="" />
+                        <input name="hash" type="hidden" value="" />
+                        <div class="form-container">
+                          <div class="signup-form__input signup-form__input--full sms-form__input--long">
+                            <label class="signup-form__label sms-form__label" for="phone"><span class="sms-form__label-content signup-form__label-content" data-content="Phone Number">Phone Number</span></label>
+                            <input class="signup-form__field form-field input__field bg-very-light-gray js-show-disclaimer" data-scroll-offset="20" id="phone" name="to" placeholder="" required="" type="tel" />
+                            <svg class="sms-form__spinner js-spinner"><use xlink:href="#icon-check"></use></svg>
+                          </div>
+                          <button class="button--primary button--primary__curved sms-form__submit button--primary__purple button--simple button--simple--alt" id="smsbutton" type="submit">
+                            <span class="send">Send</span>
+                            <span class="send__success">Send Another</span>
+                          </button>
+                        </div>
+                        <div class="c-validation" id="sms-form-msg"></div>
+                        <div class="send_placeholder">Message Sent</div>
+                        <div clas="g-recaptcha" id="screener-recaptcha"></div>
+                        <div aria-hidden="true" class="c-disclaimer-text" id="js-disclaimer"></div>
+                      </form>
+                    </div>
+                    <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"><pre>&lt;form action=&quot;&quot; class=&quot;js-share-form js-needs-disclaimer is-active&quot; method=&quot;post&quot; novalidate=&quot;&quot;&gt;
+  &lt;input name=&quot;action&quot; type=&quot;hidden&quot; value=&quot;&quot; /&gt;
+  &lt;input name=&quot;sharetext&quot; type=&quot;hidden&quot; value=&quot;&quot; /&gt;
+  &lt;input name=&quot;postid&quot; type=&quot;hidden&quot; value=&quot;&quot; /&gt;
+  &lt;input name=&quot;template&quot; type=&quot;hidden&quot; value=&quot;&quot; /&gt;
+  &lt;input name=&quot;lang&quot; type=&quot;hidden&quot; value=&quot;&quot; /&gt;
+  &lt;input name=&quot;url&quot; type=&quot;hidden&quot; value=&quot;&quot; /&gt;
+  &lt;input name=&quot;hash&quot; type=&quot;hidden&quot; value=&quot;&quot; /&gt;
+  &lt;div class=&quot;form-container&quot;&gt;
+    &lt;div class=&quot;signup-form__input signup-form__input--full sms-form__input--long&quot;&gt;
+      &lt;label class=&quot;signup-form__label sms-form__label&quot; for=&quot;phone&quot;&gt;&lt;span class=&quot;sms-form__label-content signup-form__label-content&quot; data-content=&quot;Phone Number&quot;&gt;Phone Number&lt;/span&gt;&lt;/label&gt;
+      &lt;input class=&quot;signup-form__field form-field input__field bg-very-light-gray js-show-disclaimer&quot; data-scroll-offset=&quot;20&quot; id=&quot;phone&quot; name=&quot;to&quot; placeholder=&quot;&quot; required=&quot;&quot; type=&quot;tel&quot; /&gt;
+      &lt;svg class=&quot;sms-form__spinner js-spinner&quot;&gt;&lt;use xlink:href=&quot;#icon-check&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;button class=&quot;button--primary button--primary__curved sms-form__submit button--primary__purple button--simple button--simple--alt&quot; id=&quot;smsbutton&quot; type=&quot;submit&quot;&gt;
+      &lt;span class=&quot;send&quot;&gt;Send&lt;/span&gt;
+      &lt;span class=&quot;send__success&quot;&gt;Send Another&lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;c-validation&quot; id=&quot;sms-form-msg&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;send_placeholder&quot;&gt;Message Sent&lt;/div&gt;
+  &lt;div clas=&quot;g-recaptcha&quot; id=&quot;screener-recaptcha&quot;&gt;&lt;/div&gt;
+  &lt;div aria-hidden=&quot;true&quot; class=&quot;c-disclaimer-text&quot; id=&quot;js-disclaimer&quot;&gt;&lt;/div&gt;
+&lt;/form&gt;
+</pre></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
     <footer class="c-footer">

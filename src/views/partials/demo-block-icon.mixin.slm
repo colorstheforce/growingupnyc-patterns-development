@@ -5,7 +5,7 @@
 
       - for (key in this.grid)
         - value = this.grid[key];
-          div class="mb-10 w-1/2 small:w-1/2 medium:w-1/4 large:w-1/6 xlarge:w-1/8 "
+          div class="mb-10 w-1/2 mobile:w-1/2 tablet:w-1/4 desktop:w-1/6 desktop-lg:w-1/8"
             = partial('../' + this.markup);
     - if (typeof this.grid === 'string')
       - value = this.grid;

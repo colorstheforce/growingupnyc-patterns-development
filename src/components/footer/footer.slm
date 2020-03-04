@@ -3,7 +3,7 @@
 
 footer class="c-footer" 
   div class="o-container flex flex-wrap "
-    div class="c-footer__section w-full large:w-1/2 flex-col flex-wrap"
+    div class="c-footer__section w-full desktop:w-1/2 flex-col flex-wrap"
       div class="c-footer__logos flex flex-wrap"
         figure class="c-footer__logo w-1/2"
           img alt="Growing Up NYC" src="images/logo-gunyc-white@236px.png" width="118"
@@ -24,6 +24,6 @@ footer class="c-footer"
           li class="c-footer__nav-item"
             a class="c-footer__link" href="#"
               = 'NYC Social Media'
-    div class="c-footer__signup w-full large:mt-0 large:w-1/2 "
+    div class="c-footer__signup w-full desktop:mt-0 desktop:w-1/2 "
       h2
         = "Get Updates"

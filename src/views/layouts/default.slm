@@ -8,7 +8,7 @@ html lang='en'
 
       div class='o-offcanvas__main'
         = partial('/partials/nav.slm');
-        main class="pt-12 small:pt-20 medium:pt-32"
+        main class="pt-12 mobile:pt-20 tablet:pt-32"
           div class=''
             = content('main');
 

@@ -158,6 +158,24 @@ const modules = [
       }
     ]
   },
+  {
+    input: './src/objects/static-column/staticColumn.js',
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'StaticColumn',
+        file: `./dist/objects/static-column/StaticColumn.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'StaticColumn',
+        file: `./dist/objects/static-column/StaticColumn.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
+  },
 ];
 
 export default modules;

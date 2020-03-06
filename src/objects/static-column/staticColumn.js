@@ -20,11 +20,11 @@ class StaticColumn {
 		const notStickyClass = StaticColumn.notStickyClass;
 		const bottomClass = StaticColumn.bottomClass;
     
-    this._settings = {
-      selector: StaticColumn.selector,
-      notStickyClass: StaticColumn.notStickyClass,
-      bottomClass: StaticColumn.bottomClass
-    };
+    // this._settings = {
+    //   selector: StaticColumn.selector,
+    //   notStickyClass: StaticColumn.notStickyClass,
+    //   bottomClass: StaticColumn.bottomClass
+    // };
     
 		  /**
   * Calculates the window position and sets the appropriate class on the element

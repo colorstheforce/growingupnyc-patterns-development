@@ -185,7 +185,10 @@
   //   margin-top: 0;
   //   @include grid-column(5);
   //   // @include shift(1);
-  // }
+	// }
+	@media screen and (min-width: $screen-desktop) {
+   left-margin: 8.5%;
+  }
 }
 
 // Footer of the footer component itself

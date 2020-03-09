@@ -933,11 +933,11 @@ var StaticColumn = (function () {
     // const control = document.querySelector(AlertBanner.controller);
     console.log("Hi from Static Column");
     var stickyContent = document.querySelectorAll('.js-static');
-    this._settings = {
-      selector: StaticColumn.selector,
-      notStickyClass: StaticColumn.notStickyClass,
-      bottomClass: StaticColumn.bottomClass
-    };
+    // selector: StaticColumn.selector,
+    // notStickyClass: StaticColumn.notStickyClass,
+    // bottomClass: StaticColumn.bottomClass
+    // };
+
     /**
     * Calculates the window position and sets the appropriate class on the element
     * @param {object} stickyContentElem - DOM node that should be stickied

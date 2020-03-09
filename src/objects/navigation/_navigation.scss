@@ -11,7 +11,7 @@
 // add configuration to the /config/tokens.js object (which is
 // to SASS during the compilation process).
 @import 'config/tokens';
-@import 'config/media';
+// @import 'config/media';
 @import 'config/colors';
 @import 'config/fonts';
 @import 'config/typography';
@@ -45,7 +45,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   // @include grid-media($bp-medium) {
   //   height: rem-calc($height-banner-large);
   // }
-	@media screen and (min-width: $screen-tablet) {
+  @media screen and (min-width: $screen-tablet) {
     height: rem-calc($height-banner-large);
   }
 
@@ -70,7 +70,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   //   height: rem-calc($height-banner-logo-small);
   //   width: rem-calc($width-banner-logo-small);
   // }
-	@media screen and (min-width: $screen-mobile) {
+  @media screen and (min-width: $screen-mobile) {
     height: rem-calc($height-banner-logo-small);
     width: rem-calc($width-banner-logo-small);
   }
@@ -81,7 +81,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   //   padding: 0 16px 15px 14px;
   //   width: rem-calc($width-banner-logo-large);
   // }
-	@media screen and (min-width: $screen-tablet) {
+  @media screen and (min-width: $screen-tablet) {
     height: rem-calc($height-banner-logo-large);
     padding: 0 16px 15px 14px;
     width: rem-calc($width-banner-logo-large);
@@ -91,7 +91,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   // @include grid-media($bp-large) {
   //   top: rem-calc(-38px);
   // }
-	@media screen and (min-width: $screen-desktop) {
+  @media screen and (min-width: $screen-desktop) {
     top: rem-calc(-38px);
   }
 
@@ -102,7 +102,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   // @include grid-media($bp-small) {
   //   height: rem-calc(80px);
   // }
-	@media screen and (min-width: $screen-mobile) {
+  @media screen and (min-width: $screen-mobile) {
     height: rem-calc(80px);
   }
 
@@ -110,7 +110,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   // @include grid-media($bp-medium) {
   //   height: rem-calc(144px);
   // }
-	@media screen and (min-width: $screen-tablet) {
+  @media screen and (min-width: $screen-tablet) {
     height: rem-calc(144px);
   }
 
@@ -162,7 +162,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   //   padding-top: rem-calc(18px);
   //   padding-bottom: rem-calc(18px);
   // }
-	@media screen and (min-width: $screen-mobile) {
+  @media screen and (min-width: $screen-mobile) {
     padding-top: rem-calc(18px);
     padding-bottom: rem-calc(18px);
   }
@@ -186,7 +186,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   //     }
   //   }
   // }
-	@media screen and (min-width: $screen-tablet) {
+  @media screen and (min-width: $screen-tablet) {
     padding-top: rem-calc(20px);
     padding-bottom: 0;
 
@@ -199,14 +199,14 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
       // @include grid-media($bp-small) {
       //   margin-left: rem-calc(16px);
       // }
-			@media screen and (min-width: $screen-mobile) {
+      @media screen and (min-width: $screen-mobile) {
         margin-left: rem-calc(16px);
       }
 
       // @include grid-media($bp-large) {
       //   margin-left: rem-calc(56px);
       // }
-			@media screen and (min-width: $screen-desktop) {
+      @media screen and (min-width: $screen-desktop) {
         margin-left: rem-calc(56px);
       }
 
@@ -234,7 +234,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   //   font-size: rem-calc($font-size-small);
   //   letter-spacing: 1.1px;
   // }
-	@media screen and (min-width: $screen-tablet) {
+  @media screen and (min-width: $screen-tablet) {
     font-size: rem-calc($font-size-small);
     letter-spacing: 1.1px;
   }

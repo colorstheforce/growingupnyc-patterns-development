@@ -176,6 +176,24 @@ const modules = [
       }
     ]
   },
+  {
+    input: './src/objects/navigation/Navigation.js',
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'Navigation',
+        file: `./dist/objects/navigation/Navigation.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'Navigation',
+        file: `./dist/objects/navigation/Navigation.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
+  },
 ];
 
 export default modules;

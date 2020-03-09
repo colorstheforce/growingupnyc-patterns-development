@@ -14,7 +14,6 @@ class StaticColumn {
   constructor() {
     // const el = document.querySelector(AlertBanner.selector);
     // const control = document.querySelector(AlertBanner.controller);
-	console.log("Hi from Static Column");
 	
 		const stickyContent = document.querySelectorAll('.js-static');
 		const notStickyClass = StaticColumn.notStickyClass;

@@ -1,4 +1,4 @@
-var InputAutocomplete = (function () {
+var Navigation = (function () {
   'use strict';
 
   /**
@@ -1035,6 +1035,7 @@ var InputAutocomplete = (function () {
   };
 
   var Navigation = function Navigation() {
+    console.log("Hi from Navigation");
     this._offcanvas = new Offcanvas({
       selector: Navigation.selector,
       namespace: Navigation.namespace,

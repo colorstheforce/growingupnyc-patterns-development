@@ -11,6 +11,8 @@ class Navigation {
    * @constructor
    */
   constructor() {
+		console.log("Hi from Navigation");
+
     this._offcanvas = new Offcanvas({
       selector: Navigation.selector,
       namespace: Navigation.namespace,

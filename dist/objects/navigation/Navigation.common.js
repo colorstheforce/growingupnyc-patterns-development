@@ -1034,6 +1034,7 @@ Offcanvas.dataset = function (elem, attr) {
 };
 
 var Navigation = function Navigation() {
+  console.log("Hi from Navigation");
   this._offcanvas = new Offcanvas({
     selector: Navigation.selector,
     namespace: Navigation.namespace,

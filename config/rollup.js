@@ -194,6 +194,24 @@ const modules = [
       }
     ]
   },
+  {
+    input: './src/utilities/animations/Animations.js',
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'Animations',
+        file: `./dist/utilities/animations/Animations.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'Animations',
+        file: `./dist/utilities/animations/Animations.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
+  },
 ];
 
 export default modules;

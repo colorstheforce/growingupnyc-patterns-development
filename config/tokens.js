@@ -265,7 +265,7 @@ const tokens = {
     'icon-playtime'
   ],
   version: `"${version}"`,
-  cdn: `"https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns@v${version}/dist/"`
+  cdn: `"https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/"`
 };
 
 module.exports = tokens;

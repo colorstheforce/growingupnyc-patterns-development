@@ -928,8 +928,12 @@ var Animations = (function () {
 
   var forEach_1 = forEach;
 
+  /**
+   * The Animations module
+   * @class
+   */
+
   var Animations = function Animations() {
-    console.log("Animations");
     this._settings = {
       selector: Animations.selector,
       controller: Animations.controller
@@ -946,14 +950,23 @@ var Animations = (function () {
 
   Animations.prototype.rotateTerm = function rotateTerm(terms) {
     var controller = document.querySelector(this._settings.controller);
-    controller.innerText = terms[0];
+    controller.innerText = terms[0].trim();
     var i = 0;
     setInterval(function () {
+      controller.style.opacity = 1;
+
       if (i == terms.length) {
         i = 0;
       }
 
-      controller.innerText = terms[i];
+      controller.innerText = terms[i].trim();
+      var fadeEffect = setInterval(function () {
+        if (controller.style.opacity > 0) {
+          controller.style.opacity -= 0.1;
+        } else {
+          clearInterval(fadeEffect);
+        }
+      }, 100);
       i++;
     }, 2000);
   };

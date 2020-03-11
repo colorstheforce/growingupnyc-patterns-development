@@ -1,5 +1,7 @@
 // Paint Splatter
 //
+@import 'config/cdn';
+
 
 @mixin splatter($v-alignment, $h-alignment) {
   position: relative;
@@ -7,7 +9,7 @@
   @if $v-alignment == 'top' {
     &:before {
       content: '';
-      background: url(../images/splatter-#{$v-alignment}-#{$h-alignment}.png) $v-alignment $h-alignment no-repeat;
+      background: url(#{$cdn}images/splatter-#{$v-alignment}-#{$h-alignment}.png) $v-alignment $h-alignment no-repeat;
       bottom: 0;
       display: block;
       height: 100%;
@@ -21,7 +23,7 @@
   @else {
     &:after {
       content: '';
-      background: url(../images/splatter-#{$v-alignment}-#{$h-alignment}.png) $v-alignment $h-alignment no-repeat;
+      background: url(#{$cdn}images/splatter-#{$v-alignment}-#{$h-alignment}.png) $v-alignment $h-alignment no-repeat;
       bottom: 0;
       display: block;
       height: 100%;

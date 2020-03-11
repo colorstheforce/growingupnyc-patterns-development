@@ -928,6 +928,7 @@ function forEach(collection, iteratee) {
 var forEach_1 = forEach;
 
 var Animations = function Animations() {
+  console.log("Animations");
   this._settings = {
     selector: Animations.selector,
     controller: Animations.controller

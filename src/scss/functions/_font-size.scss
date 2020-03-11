@@ -8,12 +8,19 @@
     // @include grid-media($bp-large) {
     //   font-size: rem-calc($large);
     // }
+
+	@media screen and (min-width: $screen-desktop) {
+      font-size: rem-calc($large);
+  }
   }
   @else if $large > 16 {
     font-size: rem-calc($large * $font-size-ratio);
     // @include grid-media($bp-large) {
     //   font-size: rem-calc($large);
     // }
+	@media screen and (min-width: $screen-desktop) {
+      font-size: rem-calc($large);
+  }
   }
   @else {
     font-size: rem-calc($large);
@@ -47,7 +54,10 @@
 @mixin font-size-xxx-large {
   font-size: rem-calc($font-size-xxx-large-mobile);
 
-  @include grid-media($bp-medium) {
+  // @include grid-media($bp-medium) {
+  //   font-size: rem-calc($font-size-xxx-large);
+  // }
+	@media screen and (min-width: $screen-mobile) {
     font-size: rem-calc($font-size-xxx-large);
   }
 }

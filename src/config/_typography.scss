@@ -63,7 +63,10 @@ $font-size-ratio: map-get($fontSizes, 'font-size-ratio');
 @mixin font-size-xxx-large {
   font-size: rem-calc($font-size-xxx-large-mobile);
 
-  @include grid-media($bp-medium) {
+  // @include grid-media($bp-medium) {
+  //   font-size: rem-calc($font-size-xxx-large);
+  // }
+	@media screen and (min-width: $screen-tablet) {
     font-size: rem-calc($font-size-xxx-large);
   }
 }

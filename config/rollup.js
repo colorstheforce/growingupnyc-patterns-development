@@ -212,6 +212,24 @@ const modules = [
       }
     ]
   },
+  {
+    input: './src/objects/accordion/Accordion.js',
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'Accordion',
+        file: `./dist/objects/accordion/Accordion.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'Accordion',
+        file: `./dist/objects/accordion/Accordion.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
+  },
 ];
 
 export default modules;

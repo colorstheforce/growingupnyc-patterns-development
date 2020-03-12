@@ -65,7 +65,7 @@
 }
 
 .c-list-box--primary .c-list-box__heading {
-  @include text-uppercase;
+  // @include text-uppercase;
   padding: rem-calc(12 20);
 
   // @include grid-media($bp-large) {
@@ -204,7 +204,7 @@
 }
 
 .c-list-box--secondary .c-list-box__subitem {
-  @include text-uppercase;
+  // @include text-uppercase;
 
   &:focus {
     background: $color-secondary;

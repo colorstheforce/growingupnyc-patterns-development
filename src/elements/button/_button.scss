@@ -64,7 +64,7 @@
   background: $color-text-invert;
   color: $color-text;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 
   &:focus {
     background: transparent;
@@ -150,7 +150,7 @@
   margin: rem-calc(0 2 4 0);
   min-width: 0;
   padding: rem-calc(10 17);
-  @include text-uppercase;
+  // @include text-uppercase;
 
   &:focus {
     background: $color-secondary;

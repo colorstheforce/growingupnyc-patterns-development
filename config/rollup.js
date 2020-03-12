@@ -230,6 +230,24 @@ const modules = [
       }
     ]
   },
+  {
+    input: './src/utilities/offcanvas/Offcanvas.js',
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'Offcanvas',
+        file: `./dist/utilities/offcanvas/Offcanvas.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'Offcanvas',
+        file: `./dist/utilities/offcanvas/Offcanvas.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
+  },
 ];
 
 export default modules;

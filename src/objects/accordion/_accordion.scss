@@ -30,7 +30,7 @@
   transition: height .5s ease-in-out;
 }
 
-.hidden .o-accordion__content {
+.is-collapsed .o-accordion__content {
   height: 0;
   transition: height .3s ease-in-out;
 }
@@ -38,22 +38,13 @@
 // Accordion caret
 .o-accordion__caret {
   height: rem-calc(22);
-  top: 10%;
+  top: 50%;
   margin-top: rem-calc(-11);
   position: absolute;
   right: rem-calc(14);
   width: rem-calc(22);
-
-	// @include grid-media($bp-large) {
-  //     top: 13%;
-  // }
-	@media screen and (min-width: $screen-desktop) {
-      top: 13%;
-	  }
 }
 
-.active .o-accordion__caret {
+.is-expanded .o-accordion__caret {
   transform: rotate(180deg);
-	top: 50%;
 }
-

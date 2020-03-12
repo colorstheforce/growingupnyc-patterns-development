@@ -46,8 +46,8 @@ class main {
     return new Overlay();
   }
 
-  accordionToggle() {
-    return new AccordionToggle();
+  accordion() {
+    return new Accordion();
   }
 
   icons(path) {

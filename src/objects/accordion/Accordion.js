@@ -8,6 +8,8 @@ class Accordion {
    * @constructor
    */
   constructor() {
+		console.log("Accordion jQuery");
+		
     this._settings = {
       accordions: []
     };

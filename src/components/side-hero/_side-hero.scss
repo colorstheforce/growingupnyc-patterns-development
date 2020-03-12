@@ -77,7 +77,7 @@
   //   @include splatter(top, left);
   //   @include splatter(bottom, right);
   // }
-	@media screen and (min-width: $screen-desktop) {
+	@media screen and (max-width: $screen-desktop) {
     background: $color-primary;
     @include splatter(top, left);
     @include splatter(bottom, right);

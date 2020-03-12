@@ -248,6 +248,24 @@ const modules = [
       }
     ]
   },
+  {
+    input: './src/objects/overlay/Overlay.js',
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'Overlay',
+        file: `./dist/objects/overlay/Overlay.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'overlay',
+        file: `./dist/objects/overlay/Overlay.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
+  },
 ];
 
 export default modules;

@@ -101,16 +101,19 @@ input[type="search"].form-field {
   // @include grid-media($bp-medium) {
   //   right: rem-calc(25);
   // }
+	@media screen and (min-width: $screen-tablet) {
+    right: rem-calc(25);
+  }
 
   &:focus {
     color: $color-secondary;
   }
 
-  // .no-touchevents & {
-  //   &:hover {
-  //     color: $color-secondary;
-  //   }
-  // }
+  .no-touchevents & {
+    &:hover {
+      color: $color-secondary;
+    }
+  }
 
   + .input__icon {
     right: rem-calc(50);
@@ -124,82 +127,85 @@ input[type="search"].form-field {
   }
 }
 
-// .input__icon--weak {
-//   color: $color-text-weak;
+.input__icon--weak {
+  color: $color-text-weak;
 
-//   &:focus {
-//     color: $color-text;
-//   }
+  &:focus {
+    color: $color-text;
+  }
 
-//   // .no-touchevents & {
-//   //   &:hover {
-//   //     color: $color-text;
-//   //   }
-//   // }
-// }
+  .no-touchevents & {
+    &:hover {
+      color: $color-text;
+    }
+  }
+}
 
-// // Icon Size Variations
+// Icon Size Variations
 
-// // Large
-// .input__icon--large {
-//   // height: rem-calc(20);
-//   // margin-top: rem-calc(-15);
-//   width: rem-calc(20);
+// Large
+.input__icon--large {
+  // height: rem-calc(20);
+  // margin-top: rem-calc(-15);
+  width: rem-calc(20);
 
-//   @include grid-media($bp-medium) {
-//     // height: rem-calc(30);
-//     // margin-top: rem-calc(-15);
-//     width: rem-calc(30);
+  @include grid-media($bp-medium) {
+    // height: rem-calc(30);
+    // margin-top: rem-calc(-15);
+    width: rem-calc(30);
 
-//     + .input__icon--large {
-//       right: rem-calc(65);
-//     }
-//   }
-// }
-
-
+    + .input__icon--large {
+      right: rem-calc(65);
+    }
+  }
+}
 
 
-// .signup-form__input--mid {
-//   width: 100%;
-//   @include media($bp-medium) {
-//     width: 60%;
-//   }
-// }
 
-// // Signup Form Field
-// //
-// // .is-error - Error state
-// //
-// // Text input field
-// .signup-form__field {
-//   border: 2px solid transparent;
-//   width: 100%;
 
-//   &:focus {
-//     border-color: $dark-gray;
-//     outline: none;
-//   }
+.signup-form__input--mid {
+  width: 100%;
+  // @include media($bp-medium) {
+  //   width: 60%;
+  // }
+	@media screen and (min-width: $screen-tablet) {
+    width: 60%;
+  }
+}
 
-//   &.is-error {
-//     border-color: $color-error;
-//   }
-// }
+// Signup Form Field
+//
+// .is-error - Error state
+//
+// Text input field
+.signup-form__field {
+  border: 2px solid transparent;
+  width: 100%;
 
-// .signup-form__field-blue {
-//   @extend .signup-form__field;
-//   border: 2px solid $bright-blue;
-// }
+  &:focus {
+    border-color: $dark-gray;
+    outline: none;
+  }
 
-// .signup-form__field-purple {
-//   @extend .signup-form__field;
-//   border: 2px solid $purple;
-// }
+  &.is-error {
+    border-color: $color-error;
+  }
+}
 
-// // Signup Form Label
-// .signup-form__label {
-//   overflow: hidden;
-//   padding: 0 rem-calc(15);
-//   position: absolute;
-//   width: 100%;
-// }
+.signup-form__field-blue {
+  @extend .signup-form__field;
+  border: 2px solid $bright-blue;
+}
+
+.signup-form__field-purple {
+  @extend .signup-form__field;
+  border: 2px solid $purple;
+}
+
+// Signup Form Label
+.signup-form__label {
+  overflow: hidden;
+  padding: 0 rem-calc(15);
+  position: absolute;
+  width: 100%;
+}

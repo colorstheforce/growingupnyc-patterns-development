@@ -32,7 +32,7 @@ input[type="search"].form-field {
   // @include grid-media($bp-medium) {
   //   padding: rem-calc(20 95 20 25);
   // }
-	@media screen and (min-width: $screen-tablet) {
+  @media screen and (min-width: $screen-tablet) {
     padding: rem-calc(20 95 20 25);
   }
 }
@@ -58,7 +58,7 @@ input[type="search"].form-field {
   // @include grid-media($bp-medium) {
   //   width: rem-calc(240);
   // }
-	@media screen and (min-width: $screen-tablet) {
+  @media screen and (min-width: $screen-tablet) {
     width: rem-calc(240);
   }
 }
@@ -70,7 +70,7 @@ input[type="search"].form-field {
   //   min-width: rem-calc(100);
   //   width: calc(100% - 15.3125rem);
   // }
-	@media screen and (min-width: $screen-tablet) {
+  @media screen and (min-width: $screen-tablet) {
     max-width: rem-calc(170);
     min-width: rem-calc(100);
     width: calc(100% - 15.3125rem);
@@ -101,7 +101,7 @@ input[type="search"].form-field {
   // @include grid-media($bp-medium) {
   //   right: rem-calc(25);
   // }
-	@media screen and (min-width: $screen-tablet) {
+  @media screen and (min-width: $screen-tablet) {
     right: rem-calc(25);
   }
 
@@ -121,9 +121,9 @@ input[type="search"].form-field {
     // @include grid-media($bp-medium) {
     //   right: rem-calc(55);
     // }
-		@media screen and (min-width: $screen-tablet) {
+    @media screen and (min-width: $screen-tablet) {
       right: rem-calc(55);
-  	}
+    }
   }
 }
 
@@ -149,15 +149,22 @@ input[type="search"].form-field {
   // margin-top: rem-calc(-15);
   width: rem-calc(20);
 
-  @include grid-media($bp-medium) {
-    // height: rem-calc(30);
-    // margin-top: rem-calc(-15);
-    width: rem-calc(30);
+  // @include grid-media($bp-medium) {
+  //   // height: rem-calc(30);
+  //   // margin-top: rem-calc(-15);
+  //   width: rem-calc(30);
 
-    + .input__icon--large {
-      right: rem-calc(65);
+  //   + .input__icon--large {
+  //     right: rem-calc(65);
+  //   }
+  // }
+  @media screen and (min-width: $screen-tablet) {
+      width: rem-calc(30);
+
+      + .input__icon--large {
+        right: rem-calc(65);
+      }
     }
-  }
 }
 
 
@@ -168,7 +175,7 @@ input[type="search"].form-field {
   // @include media($bp-medium) {
   //   width: 60%;
   // }
-	@media screen and (min-width: $screen-tablet) {
+  @media screen and (min-width: $screen-tablet) {
     width: 60%;
   }
 }

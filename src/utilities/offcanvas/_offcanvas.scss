@@ -87,7 +87,7 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   overflow: auto;
   transition: transform .5s;
   visibility: visible;
-  z-index: $z-index-offcanvas-side;
+  // z-index: $z-index-offcanvas-side;
 }
 
 .o-offcanvas__side {
@@ -105,6 +105,8 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
 }
 
 .is-open .o-offcanvas__side {
+	  z-index: 1;
+
   &:after {
     height: 0;
     opacity: 0;

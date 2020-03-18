@@ -54,7 +54,7 @@ $indicator-size: 10px;
   padding: rem-calc(20);
   position: relative;
   text-decoration: none;
-  @include text-uppercase;
+  // @include text-uppercase;
 
   &:focus,
   &.is-active {

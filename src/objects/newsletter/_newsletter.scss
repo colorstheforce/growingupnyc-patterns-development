@@ -1,5 +1,5 @@
 /**
- * Arrow-pager
+ * Newsletter
  */
 
 // Dependencies
@@ -10,30 +10,7 @@
 // pattern specific SASS configuration in the /src/config directory, or
 // add configuration to the /config/variables.js object (which is
 // to SASS during the compilation process).
-// @import 'config/tokens';
+// @import 'config/variables';
 
 // Declarations
-
-.c-arrow-pager {
-  font-family: $font-family-display;
-  font-weight: $font-weight-extrablack;
-  @include font-size-x-large;
-  padding-top: 10px;
-  margin: 0 0 35px;
-  text-align: center;
-  // @include text-uppercase;
-
-  // @include grid-media($bp-large) {
-  //   padding-top: 0;
-  // }
-}
-
-.c-arrow-pager__arrow {
-  color: $color-gray-mid;
-  text-decoration: none;
-}
-
-// .previous {
-//   float: left;
-//   padding-right: 5px;
-// }
+// .o-newsletter { }

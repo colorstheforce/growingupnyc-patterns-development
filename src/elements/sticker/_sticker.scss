@@ -33,7 +33,7 @@
   height: rem-calc($sticker-size-mobile);
   text-align: center;
   text-decoration: none;
-  @include text-uppercase;
+  // @include text-uppercase;
   white-space: nowrap;
   width: rem-calc($sticker-size-mobile);
   //override text-uppercase

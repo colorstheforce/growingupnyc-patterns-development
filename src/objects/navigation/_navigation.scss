@@ -108,7 +108,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
     height: rem-calc(80px);
   }
 
-  
+
   // @include grid-media($bp-medium) {
   //   height: rem-calc(144px);
   // }
@@ -226,7 +226,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   position: relative;
   text-decoration: none;
 
-  @include text-uppercase;
+  // @include text-uppercase;
 
   &:focus {
     color: $color-secondary;

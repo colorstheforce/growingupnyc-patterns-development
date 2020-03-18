@@ -45,42 +45,6 @@ input[type="search"].form-field {
 }
 
 
-.signup-form__input {
-  display: inline-block;
-  margin: rem-calc(24) 0 0;
-  position: relative;
-  z-index: 1;
-}
-
-.signup-form__input--long {
-  width: 100%;
-
-  // @include grid-media($bp-medium) {
-  //   width: rem-calc(240);
-  // }
-  @media screen and (min-width: $screen-tablet) {
-    width: rem-calc(240);
-  }
-}
-
-.signup-form__input--short {
-  width: 100%;
-  // @include grid-media($bp-medium) {
-  //   max-width: rem-calc(170);
-  //   min-width: rem-calc(100);
-  //   width: calc(100% - 15.3125rem);
-  // }
-  @media screen and (min-width: $screen-tablet) {
-    max-width: rem-calc(170);
-    min-width: rem-calc(100);
-    width: calc(100% - 15.3125rem);
-  }
-}
-
-.signup-form__input--full {
-  width: 100%;
-}
-
 // ICON
 .input__icon-container {
   position: relative;
@@ -170,49 +134,36 @@ input[type="search"].form-field {
 
 
 
-.signup-form__input--mid {
-  width: 100%;
-  // @include media($bp-medium) {
-  //   width: 60%;
-  // }
-  @media screen and (min-width: $screen-tablet) {
-    width: 60%;
-  }
-}
+
 
 // Signup Form Field
 //
 // .is-error - Error state
 //
 // Text input field
-.signup-form__field {
-  border: 2px solid transparent;
-  width: 100%;
+// .signup-form__field {
+//   border: 2px solid transparent;
+//   width: 100%;
 
-  &:focus {
-    border-color: $dark-gray;
-    outline: none;
-  }
+//   &:focus {
+//     border-color: $dark-gray;
+//     outline: none;
+//   }
 
-  &.is-error {
-    border-color: $color-error;
-  }
-}
+//   &.is-error {
+//     border-color: $color-error;
+//   }
+// }
 
-.signup-form__field-blue {
-  @extend .signup-form__field;
-  border: 2px solid $bright-blue;
-}
+// .signup-form__field-blue {
+//   @extend .signup-form__field;
+//   border: 2px solid $bright-blue;
+// }
 
-.signup-form__field-purple {
-  @extend .signup-form__field;
-  border: 2px solid $purple;
-}
+// .signup-form__field-purple {
+//   @extend .signup-form__field;
+//   border: 2px solid $purple;
+// }
 
 // Signup Form Label
-.signup-form__label {
-  overflow: hidden;
-  padding: 0 rem-calc(15);
-  position: absolute;
-  width: 100%;
-}
+

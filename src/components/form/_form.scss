@@ -17,19 +17,25 @@
 //   <button type="submit" class="signup-form__button button--simple button--simple--alt">Sign Up</button>
 // </form>
 //
-.signup-form {
-  @include font-size-small;
-  h2 {
-    margin-bottom: 0;
-  }
+
+// Signup Form Fieldset
+.form__fieldset {
+  margin-top: rem-calc(24);
 }
 
-// Signup Form Error
-.signup-form__error {
-  p {
-    margin-top: rem-calc(20);
-  }
+.form__input--full {
+  width: 100%;
 }
+
+// Signup Form Label
+.form__label {
+  overflow: hidden;
+  padding: 0 rem-calc(15);
+  position: absolute;
+  width: 100%;
+  top: 30%;
+}
+
 
 // Signup Form Input
 //
@@ -81,50 +87,6 @@
   }
 }
 
-.form__input--full {
-  width: 100%;
-}
-
-// Signup Form Field
-//
-// .is-error - Error state
-//
-// Text input field
-.signup-form__field {
-  border: 2px solid transparent;
-  width: 100%;
-
-  &:focus {
-    border-color: $color-gray-dark;
-    outline: none;
-  }
-
-  &.is-error {
-    border-color: $color-error;
-  }
-}
-
-.signup-form__field-blue {
-  @extend .signup-form__field;
-  border: 2px solid $color-blue-light;
-}
-
-.signup-form__field-purple {
-  @extend .signup-form__field;
-  border: 2px solid $color-purple;
-}
-
-// Signup Form Label
-.form__label {
-  overflow: hidden;
-  padding: 0 rem-calc(15);
-  position: absolute;
-  width: 100%;
-  top: 30%;
-}
-
-// Signup Form Label Content
-//
 // Inner content within a label. The data-content
 .form__label-content {
   color: $color-secondary;
@@ -136,10 +98,6 @@
   width: 100%;
 }
 
-// Signup Form Fieldset
-.form__fieldset {
-  margin-top: rem-calc(24);
-}
 
 // Signup Form Checkbox
 //
@@ -158,47 +116,7 @@
   margin-right: 0;
 }
 
-.signup-form__checkbox-list {
-  line-height: rem-calc(20);
-  margin-top: rem-calc(10);
-}
 
-// Signup Form Button
-.signup-form__button {
-  margin-top: rem-calc(20);
-}
-
-.signup-form__button-center {
-  @extend .signup-form__button;
-  margin: auto;
-}
-
-// Signup Form Success Message
-//
-// markup:
-// <p class="c-signup-form__success">Success message for the form</p>
-//
-.c-signup-form__response {
-  font-family: $font-family-display;
-  @include font-size(21, 24);
-  font-weight: $font-weight-extrablack;
-  text-align: center;
-  .success,
-  .error,
-  .already-subscribed {
-    display: none;
-  }
-}
-
-.c-signup-form {
-  width: 100%;
-  // @include grid-media($bp-medium) {
-  //   width: 50%;
-  // }
-	@media screen and (min-width: $screen-tablet) {
-    width: 50%;
-  }
-}
 
 .mc-field-group {
   padding-bottom: rem-calc(15);
@@ -208,13 +126,6 @@
   color: $color-pink;
 }
 
-.signup-form-logo {
-  width: rem-calc(150);
-}
-
-.signup-form-intro {
-  padding-bottom: rem-calc(15);
-}
 
 
 
@@ -239,13 +150,13 @@
 .form-field,
 .facetwp-search {
   appearance: none;
-  background: $white;
+  background: $color-white;
   border: 1px solid transparent;
   border-radius: rem-calc(3);
   color: $color-text;
 
   &--shaded {
-    background: $light-gray-2;
+    background: $color-gray;
   }
   @include font-size-small;
   font-weight: $font-weight-semibold;
@@ -364,4 +275,185 @@ input[type="search"].form-field {
       right: rem-calc(65);
     }
   }
+}
+
+
+
+
+
+
+
+// Signup Form h2
+
+.signup-form {
+  @include font-size-small;
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+// Signup Form Error
+.signup-form__error {
+  p {
+    margin-top: rem-calc(20);
+  }
+}
+
+
+// Signup Form Field
+//
+// .is-error - Error state
+//
+// Text input field
+.signup-form__field {
+  border: 2px solid transparent;
+  width: 100%;
+
+  &:focus {
+    border-color: $color-gray-dark;
+    outline: none;
+  }
+
+  &.is-error {
+    border-color: $color-error;
+  }
+}
+
+.signup-form__field-blue {
+  @extend .signup-form__field;
+  border: 2px solid $color-blue-light;
+}
+
+.signup-form__field-purple {
+  @extend .signup-form__field;
+  border: 2px solid $color-purple;
+}
+
+
+
+// Signup Form Label Content
+//
+// Signup Form Checkbox
+//
+// Wrapper around checkbox input, label, and hidden field (if its a Tools checkbox)
+.signup-form__checkbox {
+  //display: inline-block;
+  line-height: rem-calc(20);
+  //margin-right: rem-calc(20);
+  margin-top: rem-calc(10);
+  vertical-align: middle;
+  // @include span-columns(6 of 12);
+  // @include omega(even);
+}
+
+.signup-form__checkbox-list {
+  line-height: rem-calc(20);
+  margin-top: rem-calc(10);
+}
+
+// Signup Form Button
+.signup-form__button {
+  margin-top: rem-calc(20);
+}
+
+.signup-form__button-center {
+  @extend .signup-form__button;
+  margin: auto;
+}
+
+
+.signup-form-logo {
+  width: rem-calc(150);
+}
+
+.signup-form-intro {
+  padding-bottom: rem-calc(15);
+}
+
+.signup-form__label {
+  overflow: hidden;
+  padding: 0 rem-calc(15);
+  position: absolute;
+  width: 100%;
+}
+
+
+// Signup form Input
+.signup-form__input {
+  display: inline-block;
+  margin: rem-calc(24) 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.signup-form__input--long {
+  width: 100%;
+
+  // @include grid-media($bp-medium) {
+  //   width: rem-calc(240);
+  // }
+  @media screen and (min-width: $screen-tablet) {
+    width: rem-calc(240);
+  }
+}
+
+.signup-form__input--short {
+  width: 100%;
+  // @include grid-media($bp-medium) {
+  //   max-width: rem-calc(170);
+  //   min-width: rem-calc(100);
+  //   width: calc(100% - 15.3125rem);
+  // }
+  @media screen and (min-width: $screen-tablet) {
+    max-width: rem-calc(170);
+    min-width: rem-calc(100);
+    width: calc(100% - 15.3125rem);
+  }
+}
+
+.signup-form__input--full {
+  width: 100%;
+}
+
+.signup-form__input--mid {
+  width: 100%;
+  // @include media($bp-medium) {
+  //   width: 60%;
+  // }
+  @media screen and (min-width: $screen-tablet) {
+    width: 60%;
+  }
+}
+
+
+// Signup Form Success Message
+//
+// markup:
+// <p class="c-signup-form__success">Success message for the form</p>
+//
+.c-signup-form__response {
+  font-family: $font-family-display;
+  @include font-size(21, 24);
+  font-weight: $font-weight-extrablack;
+  text-align: center;
+  .success,
+  .error,
+  .already-subscribed {
+    display: none;
+  }
+}
+
+.c-signup-form {
+  width: 100%;
+  // @include grid-media($bp-medium) {
+  //   width: 50%;
+  // }
+	@media screen and (min-width: $screen-tablet) {
+    width: 50%;
+  }
+}
+
+// Signup Form Fieldset
+.signup-form__fieldset {
+  margin-top: rem-calc(24);
 }

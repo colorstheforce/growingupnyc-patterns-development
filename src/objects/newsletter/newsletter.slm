@@ -1,0 +1,89 @@
+/
+/ Newsletter
+
+div class="c-footer bg-color-blue-light py-20 px-10"
+  div class="c-footer__signup w-full desktop:mt-0 desktop:w-1/2"
+    form action="" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="guny-signup" target="_blank" novalidate=""
+      div class="c-signup-form__response"
+        p class="success"
+          = 'One more step!<br/>Please check your inbox and confirm your email address to start receiving updates.<br/>Thanks for signing up!', 'GUNY-Email-Signup'
+        p class="error"
+          = 'Something went wrong. Try again later!', 'GUNY-Email-Signup'
+        p class="already-subscribed"
+          = 'You are already signed up for updates! Check your email.', 'GUNY-Email-Signup'
+      div class="signup-form"
+        h2 class=""
+          = 'Get Updates'
+      div class="signup-form__error guny-error hidden"
+        = 'Please enter your email and zip code and select at least one age group.', 'GUNY-Email-Signup'
+      div class="signup-form__input signup-form__input--long"
+        label for="mce-EMAIL" class="signup-form__label"
+          span class="signup-form__label-content" data-content="Email" title="Email"
+            = 'Email'
+        input type="email" value="" name="EMAIL" class="email form-field signup-form__field" id="mce-EMAIL" required=""
+      div class="mc-field-group" style="display:none"
+        select name="BOROUGH" class="required" id="mce-BOROUGH"
+          option value=""
+          option value="Bronx"
+            = 'Bronx'
+          option value="Brooklyn"
+            = 'Brooklyn'
+          option value="Manhattan"
+            = 'Manhattan'
+          option value="Queens"
+            = 'Queens'
+          option value="Staten Island"
+            = 'Staten Island'
+      div class="signup-form__input signup-form__input--short"
+        label for="mce-ZIP" class="signup-form__label"
+          span class="signup-form__label-content" data-content="Zip code" title="Zip code"
+            = 'Zip code'
+        input name="ZIP" id="mce-ZIP" type="tel" class="form-field signup-form__field" required=""
+      fieldset class="input-group signup-form__fieldset"
+        legend
+          = 'I would like to receive updates for:'
+        div class="flex flex-wrap"
+          span class="signup-form__checkbox w-1/2"
+            label class="checkbox" for="mce-group[3429]-3429-0"
+              input id="mce-group[3429]-3429-0" class="checkbox__field" name="group[3429][1]" type="checkbox" value="1" required=""
+              svg class="checkbox__indicator"
+                use xlink:href="#icon-check"
+              = 'Baby'
+          span class="signup-form__checkbox w-1/2"
+            label class="checkbox" for="mce-group[3429]-3429-1"
+              input id="mce-group[3429]-3429-1" class="checkbox__field" name="group[3429][2]" type="checkbox" value="2" required=""
+              svg class="checkbox__indicator"
+                use xlink:href="#icon-check"
+              = 'Toddler'
+          span class="signup-form__checkbox w-1/2"
+            label class="checkbox" for="mce-group[3429]-3429-2"
+              input id="mce-group[3429]-3429-2" class="checkbox__field" name="group[3429][4]" type="checkbox" value="4" required=""
+              svg class="checkbox__indicator"
+                use xlink:href="#icon-check"
+              = 'Pre-Schooler'
+          span class="signup-form__checkbox w-1/2"
+            label class="checkbox" for="mce-group[3429]-3429-3"
+              input id="mce-group[3429]-3429-3" class="checkbox__field" name="group[3429][8]" type="checkbox" value="8" required=""
+              svg class="checkbox__indicator"
+                use xlink:href="#icon-check"
+              = 'Grade-Schooler'
+          span class="signup-form__checkbox w-1/2"
+            label class="checkbox" for="mce-group[3429]-3429-4"
+              input id="mce-group[3429]-3429-4" class="checkbox__field" name="group[3429][16]" type="checkbox" value="16" required=""
+              svg class="checkbox__indicator"
+                use xlink:href="#icon-check"
+              = 'Pre-Teen'
+          span class="signup-form__checkbox w-1/2"
+            label class="checkbox" for="mce-group[3429]-3429-5"
+              input id="mce-group[3429]-3429-5" class="checkbox__field" name="group[3429][32]" type="checkbox" value="32" required=""
+              svg class="checkbox__indicator"
+                use xlink:href="#icon-check"
+              = 'Teen'
+          span class="signup-form__checkbox w-1/2"
+            label class="checkbox" for="mce-group[3429]-3429-6"
+              input id="mce-group[3429]-3429-6" class="checkbox__field" name="group[3429][64]" type="checkbox" value="64" required=""
+              svg class="checkbox__indicator"
+                use xlink:href="#icon-check"
+              = 'Young Adult'
+      button id="mc-embedded-subscribe" type="submit" class="signup-form__button button--simple button--simple--alt"
+        = 'Sign Up'

@@ -127,7 +127,7 @@
 	@media screen and (min-width: $screen-mobile) {
     font-size: 1.65rem;
   }
-	
+
 	@media screen and (min-width: 425px) {
     font-size: 1.65rem;
   }
@@ -278,6 +278,6 @@
   font-weight: $font-weight-extrablack;
   padding: rem-calc(10);
   position: absolute;
-  @include text-uppercase;
+  // @include text-uppercase;
   top: rem-calc(-16);
 }

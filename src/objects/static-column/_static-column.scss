@@ -12,6 +12,7 @@
 // to SASS during the compilation process).
 @import 'scss/functions/rem-calc';
 @import 'config/media';
+@import 'config/tokens';
 // Declarations
 // .o-static-column { }
 
@@ -122,7 +123,7 @@
   // Scroll Column
   .o-scroll-column {
     width: 40%;
-		background-color: #ccc;
+		background-color: $color-white;
   }
 
   .o-scroll-column--right {

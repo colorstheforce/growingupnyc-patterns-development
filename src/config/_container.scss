@@ -8,7 +8,7 @@
 // Declarations
 
 @mixin outer-container {
-  @include grid-container;
+  // @include grid-container;
   margin-left: auto;
   margin-right: auto;
   max-width: 80em;

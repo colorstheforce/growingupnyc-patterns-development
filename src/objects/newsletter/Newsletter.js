@@ -224,7 +224,7 @@ Newsletter.zipcodes = [
 	}
 ]
 
-Newsletter.url = 'https://twitter.us20.list-manage.com/subscribe/post?u=ab78efc570f521b7eb69418cd&amp;id=925129de2e'
+Newsletter.url = "https://cityofnewyork.us18.list-manage.com/subscribe/post-json?u=d04b7b607bddbd338b416fa89&amp;id=a02dc5e68b&c=?"
 
 
 

@@ -1,5 +1,17 @@
 = extend('layouts/default')
 
-- title = 'Form-effects'
+- title = 'Footer'
+
+/ Partials
+= partial('partials/head.mixin.slm');
+= partial('partials/content-header.mixin.slm');
+= partial('partials/section-2-col.mixin.slm');
+
+/ Content blocks
+= content('head');
+  = mixin('head');
 
 = content('main')
+  = mixin('content-header', title);
+  div
+    = mixin('section-2-col', 'Form Effects', 'utilities/form-effects/form-effects');

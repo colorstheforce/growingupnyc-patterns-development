@@ -128,6 +128,9 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
           a href="navigation" class="c-list-box__subitem"
             = 'Navigation'
         li
+          a href="newsletter" class="c-list-box__subitem"
+            = 'Newsletter'
+        li
           a href="overlay" class="c-list-box__subitem"
             = 'overlay'
         li
@@ -154,6 +157,9 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
         li
           a href="fonts" class="c-list-box__subitem"
             = 'Font'
+        li
+          a href="form-effects" class="c-list-box__subitem"
+            = 'Form Effects'
         li
           a href="offcanvas" class="c-list-box__subitem"
             = 'Offcanvas'

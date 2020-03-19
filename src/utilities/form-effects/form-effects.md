@@ -1,0 +1,1 @@
+Form effect add animation to input label making it move up if the input is in focus.

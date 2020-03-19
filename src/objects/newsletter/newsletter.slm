@@ -10,12 +10,12 @@ div class="c-footer bg-color-blue-light py-20 px-10"
         p class="error"
           = 'Something went wrong. Try again later!', 'GUNY-Email-Signup'
         p class="already-subscribed"
-          = 'You are already signed up for updates! Check your email.', 'GUNY-Email-Signup'
+          = 'You are already signed up for updates! Check your email.'
       div class="signup-form"
         h2 class=""
           = 'Get Updates'
       div class="signup-form__error guny-error hidden"
-        = 'Please enter your email and zip code and select at least one age group.', 'GUNY-Email-Signup'
+        = 'Please enter your email and zip code and select at least one age group.'
       div class="signup-form__input signup-form__input--long"
         label for="mce-EMAIL" class="signup-form__label"
           span class="signup-form__label-content" data-content="Email" title="Email"

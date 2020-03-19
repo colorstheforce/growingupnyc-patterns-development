@@ -2,15 +2,35 @@
  * Form-effects
  */
 
-// Dependencies
-// This is where variables, mixins, or functions are imported that the
-// pattern depends on. It's helpful to import dependencies into each
-// pattern so that they can be exported individually and it's clear
-// where the pattern is getting variables from. You can create a
-// pattern specific SASS configuration in the /src/config directory, or
-// add configuration to the /config/variables.js object (which is
-// to SASS during the compilation process).
-// @import 'config/variables';
+.signup-form__label {
+  bottom: rem-calc(10);
+}
 
-// Declarations
-// .form-effects { }
+.is-filled .signup-form__label {
+  bottom: 100%;
+}
+
+.signup-form__label {
+  bottom: 100%;
+  transform: translate3d(0, #{rem-calc(37)}, 0);
+  transition: transform 250ms ease-in-out;
+}
+
+.is-filled .signup-form__label {
+  transform: translate3d(0, 0, 0);
+}
+
+
+.is-filled .signup-form__label-content {
+  color: $color-text-invert;
+  font-family: $font-family-display;
+  @include font-size-x-small;
+  font-weight: $font-weight-extrablack;
+  text-transform: uppercase;
+}
+
+.is-filled .signup-form__label-content {
+  color: transparent;
+  overflow: visible;
+  transform: translate3d(0, 100%, 0);
+}

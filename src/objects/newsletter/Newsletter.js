@@ -13,25 +13,23 @@ class Newsletter {
    *
    *
    */
-  constructor(settings, data) {
+  constructor(mailchimpUrl) {
     console.log("Newsletter");
+		const url = mailchimpUrl || Newsletter.url
 
-    this.data = data;
-    this.settings = {
-      url: settings.url ? settings.url : Newsletter.url
-      // user: settings.user ? settings.user : Newsletter.user,
-      // id: settings.id ? settings.id : Newsletter.id
-    };
+    // this.data = data;
+    // this.settings = {
+    //   // user: settings.user ? settings.user : Newsletter.user,
+    //   // id: settings.id ? settings.id : Newsletter.id
+    // };
 
     $('#mc-embedded-subscribe:button[type="submit"]').click(function(event){
       event.preventDefault();
-      console.log(this.settings);
 
       let formClass = $(this).parents('form').attr('class');
-      console.log(formClass);
 
       let $form = $('.' + formClass);
-      Newsletter.validateFields($form, event);
+      Newsletter.validateFields($form, event, url);
     });
 
             /**
@@ -57,8 +55,8 @@ class Newsletter {
 
 
 // loop through each required field
-Newsletter.validateFields = function(form, event, settings) {
-  console.log(settings);
+Newsletter.validateFields = function(form, event, url) {
+
 
   const emailRegex = new RegExp(/\S+@\S+\.\S+/);
   const zipRegex = new RegExp(/^\d{5}(-\d{4})?$/i);
@@ -108,7 +106,7 @@ Newsletter.validateFields = function(form, event, settings) {
         if (hasErrors) {
           form.find('.guny-error').toggleClass();
         } else {
-          Newsletter.submitSignup(form, fields);
+          Newsletter.submitSignup(form, fields, url);
         }
       }
 
@@ -126,13 +124,14 @@ Newsletter.validateFields = function(form, event, settings) {
         return borough;
       }
 
-      Newsletter.submitSignup = function(form, formData){
-        console.log(settings);
+      Newsletter.submitSignup = function(form, formData, url){
 
         let response = $('.c-signup-form__response')
+
         form.html(response);
+				console.log(form.html(response));
         // let formAction = form.attr('action') + "u=" + Newsletter.user + "amp;id=" + Newsletter.id
-        let formAction = Newsletter.url
+        let formAction = url
         $.ajax({
           url: formAction,
           type: form.attr('method'),
@@ -155,7 +154,7 @@ Newsletter.validateFields = function(form, event, settings) {
                   $('.c-signup-form__response > .already-subscribed').show();
                 }
               }
-            }else {
+            } else {
               if(form[0].className.indexOf('contact') > -1){
                 if(form[0].className.indexOf('unity') > -1){
                   form.html('<div class="text-center"><p class="u-bottom-spacing-small">Thank you for contacting the NYC Unity Project! Someone will respond to you shortly.</p><a class="button--primary button--primary__curved button--primary__purple" href="https://growingupnyc.cityofnewyork.us/generationnyc/topics/lgbtq">Go back to the Unity Project</a></div>');

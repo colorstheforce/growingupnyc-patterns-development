@@ -15,5 +15,9 @@
 / Basically, if you are building an Object or a Component and including
 / other Elements/Components/Objects, the symbol should be set to false
 / and the instance should be set to the pattern's path.
-
-div class="form-effects" data-sketch-symbol=symbol data-sketch-symbol-instance=instance
+div class="bg-color-blue-light px-20 py-20"
+  div class="signup-form__input signup-form__input--long"
+    label for="mce-EMAIL" class="signup-form__label"
+      span class="signup-form__label-content" data-content="Email" title="Email"
+        = 'Email'
+    input type="email" value="" name="EMAIL" class="email form-field signup-form__field" id="mce-EMAIL" required=""

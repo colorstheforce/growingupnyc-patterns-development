@@ -12,6 +12,7 @@ class Offcanvas {
    */
   constructor(settings) {
     const body = document.querySelector('body');
+		console.log("Offcanvas");
 
     this._settings = {
       selector: (settings.selector) ? settings.selector : Offcanvas.selector,

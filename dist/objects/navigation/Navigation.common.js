@@ -929,6 +929,7 @@ var forEach_1 = forEach;
 
 var Offcanvas = function Offcanvas(settings) {
   var body = document.querySelector('body');
+  console.log("Offcanvas");
   this._settings = {
     selector: settings.selector ? settings.selector : Offcanvas.selector,
     namespace: settings.namespace ? settings.namespace : Offcanvas.namespace,

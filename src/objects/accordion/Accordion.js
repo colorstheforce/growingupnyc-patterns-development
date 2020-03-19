@@ -8,6 +8,7 @@ class Accordion {
    * @constructor
    */
   constructor() {
+		console.log("Accordion");
 
     this._settings = {
       accordions: []

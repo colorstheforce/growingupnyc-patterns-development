@@ -15,6 +15,8 @@ class Animations {
    * @constructor
    */
   constructor() {
+		console.log("Animation");
+
     this._settings = {
       selector: Animations.selector,
       controller: Animations.controller,

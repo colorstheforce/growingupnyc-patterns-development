@@ -934,6 +934,7 @@ var Animations = (function () {
    */
 
   var Animations = function Animations() {
+    console.log("Animation");
     this._settings = {
       selector: Animations.selector,
       controller: Animations.controller

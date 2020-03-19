@@ -8,23 +8,25 @@
  * @see modules/stickyNav
  */
 
-import forEach from 'lodash/forEach'; 
+import forEach from 'lodash/forEach';
 
 class StaticColumn {
   constructor() {
+		console.log("Static Column");
+
     // const el = document.querySelector(AlertBanner.selector);
     // const control = document.querySelector(AlertBanner.controller);
-	
+
 		const stickyContent = document.querySelectorAll('.js-static');
 		const notStickyClass = StaticColumn.notStickyClass;
 		const bottomClass = StaticColumn.bottomClass;
-    
+
     // this._settings = {
     //   selector: StaticColumn.selector,
     //   notStickyClass: StaticColumn.notStickyClass,
     //   bottomClass: StaticColumn.bottomClass
     // };
-    
+
 		  /**
   * Calculates the window position and sets the appropriate class on the element
   * @param {object} stickyContentElem - DOM node that should be stickied
@@ -67,7 +69,7 @@ assignStickyFeature(stickyContent) {
 	// Absolutely positioning only when necessary and not by default prevents flickering
 	// when removing the "is-bottom" class on Chrome
 	if (elemTop > 0) {
-		
+
 		stickyContentElem.classList.add(StaticColumn.notStickyClass);
 	} else {
 		stickyContentElem.classList.remove(StaticColumn.notStickyClass);

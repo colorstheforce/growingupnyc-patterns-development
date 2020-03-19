@@ -933,6 +933,7 @@ var forEach_1 = forEach;
  */
 
 var Animations = function Animations() {
+  console.log("Animation");
   this._settings = {
     selector: Animations.selector,
     controller: Animations.controller

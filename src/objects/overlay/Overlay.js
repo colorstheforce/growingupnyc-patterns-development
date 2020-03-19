@@ -13,6 +13,7 @@ class Overlay {
   constructor() {
     // this.data = data;
     // this.settings = settings;
+			console.log("Overlay");
 
     const overlay = document.querySelectorAll('.js-overlay');
     if (overlay) {

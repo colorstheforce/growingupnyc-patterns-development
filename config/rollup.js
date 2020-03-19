@@ -266,6 +266,42 @@ const modules = [
       }
     ]
   },
+  {
+    input: './src/objects/newsletter/Newsletter.js',
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'Newsletter',
+        file: `./dist/objects/newsletter/Newsletter.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'Newsletter',
+        file: `./dist/objects/newsletter/Newsletter.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
+  },
+  {
+    input: './src/utilities/form-effects/FormEffects.js',
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'FormEffects',
+        file: `./dist/utilities/form-effects/FormEffects.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'FormEffects',
+        file: `./dist/utilities/form-effects/FormEffects.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
+  },
 ];
 
 export default modules;

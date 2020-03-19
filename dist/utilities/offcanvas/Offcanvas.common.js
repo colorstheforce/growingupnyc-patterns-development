@@ -929,15 +929,15 @@ var forEach_1 = forEach;
 
 var Offcanvas = function Offcanvas(settings) {
   var body = document.querySelector('body');
-  console.log("Offcanvas");
-  this._settings = {
-    selector: settings.selector ? settings.selector : Offcanvas.selector,
-    namespace: settings.namespace ? settings.namespace : Offcanvas.namespace,
-    inactiveClass: settings.inactiveClass ? settings.inactiveClass : Offcanvas.inactiveClass,
-    activeClass: settings.activeClass ? settings.activeClass : Offcanvas.activeClass,
-    before: settings.before ? settings.before : false,
-    after: settings.after ? settings.after : false
-  };
+  console.log("Offcanvas"); // this._settings = {
+  // selector: (settings.selector) ? settings.selector : Offcanvas.selector,
+  // namespace: (settings.namespace) ? settings.namespace : Offcanvas.namespace,
+  // inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Offcanvas.inactiveClass,
+  // activeClass: (settings.activeClass) ? settings.activeClass : Offcanvas.activeClass,
+  // before: (settings.before) ? settings.before : false,
+  // after: (settings.after) ? settings.after : false
+  // };
+
   var offCanvas = document.querySelectorAll('.js-offcanvas');
 
   if (offCanvas) {

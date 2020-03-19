@@ -14,14 +14,14 @@ class Offcanvas {
     const body = document.querySelector('body');
 		console.log("Offcanvas");
 
-    this._settings = {
-      selector: (settings.selector) ? settings.selector : Offcanvas.selector,
-      namespace: (settings.namespace) ? settings.namespace : Offcanvas.namespace,
-      inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Offcanvas.inactiveClass,
-      activeClass: (settings.activeClass) ? settings.activeClass : Offcanvas.activeClass,
-      before: (settings.before) ? settings.before : false,
-      after: (settings.after) ? settings.after : false
-    };
+    // this._settings = {
+    //   selector: (settings.selector) ? settings.selector : Offcanvas.selector,
+    //   namespace: (settings.namespace) ? settings.namespace : Offcanvas.namespace,
+    //   inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Offcanvas.inactiveClass,
+    //   activeClass: (settings.activeClass) ? settings.activeClass : Offcanvas.activeClass,
+    //   before: (settings.before) ? settings.before : false,
+    //   after: (settings.after) ? settings.after : false
+    // };
 
     const offCanvas = document.querySelectorAll('.js-offcanvas');
     if (offCanvas) {

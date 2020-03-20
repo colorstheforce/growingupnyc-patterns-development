@@ -28,6 +28,11 @@
   //   text-align: left;
   //   padding: rem-calc(92 40 80);
   // }
+	@media screen and (min-width: $screen-tablet) {
+    background-size: cover;
+    text-align: left;
+    padding: rem-calc(92 40 80);
+  }
 }
 
 .c-hero--light {
@@ -39,15 +44,27 @@
   //   padding: rem-calc(100 ($outer-gutter-medium - $outer-gutter-small) 36);
   // }
 
+	@media screen and (min-width: $screen-tablet) {
+    padding: rem-calc(100 ($outer-gutter-medium - $outer-gutter-small) 36);
+  }
+
   // @include grid-media($bp-large) {
   //   padding: rem-calc(100 0 36);
   // }
+
+	@media screen and (min-width: $screen-desktop) {
+    padding: rem-calc(100 0 36);
+  }
 }
 
 .c-hero {
   // @include grid-media($bp-xlarge) {
   //   padding: rem-calc(113 80 60);
   // }
+
+	@media screen and (min-width: $screen-desktop-large) {
+    padding: rem-calc(113 80 60);
+  }
 }
 
 .c-hero--light {
@@ -60,10 +77,16 @@
   // @include grid-media($bp-medium) {
   //   padding: rem-calc(165 40 80);
   // }
+	@media screen and (min-width: $screen-tablet) {
+    padding: rem-calc(165 40 80);
+  }
 
   // @include grid-media($bp-xlarge) {
   //   padding: rem-calc(227 80 80);
   // }
+	@media screen and (min-width: $screen-desktop-large) {
+    padding: rem-calc(227 80 80);
+  }
 }
 
 .c-hero--long-text {
@@ -100,6 +123,9 @@
   // @include grid-media($bp-medium) {
   //   padding-top: 0;
   // }
+	@media screen and (min-width: $screen-tablet) {
+    padding-top: 0;
+  }
 }
 
 .flexbox .c-hero__title,
@@ -109,6 +135,11 @@
   //   flex-flow: row nowrap;
   //   align-items: center;
   // }
+	@media screen and (min-width: $screen-tablet) {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
 }
 
 // Hero Sticker
@@ -128,12 +159,23 @@
   //   position: static;
   //   width: rem-calc(65);
   // }
+	@media screen and (min-width: $screen-tablet) {
+    box-shadow: none;
+    height: rem-calc(65);
+    line-height: rem-calc(65);
+    margin-right: rem-calc(20);
+    position: static;
+    width: rem-calc(65);
+  }
 }
 
 .flexbox .c-hero__sticker {
   // @include grid-media($bp-medium) {
   //   flex-shrink: 0;
   // }
+	@media screen and (min-width: $screen-tablet) {
+    flex-shrink: 0;
+  }
 }
 
 // Hero Tagline
@@ -150,13 +192,22 @@
   // @include grid-media($bp-medium) {
   //   font-size: rem-calc($font-size-xx-large);
   // }
+	@media screen and (min-width: $screen-tablet) {
+    font-size: rem-calc($font-size-xx-large);
+  }
 
   // @include grid-media($bp-large) {
-  //   // @include span-columns(6);
-  //   // @include grid-column(6);
-  //   // @include omega;
-  //   margin-right: 0;
+    // // @include span-columns(6);
+    // // @include grid-column(6);
+    // // @include omega;
+    // margin-right: 0;
   // }
+	@media screen and (min-width: $screen-desktop) {
+    // @include span-columns(6);
+    // @include grid-column(6);
+    // @include omega;
+    margin-right: 0;
+  }
 }
 
 .c-hero--long-text .c-hero__tagline {
@@ -171,12 +222,20 @@
   // @include grid-media($bp-medium) {
   //   font-size: rem-calc($font-size-large);
   // }
+	@media screen and (min-width: $screen-tablet) {
+    padding: rem-calc(113 80 60);
+  }
 
   // @include grid-media($bp-large) {
   //   // @include grid-column(9);
   //   // @include omega;
   //   margin-right:0;
   // }
+	@media screen and (min-width: $screen-desktop) {
+    // @include grid-column(9);
+    // @include omega;
+    margin-right:0;
+  }
 }
 
 // Hero Frill
@@ -195,12 +254,23 @@
   //   right: percentage(-114/1440);
   //   width: percentage(404/1440);
   // }
+	@media screen and (min-width: $screen-tablet) {
+    bottom: percentage(-87/480);
+    top: auto;
+    right: percentage(-114/1440);
+    width: percentage(404/1440);
+  }
 
   // @include grid-media($bp-xlarge) {
   //   bottom: -87px;
   //   right: -114px;
   //   width: 404px;
   // }
+	@media screen and (min-width: $screen-desktop-large) {
+    bottom: -87px;
+    right: -114px;
+    width: 404px;
+  }
 }
 
 // Hero Full BG
@@ -232,4 +302,7 @@
   // @include grid-media($bp-medium) {
   //   padding-top: 0;
   // }
+	@media screen and (min-width: $screen-tablet) {
+    padding-top: 0;
+  }
 }

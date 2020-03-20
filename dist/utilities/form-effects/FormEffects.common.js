@@ -960,7 +960,7 @@ var FormEffects = function FormEffects(settings, data) {
 
   if (searchInput.length) {
     forEach_1(searchInput, function (inputElem) {
-      inputElem.addEventListener('click', handleClear);
+      inputElem.addEventListener('click', FormEffects.handleClear);
     });
   } // this.data = data;
   // this.settings = settings;

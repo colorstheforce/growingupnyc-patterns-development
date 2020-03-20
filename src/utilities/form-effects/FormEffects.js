@@ -27,7 +27,7 @@ class FormEffects {
 
     if (searchInput.length) {
       forEach(searchInput, function(inputElem) {
-        inputElem.addEventListener('click', handleClear);
+        inputElem.addEventListener('click', FormEffects.handleClear);
       });
     }
     // this.data = data;

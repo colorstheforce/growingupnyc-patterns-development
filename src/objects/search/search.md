@@ -1,0 +1,1 @@
+The search object searches keyword throughout the database and can be found at the top bar.

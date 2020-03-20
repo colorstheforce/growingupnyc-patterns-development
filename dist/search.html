@@ -155,47 +155,52 @@
             <div>
               <div class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
                 <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10"><h1 class="type-h1 ">Search</h1></div>
-                <div class="html-tag my-8"><div></div></div>
+                <div class="html-tag my-8"><div><p>The search object searches keyword throughout the database and can be found at the top bar.</p>
+</div></div>
                 <div class="my-8 py-4">
                   <div>
                     <div>
-                      <form action="/search" class="search-form" method="get" role="search">
-                        <div class="form-field__icon-container">
-                          <input class="form-field form-field--large form-field--full-width c-hero__input" data-js="search" data-js-search-dropdown-class="form-field-dropdown--large" data-js-search-suggestions="" name="s" placeholder="Search" type="search" value="" />
-                          <input name="post_type" type="hidden" value="Array" />
-                          <button class="form-field__icon form-field__icon--large" type="submit">
-                            <svg class="icon">
-                              <title></title>
-                              <use xlink:href="#icon-search"></use>
-                            </svg>
-                          </button>
-                          <a aria-hidden="true" class="form-field__icon form-field__icon--large form-field__icon--weak search-clear" href="#clear" style="display:none;">
-                            <svg class="icon">
-                              <title></title>
-                              <use xlink:href="#icon-close"></use>
-                            </svg>
-                          </a>
-                        </div>
-                      </form>
+                      <div class="bg-color-gray-light py-20 px-10">
+                        <form action="/search" class="search-form" method="get" role="search">
+                          <div class="form-field__icon-container">
+                            <input class="form-field form-field--large form-field--full-width c-hero__input" data-js="search" data-js-search-dropdown-class="form-field-dropdown--large" data-js-search-suggestions="" name="s" placeholder="Search" type="search" value="" />
+                            <input name="post_type" type="hidden" value="Array" />
+                            <button class="form-field__icon form-field__icon--large" type="submit">
+                              <svg class="icon--small">
+                                <title>Searching</title>
+                                <use xlink:href="#icon-search"></use>
+                              </svg>
+                            </button>
+                            <a aria-hidden="true" class="form-field__icon form-field__icon--large form-field__icon--weak search-clear" href="#clear" style="display:none;">
+                              <svg class="icon">
+                                <title></title>
+                                <use xlink:href="#icon-close"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </form>
+                      </div>
                     </div>
-                    <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"><pre>&lt;form action=&quot;/search&quot; class=&quot;search-form&quot; method=&quot;get&quot; role=&quot;search&quot;&gt;
-  &lt;div class=&quot;form-field__icon-container&quot;&gt;
-    &lt;input class=&quot;form-field form-field--large form-field--full-width c-hero__input&quot; data-js=&quot;search&quot; data-js-search-dropdown-class=&quot;form-field-dropdown--large&quot; data-js-search-suggestions=&quot;&quot; name=&quot;s&quot; placeholder=&quot;Search&quot; type=&quot;search&quot; value=&quot;&quot; /&gt;
-    &lt;input name=&quot;post_type&quot; type=&quot;hidden&quot; value=&quot;Array&quot; /&gt;
-    &lt;button class=&quot;form-field__icon form-field__icon--large&quot; type=&quot;submit&quot;&gt;
-      &lt;svg class=&quot;icon&quot;&gt;
-        &lt;title&gt;&lt;/title&gt;
-        &lt;use xlink:href=&quot;#icon-search&quot;&gt;&lt;/use&gt;
-      &lt;/svg&gt;
-    &lt;/button&gt;
-    &lt;a aria-hidden=&quot;true&quot; class=&quot;form-field__icon form-field__icon--large form-field__icon--weak search-clear&quot; href=&quot;#clear&quot; style=&quot;display:none;&quot;&gt;
-      &lt;svg class=&quot;icon&quot;&gt;
-        &lt;title&gt;&lt;/title&gt;
-        &lt;use xlink:href=&quot;#icon-close&quot;&gt;&lt;/use&gt;
-      &lt;/svg&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-&lt;/form&gt;
+                    <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"><pre>&lt;div class=&quot;bg-color-gray-light py-20 px-10&quot;&gt;
+  &lt;form action=&quot;/search&quot; class=&quot;search-form&quot; method=&quot;get&quot; role=&quot;search&quot;&gt;
+    &lt;div class=&quot;form-field__icon-container&quot;&gt;
+      &lt;input class=&quot;form-field form-field--large form-field--full-width c-hero__input&quot; data-js=&quot;search&quot; data-js-search-dropdown-class=&quot;form-field-dropdown--large&quot; data-js-search-suggestions=&quot;&quot; name=&quot;s&quot; placeholder=&quot;Search&quot; type=&quot;search&quot; value=&quot;&quot; /&gt;
+      &lt;input name=&quot;post_type&quot; type=&quot;hidden&quot; value=&quot;Array&quot; /&gt;
+      &lt;button class=&quot;form-field__icon form-field__icon--large&quot; type=&quot;submit&quot;&gt;
+        &lt;svg class=&quot;icon--small&quot;&gt;
+          &lt;title&gt;Searching&lt;/title&gt;
+          &lt;use xlink:href=&quot;#icon-search&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/button&gt;
+      &lt;a aria-hidden=&quot;true&quot; class=&quot;form-field__icon form-field__icon--large form-field__icon--weak search-clear&quot; href=&quot;#clear&quot; style=&quot;display:none;&quot;&gt;
+        &lt;svg class=&quot;icon&quot;&gt;
+          &lt;title&gt;&lt;/title&gt;
+          &lt;use xlink:href=&quot;#icon-close&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
 </pre></div>
                   </div>
                 </div>

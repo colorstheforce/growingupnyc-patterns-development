@@ -302,6 +302,24 @@ const modules = [
       }
     ]
   },
+  {
+    input: './src/objects/search/Search.js',
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'Search',
+        file: `./dist/objects/search/Search.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'Search',
+        file: `./dist/objects/search/Search.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
+  },
 ];
 
 export default modules;

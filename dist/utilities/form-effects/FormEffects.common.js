@@ -979,4 +979,15 @@ FormEffects.handleBlur = function (event) {
   }
 };
 
+FormEffects.handleClear = function (event) {
+  event.preventDefault();
+  var searchFields = document.querySelectorAll('input[type=search]');
+
+  if (searchFields.length) {
+    forEach_1(searchFields, function (search) {
+      search.value = '';
+    });
+  }
+};
+
 module.exports = FormEffects;

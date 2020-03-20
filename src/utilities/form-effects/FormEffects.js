@@ -47,4 +47,14 @@ FormEffects.handleBlur = function(event) {
   }
 }
 
+FormEffects.handleClear = function(event) {
+  event.preventDefault()
+  const searchFields = document.querySelectorAll('input[type=search]');
+  if (searchFields.length) {
+    forEach(searchFields, function(search) {
+      search.value = '';
+    });
+  }
+}
+
 export default FormEffects;

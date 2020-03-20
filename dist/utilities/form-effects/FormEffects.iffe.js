@@ -980,6 +980,17 @@ var FormEffects = (function () {
     }
   };
 
+  FormEffects.handleClear = function (event) {
+    event.preventDefault();
+    var searchFields = document.querySelectorAll('input[type=search]');
+
+    if (searchFields.length) {
+      forEach_1(searchFields, function (search) {
+        search.value = '';
+      });
+    }
+  };
+
   return FormEffects;
 
 }());

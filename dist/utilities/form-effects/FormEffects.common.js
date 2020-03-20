@@ -947,6 +947,7 @@ function dispatchEvent (elem, eventType) {
 
 var FormEffects = function FormEffects(settings, data) {
   var inputs = document.querySelectorAll('.signup-form__field');
+  var searchInput = document.querySelectorAll('.search-clear');
   console.log("FormEffect");
 
   if (inputs.length) {
@@ -954,6 +955,12 @@ var FormEffects = function FormEffects(settings, data) {
       inputElem.addEventListener('focus', FormEffects.handleFocus);
       inputElem.addEventListener('blur', FormEffects.handleBlur);
       dispatchEvent(inputElem, 'blur');
+    });
+  }
+
+  if (searchInput.length) {
+    forEach_1(searchInput, function (inputElem) {
+      inputElem.addEventListener('click', handleClear);
     });
   } // this.data = data;
   // this.settings = settings;

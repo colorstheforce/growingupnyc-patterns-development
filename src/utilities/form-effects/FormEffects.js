@@ -13,6 +13,8 @@ class FormEffects {
    */
   constructor(settings, data) {
     const inputs = document.querySelectorAll('.signup-form__field');
+    const searchInput = document.querySelectorAll('.search-clear');
+
     console.log("FormEffect");
 
     if (inputs.length) {
@@ -21,7 +23,13 @@ class FormEffects {
         inputElem.addEventListener('blur', FormEffects.handleBlur);
         dispatchEvent(inputElem, 'blur');
       });
-  }
+    }
+
+    if (searchInput.length) {
+      forEach(searchInput, function(inputElem) {
+        inputElem.addEventListener('click', handleClear);
+      });
+    }
     // this.data = data;
     // this.settings = settings;
   }

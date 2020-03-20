@@ -1,0 +1,15 @@
+/
+/ Search
+
+form role="search" method="get" class="search-form" action="/search"
+  div class="form-field__icon-container"
+    input type="search" name="s" value="" class="form-field form-field--large form-field--full-width c-hero__input" placeholder="Search" data-js="search" data-js-search-suggestions='' data-js-search-dropdown-class="form-field-dropdown--large"
+    input type="hidden" name="post_type" value="Array"
+    button type="submit" class="form-field__icon form-field__icon--large"
+      svg class="icon"
+        title
+        use xlink:href="#icon-search"
+    a href="#clear" class="form-field__icon form-field__icon--large form-field__icon--weak search-clear"  style="display:none;" aria-hidden="true"
+      svg class="icon"
+        title
+        use xlink:href="#icon-close"

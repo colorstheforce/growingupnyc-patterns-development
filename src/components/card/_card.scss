@@ -129,7 +129,7 @@
   }
 
 	@media screen and (min-width: 425px) {
-    font-size: 1.65rem;
+    font-size: 1.875rem;
   }
 
   a {
@@ -214,6 +214,7 @@
 //
 .c-card__link {
   color: $color-text-weak;
+	margin: rem-calc(0 0 16);
   @include font-size(14);
   order: 7;
 

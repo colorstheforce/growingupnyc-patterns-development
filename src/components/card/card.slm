@@ -1,25 +1,25 @@
 /
 / Card
+div class="bg-color-gray-light p-10"
+  div class="c-card"
+    a href="#"
+      div class="c-card__sticker sticker" aria-hidden="true"
+        svg class="icon--large"
+          title = 'Cash Expenses'
+          use xlink:href="#icon-child-care"
+    h3 class="c-card__title"
+      a href="#" title="Child care for babies & toddlers" rel="bookmark"
+        = 'Child care for babies & toddlers'
 
-div class="c-card"
-  a href="#"
-    div class="c-card__sticker sticker" aria-hidden="true"
-      svg class="icon--large"
-        title = 'Cash Expenses'
-        use xlink:href="#icon-child-care"
-  h3 class="c-card__title"
-    a href="#" title="Child care for babies & toddlers" rel="bookmark"
-      = 'Child care for babies & toddlers'
+    div class="c-card__subtitle"
+      p
+        strong = 'Program Name'
+      p = 'NYC Department of Education'
 
-  div class="c-card__subtitle"
-    p
-      strong = 'Program Name'
-    p = 'NYC Department of Education'
+    div class="c-card__tags"
+      a href="#" class="button--pill button--pill--alt"
+        = 'Child Care'
 
-  div class="c-card__tags"
-    a href="#" class="button--pill button--pill--alt"
-      = 'Child Care'
-
-  div class="c-card__body"
-    = 'Early child care and education services for up to 10 hours a day.'
+    div class="c-card__body"
+      = 'Early child care and education services for up to 10 hours a day.'
 

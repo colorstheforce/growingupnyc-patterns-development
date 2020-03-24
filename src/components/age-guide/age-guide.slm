@@ -1,0 +1,15 @@
+/
+/ Age-guide
+/
+div class="c-block-list__item"
+  div class="age-guide-card bg-color-baby"
+    h3 class="age-guide-card__title bg-color-orange"
+      a href="" title="" class="age-guide-card__title-link"
+        = "2 Months"
+      div class="age-guide-card__body"
+        = "Discover how your baby is learning, and find events, programs, and tips to help support their growth."
+        div
+          a href="" class="age-guide-card__link" title="Read the age guide for: 2 Months"
+            = "Read more"
+            svg class="icon--caret--small"
+              use xlink:href="#icon-caret-line-right"

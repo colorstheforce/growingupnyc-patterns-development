@@ -83,6 +83,9 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
           a href="list-box" class="c-list-box__subitem"
             = 'List Box'
         li
+          a href="share" class="c-list-box__subitem"
+            = 'Share'
+        li
           a href="side-hero" class="c-list-box__subitem"
             = 'Side hero'
         li

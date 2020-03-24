@@ -23,6 +23,7 @@ html lang='en'
       gunyc.accordion();
       gunyc.newsletter();
       gunyc.formEffect();
+      gunyc.share();
 
 
 

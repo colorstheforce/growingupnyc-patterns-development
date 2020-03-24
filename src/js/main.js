@@ -25,7 +25,7 @@ import FormEffect from '../utilities/form-effects/FormEffects'
 // import AnotherJs from '../utilities/offcanvas/AnotherJs'
 import AccordionToggle from '../objects/accordion/AccordionToggle'
 import Newsletter from '../objects/newsletter/Newsletter'
-// import Share from '../components/share/Share'
+import Share from '../components/share/Share'
 
 // import ShareForm from '../components/tip/ShareForm'
 
@@ -68,9 +68,9 @@ class main {
     return new Accordion();
   }
 
-	// share() {
-  //   return new Share();
-  // }
+	share() {
+    return new Share();
+  }
 
 	// offCanvas() {
   //   return new Offcanvas();

@@ -32,6 +32,7 @@
 button.bg-baby--primary,
 a.bg-baby--primary {
   transition: background-color 250ms linear;
+	&:hover,
   &:focus,
   &.is-active {
     background-color: $color-baby-secondary !important;
@@ -40,7 +41,7 @@ a.bg-baby--primary {
   }
 }
 
-
+/// Babe Secodary
 .bg-baby--secondary {
   background-color: $color-baby-secondary !important;
   // border-color: $color-baby-secondary !important;

@@ -41,6 +41,16 @@ a.bg-baby--primary {
   }
 }
 
+button.bg-baby--primary,
+a.bg-baby--primary {
+  transition: background-color 250ms linear;
+  &:hover {
+    background-color: $color-baby-secondary !important;
+    border-color: $color-baby-secondary !important;
+    outline: none;
+  }
+}
+
 /// Babe Secodary
 .bg-baby--secondary {
   background-color: $color-baby-secondary !important;
@@ -64,6 +74,7 @@ a.bg-baby--secondary {
     outline: none;
   }
 }
+
 
 .svg-baby {
   .stop1 {
@@ -98,6 +109,18 @@ a.bg-toddler--primary {
     outline: none;
   }
 }
+
+button.bg-toddler--primary,
+a.bg-toddler--primary {
+  transition: background-color 250ms linear;
+  &:hover {
+    background-color: $color-toddler-secondary !important;
+    border-color: $color-toddler-secondary !important;
+    outline: none;
+  }
+}
+
+
 
 // Toddler Secondary
 .bg-toddler--secondary {
@@ -162,6 +185,16 @@ a.bg-pre-schooler--primary {
   transition: background-color 250ms linear;
   &:focus,
   &.is-active {
+    background-color: $color-pre-schooler-secondary !important;
+    border-color: $color-pre-schooler-secondary !important;
+    outline: none;
+  }
+}
+
+button.bg-pre-schooler--primary,
+a.bg-pre-schooler--primary {
+  transition: background-color 250ms linear;
+  &:hover {
     background-color: $color-pre-schooler-secondary !important;
     border-color: $color-pre-schooler-secondary !important;
     outline: none;
@@ -242,6 +275,16 @@ a.bg-grade-schooler--primary {
   }
 }
 
+button.bg-grade-schooler--primary,
+a.bg-grade-schooler--primary {
+  transition: background-color 250ms linear;
+  &:hover {
+    background-color: $color-grade-schooler-secondary !important;
+    border-color: $color-grade-schooler-secondary !important;
+    outline: none;
+  }
+}
+
 // Grade Schooler Secondary
 .bg-grade-schooler--secondary {
   background-color: $color-grade-schooler-secondary !important;
@@ -313,6 +356,16 @@ a.bg-pre-teen--primary {
   }
 }
 
+button.bg-pre-teen--primary,
+a.bg-pre-teen--primary {
+  transition: background-color 250ms linear;
+  &:hover {
+    background-color: $color-pre-teen-secondary !important;
+    border-color: $color-pre-teen-secondary !important;
+    outline: none;
+  }
+}
+
 // Pre Teen Secondary
 .bg-pre-teen--secondary {
   background-color: $color-pre-teen-secondary !important;
@@ -373,6 +426,16 @@ a.bg-teen--primary {
   }
 }
 
+button.bg-teen--primary,
+a.bg-teen--primary {
+  transition: background-color 250ms linear;
+  &:hover {
+    background-color: $color-teen-secondary !important;
+    border-color: $color-teen-secondary !important;
+    outline: none;
+  }
+}
+
 // Teen Secondary
 .bg-teen--secondary {
   background-color: $color-teen-secondary !important;
@@ -427,6 +490,16 @@ a.bg-young-adult--primary {
   transition: background-color 250ms linear;
   &:focus,
   &.is-active {
+    background-color: $color-young-adult-secondary !important;
+    border-color: $color-young-adult-secondary !important;
+    outline: none;
+  }
+}
+
+button.bg-young-adult--primary,
+a.bg-young-adult--primary {
+  transition: background-color 250ms linear;
+  &:hover {
     background-color: $color-young-adult-secondary !important;
     border-color: $color-young-adult-secondary !important;
     outline: none;

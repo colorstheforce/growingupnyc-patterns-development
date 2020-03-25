@@ -57,7 +57,7 @@
   // @include grid-media($bp-medium) {
   //   font-size: rem-calc($font-size-xxx-large);
   // }
-	@media screen and (min-width: $screen-mobile) {
+	@media screen and (min-width: $screen-tablet) {
     font-size: rem-calc($font-size-xxx-large);
   }
 }

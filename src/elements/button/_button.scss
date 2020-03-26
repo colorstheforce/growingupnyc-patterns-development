@@ -99,32 +99,32 @@
 
   &--gray {
     border-color: $color-text;
-    color: $color-text;
+    color: $color-text !important;
     opacity: .7;
 
     &:focus {
-      color: $color-text;
+      color: $color-text !important;
       opacity: 1;
     }
 
     &:hover {
-      color: $color-text;
+      color: $color-text !important;
       opacity: 1;
     }
   }
 
   &--white {
     border-color: $color-text-invert;
-    color: $color-text-invert;
+    color: $color-text-invert !important;
 
     &:focus {
       background: $color-text-invert;
-      color: $color-primary;
+      color: $color-primary !important;
     }
 
     &:hover {
       background: $color-text-invert;
-      color: $color-primary;
+      color: $color-primary !important;
     }
   }
 

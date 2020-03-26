@@ -2,7 +2,7 @@
 / Reveal
 
 div class="c-block-list"
-  div class="c-block-list__inner--m-0" js-target="content-show-all-age-guides"
+  div class="c-block-list__inner--m-0" js-target="content-show-all-age-guides" id="all-content-container"
     div class="c-block-list__item"
       div class="age-guide-card border-baby--primary tablet:flex"
         h3 class="age-guide-card__title bg-baby--primary tablet:w-2/12"
@@ -64,5 +64,5 @@ div class="c-block-list"
               svg class="icon--caret--small"
                 use xlink:href="#icon-caret-line-right"
   div class="u-top-spacing-small text-center"
-    button aria-hidden="true" tabindex="-1" class="button--outline button--outline--gray" js-trigger="content-show-all-age-guides"
+    button aria-hidden="true" tabindex="-1" class="button--outline button--outline--gray" js-trigger="content-show-all-age-guides" id="show-all-content"
       = "See more age guides"

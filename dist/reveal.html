@@ -163,7 +163,7 @@
                   <div>
                     <div>
                       <div class="c-block-list">
-                        <div class="c-block-list__inner--m-0" js-target="content-show-all-age-guides">
+                        <div class="c-block-list__inner--m-0" id="all-content-container" js-target="content-show-all-age-guides">
                           <div class="c-block-list__item">
                             <div class="age-guide-card border-baby--primary tablet:flex">
                               <h3 class="age-guide-card__title bg-baby--primary tablet:w-2/12"><a class="age-guide-card__title-link" href="" title="">2 Months</a></h3>
@@ -235,11 +235,11 @@
                             </div>
                           </div>
                         </div>
-                        <div class="u-top-spacing-small text-center"><button aria-hidden="true" class="button--outline button--outline--gray" js-trigger="content-show-all-age-guides" tabindex="-1">See more age guides</button></div>
+                        <div class="u-top-spacing-small text-center"><button aria-hidden="true" class="button--outline button--outline--gray" id="show-all-content" js-trigger="content-show-all-age-guides" tabindex="-1">See more age guides</button></div>
                       </div>
                     </div>
                     <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"><pre>&lt;div class=&quot;c-block-list&quot;&gt;
-  &lt;div class=&quot;c-block-list__inner--m-0&quot; js-target=&quot;content-show-all-age-guides&quot;&gt;
+  &lt;div class=&quot;c-block-list__inner--m-0&quot; id=&quot;all-content-container&quot; js-target=&quot;content-show-all-age-guides&quot;&gt;
     &lt;div class=&quot;c-block-list__item&quot;&gt;
       &lt;div class=&quot;age-guide-card border-baby--primary tablet:flex&quot;&gt;
         &lt;h3 class=&quot;age-guide-card__title bg-baby--primary tablet:w-2/12&quot;&gt;&lt;a class=&quot;age-guide-card__title-link&quot; href=&quot;&quot; title=&quot;&quot;&gt;2 Months&lt;/a&gt;&lt;/h3&gt;
@@ -311,7 +311,7 @@
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;u-top-spacing-small text-center&quot;&gt;&lt;button aria-hidden=&quot;true&quot; class=&quot;button--outline button--outline--gray&quot; js-trigger=&quot;content-show-all-age-guides&quot; tabindex=&quot;-1&quot;&gt;See more age guides&lt;/button&gt;&lt;/div&gt;
+  &lt;div class=&quot;u-top-spacing-small text-center&quot;&gt;&lt;button aria-hidden=&quot;true&quot; class=&quot;button--outline button--outline--gray&quot; id=&quot;show-all-content&quot; js-trigger=&quot;content-show-all-age-guides&quot; tabindex=&quot;-1&quot;&gt;See more age guides&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;
 </pre></div>
                   </div>
@@ -347,7 +347,7 @@
       gunyc.share();
     </script>
     <script type="text/javascript">
-      var reveal = gunyc.reveal();
+      var reveal = gunyc.reveal(1);
     </script>
     <script src="/reload/reload.js"></script>
   </body>

@@ -20,4 +20,4 @@
 
 = content('script')
   javascript:
-    var reveal = gunyc.reveal();
+    var reveal = gunyc.reveal(1);

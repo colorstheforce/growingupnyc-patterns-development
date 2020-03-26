@@ -73,8 +73,8 @@ class main {
     return new Share();
   }
 
-	reveal() {
-    return new Reveal();
+	reveal(elNumber) {
+    return new Reveal(elNumber);
   }
 
 	// offCanvas() {

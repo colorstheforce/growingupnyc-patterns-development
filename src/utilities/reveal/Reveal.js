@@ -1,49 +1,45 @@
-/**
- * contentShow
- */
 'use strict';
-
-import $ from 'jquery';
 
 class Reveal {
 
-  constructor() {
-    const content = $('[js-target*=content-show-all]');
-    const trigger = $('[js-trigger*=content-show-all]');
+  constructor(elNumber) {
+    const content = Reveal.target;
+    const trigger = Reveal.trigger;
 
-    $(window).on('resize', function () {
-      if ($(trigger).is(':visible') == true) {
-        Reveal.updateHeight(content);
+    window.onresize = function () {
+      console.log(trigger.style.display);
+
+      if (trigger.style.display !== 'none') {
+        Reveal.updateHeight(content, trigger, elNumber);
       }
+    }
+
+    trigger.addEventListener('click', function(e) {
+      trigger.style.display = 'none';
+      content.style.overflow = 'visible';
+      content.style.height = 'auto';
     })
 
-    $(trigger).on('click', function (e) {
-      $(this).hide();
-      content.css({
-        'overflow': 'visible',
-        'height': 'auto'
-      });
-    });
-
-    Reveal.updateHeight(content);
-
+    Reveal.updateHeight(content, trigger, elNumber);
   }
 }
 
-Reveal.updateHeight = function(content) {
-  if (content.children().length > 3) {
-    var newHeight = content.children().eq(0).height() + content.children().eq(1).height()
-      + content.children().eq(2).height() + (3 * 18);
+Reveal.updateHeight = function(content, trigger, elNumber) {
 
-    content.css({
-      'height': newHeight + 'px',
-      'overflow': 'hidden',
-    });
+  if (content.childElementCount < 2) {
+    trigger.style.display = 'none';
+  } else {
+    var newHeight = 0;
+    for (let i = 0; i < elNumber; i++) {
+      newHeight += content.children[i].offsetHeight;
+    }
+
+    content.style.height = newHeight + 'px';
+    content.style.overflow = 'hidden';
   }
 }
 
-Reveal.target = '[js-target*=content-show-all]';
-
-Reveal.trigger = '[js-trigger*=content-show-all]';
+Reveal.target = document.querySelector("#all-content-container");
+Reveal.trigger = document.querySelector("#show-all-content");
 
 export default Reveal;

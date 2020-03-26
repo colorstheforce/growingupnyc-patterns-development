@@ -43,7 +43,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   height: auto;
   position: relative;
   z-index: $z-index-header;
-  height: rem-calc($height-banner);
+  height: rem-calc($height-banner-large);
 
 
   // @include grid-media($bp-medium) {

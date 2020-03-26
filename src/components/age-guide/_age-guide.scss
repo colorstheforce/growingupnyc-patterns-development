@@ -6,7 +6,7 @@
 @import 'config/colors';
 @import 'config/fonts';
 @import 'config/typography';
-@import 'config/layouts';
+// @import 'config/layouts';
 
 
 
@@ -17,11 +17,10 @@
 .age-guide-card {
   border-width: 2px;
   border-radius: 3px;
-
   // @include media($bp-medium) {
   //   display: flex;
   // }
-	@media screen and (min-width: screen-tablet) {
+	@media screen and (min-width: $screen-tablet) {
     display: flex;
   }
 }
@@ -50,7 +49,8 @@
   //   justify-content: center;
   //   padding: rem-calc(0 65);
   // }
-	@media screen and (min-width: screen-tablet) {
+
+	@media screen and (min-width: $screen-tablet) {
     display: flex;
     align-items: center;
     min-width: 180px;

@@ -1,0 +1,1 @@
+Reveal utility helpes manage large number of cards. The utility limites the number of card on display to three and the rest of the cards can be revealed by clicking a 'see more' button.

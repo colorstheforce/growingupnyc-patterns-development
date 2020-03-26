@@ -53,6 +53,9 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
         = 'Components'
       ol class="js-accordion__content c-list-box__content"
         li
+          a href="age-guide" class="c-list-box__subitem"
+            = 'Age Guide'
+        li
           a href="arrow-pager" class="c-list-box__subitem"
             = 'arrow pager'
         li

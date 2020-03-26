@@ -20,10 +20,11 @@ import StaticColumn from '../objects/static-column/staticColumn'
 import Scroll from '../components/side-navigation/Scroll'
 import Sticky from '../utilities/sticky/Sticky'
 import Offcanvas from '../utilities/offcanvas/Offcanvas'
-import OffcanvasToggle from '../utilities/offcanvas/OffcanvasToggle'
+// import OffcanvasToggle from '../utilities/offcanvas/OffcanvasToggle'
 import FormEffect from '../utilities/form-effects/FormEffects'
+import Reveal from '../utilities/reveal/Reveal'
 // import AnotherJs from '../utilities/offcanvas/AnotherJs'
-import AccordionToggle from '../objects/accordion/AccordionToggle'
+// import AccordionToggle from '../objects/accordion/AccordionToggle'
 import Newsletter from '../objects/newsletter/Newsletter'
 import Share from '../components/share/Share'
 
@@ -70,6 +71,10 @@ class main {
 
 	share() {
     return new Share();
+  }
+
+	reveal() {
+    return new Reveal();
   }
 
 	// offCanvas() {

@@ -154,12 +154,12 @@
 
   &:focus {
     background: $color-secondary;
-    color: $color-text-invert;
+    color: $color-text-invert !important;
   }
 
   &:hover {
     background: $color-secondary;
-    color: $color-text-invert;
+    color: $color-text-invert !important;
   }
 
   // @include grid-media($bp-small) {

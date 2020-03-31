@@ -25,6 +25,7 @@
 //   <li class="c-nav-list__item"><a href="#" class="c-nav-list__link">Item</a></li>
 //   <li class="c-nav-list__item"><a href="#" class="c-nav-list__link">Item</a></li>
 // </ol>
+@import 'config/colors';
 
 // Local Variables
 $indicator-size: 10px;
@@ -56,11 +57,11 @@ $indicator-size: 10px;
   text-decoration: none;
   // @include text-uppercase;
 
-  &:hover {
-    background-color: $color-primary;
-    border-color: $color-primary;
-    color: $color-text-invert;
-  }
+  // &:hover {
+  //   background-color: $color-primary;
+  //   border-color: $color-primary;
+  //   color: $color-text-invert;
+  // }
 
 	&:focus,
   &.is-active {

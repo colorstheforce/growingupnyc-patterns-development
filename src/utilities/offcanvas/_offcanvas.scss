@@ -56,10 +56,10 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   //   float: right;
   //   height: 100%;
   // }
-	// @media screen and (min-width: $screen-mobile) {
-  //   float: right;
-  //   height: 100%;
-  // }
+	@media screen and (min-width: $screen-mobile) {
+    float: right;
+    height: 100%;
+  }
 
 }
 
@@ -68,6 +68,7 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   overflow: hidden;
   padding-top: 50px;
   position: absolute;
+  right: 0;
   top: 0;
   transition: all .5s;
   visibility: hidden;
@@ -80,24 +81,6 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
     padding-top: 60px;
   }
 
-}
-
-.float_right {
-	right: 0;
-
-	@media screen and (min-width: $screen-mobile) {
-    float: right;
-    height: 100%;
-  }
-}
-
-.float_left {
-	left: 0;
-
-	@media screen and (min-width: $screen-mobile) {
-    float: left;
-    height: 100%;
-  }
 }
 
 .is-open .o-offcanvas__side {
@@ -156,36 +139,8 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
 
 .is-open .o-offcanvas__main {
   position: fixed;
-  // right: $width-offcanvas-side;
-  width: 100%;
-
-  // @include grid-media($bp-large) {
-  //   right: $width-offcanvas-side-large;
-  // }
-	// @media screen and (min-width: $screen-desktop) {
-  //   right: $width-offcanvas-side-large;
-  // }
-
-}
-
-.is-open .o-offcanvas__main_left {
-  // position: fixed;
-  left: $width-offcanvas-side;
-  // width: 100%;
-
-  // @include grid-media($bp-large) {
-  //   right: $width-offcanvas-side-large;
-  // }
-	@media screen and (min-width: $screen-desktop) {
-    left: $width-offcanvas-side-large;
-  }
-
-}
-
-.is-open .o-offcanvas__main_right {
-  // position: fixed;
   right: $width-offcanvas-side;
-  // width: 100%;
+  width: 100%;
 
   // @include grid-media($bp-large) {
   //   right: $width-offcanvas-side-large;
@@ -195,8 +150,6 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   }
 
 }
-
-
 
 // Off-Canvas Overlay
 //

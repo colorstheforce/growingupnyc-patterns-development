@@ -320,6 +320,24 @@ const modules = [
       }
     ]
   },
+  {
+    input: './src/components/side-navigation/Scroll.js',
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'Scroll',
+        file: `./dist/components/side-navigation/Scroll.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'Scroll',
+        file: `./dist/components/side-navigation/Scroll.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
+  },
 ];
 
 export default modules;

@@ -930,8 +930,7 @@ var Offcanvas = (function () {
 
   var Offcanvas = function Offcanvas(settings) {
     var body = document.querySelector('body');
-    console.log("Offcanvas");
-    var side = Offcanvas.side; // this._settings = {
+    console.log("Offcanvas"); // this._settings = {
     // selector: (settings.selector) ? settings.selector : Offcanvas.selector,
     // namespace: (settings.namespace) ? settings.namespace : Offcanvas.namespace,
     // inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Offcanvas.inactiveClass,
@@ -945,12 +944,6 @@ var Offcanvas = (function () {
     if (offCanvas) {
       forEach_1(offCanvas, function (offCanvasElem) {
         var offCanvasSide = offCanvasElem.querySelector('.js-offcanvas__side');
-        console.log(offCanvasSide); // if (side === "left") {
-        // offCanvasSide.classList.add("float_left")
-        // } else {
-        // offCanvasSide.classList.add("float_right")
-        // }
-
         /**
         * Add event listener for 'changeOpenState'.
         * The value of event.detail indicates whether the open state is true
@@ -971,10 +964,10 @@ var Offcanvas = (function () {
       });
     }
 
-    this._toggle(side);
+    this._toggle();
   };
 
-  Offcanvas.prototype._toggle = function _toggle(side) {
+  Offcanvas.prototype._toggle = function _toggle() {
     var openClass = 'is-open';
     var linkActiveClass = 'is-active';
     var toggleElems = document.querySelectorAll('[data-js]');
@@ -997,11 +990,6 @@ var Offcanvas = (function () {
       }
 
       var targetElem = document.getElementById(targetElemSelector);
-      console.log(side); // if (side === "left") {
-      // targetElem.classList.add('o-offcanvas__main_left')
-      // } else {
-      // targetElem.classList.add('o-offcanvas__main_right')
-      // }
 
       if (!targetElem) {
         return;
@@ -1046,8 +1034,6 @@ var Offcanvas = (function () {
 
     return elem.dataset[attr];
   };
-
-  Offcanvas.side = "right";
 
   return Offcanvas;
 

@@ -12,8 +12,8 @@ class Offcanvas {
    */
   constructor(settings) {
     const body = document.querySelector('body');
-    console.log("Offcanvas");
-    const side = Offcanvas.side
+		console.log("Offcanvas");
+
     // this._settings = {
     //   selector: (settings.selector) ? settings.selector : Offcanvas.selector,
     //   namespace: (settings.namespace) ? settings.namespace : Offcanvas.namespace,
@@ -27,14 +27,7 @@ class Offcanvas {
     if (offCanvas) {
       forEach(offCanvas, function (offCanvasElem) {
         const offCanvasSide = offCanvasElem.querySelector('.js-offcanvas__side');
-        console.log(offCanvasSide);
 
-
-        // if (side === "left") {
-        //   offCanvasSide.classList.add("float_left")
-        // } else {
-        //   offCanvasSide.classList.add("float_right")
-        // }
         /**
         * Add event listener for 'changeOpenState'.
         * The value of event.detail indicates whether the open state is true
@@ -53,10 +46,10 @@ class Offcanvas {
       });
     }
 
-    this._toggle(side);
+    this._toggle();
   }
 
-  _toggle(side) {
+  _toggle() {
     const openClass = 'is-open';
 
     const linkActiveClass = 'is-active';
@@ -75,13 +68,6 @@ class Offcanvas {
       if (!targetElemSelector) return;
 
       const targetElem = document.getElementById(targetElemSelector);
-      console.log(side);
-
-      // if (side === "left") {
-      //   targetElem.classList.add('o-offcanvas__main_left')
-      // } else {
-      //   targetElem.classList.add('o-offcanvas__main_right')
-      // }
 
       if (!targetElem) return;
 
@@ -130,7 +116,5 @@ Offcanvas.dataset = function (elem, attr) {
   }
   return elem.dataset[attr];
 }
-
-Offcanvas.side = "right"
 
 export default Offcanvas;

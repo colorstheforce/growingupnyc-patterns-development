@@ -11501,7 +11501,6 @@ var Accordion = (function () {
 	var forEach_1 = forEach;
 
 	var Accordion = function Accordion() {
-	  console.log("Accordion");
 	  this._settings = {
 	    accordions: []
 	  };

@@ -56,7 +56,13 @@ $indicator-size: 10px;
   text-decoration: none;
   // @include text-uppercase;
 
-  &:focus,
+  &:hover {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: $color-text-invert;
+  }
+
+	&:focus,
   &.is-active {
     background-color: $color-primary;
     border-color: $color-primary;

@@ -10580,7 +10580,6 @@ var Newsletter = (function () {
 	});
 
 	var Newsletter = function Newsletter(mailchimpUrl) {
-	  console.log("Newsletter");
 	  var url = mailchimpUrl || Newsletter.url; // this.data = data;
 	  // this.settings = {
 	  // // user: settings.user ? settings.user : Newsletter.user,

@@ -949,7 +949,6 @@ var FormEffects = (function () {
   var FormEffects = function FormEffects(settings, data) {
     var inputs = document.querySelectorAll('.signup-form__field');
     var searchInput = document.querySelectorAll('.search-clear');
-    console.log("FormEffect");
 
     if (inputs.length) {
       forEach_1(inputs, function (inputElem) {

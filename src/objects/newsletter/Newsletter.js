@@ -14,7 +14,6 @@ class Newsletter {
    *
    */
   constructor(mailchimpUrl) {
-    console.log("Newsletter");
 		const url = mailchimpUrl || Newsletter.url
 
     // this.data = data;

@@ -15,7 +15,6 @@ class FormEffects {
     const inputs = document.querySelectorAll('.signup-form__field');
     const searchInput = document.querySelectorAll('.search-clear');
 
-    console.log("FormEffect");
 
     if (inputs.length) {
       forEach(inputs, function(inputElem) {

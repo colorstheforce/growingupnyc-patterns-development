@@ -338,6 +338,24 @@ const modules = [
       }
     ]
   },
+  {
+    input: './src/utilities/sticky/Sticky.js',
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'Sticky',
+        file: `./dist/utilities/sticky/Sticky.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'Sticky',
+        file: `./dist/utilities/sticky/Sticky.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
+  },
 ];
 
 export default modules;

@@ -930,6 +930,7 @@ var forEach_1 = forEach;
 var StickyVanilla = function StickyVanilla() {
   // const el = document.querySelector(AlertBanner.selector);
   // const control = document.querySelector(AlertBanner.controller);
+  console.log("Sticky");
   var stickyContent = document.querySelectorAll('.js-sticky'); // const StickyClass = StickyVanilla.StickyClass;
   // const StuckClass = StickyVanilla.StuckClass;
   // this._settings = {

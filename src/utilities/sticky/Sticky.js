@@ -8,25 +8,26 @@
  * @see modules/stickyNav
  */
 
-import forEach from 'lodash/forEach'; 
+import forEach from 'lodash/forEach';
 
 class StickyVanilla {
   constructor() {
     // const el = document.querySelector(AlertBanner.selector);
     // const control = document.querySelector(AlertBanner.controller);
-	
+		console.log("Sticky");
+
 		const stickyContent = document.querySelectorAll('.js-sticky');
 
-		
+
 		// const StickyClass = StickyVanilla.StickyClass;
 		// const StuckClass = StickyVanilla.StuckClass;
-    
+
     // this._settings = {
     //   selector: StickyVanilla.selector,
     //   StickyClass: StickyVanilla.StickyClass,
     //   StuckClass: StickyVanilla.StuckClass
     // };
-    
+
 		  /**
   * Calculates the window position and sets the appropriate class on the element
   * @param {object} stickyContentElem - DOM node that should be stickied
@@ -68,7 +69,7 @@ assignStickyFeature(stickyContent) {
 
 	let elemTop = stickyContentElem.parentElement.getBoundingClientRect().top;
 	let isPastBottom = window.innerHeight - stickyContentElem.parentElement.clientHeight - stickyContentElem.parentElement.getBoundingClientRect().top < 50;
-	
+
 	// Sets element to position absolute if not scrolled to yet.
 	// Absolutely positioning only when necessary and not by default prevents flickering
 	// when removing the "is-bottom" class on Chrome

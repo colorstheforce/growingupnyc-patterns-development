@@ -47,6 +47,7 @@
 		}
 		&.is-stuck {
 			position: absolute;
+			left: 40px; width: 318px; top: auto; bottom: 0px;
 		}
 	}
 }

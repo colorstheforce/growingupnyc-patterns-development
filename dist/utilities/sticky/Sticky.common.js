@@ -932,7 +932,8 @@ var StickyVanilla = function StickyVanilla() {
   // const control = document.querySelector(AlertBanner.controller);
   console.log("Sticky");
   var stickyContent = document.querySelectorAll('.js-sticky');
-  var footer = document.querySelectorAll('.c-footer__reached');
+  var footer = document.querySelector('.c-footer__reached');
+
   var isSticky = false; // Whether the sidebar is sticky at this exact moment in time
 
   console.log(isSticky); // const StickyClass = StickyVanilla.StickyClass;
@@ -948,14 +949,14 @@ var StickyVanilla = function StickyVanilla() {
   * @param {object} stickyContentElem - DOM node that should be stickied
   */
 
-  this.assignStickyFeature(stickyContent, isSticky);
-  this.snapToFooter(footer);
+  this.assignStickyFeature(stickyContent, footer, isSticky);
+  this.snapToFooter(footer, stickyContent);
 };
 
-StickyVanilla.prototype.assignStickyFeature = function assignStickyFeature(stickyContent, isSticky) {
+StickyVanilla.prototype.assignStickyFeature = function assignStickyFeature(stickyContent, footer, isSticky) {
   if (stickyContent) {
     forEach_1(stickyContent, function (stickyContentElem) {
-      StickyVanilla.calcWindowPos(stickyContentElem, isSticky);
+      StickyVanilla.calcWindowPos(stickyContentElem, footer, isSticky);
       /**
       * Add event listener for 'scroll'.
       * @function
@@ -963,7 +964,7 @@ StickyVanilla.prototype.assignStickyFeature = function assignStickyFeature(stick
       */
 
       window.addEventListener('scroll', function () {
-        StickyVanilla.calcWindowPos(stickyContentElem);
+        StickyVanilla.calcWindowPos(stickyContentElem, footer);
       }, false);
       /**
       * Add event listener for 'resize'.
@@ -972,19 +973,44 @@ StickyVanilla.prototype.assignStickyFeature = function assignStickyFeature(stick
       */
 
       window.addEventListener('resize', function () {
-        StickyVanilla.calcWindowPos(stickyContentElem);
+        StickyVanilla.calcWindowPos(stickyContentElem, footer);
       }, false);
     });
   }
 };
 
-StickyVanilla.prototype.snapToFooter = function snapToFooter(footer) {};
+StickyVanilla.prototype.snapToFooter = function snapToFooter(footer, stickyContent) {
+  window.addEventListener('scroll', function () {
+    // var element = document.querySelector('#main-container');
+    var position = footer.getBoundingClientRect(); // console.log(position.bottom, window.innerHeight);
+    // checking whether fully visible
 
-StickyVanilla.calcWindowPos = function (stickyContentElem, isSticky) {
+    if (position.top >= 0 && position.bottom <= window.innerHeight) {
+      // console.log('Element is fully visible in screen ');
+      forEach_1(stickyContent, function (stickyContentElem) {
+        stickyContentElem.classList.add(StickyVanilla.StuckClass);
+      });
+    }
+
+    forEach_1(stickyContent, function (stickyContentElem) {
+      var positionSticky = stickyContentElem.getBoundingClientRect();
+      console.log(positionSticky.top);
+
+      if (positionSticky.top >= 0) {
+        stickyContentElem.classList.remove(StickyVanilla.StuckClass);
+      }
+    }); // checking for partial visibility
+    // if(position.top < window.innerHeight && position.bottom >= 0) {
+    // 	console.log('Element is partially visible in screen');
+    // }
+  });
+};
+
+StickyVanilla.calcWindowPos = function (stickyContentElem, footer, isSticky) {
   var articleContent = document.querySelector('.js-sticky-article');
-  console.log(isSticky);
   var elemTop = stickyContentElem.parentElement.getBoundingClientRect().top;
-  var isPastBottom = window.innerHeight - stickyContentElem.parentElement.clientHeight - stickyContentElem.parentElement.getBoundingClientRect().top < 50; // Sets element to position absolute if not scrolled to yet.
+  var isPastBottom = window.innerHeight - stickyContentElem.parentElement.clientHeight - stickyContentElem.parentElement.getBoundingClientRect().top < 50; // console.log(elemTop);
+  // Sets element to position absolute if not scrolled to yet.
   // Absolutely positioning only when necessary and not by default prevents flickering
   // when removing the "is-bottom" class on Chrome
 

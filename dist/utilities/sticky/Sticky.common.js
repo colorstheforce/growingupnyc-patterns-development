@@ -994,7 +994,6 @@ StickyVanilla.prototype.snapToFooter = function snapToFooter(footer, stickyConte
 
     forEach_1(stickyContent, function (stickyContentElem) {
       var positionSticky = stickyContentElem.getBoundingClientRect();
-      console.log(positionSticky.top);
 
       if (positionSticky.top >= 0) {
         stickyContentElem.classList.remove(StickyVanilla.StuckClass);

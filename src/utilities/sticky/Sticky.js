@@ -9,6 +9,8 @@
  */
 
 import forEach from 'lodash/forEach';
+import throttle from 'lodash/throttle';
+import debounce from 'lodash/debounce';
 
 class StickyVanilla {
   constructor() {
@@ -17,7 +19,10 @@ class StickyVanilla {
 		console.log("Sticky");
 
 		const stickyContent = document.querySelectorAll('.js-sticky');
+		const footer = document.querySelectorAll('.c-footer__reached');
+		let isSticky = false; // Whether the sidebar is sticky at this exact moment in time
 
+		console.log(isSticky);
 
 		// const StickyClass = StickyVanilla.StickyClass;
 		// const StuckClass = StickyVanilla.StuckClass;
@@ -32,15 +37,15 @@ class StickyVanilla {
   * Calculates the window position and sets the appropriate class on the element
   * @param {object} stickyContentElem - DOM node that should be stickied
   */
-	this.assignStickyFeature(stickyContent);
-
+	this.assignStickyFeature(stickyContent, isSticky);
+	this.snapToFooter(footer)
 }
 
-assignStickyFeature(stickyContent) {
+assignStickyFeature(stickyContent, isSticky) {
 
 	if (stickyContent) {
     forEach(stickyContent, function(stickyContentElem) {
-      StickyVanilla.calcWindowPos(stickyContentElem);
+      StickyVanilla.calcWindowPos(stickyContentElem, isSticky);
       /**
       * Add event listener for 'scroll'.
       * @function
@@ -62,10 +67,15 @@ assignStickyFeature(stickyContent) {
   }
 }
 
+snapToFooter(footer) {
+
 }
 
- StickyVanilla.calcWindowPos = function(stickyContentElem) {
+}
+
+ StickyVanilla.calcWindowPos = function(stickyContentElem, isSticky) {
 	const articleContent = document.querySelector('.js-sticky-article');
+	console.log(isSticky);
 
 	let elemTop = stickyContentElem.parentElement.getBoundingClientRect().top;
 	let isPastBottom = window.innerHeight - stickyContentElem.parentElement.clientHeight - stickyContentElem.parentElement.getBoundingClientRect().top < 50;
@@ -74,6 +84,7 @@ assignStickyFeature(stickyContent) {
 	// Absolutely positioning only when necessary and not by default prevents flickering
 	// when removing the "is-bottom" class on Chrome
 	if (elemTop > 0) {
+		// isSticky = true;
 		stickyContentElem.classList.remove(StickyVanilla.StickyClass);
 		articleContent.classList.remove(StickyVanilla.AddLeftMargin);
 	} else {

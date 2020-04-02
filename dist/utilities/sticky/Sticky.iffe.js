@@ -932,7 +932,11 @@ var Sticky = (function () {
     // const el = document.querySelector(AlertBanner.selector);
     // const control = document.querySelector(AlertBanner.controller);
     console.log("Sticky");
-    var stickyContent = document.querySelectorAll('.js-sticky'); // const StickyClass = StickyVanilla.StickyClass;
+    var stickyContent = document.querySelectorAll('.js-sticky');
+    var footer = document.querySelectorAll('.c-footer__reached');
+    var isSticky = false; // Whether the sidebar is sticky at this exact moment in time
+
+    console.log(isSticky); // const StickyClass = StickyVanilla.StickyClass;
     // const StuckClass = StickyVanilla.StuckClass;
     // this._settings = {
     // selector: StickyVanilla.selector,
@@ -945,13 +949,14 @@ var Sticky = (function () {
     * @param {object} stickyContentElem - DOM node that should be stickied
     */
 
-    this.assignStickyFeature(stickyContent);
+    this.assignStickyFeature(stickyContent, isSticky);
+    this.snapToFooter(footer);
   };
 
-  StickyVanilla.prototype.assignStickyFeature = function assignStickyFeature(stickyContent) {
+  StickyVanilla.prototype.assignStickyFeature = function assignStickyFeature(stickyContent, isSticky) {
     if (stickyContent) {
       forEach_1(stickyContent, function (stickyContentElem) {
-        StickyVanilla.calcWindowPos(stickyContentElem);
+        StickyVanilla.calcWindowPos(stickyContentElem, isSticky);
         /**
         * Add event listener for 'scroll'.
         * @function
@@ -974,14 +979,18 @@ var Sticky = (function () {
     }
   };
 
-  StickyVanilla.calcWindowPos = function (stickyContentElem) {
+  StickyVanilla.prototype.snapToFooter = function snapToFooter(footer) {};
+
+  StickyVanilla.calcWindowPos = function (stickyContentElem, isSticky) {
     var articleContent = document.querySelector('.js-sticky-article');
+    console.log(isSticky);
     var elemTop = stickyContentElem.parentElement.getBoundingClientRect().top;
     var isPastBottom = window.innerHeight - stickyContentElem.parentElement.clientHeight - stickyContentElem.parentElement.getBoundingClientRect().top < 50; // Sets element to position absolute if not scrolled to yet.
     // Absolutely positioning only when necessary and not by default prevents flickering
     // when removing the "is-bottom" class on Chrome
 
     if (elemTop > 0) {
+      // isSticky = true;
       stickyContentElem.classList.remove(StickyVanilla.StickyClass);
       articleContent.classList.remove(StickyVanilla.AddLeftMargin);
     } else {

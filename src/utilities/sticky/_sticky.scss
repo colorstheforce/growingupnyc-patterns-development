@@ -37,13 +37,13 @@
 // }
 @media screen and (min-width: $screen-desktop) {
 	.o-sticky-nav {
-			width: 295px;
+			width: 317px;
 
 		&.is-sticky {
 			position: fixed;
 			top: 20px;
 			// left: 40px;
-			width: 295px;
+			width: 317px;
 		}
 		&.is-stuck {
 			position: absolute;

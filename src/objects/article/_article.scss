@@ -53,7 +53,7 @@
 .o-article-sidebar {
   margin-left: -#{rem-calc($outer-gutter)};
   margin-right: -#{rem-calc($outer-gutter)};
-  width: 100%;
+  // width: 100%;
   // @include grid-media($bp-small) {
   //   margin-left: -#{rem-calc($outer-gutter-small)};
   //   margin-right: -#{rem-calc($outer-gutter-small)};

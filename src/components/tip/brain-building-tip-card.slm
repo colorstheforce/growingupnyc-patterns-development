@@ -1,0 +1,18 @@
+
+div class="c-block-list__inner"
+  div class="c-tip-card"
+    div class="c-tip-card__header"
+      a href="#"
+        = "A Tall Tale"
+        span class="sticker sticker--small c-tip-card__sticker"
+          svg class="icon--large"
+            title = 'Cash Expenses'
+            use xlink:href="#icon-child-care"
+            a href="#" class="c-tip-card__title"
+              = "A Tall Tale"
+    div class="c-tip-card__content"
+      = "During a diaper change, tell your child a silly story about the tallest little child in the world. While you are at it, stretch their arms over their head as you stretch out your words in a playful tone. (The taaaaaaallest baaaaaby in the wooooooorld!)"
+      h3 class="u-top-spacing-small u-bottom-spacing-small"
+        = "See what your child is learning"
+      = "Your voice is your child's favorite sound. Even if they can't talk back yet, they're listening to your words. Stretching out your words and using a sing-song voice makes it fun. This also helps their brain connect sounds and the ways we use our mouths to make them. You may not see it, but inside their brain they are practicing talking with you."
+

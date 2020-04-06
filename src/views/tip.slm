@@ -16,4 +16,5 @@
   = mixin('content-header', title);
   div
     = mixin('section', 'Tip', 'components/tip/tip');
+    = mixin('section', 'Brain Building Tip', 'components/tip/brain-building-tip-card');
 

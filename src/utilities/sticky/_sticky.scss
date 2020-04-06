@@ -43,8 +43,9 @@
 			position: fixed;
 			top: 20px;
 			// left: 40px;
-			width: 367px;
+			// width: 367px;
 		}
+
 		&.is-stuck {
 			position: absolute;
 			left: 40px; width: 318px; top: auto; bottom: 0px;

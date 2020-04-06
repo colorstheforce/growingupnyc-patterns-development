@@ -934,30 +934,37 @@ var Sticky = (function () {
     console.log("Sticky");
     var stickyContent = document.querySelectorAll('.js-sticky');
     var footer = document.querySelector('.c-footer__reached');
+    var stickyContainer = document.querySelector('.o-article-sidebar');
 
     var isSticky = false; // Whether the sidebar is sticky at this exact moment in time
 
     console.log(isSticky); // const StickyClass = StickyVanilla.StickyClass;
     // const StuckClass = StickyVanilla.StuckClass;
-    // this._settings = {
-    // selector: StickyVanilla.selector,
-    // StickyClass: StickyVanilla.StickyClass,
-    // StuckClass: StickyVanilla.StuckClass
-    // };
 
+    this._settings = {
+      selector: StickyVanilla.selector,
+      StickyClass: StickyVanilla.StickyClass,
+      StuckClass: StickyVanilla.StuckClass
+    };
     /**
     * Calculates the window position and sets the appropriate class on the element
     * @param {object} stickyContentElem - DOM node that should be stickied
     */
 
     this.assignStickyFeature(stickyContent, footer, isSticky);
-    this.snapToFooter(footer, stickyContent);
+    this.snapToFooter(footer, stickyContent); // StickyVanilla.resize(stickyContainer, stickyContent)
+
+    StickyVanilla.updateDimensions(stickyContainer, stickyContent);
+
+    window.onresize = function () {
+      StickyVanilla.updateDimensions(stickyContainer, stickyContent);
+    };
   };
 
   StickyVanilla.prototype.assignStickyFeature = function assignStickyFeature(stickyContent, footer, isSticky) {
     if (stickyContent) {
       forEach_1(stickyContent, function (stickyContentElem) {
-        StickyVanilla.calcWindowPos(stickyContentElem, footer, isSticky);
+        StickyVanilla.calcWindowPos(stickyContentElem, isSticky);
         /**
         * Add event listener for 'scroll'.
         * @function
@@ -1006,16 +1013,23 @@ var Sticky = (function () {
     });
   };
 
-  StickyVanilla.calcWindowPos = function (stickyContentElem, footer, isSticky) {
+  StickyVanilla.updateDimensions = function (stickyContainer, stickyContent) {
+    var stickyContainerWidth = stickyContainer.clientWidth;
+    console.log(stickyContainerWidth);
+    forEach_1(stickyContent, function (stickyContentElem) {
+      stickyContentElem.style.width = stickyContainerWidth + "px";
+    });
+  };
+
+  StickyVanilla.calcWindowPos = function (stickyContentElem, isSticky) {
     var articleContent = document.querySelector('.js-sticky-article');
-    var elemTop = stickyContentElem.parentElement.getBoundingClientRect().top;
-    var isPastBottom = window.innerHeight - stickyContentElem.parentElement.clientHeight - stickyContentElem.parentElement.getBoundingClientRect().top < 50; // console.log(elemTop);
+    var elemTop = stickyContentElem.parentElement.getBoundingClientRect().top; // let isPastBottom = window.innerHeight - stickyContentElem.parentElement.clientHeight - stickyContentElem.parentElement.getBoundingClientRect().top < 50;
+    // console.log(elemTop);
     // Sets element to position absolute if not scrolled to yet.
     // Absolutely positioning only when necessary and not by default prevents flickering
     // when removing the "is-bottom" class on Chrome
 
     if (elemTop > 0) {
-      // isSticky = true;
       stickyContentElem.classList.remove(StickyVanilla.StickyClass);
       articleContent.classList.remove(StickyVanilla.AddLeftMargin);
     } else {

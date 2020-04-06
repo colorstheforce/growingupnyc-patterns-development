@@ -927,38 +927,47 @@ function forEach(collection, iteratee) {
 
 var forEach_1 = forEach;
 
-var StickyVanilla = function StickyVanilla() {
-  // const el = document.querySelector(AlertBanner.selector);
+var StickyVanilla = function StickyVanilla(mediaQuery) {
+  var screen = mediaQuery || StickyVanilla.mediaQuery; // const el = document.querySelector(AlertBanner.selector);
   // const control = document.querySelector(AlertBanner.controller);
+
   console.log("Sticky");
   var stickyContent = document.querySelectorAll('.js-sticky');
   var footer = document.querySelector('.c-footer__reached');
   var stickyContainer = document.querySelector('.o-article-sidebar');
 
   var isSticky = false; // Whether the sidebar is sticky at this exact moment in time
+  // let desktop = window.matchMedia(screen);
 
-  var desktop = window.matchMedia('(max-width: 1040px)');
-  console.log(desktop); // const StickyClass = StickyVanilla.StickyClass;
-  // const StuckClass = StickyVanilla.StuckClass;
-  // this._settings = {
+  var desktop = window.matchMedia(screen);
+  var isDesk = desktop.matches;
+
+  window.onresize = function () {
+    desktop = window.matchMedia(screen);
+  };
+
+  console.log(isDesk);
+
+  if (isDesk) {
+    StickyVanilla.updateDimensions(stickyContainer, stickyContent);
+
+    window.onresize = function () {
+      StickyVanilla.updateDimensions(stickyContainer, stickyContent);
+    };
+  } // this._settings = {
   // selector: StickyVanilla.selector,
   // StickyClass: StickyVanilla.StickyClass,
   // StuckClass: StickyVanilla.StuckClass
   // };
 
   /**
-  * Calculates the window position and sets the appropriate class on the element
-  * @param {object} stickyContentElem - DOM node that should be stickied
-  */
+   * Calculates the window position and sets the appropriate class on the element
+   * @param {object} stickyContentElem - DOM node that should be stickied
+   */
+
 
   this.assignStickyFeature(stickyContent, footer, isSticky);
   this.snapToFooter(footer, stickyContent); // StickyVanilla.resize(stickyContainer, stickyContent)
-
-  StickyVanilla.updateDimensions(stickyContainer, stickyContent);
-
-  window.onresize = function () {
-    StickyVanilla.updateDimensions(stickyContainer, stickyContent);
-  };
 };
 
 StickyVanilla.prototype.assignStickyFeature = function assignStickyFeature(stickyContent, footer, isSticky) {
@@ -1015,7 +1024,6 @@ StickyVanilla.prototype.snapToFooter = function snapToFooter(footer, stickyConte
 
 StickyVanilla.updateDimensions = function (stickyContainer, stickyContent) {
   var stickyContainerWidth = stickyContainer.clientWidth;
-  console.log(stickyContainerWidth);
   forEach_1(stickyContent, function (stickyContentElem) {
     stickyContentElem.style.width = stickyContainerWidth + "px";
   });
@@ -1042,5 +1050,6 @@ StickyVanilla.selector = 'js-sticky';
 StickyVanilla.StickyClass = 'is-sticky';
 StickyVanilla.StuckClass = 'is-stuck';
 StickyVanilla.AddLeftMargin = 'o-article--shift';
+StickyVanilla.mediaQuery = '(min-width: 1040px)';
 
 module.exports = StickyVanilla;

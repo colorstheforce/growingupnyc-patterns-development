@@ -13,7 +13,8 @@ import throttle from 'lodash/throttle';
 import debounce from 'lodash/debounce';
 
 class StickyVanilla {
-  constructor() {
+  constructor(mediaQuery) {
+    let screen = mediaQuery || StickyVanilla.mediaQuery
     // const el = document.querySelector(AlertBanner.selector);
     // const control = document.querySelector(AlertBanner.controller);
     console.log("Sticky");
@@ -25,31 +26,38 @@ class StickyVanilla {
     let stickyMode = false; // Flag to tell if sidebar is in "sticky mode"
     let isSticky = false; // Whether the sidebar is sticky at this exact moment in time
     let isAbsolute = false;// Whether the sidebar is sticky at this exact moment in time
-		let desktop = window.matchMedia('(max-width: 1040px)');
 
-    console.log(desktop);
+    // let desktop = window.matchMedia(screen);
 
-    // const StickyClass = StickyVanilla.StickyClass;
-    // const StuckClass = StickyVanilla.StuckClass;
+    let desktop = window.matchMedia(screen);
+    let isDesk = desktop.matches;
+
+    window.onresize = function() {
+      desktop = window.matchMedia(screen);
+    };
+
+    console.log(isDesk);
+
+    if (isDesk) {
+      StickyVanilla.updateDimensions(stickyContainer, stickyContent);
+
+      window.onresize = function() {
+        StickyVanilla.updateDimensions(stickyContainer, stickyContent);
+      }
+    }
 
     // this._settings = {
-    //   selector: StickyVanilla.selector,
-    //   StickyClass: StickyVanilla.StickyClass,
-    //   StuckClass: StickyVanilla.StuckClass
-    // };
+      //   selector: StickyVanilla.selector,
+      //   StickyClass: StickyVanilla.StickyClass,
+      //   StuckClass: StickyVanilla.StuckClass
+      // };
       /**
-  * Calculates the window position and sets the appropriate class on the element
-  * @param {object} stickyContentElem - DOM node that should be stickied
-  */
-  this.assignStickyFeature(stickyContent, footer, isSticky);
-  this.snapToFooter(footer, stickyContent);
-	// StickyVanilla.resize(stickyContainer, stickyContent)
-
-	StickyVanilla.updateDimensions(stickyContainer, stickyContent);
-
-	window.onresize = function() {
-		StickyVanilla.updateDimensions(stickyContainer, stickyContent);
-	}
+       * Calculates the window position and sets the appropriate class on the element
+       * @param {object} stickyContentElem - DOM node that should be stickied
+       */
+      this.assignStickyFeature(stickyContent, footer, isSticky);
+      this.snapToFooter(footer, stickyContent);
+      // StickyVanilla.resize(stickyContainer, stickyContent)
 }
 
 
@@ -78,7 +86,6 @@ assignStickyFeature(stickyContent, footer, isSticky) {
     });
   }
 }
-
 
 
 snapToFooter(footer, stickyContent) {
@@ -112,12 +119,11 @@ snapToFooter(footer, stickyContent) {
 }
 
 StickyVanilla.updateDimensions = function(stickyContainer, stickyContent) {
-	let stickyContainerWidth = stickyContainer.clientWidth;
-	console.log(stickyContainerWidth);
+  let stickyContainerWidth = stickyContainer.clientWidth;
 
-	forEach(stickyContent, function(stickyContentElem) {
-		stickyContentElem.style.width = `${stickyContainerWidth}px`;
-	 })
+  forEach(stickyContent, function(stickyContentElem) {
+    stickyContentElem.style.width = `${stickyContainerWidth}px`;
+   })
 }
 
 
@@ -136,7 +142,7 @@ StickyVanilla.updateDimensions = function(stickyContainer, stickyContent) {
     stickyContentElem.classList.remove(StickyVanilla.StickyClass);
     articleContent.classList.remove(StickyVanilla.AddLeftMargin);
   } else {
-		isSticky = true;
+    isSticky = true;
     stickyContentElem.classList.add(StickyVanilla.StickyClass);
     articleContent.classList.add(StickyVanilla.AddLeftMargin);
   }
@@ -147,7 +153,7 @@ StickyVanilla.selector = 'js-sticky';
 StickyVanilla.StickyClass = 'is-sticky';
 StickyVanilla.StuckClass = 'is-stuck';
 StickyVanilla.AddLeftMargin = 'o-article--shift';
-
+StickyVanilla.mediaQuery = '(min-width: 1040px)';
 
 
 export default StickyVanilla;

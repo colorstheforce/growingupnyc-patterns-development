@@ -25,17 +25,18 @@ class StickyVanilla {
     let stickyMode = false; // Flag to tell if sidebar is in "sticky mode"
     let isSticky = false; // Whether the sidebar is sticky at this exact moment in time
     let isAbsolute = false;// Whether the sidebar is sticky at this exact moment in time
+		let desktop = window.matchMedia('(max-width: 1040px)');
 
-    console.log(isSticky);
+    console.log(desktop);
 
     // const StickyClass = StickyVanilla.StickyClass;
     // const StuckClass = StickyVanilla.StuckClass;
 
-    this._settings = {
-      selector: StickyVanilla.selector,
-      StickyClass: StickyVanilla.StickyClass,
-      StuckClass: StickyVanilla.StuckClass
-    };
+    // this._settings = {
+    //   selector: StickyVanilla.selector,
+    //   StickyClass: StickyVanilla.StickyClass,
+    //   StuckClass: StickyVanilla.StuckClass
+    // };
       /**
   * Calculates the window position and sets the appropriate class on the element
   * @param {object} stickyContentElem - DOM node that should be stickied

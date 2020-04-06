@@ -27,24 +27,22 @@ class StickyVanilla {
     let isSticky = false; // Whether the sidebar is sticky at this exact moment in time
     let isAbsolute = false;// Whether the sidebar is sticky at this exact moment in time
 
-    // let desktop = window.matchMedia(screen);
 
     let desktop = window.matchMedia(screen);
     let isDesk = desktop.matches;
-
-    window.onresize = function() {
-      desktop = window.matchMedia(screen);
-    };
-
-    console.log(isDesk);
-
     if (isDesk) {
       StickyVanilla.updateDimensions(stickyContainer, stickyContent);
-
-      window.onresize = function() {
-        StickyVanilla.updateDimensions(stickyContainer, stickyContent);
-      }
     }
+
+    window.onresize = function () {
+      isDesk = desktop.matches;
+      if(isDesk) {
+        StickyVanilla.updateDimensions(stickyContainer, stickyContent);
+      } else {
+        StickyVanilla.resetWidth(stickyContainer, stickyContent)
+      }
+    };
+
 
     // this._settings = {
       //   selector: StickyVanilla.selector,
@@ -125,6 +123,16 @@ StickyVanilla.updateDimensions = function(stickyContainer, stickyContent) {
     stickyContentElem.style.width = `${stickyContainerWidth}px`;
    })
 }
+
+StickyVanilla.resetWidth = function(stickyContainer, stickyContent) {
+  let stickyContainerWidth = stickyContainer.clientWidth;
+
+  forEach(stickyContent, function(stickyContentElem) {
+    stickyContentElem.style.width = "";
+   })
+}
+
+
 
 
  StickyVanilla.calcWindowPos = function(stickyContentElem, isSticky) {

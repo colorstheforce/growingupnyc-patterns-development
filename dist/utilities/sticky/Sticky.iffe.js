@@ -938,24 +938,23 @@ var Sticky = (function () {
     var stickyContainer = document.querySelector('.o-article-sidebar');
 
     var isSticky = false; // Whether the sidebar is sticky at this exact moment in time
-    // let desktop = window.matchMedia(screen);
 
     var desktop = window.matchMedia(screen);
     var isDesk = desktop.matches;
 
-    window.onresize = function () {
-      desktop = window.matchMedia(screen);
-    };
-
-    console.log(isDesk);
-
     if (isDesk) {
       StickyVanilla.updateDimensions(stickyContainer, stickyContent);
+    }
 
-      window.onresize = function () {
+    window.onresize = function () {
+      isDesk = desktop.matches;
+
+      if (isDesk) {
         StickyVanilla.updateDimensions(stickyContainer, stickyContent);
-      };
-    } // this._settings = {
+      } else {
+        StickyVanilla.resetWidth(stickyContainer, stickyContent);
+      }
+    }; // this._settings = {
     // selector: StickyVanilla.selector,
     // StickyClass: StickyVanilla.StickyClass,
     // StuckClass: StickyVanilla.StuckClass
@@ -1027,6 +1026,13 @@ var Sticky = (function () {
     var stickyContainerWidth = stickyContainer.clientWidth;
     forEach_1(stickyContent, function (stickyContentElem) {
       stickyContentElem.style.width = stickyContainerWidth + "px";
+    });
+  };
+
+  StickyVanilla.resetWidth = function (stickyContainer, stickyContent) {
+    var stickyContainerWidth = stickyContainer.clientWidth;
+    forEach_1(stickyContent, function (stickyContentElem) {
+      stickyContentElem.style.width = "";
     });
   };
 

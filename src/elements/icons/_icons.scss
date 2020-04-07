@@ -32,6 +32,20 @@
 }
 
 
+.icon--vroom {
+  height: rem-calc(30.6);
+  width: rem-calc(128);
+
+  // @include grid-media($bp-large) {
+  //   height: rem-calc(50);
+  //   width: rem-calc(50);
+  // }
+	@media screen and (min-width: $screen-desktop) {
+    height: rem-calc(36);
+    width: rem-calc(110);
+  }
+}
+
 .icon--large {
   height: rem-calc(37);
   width: rem-calc(37);

@@ -76,10 +76,10 @@
 // Tip Inner Wrapper
 // Optiona. Used if you want to restrict the width of tip content
 .c-tip__inner {
-  @include grid-media($bp-medium) {
-    // @include span-columns(4 of 8);
-    // @include shift(2 of 8);
-  }
+  // @include grid-media($bp-medium) {
+  //   // @include span-columns(4 of 8);
+  //   // @include shift(2 of 8);
+  // }
 }
 
 // Tip Content

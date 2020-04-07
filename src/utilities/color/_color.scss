@@ -573,3 +573,9 @@ a.bg-young-adult--secondary {
 .border--secondary {
   border-color: $color-secondary;
 }
+
+// Brain Building
+.bg-color-brain-building-tip,
+.hover\:bg-color-brain-building-tip:hover {
+  background-color: $color-secondary;
+}

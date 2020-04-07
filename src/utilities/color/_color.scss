@@ -133,6 +133,7 @@ a.bg-toddler--primary {
 
 button.bg-toddler--secondary,
 a.bg-toddler--secondary {
+	&:hover,
   &:focus,
   &.is-active {
     background-color: $color-toddler-primary !important;

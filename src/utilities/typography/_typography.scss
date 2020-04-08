@@ -28,11 +28,12 @@ body {
   color: map-get($colors, map-get($colors-default, 'color-text'));
   font-family: $font-family-text;
   @include font-size-regular;
+	font-weight: $font-weight-semibold;
 }
 
-.wf-active body {
-  font-weight: $font-weight-semibold;
-}
+// .wf-active body {
+//   font-weight: $font-weight-semibold;
+// }
 
 h1, .h1, .type-h1,
 h2, .h2, .type-h2,

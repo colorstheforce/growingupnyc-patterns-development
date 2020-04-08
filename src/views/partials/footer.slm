@@ -2,7 +2,8 @@ footer class="c-footer"
   div class="o-container flex flex-wrap"
     div class="c-footer__section w-full desktop:w-1/2 flex-col flex-wrap"
       div class="c-footer__logos flex flex-wrap"
-        figure class="c-footer__logo w-1/2"
-          svg class=""
-            title = 'Growingupnyc Logo'
+        figure
+          svg class="icon--logo"
+            title = "Growing Up NYC Logo"
             use xlink:href="#icon-growingupnyc-logo-white"
+        

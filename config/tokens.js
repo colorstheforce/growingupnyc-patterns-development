@@ -262,7 +262,9 @@ const tokens = {
     'icon-laundry',
     'icon-mealtime',
     'icon-on-the-go',
-    'icon-playtime'
+    'icon-playtime',
+    'icon-growingupnyc-logo-white',
+    'icon-growingupnyc-logo-black'
   ],
   version: `"${version}"`,
   cdn: `"https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/"`

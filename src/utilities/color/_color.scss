@@ -3,7 +3,7 @@
  */
 
 @import 'config/colors';
-
+@import 'config/cdn';
 // Declarations
 
 // @each $combo, $c in $combinations {
@@ -86,6 +86,10 @@ a.bg-baby--secondary {
   }
 }
 
+.baby-gradient {
+  background-image: url('#{$cdn}images/gradient-baby.png');
+}
+
 // Toddler ------
 // Toddler Primary
 .bg-toddler--primary {
@@ -165,6 +169,10 @@ a.bg-toddler--secondary {
   .stop2 {
     stop-color: $color-toddler-primary;
   }
+}
+
+.toddler-gradient {
+	background-image: url('#{$cdn}images/gradient-toddler.png');
 }
 
 
@@ -251,6 +259,9 @@ a.bg-pre-schooler--secondary {
   }
 }
 
+.pre-schooler-gradient {
+	background-image: url('#{$cdn}images/gradient-pre-schooler.png');
+}
 
 // Grade Schooler ----
 // Grade Schooler Primary
@@ -334,6 +345,10 @@ a.bg-grade-schooler--secondary {
   }
 }
 
+.grade-schooler-gradient {
+	background-image: url('#{$cdn}images/gradient-grade-schooler.png');
+}
+
 // Pre Teen
 // Pre Teen Primary
 .bg-pre-teen--primary {
@@ -404,6 +419,9 @@ a.bg-pre-teen--secondary {
   }
 }
 
+.pre-teen-gradient {
+	background-image: url('#{$cdn}images/gradient-pre-teen.png');
+}
 
 // Teen
 // Teen Primary
@@ -473,6 +491,10 @@ a.bg-teen--secondary {
   .stop2 {
     stop-color: $color-teen-primary;
   }
+}
+
+.teen-gradient {
+	background-image: url('#{$cdn}images/gradient-teen.png');
 }
 
 
@@ -545,6 +567,10 @@ a.bg-young-adult--secondary {
   .stop2 {
     stop-color: $color-young-adult-primary;
   }
+}
+
+.young-adult-gradient {
+	background-image: url('#{$cdn}images/gradient-young-adult.png');
 }
 
 

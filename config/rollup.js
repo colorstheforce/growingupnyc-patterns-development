@@ -362,13 +362,13 @@ const modules = [
     output: [
       {
         name: 'Plyfills',
-        file: `./dist/utilities/polyfills/Plyfills.iffe.js`,
+        file: `./dist/utilities/polyfills/Polyfills.iffe.js`,
         format: 'iife',
         strict: rollup.strict
       },
       {
         name: 'Plyfills',
-        file: `./dist/utilities/polyfills/Plyfills.common.js`,
+        file: `./dist/utilities/polyfills/Polyfills.common.js`,
         format: 'cjs',
         strict: rollup.strict
       }

@@ -355,25 +355,7 @@ const modules = [
         strict: rollup.strict
       }
     ]
-  },
-  {
-    input: './dist/scripts/polyfills.js',
-    plugins: rollup.dist,
-    output: [
-      {
-        name: 'Plyfills',
-        file: `./dist/utilities/polyfills/Polyfills.iffe.js`,
-        format: 'iife',
-        strict: rollup.strict
-      },
-      {
-        name: 'Plyfills',
-        file: `./dist/utilities/polyfills/Polyfills.common.js`,
-        format: 'cjs',
-        strict: rollup.strict
-      }
-    ]
-  },
+  }
 ];
 
 export default modules;

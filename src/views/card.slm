@@ -16,4 +16,4 @@
   = mixin('content-header', title);
   = mixin('section', 'Card', 'components/card/card');
   = mixin('section', 'Card with Hero', 'components/card/card--hero');
-  = mixin('section', 'Event Card', 'components/card/event-card');
+  = mixin('section', 'Event Card', 'components/card/card--event');

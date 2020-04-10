@@ -3,16 +3,10 @@
  */
 
 // Dependencies
-// This is where variables, mixins, or functions are imported that the
-// pattern depends on. It's helpful to import dependencies into each
-// pattern so that they can be exported individually and it's clear
-// where the pattern is getting variables from. You can create a
-// pattern specific SASS configuration in the /src/config directory, or
-// add configuration to the /config/variables.js object (which is
-// to SASS during the compilation process).
-// @import 'config/variables';
-// @import 'config/colors';
-// @import 'config/media';
+
+@import 'config/media';
+@import 'config/colors';
+@import 'config/stickers';
 
 
 // Declarations
@@ -44,15 +38,8 @@
   padding: rem-calc(25 ($sticker-size-mobile / 2) + 10 25 21);
   position: relative;
 
-  // @include grid-media($bp-large) {
-  //   margin-right: rem-calc($sticker-size / 2);
-  //   padding: rem-calc(30);
-  //   padding-right: rem-calc(($sticker-size / 2) + 10);
-  // }
-
 	@media screen and (min-width: $screen-desktop) {
     margin-right: rem-calc($sticker-size / 2);
-    padding: rem-calc(30);
     padding-right: rem-calc(($sticker-size / 2) + 10);
   }
 }
@@ -61,14 +48,7 @@
   background-position: top center;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  padding-top: percentage(123/335);
-
-  // @include grid-media($bp-medium) {
-  //   padding-top: percentage(266/760);
-  // }
-	@media screen and (min-width: $screen-tablet) {
-    padding-top: percentage(266/760);
-  }
+  padding-top: percentage(266/760);
 }
 
 // Content Card Sticker

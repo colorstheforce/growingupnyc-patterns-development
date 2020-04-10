@@ -1,0 +1,1 @@
+The Card Component is a wrapper for a preview of a full page of content.

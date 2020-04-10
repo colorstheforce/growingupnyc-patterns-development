@@ -1,1 +1,1 @@
-Reveal utility helpes manage large number of cards. The utility limites the number of card on display to three and the rest of the cards can be revealed by clicking a 'see more' button.
+The Reveal Utility allows the user to limit the number of common elements on a page with the use of a button as a trigger. The user can specify the number of elements in a container to show. The rest of the elements will remain hidden until the trigger has been activated.

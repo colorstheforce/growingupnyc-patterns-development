@@ -12682,23 +12682,26 @@ var GUNYC = (function () {
   };
 
   var Reveal = function Reveal(elNumber) {
-    var content = Reveal.target;
-    var trigger = Reveal.trigger;
+    var numElements = isNaN(elNumber) ? 1 : elNumber;
+    var content = document.querySelector(Reveal.target);
+    var trigger = document.querySelector(Reveal.trigger);
 
     window.onresize = function () {
-      console.log(trigger.style.display);
-
       if (trigger.style.display !== 'none') {
-        Reveal.updateHeight(content, trigger, elNumber);
+        Reveal.updateHeight(content, trigger, numElements);
       }
     };
+
+    if (numElements === content.children.length) {
+      trigger.style.display = 'none';
+    }
 
     trigger.addEventListener('click', function (e) {
       trigger.style.display = 'none';
       content.style.overflow = 'visible';
       content.style.height = 'auto';
     });
-    Reveal.updateHeight(content, trigger, elNumber);
+    Reveal.updateHeight(content, trigger, numElements);
   };
 
   Reveal.updateHeight = function (content, trigger, elNumber) {
@@ -12716,8 +12719,8 @@ var GUNYC = (function () {
     }
   };
 
-  Reveal.target = document.querySelector("#all-content-container");
-  Reveal.trigger = document.querySelector("#show-all-content");
+  Reveal.target = '[data-js*=reveal-content]';
+  Reveal.trigger = '[data-js*=reveal-trigger]';
 
   var Newsletter = function Newsletter(mailchimpUrl) {
     var url = mailchimpUrl || Newsletter.url; // this.data = data;

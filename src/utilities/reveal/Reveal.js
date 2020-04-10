@@ -3,24 +3,29 @@
 class Reveal {
 
   constructor(elNumber) {
-    const content = Reveal.target;
-    const trigger = Reveal.trigger;
 
+    const numElements = isNaN(elNumber) ? 1 : elNumber;
+    const content = document.querySelector(Reveal.target);
+    const trigger = document.querySelector(Reveal.trigger);
+    
     window.onresize = function () {
-      console.log(trigger.style.display);
-
+      
       if (trigger.style.display !== 'none') {
-        Reveal.updateHeight(content, trigger, elNumber);
+        Reveal.updateHeight(content, trigger, numElements);
       }
     }
 
+    if(numElements === content.children.length) {
+      trigger.style.display = 'none';
+    }
+    
     trigger.addEventListener('click', function(e) {
       trigger.style.display = 'none';
       content.style.overflow = 'visible';
       content.style.height = 'auto';
     })
 
-    Reveal.updateHeight(content, trigger, elNumber);
+    Reveal.updateHeight(content, trigger, numElements);
   }
 }
 
@@ -39,7 +44,7 @@ Reveal.updateHeight = function(content, trigger, elNumber) {
   }
 }
 
-Reveal.target = document.querySelector("#all-content-container");
-Reveal.trigger = document.querySelector("#show-all-content");
+Reveal.target = '[data-js*=reveal-content]';
+Reveal.trigger = '[data-js*=reveal-trigger]';
 
 export default Reveal;

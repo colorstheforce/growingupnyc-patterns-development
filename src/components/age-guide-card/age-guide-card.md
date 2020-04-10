@@ -1,0 +1,1 @@
+The Age Guide Card component is a preview of an Age Guide page.

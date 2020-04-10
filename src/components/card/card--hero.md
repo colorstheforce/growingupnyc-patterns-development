@@ -1,0 +1,1 @@
+The Card Component with a hero prepends an image to highlight the section of cards.

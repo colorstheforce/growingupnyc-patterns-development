@@ -1,0 +1,1 @@
+The Event Card adds elements of time and location to the Card component.

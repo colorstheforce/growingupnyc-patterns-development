@@ -1,25 +1,14 @@
 /**
- * Age-guide
+ * Card: Age Guide
  */
- @import 'config/tokens';
-
+@import 'config/tokens';
 @import 'config/colors';
-@import 'config/fonts';
-@import 'config/typography';
-// @import 'config/layouts';
-
-
-
-
-
-
+@import 'config/media';
 
 .age-guide-card {
   border-width: 2px;
   border-radius: 3px;
-  // @include media($bp-medium) {
-  //   display: flex;
-  // }
+
 	@media screen and (min-width: $screen-tablet) {
     display: flex;
   }
@@ -35,20 +24,11 @@
   a {
     color: $color-white;
     text-decoration: none;
-
-    // &:hover {
-    //   color: $color-brain-building-tip;
-    // }
+    
+    &:hover {
+      color: $color-blue;
+    }
   }
-
-  // @include media($bp-medium) {
-  //   display: flex;
-  //   align-items: center;
-  //   min-width: 180px;
-  //   max-width: 180px;
-  //   justify-content: center;
-  //   padding: rem-calc(0 65);
-  // }
 
 	@media screen and (min-width: $screen-tablet) {
     display: flex;

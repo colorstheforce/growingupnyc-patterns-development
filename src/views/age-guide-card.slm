@@ -1,6 +1,6 @@
 = extend('layouts/default')
 
-- title = 'Age Guide'
+- title = 'Age Guide Card'
 
 / Partials
 = partial('partials/head.mixin.slm');
@@ -15,7 +15,7 @@
 = content('main')
   = mixin('content-header', title);
   div
-    = mixin('section', 'Age Guide', 'components/age-guide/age-guide');
+    = mixin('section', 'Age Guide Card', 'components/age-guide-card/age-guide-card');
 
 
 

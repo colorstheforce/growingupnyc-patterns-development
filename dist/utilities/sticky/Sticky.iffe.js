@@ -928,6 +928,8 @@ var Sticky = (function () {
 
   var forEach_1 = forEach;
 
+  // import debounce from 'lodash/debounce';
+
   var StickyVanilla = function StickyVanilla(mediaQuery) {
     var screen = mediaQuery || StickyVanilla.mediaQuery; // const el = document.querySelector(AlertBanner.selector);
     // const control = document.querySelector(AlertBanner.controller);

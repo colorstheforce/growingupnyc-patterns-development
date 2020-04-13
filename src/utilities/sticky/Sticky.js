@@ -9,8 +9,8 @@
  */
 
 import forEach from 'lodash/forEach';
-import throttle from 'lodash/throttle';
-import debounce from 'lodash/debounce';
+// import throttle from 'lodash/throttle';
+// import debounce from 'lodash/debounce';
 
 class StickyVanilla {
   constructor(mediaQuery) {

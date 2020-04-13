@@ -1,4 +1,4 @@
-var Polyfills = (function (exports) {
+(function (exports) {
 	'use strict';
 
 	function createCommonjsModule(fn, module) {

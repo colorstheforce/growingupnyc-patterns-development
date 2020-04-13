@@ -1056,6 +1056,6 @@ StickyVanilla.selector = 'js-sticky';
 StickyVanilla.StickyClass = 'is-sticky';
 StickyVanilla.StuckClass = 'is-stuck';
 StickyVanilla.AddLeftMargin = 'o-article--shift';
-StickyVanilla.mediaQuery = '(min-width: 1040px)';
+StickyVanilla.mediaQuery = '(min-width: 1024px)';
 
 module.exports = StickyVanilla;

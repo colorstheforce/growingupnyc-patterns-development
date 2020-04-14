@@ -28,7 +28,7 @@ body {
   color: map-get($colors, map-get($colors-default, 'color-text'));
   font-family: $font-family-text;
   @include font-size-regular;
-	font-weight: $font-weight-semibold;
+	// font-weight: $font-weight-semibold;
 }
 
 // .wf-active body {

@@ -15,7 +15,7 @@
 / Basically, if you are building an Object or a Component and including
 / other Elements/Components/Objects, the symbol should be set to false
 / and the instance should be set to the pattern's path.
-div 
+div
     div class="o-offcanvas js-offcanvas bg-color-black" id="offcanvas-ages"
         nav class="o-offcanvas__side js-offcanvas__side"
             button data-toggle="offcanvas-ages" class="o-offcanvas__close button--text is-active"
@@ -28,16 +28,16 @@ div
                         = "Baby"
                     svg class="o-accordion__caret icon" aria-hidden="true"
                     ol class="js-accordion__content c-list-box__content o-accordion__content" id="ages-panel-1" aria-hidden="true" role="region" aria-labelledby="ages-heading-1"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "2 Months"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "3 Months"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "4 Months"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "5 Months"
                 li class="c-list-box__item o-accordion__item is-collapsed"
@@ -45,16 +45,16 @@ div
                         = "Toddler"
                     svg class="o-accordion__caret icon" aria-hidden="true"
                     ol class="js-accordion__content c-list-box__content o-accordion__content" id="ages-panel-1" aria-hidden="true" role="region" aria-labelledby="ages-heading-1"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "2 Months"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "3 Months"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "4 Months"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "5 Months"
                 li class="c-list-box__item o-accordion__item is-collapsed"
@@ -62,16 +62,16 @@ div
                         = "Baby"
                     svg class="o-accordion__caret icon" aria-hidden="true"
                     ol class="js-accordion__content c-list-box__content o-accordion__content" id="ages-panel-1" aria-hidden="true" role="region" aria-labelledby="ages-heading-1"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "2 Months"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "3 Months"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "4 Months"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "5 Months"
                 li class="c-list-box__item o-accordion__item is-collapsed"
@@ -79,16 +79,16 @@ div
                         = "Baby"
                     svg class="o-accordion__caret icon" aria-hidden="true"
                     ol class="js-accordion__content c-list-box__content o-accordion__content" id="ages-panel-1" aria-hidden="true" role="region" aria-labelledby="ages-heading-1"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "2 Months"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "3 Months"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "4 Months"
-                        li 
+                        li
                             a class="c-list-box__subitem" tabindex="0"
                                 = "5 Months"
-        div class="o-offcanvas__main bg-color-blue-light"
+        div class="o-offcanvas__main bg-color-blue-light js-offcanvas__main"

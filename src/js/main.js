@@ -27,7 +27,7 @@ import Reveal from '../utilities/reveal/Reveal'
 // import AccordionToggle from '../objects/accordion/AccordionToggle'
 import Newsletter from '../objects/newsletter/Newsletter'
 import Share from '../components/share/Share'
-
+import 'scripts/polyfills'
 // import ShareForm from '../components/tip/ShareForm'
 
 /** import components here as they are written. */

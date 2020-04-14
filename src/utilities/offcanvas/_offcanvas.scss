@@ -30,7 +30,7 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   // @include grid-media($bp-small) {
   //   display: none !important;
   // }
-	@media screen and (min-width: $screen-mobile) {
+  @media screen and (min-width: $screen-mobile) {
     display: none !important;
   }
 }
@@ -38,74 +38,146 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
 // Off-Canvas Side
 //
 // The content that is initially offcanvas and then revealed
+// .o-offcanvas__side {
+//   background: $color-background;
+//   width: $width-offcanvas-side;
+
+//   // @include grid-media($bp-large) {
+//   //   width: $width-offcanvas-side-large;
+//   // }
+// 	@media screen and (min-width: $screen-desktop) {
+//     width: $width-offcanvas-side-large;
+//   }
+// }
+
+// .o-offcanvas__side {
+//   // @include grid-media($bp-small) {
+//   //   float: right;
+//   //   height: 100%;
+//   // }
+// 	@media screen and (min-width: $screen-mobile) {
+//     float: right;
+//     height: 100%;
+//   }
+
+// }
+
 .o-offcanvas__side {
   background: $color-background;
   width: $width-offcanvas-side;
 
-  // @include grid-media($bp-large) {
-  //   width: $width-offcanvas-side-large;
-  // }
-	@media screen and (min-width: $screen-desktop) {
-    width: $width-offcanvas-side-large;
-  }
-
-}
-
-.o-offcanvas__side {
-  // @include grid-media($bp-small) {
-  //   float: right;
-  //   height: 100%;
-  // }
-	@media screen and (min-width: $screen-mobile) {
-    float: right;
-    height: 100%;
-  }
-
-}
-
-.o-offcanvas__side {
   max-height: 100%;
   overflow: hidden;
   padding-top: 50px;
   position: absolute;
-  right: 0;
+  // right: 0;
   top: 0;
   transition: all .5s;
   visibility: hidden;
   z-index: 1;
 
+  &:after {
+      background: rgba(0, 0, 0, .4);
+      content: '';
+      height: 100%;
+      opacity: 1;
+      position: absolute;
+      // right: 0;
+      top: 0;
+      transition: opacity .5s;
+      width: 100%;
+  }
   // @include grid-media($bp-large) {
   //   padding-top: 60px;
   // }
-	@media screen and (min-width: $screen-desktop) {
+  @media screen and (min-width: $screen-desktop) {
     padding-top: 60px;
+    width: $width-offcanvas-side-large;
   }
+
 
 }
 
-.is-open .o-offcanvas__side {
+.o-offcanvas__side-left {
+  left: 0;
+  &:after {
+    left: 0;
+  }
+
+	@media screen and (min-width: $screen-mobile) {
+    float: left;
+    height: 100%;
+  }
+}
+.o-offcanvas__side-right {
+  right: 0;
+  &:after {
+    right: 0;
+  }
+
+	@media screen and (min-width: $screen-mobile) {
+    float: right;
+    height: 100%;
+  }
+}
+
+// .is-open .o-offcanvas__side {
+//   overflow: auto;
+//   transition: transform .5s;
+//   visibility: visible;
+//   // z-index: $z-index-offcanvas-side;
+// }
+
+.is-open-right .o-offcanvas__side  {
+  overflow: auto;
+  transition: transform .5s;
+  visibility: visible;
+  // z-index: $z-index-offcanvas-side;
+}
+.is-open-left .o-offcanvas__side  {
   overflow: auto;
   transition: transform .5s;
   visibility: visible;
   // z-index: $z-index-offcanvas-side;
 }
 
-.o-offcanvas__side {
+// .o-offcanvas__side {
+//   &:after {
+//     background: rgba(0, 0, 0, .4);
+//     content: '';
+//     height: 100%;
+//     opacity: 1;
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     transition: opacity .5s;
+//     width: 100%;
+//   }
+// }
+
+// .is-open .o-offcanvas__side {
+// 	  z-index: 1;
+
+//   &:after {
+//     height: 0;
+//     opacity: 0;
+//     transition: opacity .5s, width .1s .5s, height .1s .5s;
+//     width: 0;
+//   }
+// }
+
+.is-open-right .o-offcanvas__side {
+    z-index: 1;
+
   &:after {
-    background: rgba(0, 0, 0, .4);
-    content: '';
-    height: 100%;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: opacity .5s;
-    width: 100%;
+    height: 0;
+    opacity: 0;
+    transition: opacity .5s, width .1s .5s, height .1s .5s;
+    width: 0;
   }
 }
-
-.is-open .o-offcanvas__side {
-	  z-index: 1;
+.is-open-left .o-offcanvas__side {
+    z-index: 1;
 
   &:after {
     height: 0;
@@ -131,13 +203,37 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   background: $color-background !important;
   backface-visibility: hidden;
   height: 100%;
-  right: 0;
   position: relative;
-  transition: right .5s;
   z-index: $z-index-offcanvas-main;
+	// right: 0;
+  // transition: right .5s;
 }
 
-.is-open .o-offcanvas__main {
+.o-offcanvas__main-right {
+	right: 0;
+  transition: right .5s;
+}
+.o-offcanvas__main-left {
+	left: 0;
+  transition: left .5s;
+}
+
+
+// .is-open .o-offcanvas__main {
+//   position: fixed;
+//   right: $width-offcanvas-side;
+//   width: 100%;
+
+//   // @include grid-media($bp-large) {
+//   //   right: $width-offcanvas-side-large;
+//   // }
+// 	@media screen and (min-width: $screen-desktop) {
+//     right: $width-offcanvas-side-large;
+//   }
+
+// }
+
+.is-open-right .o-offcanvas__main {
   position: fixed;
   right: $width-offcanvas-side;
   width: 100%;
@@ -145,8 +241,21 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   // @include grid-media($bp-large) {
   //   right: $width-offcanvas-side-large;
   // }
-	@media screen and (min-width: $screen-desktop) {
+  @media screen and (min-width: $screen-desktop) {
     right: $width-offcanvas-side-large;
+  }
+
+}
+.is-open-left .o-offcanvas__main {
+  position: fixed;
+  left: $width-offcanvas-side;
+  width: 100%;
+
+  // @include grid-media($bp-large) {
+  //   right: $width-offcanvas-side-large;
+  // }
+  @media screen and (min-width: $screen-desktop) {
+    left: $width-offcanvas-side-large;
   }
 
 }
@@ -166,7 +275,23 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   width: 0;
 }
 
-.is-open .o-offcanvas__overlay {
+// .is-open .o-offcanvas__overlay {
+//   height: 100%;
+//   opacity: 1;
+//   transition: opacity .5s;
+//   width: 100%;
+//   z-index: $z-index-offcanvas-overlay;
+// }
+
+.is-open-right .o-offcanvas__overlay {
+  height: 100%;
+  opacity: 1;
+  transition: opacity .5s;
+  width: 100%;
+  z-index: $z-index-offcanvas-overlay;
+}
+
+.is-open-left .o-offcanvas__overlay {
   height: 100%;
   opacity: 1;
   transition: opacity .5s;

@@ -6,7 +6,7 @@ html lang='en'
     div class="o-offcanvas js-offcanvas" id="offcanvas-patterns"
       = partial('/partials/nav-offcanvas.slm');
 
-      div class='o-offcanvas__main'
+      div class='o-offcanvas__main js-offcanvas__main'
         = partial('/partials/nav.slm');
         main class="pt-12 mobile:pt-20 tablet:pt-32"
           div class=''

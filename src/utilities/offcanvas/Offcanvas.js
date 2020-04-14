@@ -11,17 +11,27 @@ class Offcanvas {
    * @constructor
    */
   constructor(settings) {
-    const body = document.querySelector('body');
-		console.log("Offcanvas");
+		const body = document.querySelector('body');
+		const nav = document.querySelector('.js-offcanvas__side')
+		const mainOff = document.querySelector('.js-offcanvas__main')
+    console.log(mainOff);
 
-    // this._settings = {
-    //   selector: (settings.selector) ? settings.selector : Offcanvas.selector,
-    //   namespace: (settings.namespace) ? settings.namespace : Offcanvas.namespace,
-    //   inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Offcanvas.inactiveClass,
-    //   activeClass: (settings.activeClass) ? settings.activeClass : Offcanvas.activeClass,
-    //   before: (settings.before) ? settings.before : false,
-    //   after: (settings.after) ? settings.after : false
-    // };
+    this._settings = {
+      selector: (settings.selector) ? settings.selector : Offcanvas.selector,
+      namespace: (settings.namespace) ? settings.namespace : Offcanvas.namespace,
+      inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Offcanvas.inactiveClass,
+      activeClass: (settings.activeClass) ? settings.activeClass : Offcanvas.activeClass,
+      before: (settings.before) ? settings.before : false,
+      after: (settings.after) ? settings.after : false
+    };
+
+  let openClass = "";
+    if (Offcanvas.selector === 'left')
+       openClass = 'is-open-left';
+    else if (Offcanvas.selector === 'right') {
+       openClass = 'is-open-right';
+    }
+    console.log(openClass);
 
     const offCanvas = document.querySelectorAll('.js-offcanvas');
     if (offCanvas) {
@@ -46,11 +56,11 @@ class Offcanvas {
       });
     }
 
-    this._toggle();
+    this._toggle(openClass, nav, mainOff);
   }
 
-  _toggle() {
-    const openClass = 'is-open';
+  _toggle(openClass, nav, mainOff) {
+
 
     const linkActiveClass = 'is-active';
     const toggleElems = document.querySelectorAll('[data-js]');
@@ -79,12 +89,19 @@ class Offcanvas {
         event.preventDefault();
 
         // Toggle the element's active class
-        toggleElem.classList.toggle(linkActiveClass);
+				toggleElem.classList.toggle(linkActiveClass);
+				if (openClass === 'is-open-left') {
+					nav.classList.toggle("o-offcanvas__side-left")
+					mainOff.classList.toggle("o-offcanvas__main-left")
+
+				} else {
+					nav.classList.toggle("o-offcanvas__side-right")
+					mainOff.classList.toggle("o-offcanvas__main-right")
+				}
 
         // Toggle custom class if it is set
         if (toggleClass !== openClass)
           targetElem.classList.toggle(toggleClass);
-
         // Toggle the default open class
         targetElem.classList.toggle(openClass);
 
@@ -116,5 +133,7 @@ Offcanvas.dataset = function (elem, attr) {
   }
   return elem.dataset[attr];
 }
+
+Offcanvas.selector = "right";
 
 export default Offcanvas;

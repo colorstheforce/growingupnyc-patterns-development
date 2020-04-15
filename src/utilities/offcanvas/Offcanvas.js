@@ -28,9 +28,9 @@ class Offcanvas {
     };
 
   let openClass = "";
-    if (Offcanvas.selector === 'left')
+    if (Offcanvas.side === 'left')
        openClass = 'is-open-left';
-    else if (Offcanvas.selector === 'right') {
+    else if (Offcanvas.side === 'right') {
        openClass = 'is-open-right';
     }
     console.log(openClass);
@@ -129,6 +129,8 @@ class Offcanvas {
     });
   };
 }
+Offcanvas.side = "right";
+
 Offcanvas.dataset = function (elem, attr) {
   if (typeof elem.dataset === 'undefined') {
     return elem.getAttribute('data-' + attr);
@@ -136,6 +138,5 @@ Offcanvas.dataset = function (elem, attr) {
   return elem.dataset[attr];
 }
 
-Offcanvas.selector = "right";
 
 export default Offcanvas;

@@ -944,9 +944,9 @@ var Navigation = (function () {
     };
     var openClass = "";
 
-    if (Offcanvas.selector === 'left') {
+    if (Offcanvas.side === 'left') {
       openClass = 'is-open-left';
-    } else if (Offcanvas.selector === 'right') {
+    } else if (Offcanvas.side === 'right') {
       openClass = 'is-open-right';
     }
 
@@ -1047,6 +1047,8 @@ var Navigation = (function () {
     });
   };
 
+  Offcanvas.side = "right";
+
   Offcanvas.dataset = function (elem, attr) {
     if (typeof elem.dataset === 'undefined') {
       return elem.getAttribute('data-' + attr);
@@ -1054,8 +1056,6 @@ var Navigation = (function () {
 
     return elem.dataset[attr];
   };
-
-  Offcanvas.selector = "right";
 
   var Navigation = function Navigation() {
     this._offcanvas = new Offcanvas({

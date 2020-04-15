@@ -1046,6 +1046,8 @@ Offcanvas.prototype._toggle = function _toggle(openClass, nav, mainOff) {
   });
 };
 
+Offcanvas.selector = "right";
+
 Offcanvas.dataset = function (elem, attr) {
   if (typeof elem.dataset === 'undefined') {
     return elem.getAttribute('data-' + attr);
@@ -1053,7 +1055,5 @@ Offcanvas.dataset = function (elem, attr) {
 
   return elem.dataset[attr];
 };
-
-Offcanvas.selector = "right";
 
 module.exports = Offcanvas;

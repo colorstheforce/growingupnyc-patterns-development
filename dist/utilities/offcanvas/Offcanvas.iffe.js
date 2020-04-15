@@ -1047,6 +1047,8 @@ var Offcanvas = (function () {
     });
   };
 
+  Offcanvas.selector = "right";
+
   Offcanvas.dataset = function (elem, attr) {
     if (typeof elem.dataset === 'undefined') {
       return elem.getAttribute('data-' + attr);
@@ -1054,8 +1056,6 @@ var Offcanvas = (function () {
 
     return elem.dataset[attr];
   };
-
-  Offcanvas.selector = "right";
 
   return Offcanvas;
 

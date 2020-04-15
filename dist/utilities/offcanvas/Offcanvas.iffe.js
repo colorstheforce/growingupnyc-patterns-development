@@ -931,9 +931,7 @@ var Offcanvas = (function () {
   var Offcanvas = function Offcanvas(settings) {
     var body = document.querySelector('body');
     var nav = document.querySelector('.js-offcanvas__side');
-    var mainOff = document.querySelector('.js-offcanvas__main');
-    console.log(mainOff);
-    console.log(nav); // this._settings = {
+    var mainOff = document.querySelector('.js-offcanvas__main'); // this._settings = {
     // selector: (settings.selector) ? settings.selector : Offcanvas.selector,
     // namespace: (settings.namespace) ? settings.namespace : Offcanvas.namespace,
     // inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Offcanvas.inactiveClass,
@@ -946,11 +944,12 @@ var Offcanvas = (function () {
 
     if (Offcanvas.side === 'left') {
       openClass = 'is-open-left';
+      mainOff.classList.toggle("o-offcanvas__main-left");
     } else if (Offcanvas.side === 'right') {
       openClass = 'is-open-right';
+      mainOff.classList.toggle("o-offcanvas__main-right");
     }
 
-    console.log(openClass);
     var offCanvas = document.querySelectorAll('.js-offcanvas');
 
     if (offCanvas) {
@@ -1015,10 +1014,8 @@ var Offcanvas = (function () {
 
         if (openClass === 'is-open-left') {
           nav.classList.toggle("o-offcanvas__side-left");
-          mainOff.classList.toggle("o-offcanvas__main-left");
         } else {
           nav.classList.toggle("o-offcanvas__side-right");
-          mainOff.classList.toggle("o-offcanvas__main-right");
         } // Toggle custom class if it is set
 
 
@@ -1047,7 +1044,7 @@ var Offcanvas = (function () {
     });
   };
 
-  Offcanvas.side = "right";
+  Offcanvas.side = "left";
 
   Offcanvas.dataset = function (elem, attr) {
     if (typeof elem.dataset === 'undefined') {

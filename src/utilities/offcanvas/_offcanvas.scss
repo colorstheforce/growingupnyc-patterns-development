@@ -198,25 +198,44 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
 
 // Off-Canvas Main
 //
+// .o-offcanvas__main-right {
+// 	right: 0;
+//   transition: right .5s;
+// }
+.o-offcanvas__main-left {
+	left: 0;
+  transition: left .5s;
+}
 // The content that slides over to make room for the offcanvas content
-.o-offcanvas__main {
+// .o-offcanvas__main {
+//   background: $color-background !important;
+//   backface-visibility: hidden;
+//   height: 100%;
+//   position: relative;
+//   z-index: $z-index-offcanvas-main;
+// 	right: 0;
+//   transition: right .5s;
+// }
+.o-offcanvas__main-left {
   background: $color-background !important;
   backface-visibility: hidden;
   height: 100%;
   position: relative;
   z-index: $z-index-offcanvas-main;
-	// right: 0;
-  // transition: right .5s;
-}
-
-.o-offcanvas__main-right {
-	right: 0;
-  transition: right .5s;
-}
-.o-offcanvas__main-left {
 	left: 0;
   transition: left .5s;
 }
+.o-offcanvas__main-right {
+  background: $color-background !important;
+  backface-visibility: hidden;
+  height: 100%;
+  position: relative;
+  z-index: $z-index-offcanvas-main;
+	right: 0;
+  transition: right .5s;
+}
+
+
 
 
 // .is-open .o-offcanvas__main {

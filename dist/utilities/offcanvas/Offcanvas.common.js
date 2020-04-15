@@ -932,15 +932,15 @@ var Offcanvas = function Offcanvas(settings) {
   var nav = document.querySelector('.js-offcanvas__side');
   var mainOff = document.querySelector('.js-offcanvas__main');
   console.log(mainOff);
-  console.log(nav);
-  this._settings = {
-    selector: settings.selector ? settings.selector : Offcanvas.selector,
-    namespace: settings.namespace ? settings.namespace : Offcanvas.namespace,
-    inactiveClass: settings.inactiveClass ? settings.inactiveClass : Offcanvas.inactiveClass,
-    activeClass: settings.activeClass ? settings.activeClass : Offcanvas.activeClass,
-    before: settings.before ? settings.before : false,
-    after: settings.after ? settings.after : false
-  };
+  console.log(nav); // this._settings = {
+  // selector: (settings.selector) ? settings.selector : Offcanvas.selector,
+  // namespace: (settings.namespace) ? settings.namespace : Offcanvas.namespace,
+  // inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Offcanvas.inactiveClass,
+  // activeClass: (settings.activeClass) ? settings.activeClass : Offcanvas.activeClass,
+  // before: (settings.before) ? settings.before : false,
+  // after: (settings.after) ? settings.after : false
+  // };
+
   var openClass = "";
 
   if (Offcanvas.side === 'left') {

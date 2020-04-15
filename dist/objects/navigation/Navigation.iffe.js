@@ -933,6 +933,7 @@ var Navigation = (function () {
     var nav = document.querySelector('.js-offcanvas__side');
     var mainOff = document.querySelector('.js-offcanvas__main');
     console.log(mainOff);
+    console.log(nav);
     this._settings = {
       selector: settings.selector ? settings.selector : Offcanvas.selector,
       namespace: settings.namespace ? settings.namespace : Offcanvas.namespace,

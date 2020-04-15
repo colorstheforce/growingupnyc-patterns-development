@@ -15,6 +15,8 @@ class Offcanvas {
 		const nav = document.querySelector('.js-offcanvas__side')
 		const mainOff = document.querySelector('.js-offcanvas__main')
     console.log(mainOff);
+    console.log(nav);
+
 
     this._settings = {
       selector: (settings.selector) ? settings.selector : Offcanvas.selector,

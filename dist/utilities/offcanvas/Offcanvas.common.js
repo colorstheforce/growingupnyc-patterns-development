@@ -943,9 +943,9 @@ var Offcanvas = function Offcanvas(settings) {
   };
   var openClass = "";
 
-  if (Offcanvas.selector === 'left') {
+  if (Offcanvas.side === 'left') {
     openClass = 'is-open-left';
-  } else if (Offcanvas.selector === 'right') {
+  } else if (Offcanvas.side === 'right') {
     openClass = 'is-open-right';
   }
 
@@ -1046,7 +1046,7 @@ Offcanvas.prototype._toggle = function _toggle(openClass, nav, mainOff) {
   });
 };
 
-Offcanvas.selector = "right";
+Offcanvas.side = "right";
 
 Offcanvas.dataset = function (elem, attr) {
   if (typeof elem.dataset === 'undefined') {

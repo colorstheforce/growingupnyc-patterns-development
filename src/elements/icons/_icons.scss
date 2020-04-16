@@ -26,8 +26,12 @@
   //   width: rem-calc(50);
   // }
 	@media screen and (min-width: $screen-desktop) {
-    height: rem-calc(150);
-    width: rem-calc(66);
+		// height: 9.375rem;
+    // width: 4.125rem;
+    height: rem-calc(85.4);
+    width: rem-calc(130);
+		// height: 5.375rem;
+    // width: 8.125rem;
   }
 }
 
@@ -40,8 +44,12 @@
   //   width: rem-calc(50);
   // }
 	@media screen and (min-width: $screen-desktop) {
-    height: rem-calc(117);
-    width: rem-calc(66);
+		// height: 7.3125rem;
+    // width: 4.125rem;
+    height: rem-calc(87);
+    width: rem-calc(119);
+		// height: 5.3125rem;
+    // width: 7.425rem;
   }
 }
 

@@ -27,7 +27,21 @@
   // }
 	@media screen and (min-width: $screen-desktop) {
     height: rem-calc(150);
-    width: rem-calc(150);
+    width: rem-calc(66);
+  }
+}
+
+.icon--logo-guny {
+  height: rem-calc(111);
+  width: rem-calc(111);
+
+  // @include grid-media($bp-large) {
+  //   height: rem-calc(50);
+  //   width: rem-calc(50);
+  // }
+	@media screen and (min-width: $screen-desktop) {
+    height: rem-calc(117);
+    width: rem-calc(66);
   }
 }
 

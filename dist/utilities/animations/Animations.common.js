@@ -933,7 +933,6 @@ var forEach_1 = forEach;
  */
 
 var Animations = function Animations() {
-  console.log("Animation");
   this._settings = {
     selector: Animations.selector,
     controller: Animations.controller
@@ -949,7 +948,8 @@ var Animations = function Animations() {
 };
 
 Animations.prototype.rotateTerm = function rotateTerm(terms) {
-  var controller = document.querySelector(this._settings.controller);
+  var controller = document.querySelector(this._settings.controller); // console.log(terms[0]);
+
   controller.innerText = terms[0].trim();
   var i = 0;
   setInterval(function () {

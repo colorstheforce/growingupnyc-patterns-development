@@ -15,7 +15,6 @@ class Animations {
    * @constructor
    */
   constructor() {
-		console.log("Animation");
 
     this._settings = {
       selector: Animations.selector,
@@ -36,6 +35,7 @@ class Animations {
 
   rotateTerm(terms) {
     const controller = document.querySelector(this._settings.controller)
+		// console.log(terms[0]);
 
     controller.innerText = terms[0].trim();
     var i = 0;

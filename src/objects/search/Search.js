@@ -4,6 +4,7 @@ import MissPlete from 'miss-plete-js';
 
 class Search {
   constructor() {}
+	console.log("Search");
 
   /**
    * Initializes the module

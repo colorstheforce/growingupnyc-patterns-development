@@ -407,7 +407,9 @@ var Search = (function () {
 
 	var MissPlete = unwrapExports(bundle);
 
-	var Search = function Search() {};
+	var Search = function Search() {
+	  console.log("Search");
+	};
 	/**
 	 * Initializes the module
 	 */

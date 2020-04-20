@@ -6560,8 +6560,8 @@ input[type=search].form-field {
  * Icons
  */
 .icon--logo {
-  height: 6.9375rem;
-  width: 6.9375rem;
+  height: 5.3125rem;
+  width: 9.8125rem;
 }
 @media screen and (min-width: 1024px) {
   .icon--logo {
@@ -6571,13 +6571,13 @@ input[type=search].form-field {
 }
 
 .icon--logo-guny {
-  height: 6.9375rem;
-  width: 6.9375rem;
+  height: 5.4375rem;
+  width: 7.375rem;
 }
 @media screen and (min-width: 1024px) {
   .icon--logo-guny {
     height: 5.4375rem;
-    width: 7.4375rem;
+    width: 7.5rem;
   }
 }
 
@@ -7218,7 +7218,7 @@ a.sticker:focus {
 }
 @media screen and (min-width: 1024px) {
   .c-footer__signup {
-    padding-left: 8.5%;
+    padding-left: 8%;
   }
 }
 
@@ -9877,6 +9877,7 @@ body {
   color: #333;
   font-family: "Open Sans", sans-serif;
   font-size: 0.984375rem;
+  font-weight: 600;
 }
 @media screen and (min-width: 1024px) {
   body {

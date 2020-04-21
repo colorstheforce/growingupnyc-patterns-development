@@ -200,6 +200,8 @@ select {
 
 svg {
 	fill: currentColor;
+	width: 100%;
+	height: 100%;
 }
 
 // specify the progress cursor of updating elements
@@ -354,3 +356,6 @@ textarea {
 	text-shadow: if(variable-exists(selection-text-shadow), $selection-text-shadow, none);
 }
 /* stylelint-enable */
+
+
+// Cu

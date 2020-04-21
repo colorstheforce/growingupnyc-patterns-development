@@ -2,11 +2,15 @@
 / Overlay
 
 
-a data-js="toggle-search" href="#search" onclick="return false;"
-  svg class="icon--small" role="img"
-    title
-      = 'Search'
-    use xlink:href="#icon-search"
+/ a data-js="toggle-search" href="#search" onclick="return false;"
+/   svg class="icon--small" role="img"
+/     title
+/       = 'Search'
+/     use xlink:href="#icon-search"
 
-div id="search" class="o-overlay hidden p-4" aria-hidden='true'
-  p = "Overlay content."
+/ div id="search" class="o-overlay hidden p-4" aria-hidden='true'
+/   p = "Overlay content."
+
+button aria-controls='toggle-search' aria-expanded='false' class='btn btn-primary mb-3' data-js='toggle' type='button' Search
+
+div aria-hidden='true' class='bg-color-blue-light p-4 text-center hidden' id='toggle-search' Targeted toggle element

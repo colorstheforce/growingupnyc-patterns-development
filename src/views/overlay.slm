@@ -17,3 +17,6 @@
   div
     = mixin('section', 'Overlay', 'objects/overlay/overlay');
 
+= content('script')
+  javascript:
+   var toggle = gunyc.toggle();

@@ -11,6 +11,7 @@ import Navigation from '../objects/navigation/Navigation';
 import Accordion from '../objects/accordion/Accordion';
 import Overlay from '../objects/overlay/Overlay';
 import Icons from '../../node_modules/@nycopportunity/patterns-framework/src/utilities/icons/icons';
+import Toggle from '../../node_modules/@nycopportunity/patterns-framework/src/utilities/toggle/toggle';
 // import Toggle from '../utilities/toggle/Toggle';
 // import Sticky from '../utilities/sticky/Sticky';
 import AlertBanner from '../objects/alert-banner/AlertBanner';
@@ -99,6 +100,10 @@ class main {
 
 	scroll() {
     return new Scroll();
+  }
+
+	toggle() {
+    return new Toggle();
   }
 
 	// shareFrom() {

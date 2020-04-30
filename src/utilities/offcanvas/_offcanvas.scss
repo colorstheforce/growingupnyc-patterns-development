@@ -12,6 +12,7 @@
 // to SASS during the compilation process).
 @import 'config/tokens';
 @import 'config/colors';
+@import 'config/media';
 
 $z-index-offcanvas-side: map-get(map-get($tokens, 'z-index'), 'z-index-offcanvas-side');
 $z-index-offcanvas-main: map-get(map-get($tokens, 'z-index'), 'z-index-offcanvas-main');

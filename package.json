@@ -18,7 +18,7 @@
     "bourbon": "^6.0.0",
     "bourbon-neat": "^4.0.0",
     "imagesready": "^0.2.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.15"
   },
   "stylelintConfig": {

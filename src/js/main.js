@@ -41,7 +41,7 @@ class main {
     return (settings) ? new Navigation(settings) : new Navigation();
   }
 
-	offCanvas(settings = false) {
+	offCanvas(settings = {sideSelector: "left"}) {
     return (settings) ? new Offcanvas(settings) : new Offcanvas();
   }
 

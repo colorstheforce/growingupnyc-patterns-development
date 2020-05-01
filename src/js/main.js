@@ -19,7 +19,7 @@ import Form from '../components/form/Form';
 import StaticColumn from '../objects/static-column/staticColumn'
 import Scroll from '../components/side-navigation/Scroll'
 import Sticky from '../utilities/sticky/Sticky'
-import Offcanvas from '../utilities/offcanvas/Offcanvas'
+// import Offcanvas from '../utilities/offcanvas/Offcanvas'
 // import OffcanvasToggle from '../utilities/offcanvas/OffcanvasToggle'
 import FormEffect from '../utilities/form-effects/FormEffects'
 import Reveal from '../utilities/reveal/Reveal'
@@ -41,9 +41,9 @@ class main {
     return (settings) ? new Navigation(settings) : new Navigation();
   }
 
-	offCanvas(settings = false) {
-    return (settings) ? new Offcanvas(settings) : new Offcanvas();
-  }
+	// offCanvas(settings = false) {
+  //   return (settings) ? new Offcanvas(settings) : new Offcanvas();
+  // }
 
 	newsletter(settings = false) {
     return (settings) ? new Newsletter(settings) : new Newsletter();

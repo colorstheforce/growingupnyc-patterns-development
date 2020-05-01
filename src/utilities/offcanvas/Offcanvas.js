@@ -15,20 +15,21 @@ class Offcanvas {
 		const nav = document.querySelector('.js-offcanvas__side')
 		const mainOff = document.querySelector('.js-offcanvas__main')
 
-    // this._settings = {
+    this._settings = {
+      sideSelector: (settings.sideSelector) ? settings.sideSelector : Offcanvas.side
     //   selector: (settings.selector) ? settings.selector : Offcanvas.selector,
     //   namespace: (settings.namespace) ? settings.namespace : Offcanvas.namespace,
     //   inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Offcanvas.inactiveClass,
     //   activeClass: (settings.activeClass) ? settings.activeClass : Offcanvas.activeClass,
     //   before: (settings.before) ? settings.before : false,
     //   after: (settings.after) ? settings.after : false
-    // };
+    };
 
-  let openClass = "";
-    if (Offcanvas.side === 'left') {
+    let openClass = "";
+    if (this._settings.sideSelector === 'left') {
 			openClass = 'is-open-left';
 			mainOff.classList.toggle("o-offcanvas__main-left")
-		} else if (Offcanvas.side === 'right') {
+    } else if (this._settings.sideSelector === 'right') {
 				openClass = 'is-open-right';
 				mainOff.classList.toggle("o-offcanvas__main-right")
     }
@@ -124,7 +125,7 @@ class Offcanvas {
     });
   };
 }
-Offcanvas.side = "left";
+Offcanvas.side = "right";
 
 Offcanvas.dataset = function (elem, attr) {
   if (typeof elem.dataset === 'undefined') {

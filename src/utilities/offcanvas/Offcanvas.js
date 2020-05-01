@@ -23,7 +23,8 @@ class Offcanvas {
     //   inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Offcanvas.inactiveClass,
     //   activeClass: (settings.activeClass) ? settings.activeClass : Offcanvas.activeClass,
     //   before: (settings.before) ? settings.before : false,
-    //   after: (settings.after) ? settings.after : false
+		//   after: (settings.after) ? settings.after : false
+
     };
 
     let openClass = "";

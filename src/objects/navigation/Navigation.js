@@ -10,12 +10,12 @@ class Navigation {
    *                           for the pattern module to render.
    * @constructor
    */
-  constructor() {
-
+  constructor(settings) {
     this._offcanvas = new Offcanvas({
-      selector: Navigation.selector,
-      namespace: Navigation.namespace,
-      inactiveClass: Navigation.inactiveClass
+      selector: (settings.selector) ? settings.selector : Navigation.selector,
+      sideSelector: (settings.sideSelector) ? settings.sideSelector : 'right',
+      namespace: (settings.namespace) ? settings.namespace : Navigation.namespace,
+      inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Navigation.inactiveClass,
     });
     return this;
   }

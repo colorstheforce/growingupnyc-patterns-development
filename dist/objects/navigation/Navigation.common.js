@@ -930,21 +930,22 @@ var forEach_1 = forEach;
 var Offcanvas = function Offcanvas(settings) {
   var body = document.querySelector('body');
   var nav = document.querySelector('.js-offcanvas__side');
-  var mainOff = document.querySelector('.js-offcanvas__main'); // this._settings = {
-  // selector: (settings.selector) ? settings.selector : Offcanvas.selector,
-  // namespace: (settings.namespace) ? settings.namespace : Offcanvas.namespace,
-  // inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Offcanvas.inactiveClass,
-  // activeClass: (settings.activeClass) ? settings.activeClass : Offcanvas.activeClass,
-  // before: (settings.before) ? settings.before : false,
-  // after: (settings.after) ? settings.after : false
-  // };
+  var mainOff = document.querySelector('.js-offcanvas__main');
+  this._settings = {
+    sideSelector: settings.sideSelector ? settings.sideSelector : Offcanvas.side // selector: (settings.selector) ? settings.selector : Offcanvas.selector,
+    // namespace: (settings.namespace) ? settings.namespace : Offcanvas.namespace,
+    // inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Offcanvas.inactiveClass,
+    // activeClass: (settings.activeClass) ? settings.activeClass : Offcanvas.activeClass,
+    // before: (settings.before) ? settings.before : false,
+    // after: (settings.after) ? settings.after : false
 
+  };
   var openClass = "";
 
-  if (Offcanvas.side === 'left') {
+  if (this._settings.sideSelector === 'left') {
     openClass = 'is-open-left';
     mainOff.classList.toggle("o-offcanvas__main-left");
-  } else if (Offcanvas.side === 'right') {
+  } else if (this._settings.sideSelector === 'right') {
     openClass = 'is-open-right';
     mainOff.classList.toggle("o-offcanvas__main-right");
   }
@@ -1043,7 +1044,7 @@ Offcanvas.prototype._toggle = function _toggle(openClass, nav, mainOff) {
   });
 };
 
-Offcanvas.side = "left";
+Offcanvas.side = "right";
 
 Offcanvas.dataset = function (elem, attr) {
   if (typeof elem.dataset === 'undefined') {
@@ -1053,11 +1054,12 @@ Offcanvas.dataset = function (elem, attr) {
   return elem.dataset[attr];
 };
 
-var Navigation = function Navigation() {
+var Navigation = function Navigation(settings) {
   this._offcanvas = new Offcanvas({
-    selector: Navigation.selector,
-    namespace: Navigation.namespace,
-    inactiveClass: Navigation.inactiveClass
+    selector: settings.selector ? settings.selector : Navigation.selector,
+    sideSelector: settings.sideSelector ? settings.sideSelector : 'right',
+    namespace: settings.namespace ? settings.namespace : Navigation.namespace,
+    inactiveClass: settings.inactiveClass ? settings.inactiveClass : Navigation.inactiveClass
   });
   return this;
 };

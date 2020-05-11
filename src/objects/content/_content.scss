@@ -6,7 +6,7 @@
 
 // Declarations
 .o-content-container {
-  padding: rem-calc(30 $outer-gutter 35);
+  padding: rem-calc(40 $outer-gutter 35);
 
   // @include grid-media($bp-small) {
   //   padding: rem-calc(35 $outer-gutter-small 40);
@@ -31,7 +31,7 @@
   // }
 	@media screen and (min-width: $screen-desktop) {
     padding: rem-calc($outer-gutter-large);
-    padding: 2.5rem;
+    padding: 2.9rem;
   }
 
 }

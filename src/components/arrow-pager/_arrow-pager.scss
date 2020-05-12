@@ -26,6 +26,9 @@
   // @include grid-media($bp-large) {
   //   padding-top: 0;
   // }
+	@media screen and (min-width: $screen-desktop) {
+    padding-top: 0;
+  }
 }
 
 .c-arrow-pager__arrow {

@@ -67,8 +67,13 @@
   }
 }
 
+
 .c-hero--light {
-  padding: rem-calc(113 0 60);
+  padding: rem-calc(50 0 60);
+
+	@media screen and (min-width: $screen-tablet) {
+    padding: rem-calc(113 0 60);
+  }
 }
 
 .c-hero--large {

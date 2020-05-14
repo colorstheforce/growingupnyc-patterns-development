@@ -228,7 +228,7 @@
   //   font-size: rem-calc($font-size-large);
   // }
 	@media screen and (min-width: $screen-tablet) {
-    padding: rem-calc(113 80 60);
+    // padding: rem-calc(113 80 60);
   }
 
   // @include grid-media($bp-large) {

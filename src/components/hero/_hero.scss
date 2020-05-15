@@ -198,7 +198,7 @@
   //   font-size: rem-calc($font-size-xx-large);
   // }
 	@media screen and (min-width: $screen-tablet) {
-    font-size: rem-calc($font-size-xx-large);
+    font-size: rem-calc($font-size-x-large);
   }
 
   // @include grid-media($bp-large) {

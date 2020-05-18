@@ -38,6 +38,9 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
           a href="lists" class="c-list-box__subitem"
             = 'Lists'
         li
+          a href="spinner" class="c-list-box__subitem"
+            = 'Spinner'
+        li
           a href="sticker" class="c-list-box__subitem"
             = 'Sticker'
         li

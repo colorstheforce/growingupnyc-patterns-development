@@ -188,7 +188,14 @@
   //   // @include shift(1);
 	// }
 	@media screen and (min-width: $screen-desktop) {
+
+		@if ($language == 'ar') or ($language == 'ur') {
+		padding-right: 8.5%;
+	} @else {
 		padding-left: 8.5%;
+
+	}
+}
   }
 }
 

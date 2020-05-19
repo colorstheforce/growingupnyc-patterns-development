@@ -187,17 +187,14 @@
   //   @include grid-column(5);
   //   // @include shift(1);
 	// }
-	@media screen and (min-width: $screen-desktop) {
-
-		@if ($language == 'ar') or ($language == 'ur') {
-		padding-right: 8.5%;
-	} @else {
-		padding-left: 8.5%;
-
-	}
-}
+		@media screen and (min-width: $screen-desktop) {
+			@if ($language == 'ar') or ($language == 'ur') {
+				padding-right: 8.5%;
+			} @else {
+				padding-left: 8.5%;
+			}
+		}
   }
-}
 
 // Footer of the footer component itself
 //

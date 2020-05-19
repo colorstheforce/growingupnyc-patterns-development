@@ -154,8 +154,12 @@
 // </label>
 //
 .checkbox {
-  cursor: pointer;
-  position: relative;
+  @if ($language == 'ar') or ($language == 'ur') {
+		cursor: pointer;
+	} @else {
+		cursor: pointer;
+		position: relative;
+	}
 }
 
 .checkbox__field {

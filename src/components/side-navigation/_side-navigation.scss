@@ -113,22 +113,55 @@ $indicator-size: 10px;
 	@media screen and (min-width: $screen-desktop) {
     padding: rem-calc(28);
 
-    &:focus,
-    &.is-active {
-      &:after {
-        content: '';
-        display: block;
-        border: $indicator-size solid transparent;
-        border-left-color: inherit;
-        margin-top: -#{$indicator-size};
-        position: absolute;
-        right: -#{$indicator-size * 2};
-        top: 50%;
+    // &:focus,
+    // &.is-active {
+    //   &:after {
+    //     content: '';
+    //     display: block;
+    //     border: $indicator-size solid transparent;
+    //     border-left-color: inherit;
+    //     margin-top: -#{$indicator-size};
+    //     position: absolute;
+    //     right: -#{$indicator-size * 2};
+    //     top: 50%;
+    //   }
+    // }
+
+    // .no-touchevents & {
+    //   &:hover {
+    //     &:after {
+    //       content: '';
+    //       display: block;
+    //       border: $indicator-size solid transparent;
+    //       border-left-color: inherit;
+    //       margin-top: -#{$indicator-size};
+    //       position: absolute;
+    //       right: -#{$indicator-size * 2};
+    //       top: 50%;
+    //     }
+    //   }
+    // }
+
+		    @if ($language == 'ar') or ($language == 'ur') {
+      &:focus,
+      &.is-active {
+        &:after {
+          content: '';
+          display: block;
+          border: $indicator-size solid transparent;
+          border-left-color: inherit;
+          margin-top: -#{$indicator-size};
+          position: absolute;
+          top: 50%;
+
+          left: -#{$indicator-size * 2};
+          transform: rotate(180deg);
+        }
       }
     }
-
-    .no-touchevents & {
-      &:hover {
+    @else {
+      &:focus,
+      &.is-active {
         &:after {
           content: '';
           display: block;
@@ -138,6 +171,42 @@ $indicator-size: 10px;
           position: absolute;
           right: -#{$indicator-size * 2};
           top: 50%;
+        }
+      }
+    }
+
+
+    @if ($language == 'ar') or ($language == 'ur') {
+      .no-touchevents & {
+        &:hover {
+          &:after {
+            content: '';
+            display: block;
+            border: $indicator-size solid transparent;
+            border-left-color: inherit;
+            margin-top: -#{$indicator-size};
+            position: absolute;
+            top: 50%;
+
+            left: -#{$indicator-size * 2};
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    @else {
+      .no-touchevents & {
+        &:hover {
+          &:after {
+            content: '';
+            display: block;
+            border: $indicator-size solid transparent;
+            border-left-color: inherit;
+            margin-top: -#{$indicator-size};
+            position: absolute;
+            right: -#{$indicator-size * 2};
+            top: 50%;
+          }
         }
       }
     }

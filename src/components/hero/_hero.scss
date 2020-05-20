@@ -168,9 +168,14 @@
     box-shadow: none;
     height: rem-calc(65);
     line-height: rem-calc(65);
-    margin-right: rem-calc(20);
     position: static;
     width: rem-calc(65);
+
+		@if ($language == 'ar') or ($language == 'ur') {
+    	margin-left: rem-calc(20);
+    } @else {
+    margin-right: rem-calc(20);
+		}
   }
 }
 

@@ -148,6 +148,10 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   padding-top: rem-calc(30px);
   padding-bottom: rem-calc(6px);
 
+	 @if ($language == 'ar') or ($language == 'ur') {
+    float: left;
+  }
+
   li {
     margin-left: 0;
     margin-right: rem-calc(6px);
@@ -205,6 +209,11 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
       // }
       @media screen and (min-width: $screen-mobile) {
         margin-left: rem-calc(16px);
+
+				@if ($language == 'ar') or ($language == 'ur') {
+          margin-right: rem-calc(16);
+          margin-left: 0;
+        }
       }
 
       // @include grid-media($bp-large) {
@@ -212,6 +221,11 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
       // }
       @media screen and (min-width: $screen-desktop) {
         margin-left: rem-calc(56px);
+
+				@if ($language == 'ar') or ($language == 'ur') {
+          margin-right: rem-calc(56);
+          margin-left: 0;
+        }
       }
 
     }
@@ -273,5 +287,56 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
 
   .is-active & {
     opacity: 1;
+  }
+}
+
+
+
+//Language switcher
+.c-language-switcher-wrapper {
+  background-color: $color-background;
+  position: relative;
+  z-index: 3;
+  .c-language__switcher {
+    background-color: $color-background;
+    text-align: right;
+    z-index: 1;
+    @if ($language == 'ar') or ($language == 'ur') {
+      text-align: left;
+    }
+    .wpml-ls-legacy-list-horizontal {
+      padding: 7px 0 0;
+      li {
+        margin-right: rem-calc(5);
+        &:last-child {
+          margin-right: 0;
+          a {
+            padding-right: 0;
+          }
+        }
+        a {
+          font-size: rem-calc(11);
+          color: $light-gray-1;
+          padding: 5px 8px;
+          &:hover {
+            color: $color-primary;
+          }
+        }
+        &.wpml-ls-current-language {
+          a {
+            color: $color-primary;
+            &:before {
+              content: '\f00c';
+              font-family: FontAwesome;
+              font-style: normal;
+              font-weight: normal;
+              position: relative;
+              top: rem-calc(2);
+              margin-right: rem-calc(3);
+            }
+          }
+        }
+      }
+    }
   }
 }

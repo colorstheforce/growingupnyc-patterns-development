@@ -38,9 +38,25 @@
   padding: rem-calc(25 ($sticker-size-mobile / 2) + 10 25 21);
   position: relative;
 
+	@if ($language == 'ar') or ($language == 'ur') {
+    margin-left: rem-calc($sticker-size-mobile / 2);
+  }
+  @else {
+    margin-right: rem-calc($sticker-size-mobile / 2);
+  }
+
 	@media screen and (min-width: $screen-desktop) {
-    margin-right: rem-calc($sticker-size / 2);
-    padding-right: rem-calc(($sticker-size / 2) + 10);
+    // margin-right: rem-calc($sticker-size / 2);
+    // padding-right: rem-calc(($sticker-size / 2) + 10);
+
+		@if ($language == 'ar') or ($language == 'ur') {
+      margin-left: rem-calc($sticker-size / 2);
+      padding-left: rem-calc(($sticker-size / 2) + 10);
+    }
+    @else {
+      padding-right: rem-calc(($sticker-size / 2) + 10);
+      margin-right: rem-calc($sticker-size / 2);
+    }
   }
 }
 
@@ -61,15 +77,29 @@
 .c-card__sticker {
   order: 1;
   position: absolute;
-  right: rem-calc(-$sticker-size-mobile / 2);
+  // right: rem-calc(-$sticker-size-mobile / 2);
   top: rem-calc(10);
+
+	 @if ($language == 'ar') or ($language == 'ur') {
+    left: rem-calc(-$sticker-size-mobile / 2);
+		}
+		@else {
+			right: rem-calc(-$sticker-size-mobile / 2);
+		}
 
   .event-day {
     display: none;
   }
 
 	@media screen and (min-width: $screen-desktop) {
-    right: rem-calc(-$sticker-size / 2);
+    // right: rem-calc(-$sticker-size / 2);
+
+		 @if ($language == 'ar') or ($language == 'ur') {
+      left: rem-calc(-$sticker-size / 2);
+    }
+    @else {
+      right: rem-calc(-$sticker-size / 2);
+    }
   }
   // @include grid-media($bp-large) {
   //   right: rem-calc(-$sticker-size / 2);

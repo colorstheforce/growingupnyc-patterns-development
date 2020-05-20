@@ -34,6 +34,12 @@
 .c-arrow-pager__arrow {
   color: $color-gray-mid;
   text-decoration: none;
+
+	@if ($language == 'ar') or ($language == 'ur') {
+		svg {
+			transform: rotate(180deg);
+		}
+	}
 }
 
 // .previous {

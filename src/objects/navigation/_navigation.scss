@@ -143,14 +143,15 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
 }
 
 .o-navigation__nav {
-  float: right;
   line-height: 1;
   padding-top: rem-calc(30px);
   padding-bottom: rem-calc(6px);
 
-	 @if ($language == 'ar') or ($language == 'ur') {
+	@if ($language == 'ar') or ($language == 'ur') {
     float: left;
-  }
+  } @else {
+    float: right;
+	}
 
   li {
     margin-left: 0;
@@ -158,6 +159,10 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
 
     &:last-child {
       margin-right: 0;
+
+			@if ($language == 'ar') or ($language == 'ur') {
+       margin-right: 1rem;
+			}
     }
 
     a {

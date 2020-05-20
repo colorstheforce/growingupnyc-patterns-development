@@ -56,6 +56,10 @@
   margin-bottom: 0;
   text-align: left;
   width: 100%;
+
+	@if ($language == 'ar') or ($language == 'ur') {
+    text-align: right;
+  }
 }
 
 .c-list-box--primary .c-list-box__heading,
@@ -209,7 +213,7 @@
   &:focus {
     background: $color-secondary;
   }
- 
+
   &:hover {
     background: $color-secondary;
     color: inherit;

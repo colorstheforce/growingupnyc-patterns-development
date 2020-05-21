@@ -11711,7 +11711,7 @@ var Accordion = (function () {
 	   */
 
 	  $accordionElem.on('DOMNodeInserted', function (event) {
-	    reInitialize($accordionElem);
+	    reInitialize(jquery(this));
 	  });
 	};
 	/**

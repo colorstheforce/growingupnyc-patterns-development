@@ -208,7 +208,7 @@ Accordion.initialize = function($accordionElem, multiSelectable) {
    * @param {object} event - The event object
    */
   $accordionElem.on('DOMNodeInserted', function (event) {
-    reInitialize($accordionElem);
+    reInitialize($(this));
   });
 }
 

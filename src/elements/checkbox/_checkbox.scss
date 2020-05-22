@@ -177,7 +177,12 @@
   height: rem-calc(15);
   width: rem-calc(15);
   vertical-align: middle;
-  margin-right: 5px;
+
+	@if ($language == 'ar') or ($language == 'ur') {
+  	margin-right: 5px;
+  } @else {
+  	margin-right: 5px;
+	}
   // @include grid-media($bp-large) {
   //   height: rem-calc(20);
   //   width: rem-calc(20);

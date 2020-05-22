@@ -179,7 +179,7 @@
   vertical-align: middle;
 
 	@if ($language == 'ar') or ($language == 'ur') {
-  	margin-right: 5px;
+  	margin-left: 5px;
   } @else {
   	margin-right: 5px;
 	}

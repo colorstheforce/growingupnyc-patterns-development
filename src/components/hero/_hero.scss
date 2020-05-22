@@ -33,6 +33,10 @@
     text-align: left;
     padding: rem-calc(92 40 80);
   }
+
+	@media screen and (min-width: $screen-mobile) {
+      background-size: cover;
+  }
 }
 
 .c-hero--light {

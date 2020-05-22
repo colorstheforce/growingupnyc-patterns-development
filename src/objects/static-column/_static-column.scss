@@ -100,7 +100,7 @@
 
     // Uses "not sticky" class to prevent jumping when going from absolute bottom to fixed top
     &.is-not-sticky {
-      position: fixed;
+      position: absolute;
     }
 
     &.is-bottom {

@@ -156,10 +156,14 @@
   background-color: $color-secondary;
   box-shadow: 0 2px 4px 0 $color-shadow;
   display: inline-block;
-  left: 0;
   top: rem-calc($sticker-size-mobile / -2);
   position: absolute;
 
+		@if ($language == 'ar') or ($language == 'ur') {
+  		right: 0;
+    } @else {
+  		left: 0;
+		}
   // @include grid-media($bp-medium) {
   //   box-shadow: none;
   //   height: rem-calc(65);
@@ -259,9 +263,15 @@
   height: auto;
   position: absolute;
   top: percentage(60/375);
-  right: percentage(-50/375);
+  // right: percentage(-50/375);
   width: percentage(140/375);
 
+		@if ($language == 'ar') or ($language == 'ur') {
+		  left: percentage(-114/1440);
+			transform: scaleX(-1);
+    } @else {
+    	right: percentage(-114/1440);
+		}
   // @include grid-media($bp-medium) {
   //   bottom: percentage(-87/480);
   //   top: auto;
@@ -271,9 +281,10 @@
 	@media screen and (min-width: $screen-tablet) {
     bottom: percentage(-87/480);
     top: auto;
-    right: percentage(-114/1440);
     width: percentage(404/1440);
+
   }
+
 
   // @include grid-media($bp-xlarge) {
   //   bottom: -87px;
@@ -282,8 +293,16 @@
   // }
 	@media screen and (min-width: $screen-desktop-large) {
     bottom: -87px;
-    right: -114px;
     width: 404px;
+
+		@if ($language == 'ar') or ($language == 'ur') {
+    	left: -114px;
+		  left: percentage(-114/1440);
+			transform: scaleX(-1);
+    } @else {
+    	right: -114px;
+    	right: percentage(-114/1440);
+		}
   }
 }
 

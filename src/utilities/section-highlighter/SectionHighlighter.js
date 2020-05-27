@@ -37,16 +37,16 @@ class SectionHighlighter {
 			sectionIdTonavigationLink[section.attr('data-id')] = $('.js-section-set > li > a[href="#' + section.attr('data-id') + '"]');
 		});
 
-			SectionHighlighter.optimized();
+			SectionHighlighter.optimized($navigationLinks, $sectionsReversed, sectionIdTonavigationLink);
 		$(window).scroll(function() {
-			SectionHighlighter.optimized();
+			SectionHighlighter.optimized($navigationLinks, $sectionsReversed, sectionIdTonavigationLink);
 		});
 
   }
 
 }
 
-  SectionHighlighter.optimized = function () {
+  SectionHighlighter.optimized = function ($navigationLinks, $sectionsReversed, sectionIdTonavigationLink) {
    var scrollPosition = $(window).scrollTop();
 
     $sectionsReversed.each(function() {

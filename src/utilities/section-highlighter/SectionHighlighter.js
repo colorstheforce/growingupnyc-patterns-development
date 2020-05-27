@@ -36,14 +36,16 @@ class SectionHighlighter {
 			sectionIdTonavigationLink[section.attr('data-id')] = $('.js-section-set > li > a[href="#' + section.attr('data-id') + '"]');
 		});
 
-			this.optimized();
+			SectionHighlighter.optimized();
 		$(window).scroll(function() {
-			this.optimized();
+			SectionHighlighter.optimized();
 		});
 
   }
 
-  optimized() {
+}
+
+  SectionHighlighter.optimized = function () {
    var scrollPosition = $(window).scrollTop();
 
     $sectionsReversed.each(function() {
@@ -67,8 +69,6 @@ class SectionHighlighter {
       }
     });
   }
-}
-
 
 // Animations.controller = '[data-js*="rotate-controller"]';
 

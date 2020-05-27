@@ -22,20 +22,20 @@ var SectionHighlighter = (function () {
       section.children(':first').attr('id', section.attr('data-id'));
       sectionIdTonavigationLink[section.attr('data-id')] = $('.js-section-set > li > a[href="#' + section.attr('data-id') + '"]');
     });
-    this.optimized();
+    SectionHighlighter.optimized();
     $(window).scroll(function () {
-      this.optimized();
+      SectionHighlighter.optimized();
     });
   };
 
-  SectionHighlighter.prototype.optimized = function optimized() {
+  SectionHighlighter.optimized = function () {
     var scrollPosition = $(window).scrollTop();
     $sectionsReversed.each(function () {
       var currentSection = $(this);
       console.log(currentSection);
       var sectionTop = currentSection.offset().top; // if(currentSection.is('section:first-child') && sectionTop > scrollPosition){
-      // console.log('scrollPosition', scrollPosition);
-      // console.log('sectionTop', sectionTop);
+      //   console.log('scrollPosition', scrollPosition);
+      //   console.log('sectionTop', sectionTop);
       // }
 
       if (scrollPosition >= sectionTop || currentSection.is('section:first-child') && sectionTop > scrollPosition) {

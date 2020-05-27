@@ -1,7 +1,9 @@
 'use strict';
 
 // * @see https://stackoverflow.com/questions/32395988/highlight-menu-item-when-scrolling-down-to-section
+
 var SectionHighlighter = function SectionHighlighter() {
+  console.log("Highlighter");
   this._settings = {// selector: Animations.selector,
     // controller: Animations.controller,
   };

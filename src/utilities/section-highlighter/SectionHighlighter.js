@@ -1,4 +1,5 @@
 // * @see https://stackoverflow.com/questions/32395988/highlight-menu-item-when-scrolling-down-to-section
+'use strict';
 
 
 class SectionHighlighter {
@@ -10,7 +11,7 @@ class SectionHighlighter {
    * @constructor
    */
   constructor() {
-
+		console.log("Highlighter")
     this._settings = {
       // selector: Animations.selector,
       // controller: Animations.controller,

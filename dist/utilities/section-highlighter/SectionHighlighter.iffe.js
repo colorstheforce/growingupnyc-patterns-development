@@ -1,57 +1,59 @@
 var SectionHighlighter = (function () {
-  'use strict';
+	'use strict';
 
-  // * @see https://stackoverflow.com/questions/32395988/highlight-menu-item-when-scrolling-down-to-section
-  var SectionHighlighter = function SectionHighlighter() {
-    this._settings = {// selector: Animations.selector,
-      // controller: Animations.controller,
-    };
-    var $navigationLinks = $('.js-section-set > li > a');
-    var $sections = $("section");
-    var $sectionsReversed = $($("section").get().reverse());
-    var sectionIdTonavigationLink = {}; //var eTop = $('#free-day-trips').offset().top;
+	// * @see https://stackoverflow.com/questions/32395988/highlight-menu-item-when-scrolling-down-to-section
 
-    $sections.each(function () {
-      var section = $(this); // fallback for acf_fc_layout sections
+	var SectionHighlighter = function SectionHighlighter() {
+	  console.log("Highlighter");
+	  this._settings = {// selector: Animations.selector,
+	    // controller: Animations.controller,
+	  };
+	  var $navigationLinks = $('.js-section-set > li > a');
+	  var $sections = $("section");
+	  var $sectionsReversed = $($("section").get().reverse());
+	  var sectionIdTonavigationLink = {}; //var eTop = $('#free-day-trips').offset().top;
 
-      if (!section.attr('data-id') && section.attr('id')) {
-        section.attr('data-id', section.attr('id'));
-        section.removeAttr('id');
-      }
+	  $sections.each(function () {
+	    var section = $(this); // fallback for acf_fc_layout sections
 
-      section.children(':first').attr('id', section.attr('data-id'));
-      sectionIdTonavigationLink[section.attr('data-id')] = $('.js-section-set > li > a[href="#' + section.attr('data-id') + '"]');
-    });
-    SectionHighlighter.optimized();
-    $(window).scroll(function () {
-      SectionHighlighter.optimized();
-    });
-  };
+	    if (!section.attr('data-id') && section.attr('id')) {
+	      section.attr('data-id', section.attr('id'));
+	      section.removeAttr('id');
+	    }
 
-  SectionHighlighter.optimized = function () {
-    var scrollPosition = $(window).scrollTop();
-    $sectionsReversed.each(function () {
-      var currentSection = $(this);
-      console.log(currentSection);
-      var sectionTop = currentSection.offset().top; // if(currentSection.is('section:first-child') && sectionTop > scrollPosition){
-      //   console.log('scrollPosition', scrollPosition);
-      //   console.log('sectionTop', sectionTop);
-      // }
+	    section.children(':first').attr('id', section.attr('data-id'));
+	    sectionIdTonavigationLink[section.attr('data-id')] = $('.js-section-set > li > a[href="#' + section.attr('data-id') + '"]');
+	  });
+	  SectionHighlighter.optimized();
+	  $(window).scroll(function () {
+	    SectionHighlighter.optimized();
+	  });
+	};
 
-      if (scrollPosition >= sectionTop || currentSection.is('section:first-child') && sectionTop > scrollPosition) {
-        var id = currentSection.attr('data-id');
-        var $navigationLink = sectionIdTonavigationLink[id];
+	SectionHighlighter.optimized = function () {
+	  var scrollPosition = $(window).scrollTop();
+	  $sectionsReversed.each(function () {
+	    var currentSection = $(this);
+	    console.log(currentSection);
+	    var sectionTop = currentSection.offset().top; // if(currentSection.is('section:first-child') && sectionTop > scrollPosition){
+	    //   console.log('scrollPosition', scrollPosition);
+	    //   console.log('sectionTop', sectionTop);
+	    // }
 
-        if (!$navigationLink.hasClass('is-active') || !$('section').hasClass('o-content-container--compact')) {
-          $navigationLinks.removeClass('is-active');
-          $navigationLink.addClass('is-active');
-        }
+	    if (scrollPosition >= sectionTop || currentSection.is('section:first-child') && sectionTop > scrollPosition) {
+	      var id = currentSection.attr('data-id');
+	      var $navigationLink = sectionIdTonavigationLink[id];
 
-        return false;
-      }
-    });
-  }; // Animations.controller = '[data-js*="rotate-controller"]';
+	      if (!$navigationLink.hasClass('is-active') || !$('section').hasClass('o-content-container--compact')) {
+	        $navigationLinks.removeClass('is-active');
+	        $navigationLink.addClass('is-active');
+	      }
 
-  return SectionHighlighter;
+	      return false;
+	    }
+	  });
+	}; // Animations.controller = '[data-js*="rotate-controller"]';
+
+	return SectionHighlighter;
 
 }());

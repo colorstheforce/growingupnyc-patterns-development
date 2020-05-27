@@ -355,6 +355,24 @@ const modules = [
         strict: rollup.strict
       }
     ]
+  },
+  {
+    input: './src/utilities/section-highlighter/SectionHighlighter.js',
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'SectionHighlighter',
+        file: `./dist/utilities/section-highlighter/SectionHighlighter.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'SectionHighlighter',
+        file: `./dist/utilities/section-highlighter/SectionHighlighter.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
   }
 ];
 

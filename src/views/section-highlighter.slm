@@ -1,6 +1,6 @@
 = extend('layouts/default')
 
-- title = 'Sticky'
+- title = 'Reveal'
 
 / Partials
 = partial('partials/head.mixin.slm');
@@ -15,11 +15,10 @@
 = content('main')
   = mixin('content-header', title);
   div
-    = mixin('section', '', 'utilities/sticky/sticky');
+    = mixin('section', 'Section Highlighter', 'utilities/section-highlighter/section-highlighter');
+
 
 = content('script')
   javascript:
-    gunyc.sticky();
-    gunyc.sectionHighlighter();
-
-
+    var sectionHighlighter = gunyc.sectionHighlighter();
+    var sticky = gunyc.sticky();

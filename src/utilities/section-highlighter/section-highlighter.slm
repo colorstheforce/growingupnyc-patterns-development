@@ -1,19 +1,74 @@
 /
 / Section-highlighter
-/ The Sketch attributes expose the markup to HTML Sketch App and should
-/ be included by default. They should only be set before the include
-/ statement of this partial. There should only be one Symbol definition
-/ library and all others should be Symbol Instances.
-/ data-sketch-symbol - Defines markup as a new Sketch Symbol
-/ data-sketch-symbol-instance - Relates the markup to a previously defined Symbol
-/
-/ ex;
-/ - symbol = false;
-/ - instance = 'elements/checkboxes/checkboxes';
-/ = partial(`../../${instance}.slm`);
-/
-/ Basically, if you are building an Object or a Component and including
-/ other Elements/Components/Objects, the symbol should be set to false
-/ and the instance should be set to the pattern's path.
+header class="c-banner py-24 bg-color-gray-dark"
+  div class=" bg-color-gray-dark"
+main id="main" role="main" class=""
+  article class="o-container js-sticky-container desktop:flex"
+    div class="o-article-sidebar desktop:w-4/12"
+      div class="o-content-container--compact u-shift-up"
+        ol class="c-nav-list js-sticky js-section-set o-sticky-nav" data-js="sticky"
+          li class="c-nav-list__item"
+            a href="#section-events" data-section="section-events" class="scroll js-section c-nav-list__link"
+              = "Events"
+              svg aria-hidden="true" class="icon--caret"
+                use xlink:href="#icon-caret-right"
+          li class="c-nav-list__item"
+            a href="#section-programs" data-section="section-programs" class="scroll js-section c-nav-list__link"
+              = "Programs"
+              svg aria-hidden="true" class="icon--caret"
+                use xlink:href="#icon-caret-right"
+          li class="c-nav-list__item"
+            a href="#section-milestones" data-section="section-milestones" class="scroll js-section c-nav-list__link"
+              = "Milestones"
+              svg aria-hidden="true" class="icon--caret"
+                use xlink:href="#icon-caret-right"
 
-div class="section-highlighter" data-sketch-symbol=symbol data-sketch-symbol-instance=instance
+    div class="o-article js-sticky-article desktop:w-8/12"
+      section class="c-block-list o-content-container pt-12" id="section-events"
+        h2 = "Events"
+        div
+          p
+            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
+          p
+            = "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin."
+          p
+            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
+          p
+            = "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin."
+          p
+            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
+          p
+            = "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin."
+
+      section class="c-block-list o-content-container pt-12" id="section-programs"
+        h2 = "Programs"
+        div
+          p
+            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
+          p
+            = "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin."
+          p
+            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
+          p
+            = "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin."
+          p
+            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
+          p
+            = "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin."
+
+      section class="c-block-list o-content-container pt-12" id="section-milestones"
+        h2 = "Milestones"
+        div
+          p
+            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
+          p
+            = "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin."
+          p
+            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
+          p
+            = "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin."
+          p
+            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
+          p
+            = "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin."
+footer class="c-footer__reached bg-color-blue-light p-20"

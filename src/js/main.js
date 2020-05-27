@@ -1,5 +1,6 @@
 'use strict';
 // Utilities
+import SectionHighlighter from '../utilities/section-highlighter/SectionHighlighter';
 
 // Elements
 
@@ -56,6 +57,10 @@ class main {
 
   overlay() {
     return new Overlay();
+  }
+
+  sectionHighlighter() {
+    return new SectionHighlighter();
   }
 
   accordion() {

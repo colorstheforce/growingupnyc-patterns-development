@@ -2,14 +2,52 @@
 / Language-switcher
 
 div class="c-language-switcher-wrapper"
-  div class="o-container c-language-switcher"
-    div class="c-language-switcher__horizontal"
+  div class="o-container c-language-switcher desktop:flex desktop:justify-end"
+    a class="rounded desktop:order-last desktop:self-end desktop:pl-8 desktop:pb-1"
+      = "Translate"
+    div class="c-language-switcher__horizontal wpml-ls-legacy-list-horizontal "
       ul
-        li class="c-language-switcher__current"
+        li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-en wpml-ls-first-item wpml-ls-item-legacy-list-horizontal"
           a href="" title="English"
             span
               = 'English'
-        li
+        li class=" wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-es wpml-ls-item-legacy-list-horizontal"
           a href="" title="Spanish"
             span
               = 'Spanish'
+        li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ar wpml-ls-item-legacy-list-horizontal"
+          a class="wpml-ls-link" href="" title="Arabic"
+            span
+              = 'العربية'
+        li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-zh-hant wpml-ls-item-legacy-list-horizontal"
+          a class="wpml-ls-link" href="" title="Traditional Chinese"
+            span
+              = '繁體中文'
+        li class="wpml-ls-current-language wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-fr wpml-ls-item-legacy-list-horizontal"
+          a class="wpml-ls-link" href="" title="French"
+            span
+              = 'Français'
+        li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ko wpml-ls-item-legacy-list-horizontal"
+          a class="wpml-ls-link" href="" title="Korean"
+            span
+              = '한국어'
+        li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-pl wpml-ls-item-legacy-list-horizontal"
+          a class="wpml-ls-link" href="" title="Polski"
+            span
+              = 'polski'
+        li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ru wpml-ls-item-legacy-list-horizontal"
+          a class="wpml-ls-link" href="" title="Russian"
+            span
+              = 'Русский'
+        li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ur wpml-ls-item-legacy-list-horizontal"
+          a class="wpml-ls-link" href="" title="Urdu"
+            span
+              = 'اردو '
+        li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-bn wpml-ls-item-legacy-list-horizontal"
+          a class="wpml-ls-link" href="" title="Bangla"
+            span
+              = 'Bangla'
+        li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ht wpml-ls-item-legacy-list-horizontal"
+          a class="wpml-ls-link" href="" title="Haitian Creole"
+            span
+              = 'Haitian Creole'

@@ -19,6 +19,7 @@ import Animations from '../utilities/animations/Animations';
 import Form from '../components/form/Form';
 import StaticColumn from '../objects/static-column/staticColumn'
 import Scroll from '../components/side-navigation/Scroll'
+import LanguageSwitcher from '../components/language-switcher/LanguageSwitcher'
 import Sticky from '../utilities/sticky/Sticky'
 // import Offcanvas from '../utilities/offcanvas/Offcanvas'
 // import OffcanvasToggle from '../utilities/offcanvas/OffcanvasToggle'
@@ -81,6 +82,10 @@ class main {
 
 	reveal(elNumber) {
     return new Reveal(elNumber);
+  }
+
+	languageSwitcher() {
+    return new LanguageSwitcher();
   }
 
 	// offCanvas() {

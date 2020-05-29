@@ -297,51 +297,51 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
 
 
 
-//Language switcher
-.c-language-switcher-wrapper {
-  background-color: $color-background;
-  position: relative;
-  z-index: 3;
-  .c-language__switcher {
-    background-color: $color-background;
-    text-align: right;
-    z-index: 1;
-    @if ($language == 'ar') or ($language == 'ur') {
-      text-align: left;
-    }
-    .wpml-ls-legacy-list-horizontal {
-      padding: 7px 0 0;
-      li {
-        margin-right: rem-calc(5);
-        &:last-child {
-          margin-right: 0;
-          a {
-            padding-right: 0;
-          }
-        }
-        a {
-          font-size: rem-calc(11);
-          color: $light-gray-1;
-          padding: 5px 8px;
-          &:hover {
-            color: $color-primary;
-          }
-        }
-        &.wpml-ls-current-language {
-          a {
-            color: $color-primary;
-            &:before {
-              content: '\f00c';
-              font-family: FontAwesome;
-              font-style: normal;
-              font-weight: normal;
-              position: relative;
-              top: rem-calc(2);
-              margin-right: rem-calc(3);
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// //Language switcher
+// .c-language-switcher-wrapper {
+//   background-color: $color-background;
+//   position: relative;
+//   z-index: 3;
+//   .c-language__switcher {
+//     background-color: $color-background;
+//     text-align: right;
+//     z-index: 1;
+//     @if ($language == 'ar') or ($language == 'ur') {
+//       text-align: left;
+//     }
+//     .wpml-ls-legacy-list-horizontal {
+//       padding: 7px 0 0;
+//       li {
+//         margin-right: rem-calc(5);
+//         &:last-child {
+//           margin-right: 0;
+//           a {
+//             padding-right: 0;
+//           }
+//         }
+//         a {
+//           font-size: rem-calc(11);
+//           color: $light-gray-1;
+//           padding: 5px 8px;
+//           &:hover {
+//             color: $color-primary;
+//           }
+//         }
+//         &.wpml-ls-current-language {
+//           a {
+//             color: $color-primary;
+//             &:before {
+//               content: '\f00c';
+//               font-family: FontAwesome;
+//               font-style: normal;
+//               font-weight: normal;
+//               position: relative;
+//               top: rem-calc(2);
+//               margin-right: rem-calc(3);
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

@@ -15,3 +15,8 @@
 = content('main')
   = mixin('content-header', title);
   = mixin('section', 'Language Switcher', 'components/language-switcher/language-switcher');
+
+
+= content('script')
+  javascript:
+    var languageSwitcher = gunyc.languageSwitcher();

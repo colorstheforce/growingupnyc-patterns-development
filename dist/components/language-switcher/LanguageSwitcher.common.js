@@ -12,7 +12,8 @@ var LanguageSwitcher = function LanguageSwitcher() {
   var currentLanguage = document.querySelector("." + this._settings.currentLanguage);
   var allLanguages = document.querySelectorAll(".wpml-ls-item"); // const switcher = document.querySelector(`.${LanguageSwitcher}`)
 
-  switcher.convert.outerHTML = "<a class=\"rounded\">Translate</a>";
+  console.log(switcher);
+  switcher.outerHTML = "<a class=\"rounded\">Translate</a>";
   allLanguages.forEach(function (item) {
     if (!item.classList.contains('wpml-ls-current-language')) {
       item.style.display = "none";

@@ -63,9 +63,11 @@
 
 // Declarations
 
-.c-language-switcher {
+.c-language__switcher {
   text-align: right;
   z-index: 1;
+	display: flex;
+	justify-content: flex-end;
 
 	@if ($language == 'ar') or ($language == 'ur') {
       text-align: left;
@@ -76,6 +78,12 @@
 		color: #999;
 		// padding: 5px 8px;
 		text-decoration: none;
+		padding-left: 2rem !important;
+		padding-bottom: .25rem !important;
+		-webkit-box-ordinal-group: 10000 !important;
+    -ms-flex-order: 9999 !important;
+    order: 9999 !important;
+		align-self: flex-end !important;
 
 		&:before {
 					content: "";
@@ -90,7 +98,7 @@
 	}
 
   a {
-    @extend .font-sans--secondary;
+    // @extend .font-sans--secondary;
 
   }
 }
@@ -119,14 +127,14 @@
     }
 
     &.wpml-ls-current-language {
-      @extend %fa-icon;
-      @extend .fas;
+      // @extend %fa-icon;
+      // @extend .fas;
 
       a {
         color: $color-primary;
         &:before {
-          content: fa-content($fa-var-check);
-          font-family: 'Font Awesome 5 Free';
+          // content: fa-content($fa-var-check);
+          // font-family: 'Font Awesome 5 Free';
           font-weight: 900;
           font-style: normal;
           position: relative;

@@ -20,7 +20,6 @@ class LanguageSwitcher {
 		// const switcher = document.querySelector(`.${LanguageSwitcher}`)
 
 		console.log(switcher)
-		switcher.outerHTML = "<a class=\"rounded\">Translate</a>"
 
 		allLanguages.forEach(item => {
 			if (!item.classList.contains('wpml-ls-current-language')) {
@@ -30,6 +29,7 @@ class LanguageSwitcher {
 			// console.log(item.classList.contains('wpml-ls-current-language'))
 		});
 
+	// const switcher2 = switcher.outerHTML = "<a class=\"rounded\">Translate</a>"
 	switcher.addEventListener('click', (e) => {
 		this._toggle(allLanguages, currentLanguage)
 	})

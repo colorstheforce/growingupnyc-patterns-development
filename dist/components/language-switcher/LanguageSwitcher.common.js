@@ -13,13 +13,13 @@ var LanguageSwitcher = function LanguageSwitcher() {
   var allLanguages = document.querySelectorAll(".wpml-ls-item"); // const switcher = document.querySelector(`.${LanguageSwitcher}`)
 
   console.log(switcher);
-  switcher.outerHTML = "<a class=\"rounded\">Translate</a>";
   allLanguages.forEach(function (item) {
     if (!item.classList.contains('wpml-ls-current-language')) {
       item.style.display = "none";
     } // console.log(item.classList.contains('wpml-ls-current-language'))
 
-  });
+  }); // const switcher2 = switcher.outerHTML = "<a class=\"rounded\">Translate</a>"
+
   switcher.addEventListener('click', function (e) {
     this$1._toggle(allLanguages, currentLanguage);
   });

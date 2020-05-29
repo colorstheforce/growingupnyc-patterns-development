@@ -373,6 +373,24 @@ const modules = [
         strict: rollup.strict
       }
     ]
+  },
+  {
+    input: './src/components/language-switcher/LanguageSwitcher.js',
+    plugins: rollup.dist,
+    output: [
+      {
+        name: 'LanguageSwitcher',
+        file: `./dist/components/language-switcher/LanguageSwitcher.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'LanguageSwitcher',
+        file: `./dist/components/language-switcher/LanguageSwitcher.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
   }
 ];
 

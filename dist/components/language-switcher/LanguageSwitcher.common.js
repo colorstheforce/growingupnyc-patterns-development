@@ -29,7 +29,7 @@ var LanguageSwitcher = function LanguageSwitcher() {
   var li = document.createElement("li");
   li.classList.add("wpml-ls-item-button");
   li.appendChild(aTag);
-  var ul = document.querySelector(".c-language-switcher__horizontal").getElementsByTagName("ul");
+  var ul = document.querySelector(".wpml-ls-legacy-list-horizontal").getElementsByTagName("ul");
   ul[0].appendChild(li); // console.log(li)
 
   allLanguages.forEach(function (item) {

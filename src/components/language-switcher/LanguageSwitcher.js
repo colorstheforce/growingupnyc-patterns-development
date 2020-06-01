@@ -40,7 +40,7 @@ class LanguageSwitcher {
 		li.classList.add("wpml-ls-item-button")
 		li.appendChild(aTag)
 
-		let ul = document.querySelector(".c-language-switcher__horizontal").getElementsByTagName("ul");
+		let ul = document.querySelector(".wpml-ls-legacy-list-horizontal").getElementsByTagName("ul");
 		ul[0].appendChild(li);
 
 		// console.log(li)

@@ -110,8 +110,8 @@
 
 				.title-tag {
 					&:before {
-						// content: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-translate.svg");
-						content: url('../svg/icon-translate.svg');
+						content: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-translate.svg");
+						// content: url('../svg/icon-translate.svg');
 						// background-image: ;
 						font-weight: 900;
 						font-style: normal;
@@ -152,8 +152,8 @@
       a {
         color: $color-primary;
         &:before {
-					// content: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-check.svg");
-					content: url('../svg/icon-check.svg');
+					content: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-check.svg");
+					// content: url('../svg/icon-check.svg');
 
           // content: fa-content($fa-var-check);
           // font-family: 'Font Awesome 5 Free';

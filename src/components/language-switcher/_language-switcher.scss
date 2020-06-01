@@ -72,31 +72,31 @@
 	@if ($language == 'ar') or ($language == 'ur') {
       text-align: left;
     }
-	.rounded {
-		display: inline-block;
-		font-size: .6875rem;
-		color: #999;
-		// padding: 5px 8px;
-		text-decoration: none;
-		padding-left: 2rem !important;
-		padding-bottom: .25rem !important;
-		-webkit-box-ordinal-group: 10000 !important;
-    -ms-flex-order: 9999 !important;
-    order: 9999 !important;
-		align-self: flex-end !important;
-		padding-top: 1rem;
+	// .rounded {
+	// 	display: inline-block;
+	// 	font-size: .6875rem;
+	// 	color: #999;
+	// 	// padding: 5px 8px;
+	// 	text-decoration: none;
+	// 	padding-left: 2rem !important;
+	// 	padding-bottom: .25rem !important;
+	// 	-webkit-box-ordinal-group: 10000 !important;
+  //   -ms-flex-order: 9999 !important;
+  //   order: 9999 !important;
+	// 	align-self: flex-end !important;
+	// 	padding-top: 1rem;
 
-		&:before {
-					content: "";
-					// background-image: url('../icons.svg#icon-translate');
-          font-weight: 900;
-          font-style: normal;
-          position: relative;
-          top: rem-calc(2);
-          margin-right: rem-calc(3);
-        }
+	// 	&:before {
+	// 				content: "";
+	// 				// background-image: url('../icons.svg#icon-translate');
+  //         font-weight: 900;
+  //         font-style: normal;
+  //         position: relative;
+  //         top: rem-calc(2);
+  //         margin-right: rem-calc(3);
+  //       }
 
-	}
+	// }
 
   a {
     // @extend .font-sans--secondary;
@@ -105,6 +105,24 @@
 }
 .wpml-ls-legacy-list-horizontal {
   padding: 7px 0 0;
+
+	.wpml-ls-item-button {
+
+				.title-tag {
+					&:before {
+						// content: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-translate.svg");
+						content: url('../svg/icon-translate.svg');
+						// background-image: ;
+						font-weight: 900;
+						font-style: normal;
+						position: relative;
+						top: rem-calc(2);
+						margin-right: rem-calc(3);
+					}
+				}
+
+	}
+
   ul {
     list-style: none;
   }
@@ -134,6 +152,9 @@
       a {
         color: $color-primary;
         &:before {
+					// content: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-check.svg");
+					content: url('../svg/icon-check.svg');
+
           // content: fa-content($fa-var-check);
           // font-family: 'Font Awesome 5 Free';
           font-weight: 900;
@@ -141,6 +162,9 @@
           position: relative;
           top: rem-calc(2);
           margin-right: rem-calc(3);
+					display: inline-block;
+					width: 10px;
+					fill: $color-gray;
         }
       }
     }

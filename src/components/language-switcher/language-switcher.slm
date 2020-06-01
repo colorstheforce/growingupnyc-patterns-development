@@ -3,8 +3,6 @@
 
 div class="c-language-switcher-wrapper"
   div class="o-container c-language-switcher desktop:flex desktop:justify-end"
-    a class="rounded desktop:order-last desktop:self-end desktop:pl-8 desktop:pb-1"
-      = "Translate"
     div class="c-language-switcher__horizontal wpml-ls-legacy-list-horizontal "
       ul
         li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-en wpml-ls-first-item wpml-ls-item-legacy-list-horizontal"

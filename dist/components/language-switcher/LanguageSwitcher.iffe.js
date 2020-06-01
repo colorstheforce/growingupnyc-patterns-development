@@ -12,17 +12,42 @@ var LanguageSwitcher = (function () {
 	  var languages = document.querySelector("." + this._settings.target);
 	  var currentLanguage = document.querySelector("." + this._settings.currentLanguage);
 	  var allLanguages = document.querySelectorAll(".wpml-ls-item"); // const switcher = document.querySelector(`.${LanguageSwitcher}`)
+	  //Span elemtn with the title "Translate"
 
-	  console.log(switcher);
+	  var span = document.createElement("span");
+	  span.classList.add("wpml-ls-native");
+	  var title = document.createTextNode("Translate");
+	  span.appendChild(title); // var svg = document.createElement('svg'); //Get svg element
+	  // var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'path'); //Create a path in SVG's namespace
+	  // newElement.setAttribute("d","M 0 0 L 10 10"); //Set path's data
+	  // newElement.style.stroke = "#000"; //Set stroke colour
+	  // newElement.style.strokeWidth = "5px"; //Set stroke width
+	  // svg.appendChild(newElement);
+
+	  var aTag = document.createElement("a");
+	  aTag.classList.add("wpml-ls-link", "title-tag");
+	  aTag.appendChild(span);
+	  var li = document.createElement("li");
+	  li.classList.add("wpml-ls-item-button");
+	  li.appendChild(aTag);
+	  var ul = document.querySelector(".c-language-switcher__horizontal").getElementsByTagName("ul");
+	  ul[0].appendChild(li); // console.log(li)
+
 	  allLanguages.forEach(function (item) {
 	    if (!item.classList.contains('wpml-ls-current-language')) {
 	      item.style.display = "none";
 	    } // console.log(item.classList.contains('wpml-ls-current-language'))
 
 	  }); // const switcher2 = switcher.outerHTML = "<a class=\"rounded\">Translate</a>"
+	  // switcher.addEventListener('click', (e) => {
+	  // this._toggle(allLanguages, currentLanguage)
+	  // })
 
-	  switcher.addEventListener('click', function (e) {
+	  aTag.addEventListener('click', function (e) {
 	    this$1._toggle(allLanguages, currentLanguage);
+
+	    li.style.display = "none";
+	    console.log("Gocha");
 	  });
 	};
 

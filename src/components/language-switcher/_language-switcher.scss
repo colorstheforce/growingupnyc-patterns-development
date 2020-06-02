@@ -125,6 +125,11 @@
 						// margin-right: rem-calc(3);
 						// display: inline-block;
 						// width: 10px;
+						@if ($language == 'ar') or ($language == 'ur') {
+							width: 30px;
+						} @else {
+							width: 22px;
+						}
 					}
 					&:hover:before {
 						background-color: $color-primary;
@@ -180,8 +185,12 @@
 					background-color: $color-primary;
 					position: relative;
 					top: .125rem;
-					margin-right: .1875rem;
 
+					@if ($language == 'ar') or ($language == 'ur') {
+						margin-left: .1875rem;
+					} @else {
+						margin-right: .1875rem;
+					}
         }
 
 				// &:hover:before {

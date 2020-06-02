@@ -21,7 +21,7 @@ class LanguageSwitcher {
 
 
 	// Add wrapper classes on mobile and tablet view
-	languagesDiv.classList.add("desktop:w-11/12", "tablet:w-6/12")
+	  languagesDiv.classList.add("desktop:w-11/12", "tablet:w-6/12")
 
 		//Span elemtn with the title "Translate"
 		const span = document.createElement("span");

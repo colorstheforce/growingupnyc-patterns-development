@@ -109,9 +109,11 @@
 	.wpml-ls-item-button {
 
 				.title-tag {
+					padding-top: 0;
+
 					&:before {
-						content: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-translate.svg");
-						// content: url('../svg/icon-translate.svg');
+						// content: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-translate.svg");
+						content: url('../svg/icon-translate.svg');
 						// background-image: ;
 						font-weight: 900;
 						font-style: normal;
@@ -120,6 +122,9 @@
 						margin-right: rem-calc(3);
 						// display: inline-block;
 						// width: 10px;
+					}
+					&:hover:before {
+						fill: blue;
 					}
 				}
 

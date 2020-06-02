@@ -14,10 +14,14 @@ class LanguageSwitcher {
     };
 
 	const switcher = document.querySelector(`.${this._settings.selector}`)
-	const languages = document.querySelector(`.${this._settings.target}`)
+	const languagesDiv = document.querySelector(`.${this._settings.target}`)
 	const currentLanguage = document.querySelector(`.${this._settings.currentLanguage}`)
 	const allLanguages = document.querySelectorAll(".wpml-ls-item")
 		// const switcher = document.querySelector(`.${LanguageSwitcher}`)
+
+
+	// Add wrapper classes on mobile and tablet view
+	languagesDiv.classList.add("desktop:w-11/12", "tablet:w-6/12")
 
 		//Span elemtn with the title "Translate"
 		const span = document.createElement("span");
@@ -40,7 +44,7 @@ class LanguageSwitcher {
 		li.classList.add("wpml-ls-item-button")
 		li.appendChild(aTag)
 
-		let ul = document.querySelector(".wpml-ls-legacy-list-horizontal").getElementsByTagName("ul");
+		let ul = document.querySelector(`.${languagesDiv}`).getElementsByTagName("ul");
 		ul[0].appendChild(li);
 
 		// console.log(li)
@@ -77,7 +81,7 @@ class LanguageSwitcher {
 }
 
 LanguageSwitcher.Selector = "rounded"
-LanguageSwitcher.Target = "c-language-switcher__horizontal"
+LanguageSwitcher.Target = "wpml-ls-legacy-list-horizontal"
 LanguageSwitcher.currentLanguage = "wpml-ls-current-language"
 
 export default LanguageSwitcher;

@@ -118,8 +118,10 @@
 						// mask: url("../svg/icon-translate.svg")  no-repeat 50% 50%;
 						// content: url('../svg/icon-translate.svg');
 						display: inline-block;
-						width: 30px;
 						height: 15px;
+						width: 22px;
+						margin-bottom: -3px;
+}
       			background-color: $color-gray;
 						// margin-right: rem-calc(3);
 						// display: inline-block;
@@ -189,3 +191,5 @@
     }
   }
 }
+
+

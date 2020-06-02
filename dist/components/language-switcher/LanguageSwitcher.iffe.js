@@ -11,10 +11,10 @@ var LanguageSwitcher = (function () {
 	  var switcher = document.querySelector("." + this._settings.selector);
 	  var languagesDiv = document.querySelector("." + this._settings.target);
 	  var currentLanguage = document.querySelector("." + this._settings.currentLanguage);
-	  var allLanguages = document.querySelectorAll(".wpml-ls-item"); // const switcher = document.querySelector(`.${LanguageSwitcher}`)
-	  // Add wrapper classes on mobile and tablet view
+	  var allLanguages = document.querySelectorAll(".wpml-ls-item"); // const languagesDiv = document.querySelector(".wpml-ls-legacy-list-horizontal")
+	  // const switcher = document.querySelector(`.${LanguageSwitcher}`)
 
-	  languagesDiv.classList.add("desktop:w-11/12", "tablet:w-6/12"); //Span elemtn with the title "Translate"
+	  languagesDiv.classList.add("desktop:w-11/12", "mobile:w-6/12"); //Span elemtn with the title "Translate"
 
 	  var span = document.createElement("span");
 	  span.classList.add("wpml-ls-native");
@@ -32,7 +32,7 @@ var LanguageSwitcher = (function () {
 	  var li = document.createElement("li");
 	  li.classList.add("wpml-ls-item-button");
 	  li.appendChild(aTag);
-	  var ul = document.querySelector("." + languagesDiv).getElementsByTagName("ul");
+	  var ul = document.querySelector(".wpml-ls-legacy-list-horizontal").getElementsByTagName("ul");
 	  ul[0].appendChild(li); // console.log(li)
 
 	  allLanguages.forEach(function (item) {

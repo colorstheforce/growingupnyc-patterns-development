@@ -16,7 +16,11 @@ class LanguageSwitcher {
 	const switcher = document.querySelector(`.${this._settings.selector}`)
 	const languagesDiv = document.querySelector(`.${this._settings.target}`)
 	const currentLanguage = document.querySelector(`.${this._settings.currentLanguage}`)
-	const allLanguages = document.querySelectorAll(".wpml-ls-item")
+	const allLanguages = document.querySelectorAll(".wpml-ls-item");
+
+
+
+
 	// const languagesDiv = document.querySelector(".wpml-ls-legacy-list-horizontal")
 		// const switcher = document.querySelector(`.${LanguageSwitcher}`)
 
@@ -25,9 +29,19 @@ class LanguageSwitcher {
 
 		//Span elemtn with the title "Translate"
 		const span = document.createElement("span");
-		span.classList.add("wpml-ls-native");
-		const title = document.createTextNode("Translate");
-		span.appendChild(title);
+		if (document.querySelector("[data-js='translate']")) {
+			span.classList.add("wpml-ls-native");
+			const hiddenSpan = document.querySelector("[data-js='translate']")
+			const hiddenSpanConten = hiddenSpan.textContent;
+			// span.textContent = hiddenSpanConten;
+			const title = document.createTextNode(hiddenSpanConten);
+			span.appendChild(title);
+			console.log(hiddenSpanConten)
+		} else {
+			span.classList.add("wpml-ls-native");
+			const title = document.createTextNode("Translate");
+			span.appendChild(title);
+		}
 
 		// var svg = document.createElement('svg'); //Get svg element
 		// var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'path'); //Create a path in SVG's namespace

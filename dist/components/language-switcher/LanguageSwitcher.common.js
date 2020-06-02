@@ -16,14 +16,26 @@ var LanguageSwitcher = function LanguageSwitcher() {
   languagesDiv.classList.add("desktop:w-11/12", "w-9/12"); //Span elemtn with the title "Translate"
 
   var span = document.createElement("span");
-  span.classList.add("wpml-ls-native");
-  var title = document.createTextNode("Translate");
-  span.appendChild(title); // var svg = document.createElement('svg'); //Get svg element
+
+  if (document.querySelector("[data-js='translate']")) {
+    span.classList.add("wpml-ls-native");
+    var hiddenSpan = document.querySelector("[data-js='translate']");
+    var hiddenSpanConten = hiddenSpan.textContent; // span.textContent = hiddenSpanConten;
+
+    var title = document.createTextNode(hiddenSpanConten);
+    span.appendChild(title);
+    console.log(hiddenSpanConten);
+  } else {
+    span.classList.add("wpml-ls-native");
+    var title$1 = document.createTextNode("Translate");
+    span.appendChild(title$1);
+  } // var svg = document.createElement('svg'); //Get svg element
   // var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'path'); //Create a path in SVG's namespace
   // newElement.setAttribute("d","M 0 0 L 10 10"); //Set path's data
   // newElement.style.stroke = "#000"; //Set stroke colour
   // newElement.style.strokeWidth = "5px"; //Set stroke width
   // svg.appendChild(newElement);
+
 
   var aTag = document.createElement("a");
   aTag.classList.add("wpml-ls-link", "title-tag");

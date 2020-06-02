@@ -14,7 +14,7 @@ var LanguageSwitcher = (function () {
 	  var allLanguages = document.querySelectorAll(".wpml-ls-item"); // const languagesDiv = document.querySelector(".wpml-ls-legacy-list-horizontal")
 	  // const switcher = document.querySelector(`.${LanguageSwitcher}`)
 
-	  languagesDiv.classList.add("desktop:w-11/12", "mobile:w-6/12"); //Span elemtn with the title "Translate"
+	  languagesDiv.classList.add("desktop:w-11/12", "mobile:w-9/12"); //Span elemtn with the title "Translate"
 
 	  var span = document.createElement("span");
 	  span.classList.add("wpml-ls-native");

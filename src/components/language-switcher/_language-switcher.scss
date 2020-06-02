@@ -112,19 +112,21 @@
 					padding-top: 0;
 
 					&:before {
-						content: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-translate.svg");
+						content: "";
+						-webkit-mask: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-translate.svg")  no-repeat 50% 50%;
+						mask: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-translate.svg")  no-repeat 50% 50%;
+						// mask: url("../svg/icon-translate.svg")  no-repeat 50% 50%;
 						// content: url('../svg/icon-translate.svg');
-						// background-image: ;
-						font-weight: 900;
-						font-style: normal;
-						position: relative;
-						top: rem-calc(2);
-						margin-right: rem-calc(3);
+						display: inline-block;
+						width: 30px;
+						height: 15px;
+      			background-color: $color-gray;
+						// margin-right: rem-calc(3);
 						// display: inline-block;
 						// width: 10px;
 					}
 					&:hover:before {
-						fill: blue;
+						background-color: $color-primary;
 					}
 				}
 
@@ -159,20 +161,26 @@
       a {
         color: $color-primary;
         &:before {
-					content: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-check.svg");
+					content: "";
+					// content: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-check.svg");
 					// content: url('../svg/icon-check.svg');
-
+					-webkit-mask: url(https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-check.svg) no-repeat 50% 50%;
+  				mask: url(https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-check.svg) no-repeat 50% 50%;
           // content: fa-content($fa-var-check);
           // font-family: 'Font Awesome 5 Free';
-          font-weight: 900;
-          font-style: normal;
-          position: relative;
-          top: rem-calc(2);
-          margin-right: rem-calc(3);
+          // font-weight: 900;
+          // font-style: normal;
+          // position: relative;
+          // top: rem-calc(2);
+          // margin-right: rem-calc(3);
 					display: inline-block;
 					width: 10px;
-					fill: $color-gray;
+					height: 10px;
+					background-color: $color-primary;
         }
+
+				// &:hover:before {
+				// }
       }
     }
   }

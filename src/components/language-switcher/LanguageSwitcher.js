@@ -20,7 +20,7 @@ class LanguageSwitcher {
 	// const languagesDiv = document.querySelector(".wpml-ls-legacy-list-horizontal")
 		// const switcher = document.querySelector(`.${LanguageSwitcher}`)
 
-	languagesDiv.classList.add("desktop:w-11/12", "mobile:w-6/12")
+	languagesDiv.classList.add("desktop:w-11/12", "mobile:w-9/12")
 
 
 		//Span elemtn with the title "Translate"

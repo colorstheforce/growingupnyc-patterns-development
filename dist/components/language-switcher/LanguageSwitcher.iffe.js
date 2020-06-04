@@ -6,15 +6,28 @@ var LanguageSwitcher = (function () {
 	  this._settings = {
 	    selector: LanguageSwitcher.Selector,
 	    target: LanguageSwitcher.Target,
-	    currentLanguage: LanguageSwitcher.currentLanguage
+	    currentLanguage: LanguageSwitcher.currentLanguage,
+	    languageSwitcherWrapper: LanguageSwitcher.LanguageSwitcherWrapper,
+	    logoWrapper: LanguageSwitcher.logoWrapper
 	  };
 	  var switcher = document.querySelector("." + this._settings.selector);
 	  var languagesDiv = document.querySelector("." + this._settings.target);
 	  var currentLanguage = document.querySelector("." + this._settings.currentLanguage);
-	  var allLanguages = document.querySelectorAll(".wpml-ls-item"); // const languagesDiv = document.querySelector(".wpml-ls-legacy-list-horizontal")
+	  var allLanguages = document.querySelectorAll(".wpml-ls-item");
+	  var languageSwitcherWrapper = document.querySelector("." + this._settings.languageSwitcherWrapper);
+	  var logoWrapper = document.querySelector("." + this._settings.logoWrapper);
+	  console.log(languageSwitcherWrapper, logoWrapper);
+
+	  if (!languageSwitcherWrapper) {
+	    logoWrapper.style.marginTop = "2rem";
+	  } // const languagesDiv = document.querySelector(".wpml-ls-legacy-list-horizontal")
 	  // const switcher = document.querySelector(`.${LanguageSwitcher}`)
 
-	  languagesDiv.classList.add("desktop:w-11/12", "w-9/12"); //Span elemtn with the title "Translate"
+
+	  if (languagesDiv) {
+	    languagesDiv.classList.add("desktop:w-11/12", "w-9/12");
+	  } //Span elemtn with the title "Translate"
+
 
 	  var span = document.createElement("span");
 
@@ -44,8 +57,12 @@ var LanguageSwitcher = (function () {
 	  var li = document.createElement("li");
 	  li.classList.add("wpml-ls-item-button");
 	  li.appendChild(aTag);
-	  var ul = document.querySelector(".wpml-ls-legacy-list-horizontal").getElementsByTagName("ul");
-	  ul[0].appendChild(li); // console.log(li)
+
+	  if (document.querySelector(".wpml-ls-legacy-list-horizontal")) {
+	    var ul = document.querySelector(".wpml-ls-legacy-list-horizontal").getElementsByTagName("ul");
+	    ul[0].appendChild(li);
+	  } // console.log(li)
+
 
 	  allLanguages.forEach(function (item) {
 	    if (!item.classList.contains('wpml-ls-current-language')) {
@@ -75,6 +92,8 @@ var LanguageSwitcher = (function () {
 	LanguageSwitcher.Selector = "rounded";
 	LanguageSwitcher.Target = "wpml-ls-legacy-list-horizontal";
 	LanguageSwitcher.currentLanguage = "wpml-ls-current-language";
+	LanguageSwitcher.LanguageSwitcherWrapper = "c-language-switcher-wrapper";
+	LanguageSwitcher.logoWrapper = "o-navigation__logo-wrapper";
 
 	return LanguageSwitcher;
 

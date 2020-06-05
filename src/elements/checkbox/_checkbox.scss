@@ -211,6 +211,12 @@
   border: 2px solid $color-blue-light;
 }
 
+// light gray
+.checkbox__indicator-light-gray {
+  @extend .checkbox__indicator;
+  border: 2px solid $color-gray-light;
+}
+
 // purple
 .checkbox__indicator-purple {
   @extend .checkbox__indicator;

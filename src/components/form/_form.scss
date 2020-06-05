@@ -327,6 +327,11 @@ input[type="search"].form-field {
   border: 2px solid $color-blue-light;
 }
 
+.signup-form__field-light-gray {
+  @extend .signup-form__field;
+  border: 2px solid $color-blue-light;
+}
+
 .signup-form__field-purple {
   @extend .signup-form__field;
   border: 2px solid $color-purple;

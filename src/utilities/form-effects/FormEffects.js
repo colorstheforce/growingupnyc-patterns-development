@@ -14,6 +14,7 @@ class FormEffects {
   constructor(settings, data) {
     const inputs = document.querySelectorAll('.signup-form__field');
     const searchInput = document.querySelectorAll('.search-clear');
+    const checkboxes = document.querySelectorAll('.checkbox__field');
 
 
     if (inputs.length) {
@@ -27,11 +28,18 @@ class FormEffects {
 
     if (searchInput.length) {
       forEach(searchInput, function(inputElem) {
+        inputElem.value = "";
         inputElem.addEventListener('click', FormEffects.handleClear);
       });
     }
 
-    // debugger
+    if (checkboxes.length) {
+      forEach(checkboxes, function(checkbox) {
+        checkbox.checked = false;
+      })
+    }
+
+    debugger
     // this.data = data;
     // this.settings = settings;
   }

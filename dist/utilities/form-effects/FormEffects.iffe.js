@@ -949,6 +949,7 @@ var FormEffects = (function () {
   var FormEffects = function FormEffects(settings, data) {
     var inputs = document.querySelectorAll('.signup-form__field');
     var searchInput = document.querySelectorAll('.search-clear');
+    var checkboxes = document.querySelectorAll('.checkbox__field');
 
     if (inputs.length) {
       forEach_1(inputs, function (inputElem) {
@@ -961,12 +962,19 @@ var FormEffects = (function () {
 
     if (searchInput.length) {
       forEach_1(searchInput, function (inputElem) {
+        inputElem.value = "";
         inputElem.addEventListener('click', FormEffects.handleClear);
       });
-    } // debugger
-    // this.data = data;
-    // this.settings = settings;
+    }
 
+    if (checkboxes.length) {
+      forEach_1(checkboxes, function (checkbox) {
+        checkbox.checked = false;
+      });
+    }
+
+    debugger; // this.data = data;
+    // this.settings = settings;
   };
 
   FormEffects.handleFocus = function (event) {

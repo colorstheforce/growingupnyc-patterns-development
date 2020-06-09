@@ -196,6 +196,9 @@
 .checkbox__field:checked + .checkbox__indicator {
   color: $color-secondary;
 }
+.checkbox__field--gray-dark:checked + .checkbox__indicator {
+  color: $color-gray-dark !important;
+}
 
 .checkbox__field:focus + .checkbox__indicator {
   border-color: $color-gray-dark !important;

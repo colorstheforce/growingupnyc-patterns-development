@@ -123,6 +123,10 @@
 
 .mc-field-group {
   padding-bottom: rem-calc(15);
+
+	textarea {
+		height: 10rem;
+	}
 }
 
 .guny-error-detailed {

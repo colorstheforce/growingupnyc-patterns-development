@@ -18,6 +18,7 @@ class FormEffects {
 
     if (inputs.length) {
       forEach(inputs, function(inputElem) {
+        inputElem.value = "";
         inputElem.addEventListener('focus', FormEffects.handleFocus);
         inputElem.addEventListener('blur', FormEffects.handleBlur);
         dispatchEvent(inputElem, 'blur');
@@ -29,6 +30,8 @@ class FormEffects {
         inputElem.addEventListener('click', FormEffects.handleClear);
       });
     }
+
+    // debugger
     // this.data = data;
     // this.settings = settings;
   }

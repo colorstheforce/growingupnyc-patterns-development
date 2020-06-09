@@ -952,6 +952,7 @@ var FormEffects = (function () {
 
     if (inputs.length) {
       forEach_1(inputs, function (inputElem) {
+        inputElem.value = "";
         inputElem.addEventListener('focus', FormEffects.handleFocus);
         inputElem.addEventListener('blur', FormEffects.handleBlur);
         dispatchEvent(inputElem, 'blur');
@@ -962,7 +963,8 @@ var FormEffects = (function () {
       forEach_1(searchInput, function (inputElem) {
         inputElem.addEventListener('click', FormEffects.handleClear);
       });
-    } // this.data = data;
+    } // debugger
+    // this.data = data;
     // this.settings = settings;
 
   };

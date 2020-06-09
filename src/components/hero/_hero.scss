@@ -212,6 +212,9 @@
   // }
 	@media screen and (min-width: $screen-tablet) {
     font-size: rem-calc($font-size-x-large);
+		@if ($language == 'ar') or ($language == 'ur') {
+    	text-align: right;
+    }
   }
 
   // @include grid-media($bp-large) {

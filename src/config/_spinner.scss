@@ -4,17 +4,15 @@
 
 
 @mixin spinner($color, $spinner-size, $border-size) {
-	.spinner-loader {
-		border: $border-size solid #f3f3f3;
-		border-radius: 50%;
-		border-top: $border-size solid $color;
-		border-right: $border-size solid $color;
-
-		width: $spinner-size;
-		height: $spinner-size;
-		-webkit-animation: spin 2s linear infinite; /* Safari */
-		animation: spin 2s linear infinite;
-	}
+  border: $border-size solid #f3f3f3;
+  border-radius: 50%;
+  color: $color;
+  border-top: $border-size solid $color !important;
+  border-right: $border-size solid $color !important;
+  width: $spinner-size;
+  height: $spinner-size;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
 
 	/* Safari */
 	@-webkit-keyframes spin {

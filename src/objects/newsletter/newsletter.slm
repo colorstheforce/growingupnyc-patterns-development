@@ -1,7 +1,7 @@
 /
 / Newsletter
 
-div class="c-footer bg-color-blue-light py-20 px-10"
+div class="c-footer bg-color-blue-light"
   div class="c-footer__signup w-full desktop:mt-0 desktop:w-1/2"
     form action="" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="guny-signup" target="_blank" novalidate=""
       div class="c-signup-form__response"

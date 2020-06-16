@@ -128,7 +128,7 @@ const modules = [
     ]
 	},
 	{
-    input: `${process.env.PWD}/node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js`,
+    input: `${process.env.PWD}/node_modules/smoothscroll-polyfill/dist/smoothscroll.js`,
     output: {
       name: 'Polyfills',
       file: `./dist/scripts/polyfills.js`,

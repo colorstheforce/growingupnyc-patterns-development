@@ -73,6 +73,7 @@
               <li><a class="c-list-box__subitem" href="layouts">Layouts</a></li>
               <li><a class="c-list-box__subitem" href="list-box">List Box</a></li>
               <li><a class="c-list-box__subitem" href="lists">Lists</a></li>
+              <li><a class="c-list-box__subitem" href="spinner">Spinner</a></li>
               <li><a class="c-list-box__subitem" href="sticker">Sticker</a></li>
               <li><a class="c-list-box__subitem" href="table">table</a></li>
               <li><a class="c-list-box__subitem" href="inline-list">Inline List</a></li>
@@ -83,6 +84,7 @@
           <li class="c-list-box__item">
             <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Components</h3>
             <ol class="js-accordion__content c-list-box__content">
+              <li><a class="c-list-box__subitem" href="age-guide">Age Guide</a></li>
               <li><a class="c-list-box__subitem" href="arrow-pager">arrow pager</a></li>
               <li><a class="c-list-box__subitem" href="base">Base</a></li>
               <li><a class="c-list-box__subitem" href="block-list">Block List</a></li>
@@ -93,6 +95,7 @@
               <li><a class="c-list-box__subitem" href="hero">hero</a></li>
               <li><a class="c-list-box__subitem" href="language-switcher">language switcher</a></li>
               <li><a class="c-list-box__subitem" href="list-box">List Box</a></li>
+              <li><a class="c-list-box__subitem" href="share">Share</a></li>
               <li><a class="c-list-box__subitem" href="side-hero">Side hero</a></li>
               <li><a class="c-list-box__subitem" href="side-navigation">Side Navigation</a></li>
               <li><a class="c-list-box__subitem" href="tip">tip</a></li>
@@ -113,7 +116,9 @@
               <li><a class="c-list-box__subitem" href="feature-photo">feature photo</a></li>
               <li><a class="c-list-box__subitem" href="flex-embed">flex embed</a></li>
               <li><a class="c-list-box__subitem" href="navigation">Navigation</a></li>
+              <li><a class="c-list-box__subitem" href="newsletter">Newsletter</a></li>
               <li><a class="c-list-box__subitem" href="overlay">overlay</a></li>
+              <li><a class="c-list-box__subitem" href="search">Search</a></li>
               <li><a class="c-list-box__subitem" href="static-column">static column</a></li>
             </ol>
           </li>
@@ -127,6 +132,7 @@
               <li><a class="c-list-box__subitem" href="background-image">background image</a></li>
               <li><a class="c-list-box__subitem" href="color">color</a></li>
               <li><a class="c-list-box__subitem" href="fonts">Font</a></li>
+              <li><a class="c-list-box__subitem" href="form-effects">Form Effects</a></li>
               <li><a class="c-list-box__subitem" href="offcanvas">Offcanvas</a></li>
               <li><a class="c-list-box__subitem" href="sticky">sticky</a></li>
               <li><a class="c-list-box__subitem" href="tailwind">Tailwind</a></li>
@@ -135,7 +141,7 @@
           </li>
         </ol>
       </nav>
-      <div class="o-offcanvas__main">
+      <div class="o-offcanvas__main js-offcanvas__main">
         <header class="o-navigation">
           <div class="o-container">
             <a class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu" href="/"><span class="o-navigation__logo">Growing Up NYC</span></a>
@@ -147,24 +153,51 @@
           </div>
         </header>
         <a aria-hidden="true" class="o-offcanvas__overlay" data-js="offcanvas-patterns"></a>
-        <main class="pt-12 small:pt-20 medium:pt-32">
+        <main class="pt-12 mobile:pt-20 tablet:pt-32">
           <div>
             <header></header>
-            <div class="xlarge:w-8/12 large:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-              <div class="flex flex-wrap xlarge:mb-20 large:mb-10"><h1 class="type-h1 ">Language Switcher</h1></div>
+            <div class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
+              <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10"><h1 class="type-h1 ">Language Switcher</h1></div>
               <div class="html-tag my-8"><div></div></div>
               <div class="my-8 py-4">
                 <div>
                   <div>
                     <div class="c-language-switcher-wrapper">
-                      <div class="o-container c-language-switcher">
-                        <div class="c-language-switcher__horizontal">
+                      <div class="o-container c-language-switcher desktop:flex desktop:justify-end">
+                        <div class="c-language-switcher__horizontal wpml-ls-legacy-list-horizontal">
                           <ul>
-                            <li class="c-language-switcher__current">
+                            <li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-en wpml-ls-first-item wpml-ls-item-legacy-list-horizontal">
                               <a href="" title="English"><span>English</span></a>
                             </li>
-                            <li>
+                            <li class=" wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-es wpml-ls-item-legacy-list-horizontal">
                               <a href="" title="Spanish"><span>Spanish</span></a>
+                            </li>
+                            <li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ar wpml-ls-item-legacy-list-horizontal">
+                              <a class="wpml-ls-link" href="" title="Arabic"><span>العربية</span></a>
+                            </li>
+                            <li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-zh-hant wpml-ls-item-legacy-list-horizontal">
+                              <a class="wpml-ls-link" href="" title="Traditional Chinese"><span>繁體中文</span></a>
+                            </li>
+                            <li class="wpml-ls-current-language wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-fr wpml-ls-item-legacy-list-horizontal">
+                              <a class="wpml-ls-link" href="" title="French"><span>Français</span></a>
+                            </li>
+                            <li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ko wpml-ls-item-legacy-list-horizontal">
+                              <a class="wpml-ls-link" href="" title="Korean"><span>한국어</span></a>
+                            </li>
+                            <li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-pl wpml-ls-item-legacy-list-horizontal">
+                              <a class="wpml-ls-link" href="" title="Polski"><span>polski</span></a>
+                            </li>
+                            <li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ru wpml-ls-item-legacy-list-horizontal">
+                              <a class="wpml-ls-link" href="" title="Russian"><span>Русский</span></a>
+                            </li>
+                            <li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ur wpml-ls-item-legacy-list-horizontal">
+                              <a class="wpml-ls-link" href="" title="Urdu"><span>اردو</span></a>
+                            </li>
+                            <li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-bn wpml-ls-item-legacy-list-horizontal">
+                              <a class="wpml-ls-link" href="" title="Bangla"><span>Bangla</span></a>
+                            </li>
+                            <li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ht wpml-ls-item-legacy-list-horizontal">
+                              <a class="wpml-ls-link" href="" title="Haitian Creole"><span>Haitian Creole</span></a>
                             </li>
                           </ul>
                         </div>
@@ -172,14 +205,41 @@
                     </div>
                   </div>
                   <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"><pre>&lt;div class=&quot;c-language-switcher-wrapper&quot;&gt;
-  &lt;div class=&quot;o-container c-language-switcher&quot;&gt;
-    &lt;div class=&quot;c-language-switcher__horizontal&quot;&gt;
+  &lt;div class=&quot;o-container c-language-switcher desktop:flex desktop:justify-end&quot;&gt;
+    &lt;div class=&quot;c-language-switcher__horizontal wpml-ls-legacy-list-horizontal&quot;&gt;
       &lt;ul&gt;
-        &lt;li class=&quot;c-language-switcher__current&quot;&gt;
+        &lt;li class=&quot;wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-en wpml-ls-first-item wpml-ls-item-legacy-list-horizontal&quot;&gt;
           &lt;a href=&quot;&quot; title=&quot;English&quot;&gt;&lt;span&gt;English&lt;/span&gt;&lt;/a&gt;
         &lt;/li&gt;
-        &lt;li&gt;
+        &lt;li class=&quot; wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-es wpml-ls-item-legacy-list-horizontal&quot;&gt;
           &lt;a href=&quot;&quot; title=&quot;Spanish&quot;&gt;&lt;span&gt;Spanish&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ar wpml-ls-item-legacy-list-horizontal&quot;&gt;
+          &lt;a class=&quot;wpml-ls-link&quot; href=&quot;&quot; title=&quot;Arabic&quot;&gt;&lt;span&gt;العربية&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-zh-hant wpml-ls-item-legacy-list-horizontal&quot;&gt;
+          &lt;a class=&quot;wpml-ls-link&quot; href=&quot;&quot; title=&quot;Traditional Chinese&quot;&gt;&lt;span&gt;繁體中文&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;wpml-ls-current-language wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-fr wpml-ls-item-legacy-list-horizontal&quot;&gt;
+          &lt;a class=&quot;wpml-ls-link&quot; href=&quot;&quot; title=&quot;French&quot;&gt;&lt;span&gt;Français&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ko wpml-ls-item-legacy-list-horizontal&quot;&gt;
+          &lt;a class=&quot;wpml-ls-link&quot; href=&quot;&quot; title=&quot;Korean&quot;&gt;&lt;span&gt;한국어&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-pl wpml-ls-item-legacy-list-horizontal&quot;&gt;
+          &lt;a class=&quot;wpml-ls-link&quot; href=&quot;&quot; title=&quot;Polski&quot;&gt;&lt;span&gt;polski&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ru wpml-ls-item-legacy-list-horizontal&quot;&gt;
+          &lt;a class=&quot;wpml-ls-link&quot; href=&quot;&quot; title=&quot;Russian&quot;&gt;&lt;span&gt;Русский&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ur wpml-ls-item-legacy-list-horizontal&quot;&gt;
+          &lt;a class=&quot;wpml-ls-link&quot; href=&quot;&quot; title=&quot;Urdu&quot;&gt;&lt;span&gt;اردو&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-bn wpml-ls-item-legacy-list-horizontal&quot;&gt;
+          &lt;a class=&quot;wpml-ls-link&quot; href=&quot;&quot; title=&quot;Bangla&quot;&gt;&lt;span&gt;Bangla&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ht wpml-ls-item-legacy-list-horizontal&quot;&gt;
+          &lt;a class=&quot;wpml-ls-link&quot; href=&quot;&quot; title=&quot;Haitian Creole&quot;&gt;&lt;span&gt;Haitian Creole&lt;/span&gt;&lt;/a&gt;
         &lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
@@ -194,10 +254,15 @@
       </div>
     </div>
     <footer class="c-footer">
-      <div class="o-container">
-        <div class="c-footer__section">
-          <div class="c-footer__logos">
-            <figure class="c-footer__logo"><img alt="Growing Up NYC" src="images/logo-gunyc-white@236px.png" width="118" /></figure>
+      <div class="o-container flex flex-wrap">
+        <div class="c-footer__section w-full desktop:w-1/2 flex-col flex-wrap">
+          <div class="c-footer__logos flex flex-wrap">
+            <figure>
+              <svg class="icon--logo">
+                <title>Growing Up NYC Logo</title>
+                <use xlink:href="#icon-growingupnyc-logo-white"></use>
+              </svg>
+            </figure>
           </div>
         </div>
       </div>
@@ -205,9 +270,12 @@
     <script src="scripts/growingup-nyc.js"></script>
     <script type="text/javascript">
       var gunyc = new GUNYC();
-      gunyc.navigation();
+      gunyc.navigation({ sideSelector: 'right' });
       gunyc.icons();
-      gunyc.accordionToggle();
+      gunyc.accordion();
+      gunyc.newsletter();
+      gunyc.formEffect();
+      gunyc.languageSwitcher();
     </script>
     <script src="/reload/reload.js"></script>
   </body>

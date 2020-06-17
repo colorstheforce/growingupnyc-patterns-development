@@ -17,7 +17,6 @@ class StickyVanilla {
     let screen = mediaQuery || StickyVanilla.mediaQuery
     // const el = document.querySelector(AlertBanner.selector);
     // const control = document.querySelector(AlertBanner.controller);
-    console.log("Sticky");
 
     const stickyContent = document.querySelectorAll('.js-sticky');
     const footer = document.querySelector('.c-footer__reached');

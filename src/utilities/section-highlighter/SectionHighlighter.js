@@ -12,7 +12,6 @@ class SectionHighlighter {
    * @constructor
    */
   constructor() {
-		console.log("Highlighter")
     this._settings = {
       // selector: Animations.selector,
       // controller: Animations.controller,
@@ -52,7 +51,7 @@ class SectionHighlighter {
 
     $sectionsReversed.each(function() {
 			var currentSection = $(this);
-			console.log(currentSection)
+			// console.log(currentSection)
       var sectionTop = currentSection.offset().top;
 
       // if(currentSection.is('section:first-child') && sectionTop > scrollPosition){

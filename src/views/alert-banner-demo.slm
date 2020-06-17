@@ -20,7 +20,7 @@
     div class="my-4 text-center"
         a href="/alert-banner"
           = "Back to Alert Banner"
-              
+
 
   div data-js="alert-banner-notification" class="o-alert-banner hidden" data-alert="notification" id="banner-notification" role="dialog" aria-labelledby="dialog-title-notification" aria-describedby="dialog-desc-notification"
     div class="show-for-screen-reader" id="dialog-title-notification"
@@ -39,9 +39,8 @@
 = content('script')
   javascript:
     var alertBanner = gunyc.alertBanner();
-    console.log(alertBanner)
-    
-    
+
+
 
     // a method for removing cookie
     // provide cookie name as an argument, if no argument is specified the expiration will be defaulted to 360days

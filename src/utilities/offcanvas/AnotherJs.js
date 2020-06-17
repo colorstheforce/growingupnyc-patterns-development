@@ -10,7 +10,6 @@ class AnotherJs {
 
 	constructor() {
 		const panelTriggers = document.getElementsByClassName('js-cd-panel-trigger');
-		console.log(panelTriggers)
 		this.toggle(panelTriggers)
 	}
 

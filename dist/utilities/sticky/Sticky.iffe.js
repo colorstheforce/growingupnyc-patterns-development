@@ -934,7 +934,6 @@ var Sticky = (function () {
     var screen = mediaQuery || StickyVanilla.mediaQuery; // const el = document.querySelector(AlertBanner.selector);
     // const control = document.querySelector(AlertBanner.controller);
 
-    console.log("Sticky");
     var stickyContent = document.querySelectorAll('.js-sticky');
     var footer = document.querySelector('.c-footer__reached');
     var stickyContainer = document.querySelector('.o-article-sidebar');

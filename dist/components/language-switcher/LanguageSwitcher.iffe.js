@@ -16,7 +16,6 @@ var LanguageSwitcher = (function () {
 	  var allLanguages = document.querySelectorAll(".wpml-ls-item");
 	  var languageSwitcherWrapper = document.querySelector("." + this._settings.languageSwitcherWrapper);
 	  var logoWrapper = document.querySelector("." + this._settings.logoWrapper);
-	  console.log(languageSwitcherWrapper, logoWrapper);
 
 	  if (!languageSwitcherWrapper) {
 	    logoWrapper.style.marginTop = "2rem";
@@ -78,14 +77,12 @@ var LanguageSwitcher = (function () {
 	    this$1._toggle(allLanguages, currentLanguage);
 
 	    li.style.display = "none";
-	    console.log("Gocha");
 	  });
 	};
 
 	LanguageSwitcher.prototype._toggle = function _toggle(allLanguages, currentLanguage) {
 	  allLanguages.forEach(function (item) {
 	    item.style.display = "";
-	    console.log("yep");
 	  });
 	};
 

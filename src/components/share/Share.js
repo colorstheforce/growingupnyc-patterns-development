@@ -24,8 +24,6 @@ class ShareForm {
    */
   constructor(el) {
 
-		console.log("ShareForm");
-
     /** @private {HTMLElement} The component element. */
     this._el = el;
 

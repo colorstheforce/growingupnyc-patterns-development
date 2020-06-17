@@ -12,7 +12,6 @@ import forEach from 'lodash/forEach';
 
 class StaticColumn {
   constructor() {
-		console.log("Static Column");
 
     // const el = document.querySelector(AlertBanner.selector);
     // const control = document.querySelector(AlertBanner.controller);

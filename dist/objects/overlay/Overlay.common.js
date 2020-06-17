@@ -930,7 +930,6 @@ var forEach_1 = forEach;
 var Overlay = function Overlay() {
   // this.data = data;
   // this.settings = settings;
-  console.log("Overlay");
   var overlay = document.querySelectorAll('.js-overlay');
 
   if (overlay) {

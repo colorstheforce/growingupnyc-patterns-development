@@ -10678,8 +10678,8 @@ Newsletter.assignBorough = function (zip) {
 
 Newsletter.submitSignup = function (form, formData, url) {
   var response = jquery('.c-signup-form__response');
-  form.html(response);
-  console.log(form.html(response)); // let formAction = form.attr('action') + "u=" + Newsletter.user + "amp;id=" + Newsletter.id
+  form.html(response); // console.log(form.html(response));
+  // let formAction = form.attr('action') + "u=" + Newsletter.user + "amp;id=" + Newsletter.id
 
   var formAction = url;
   jquery.ajax({

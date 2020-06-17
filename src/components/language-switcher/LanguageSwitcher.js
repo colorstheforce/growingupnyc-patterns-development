@@ -22,7 +22,6 @@ class LanguageSwitcher {
 	const languageSwitcherWrapper = document.querySelector(`.${this._settings.languageSwitcherWrapper}`);
 	const logoWrapper = document.querySelector(`.${this._settings.logoWrapper}`);
 
-	console.log(languageSwitcherWrapper, logoWrapper)
 
 	if(!languageSwitcherWrapper) {
 		logoWrapper.style.marginTop = "2rem";
@@ -90,7 +89,6 @@ class LanguageSwitcher {
 	aTag.addEventListener('click', (e) => {
 		this._toggle(allLanguages, currentLanguage);
 		li.style.display = "none";
-		console.log("Gocha")
 	})
 
 	}
@@ -99,7 +97,6 @@ class LanguageSwitcher {
 	_toggle(allLanguages, currentLanguage) {
 		allLanguages.forEach(item => {
 			item.style.display = ""
-			console.log("yep")
 		})
 	}
 

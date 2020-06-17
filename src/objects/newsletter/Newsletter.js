@@ -128,7 +128,7 @@ Newsletter.validateFields = function(form, event, url) {
         let response = $('.c-signup-form__response')
 
         form.html(response);
-				console.log(form.html(response));
+				// console.log(form.html(response));
         // let formAction = form.attr('action') + "u=" + Newsletter.user + "amp;id=" + Newsletter.id
         let formAction = url
         $.ajax({

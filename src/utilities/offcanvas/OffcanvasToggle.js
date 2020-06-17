@@ -15,11 +15,11 @@ class OffcanvasToggle {
    */
   constructor() {
     this._toggle = new Toggle();
-		
-		console.log(this._toggle)
-    return this; 
+
+		// console.log(this._toggle)
+    return this;
 	}
-	
+
 }
 
 /**

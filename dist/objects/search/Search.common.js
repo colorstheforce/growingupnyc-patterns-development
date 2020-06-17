@@ -406,9 +406,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 var MissPlete = unwrapExports(bundle);
 
-var Search = function Search() {
-  console.log("Search");
-};
+var Search = function Search() {};
 /**
  * Initializes the module
  */

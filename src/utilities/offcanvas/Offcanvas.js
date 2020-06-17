@@ -11,9 +11,9 @@ class Offcanvas {
    * @constructor
    */
   constructor(settings) {
-		const body = document.querySelector('body');
-		const nav = document.querySelector('.js-offcanvas__side')
-		const mainOff = document.querySelector('.js-offcanvas__main')
+    const body = document.querySelector('body');
+    const nav = document.querySelector('.js-offcanvas__side')
+    const mainOff = document.querySelector('.js-offcanvas__main')
 
 
     this._settings = {
@@ -23,17 +23,21 @@ class Offcanvas {
     //   inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Offcanvas.inactiveClass,
     //   activeClass: (settings.activeClass) ? settings.activeClass : Offcanvas.activeClass,
     //   before: (settings.before) ? settings.before : false,
-		//   after: (settings.after) ? settings.after : false
+    //   after: (settings.after) ? settings.after : false
 
     };
 
     let openClass = "";
     if (this._settings.sideSelector === 'left') {
-			openClass = 'is-open-left';
-			mainOff.classList.toggle("o-offcanvas__main-left")
+      openClass = 'is-open-left';
+      mainOff.classList.toggle("o-offcanvas__main-left")
     } else if (this._settings.sideSelector === 'right') {
-				openClass = 'is-open-right';
-				mainOff.classList.toggle("o-offcanvas__main-right")
+        openClass = 'is-open-right';
+        mainOff.classList.toggle("o-offcanvas__main-right")
+    }
+
+    if (typeof NodeList.prototype.forEach !== 'function')  {
+      NodeList.prototype.forEach = Array.prototype.forEach;
     }
 
     const offCanvas = document.querySelectorAll('.js-offcanvas');
@@ -92,12 +96,12 @@ class Offcanvas {
         event.preventDefault();
 
         // Toggle the element's active class
-				toggleElem.classList.toggle(linkActiveClass);
-				if (openClass === 'is-open-left') {
-					nav.classList.toggle("o-offcanvas__side-left")
-				} else {
-					nav.classList.toggle("o-offcanvas__side-right")
-				}
+        toggleElem.classList.toggle(linkActiveClass);
+        if (openClass === 'is-open-left') {
+          nav.classList.toggle("o-offcanvas__side-left")
+        } else {
+          nav.classList.toggle("o-offcanvas__side-right")
+        }
 
         // Toggle custom class if it is set
         if (toggleClass !== openClass)

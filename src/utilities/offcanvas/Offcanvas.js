@@ -36,9 +36,9 @@ class Offcanvas {
         mainOff.classList.toggle("o-offcanvas__main-right")
     }
 
-    if (typeof NodeList.prototype.forEach !== 'function')  {
-      NodeList.prototype.forEach = Array.prototype.forEach;
-    }
+    // if (typeof NodeList.prototype.forEach !== 'function')  {
+    //   NodeList.prototype.forEach = Array.prototype.forEach;
+    // }
 
     const offCanvas = document.querySelectorAll('.js-offcanvas');
     if (offCanvas) {

@@ -113,8 +113,11 @@ class Offcanvas {
     * Bind an event handler to toggle the openClass on/off on the target element
     * when the toggle element is clicked.
     */
-    forEach(toggleElems, function (toggleElem) {
-      const targetElemSelector = Offcanvas.dataset(toggleElem, 'js');
+    // forEach(toggleElems, function (toggleElem) {
+
+      for (let i = 0; i < toggleElems.length; i++) {
+
+      const targetElemSelector = Offcanvas.dataset(toggleElems[i], 'js');
 
       if (!targetElemSelector) return;
 
@@ -122,15 +125,15 @@ class Offcanvas {
 
       if (!targetElem) return;
 
-      toggleElem.addEventListener('click', function (event) {
+      toggleElems[i].addEventListener('click', function (event) {
         let toggleEvent;
-        let toggleClass = (toggleElem.dataset.toggleClass) ?
-          toggleElem.dataset.toggleClass : openClass;
+        let toggleClass = (toggleElems[i].dataset.toggleClass) ?
+          toggleElems[i].dataset.toggleClass : openClass;
 
         event.preventDefault();
 
         // Toggle the element's active class
-        toggleElem.classList.toggle(linkActiveClass);
+        toggleElems[i].classList.toggle(linkActiveClass);
         if (openClass === 'is-open-left') {
           nav.classList.toggle("o-offcanvas__side-left")
         } else {
@@ -162,7 +165,11 @@ class Offcanvas {
 
         targetElem.dispatchEvent(toggleEvent);
       });
-    });
+
+    }
+
+
+    // });
   };
 }
 Offcanvas.side = "right";

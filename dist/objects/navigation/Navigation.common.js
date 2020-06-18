@@ -928,14 +928,12 @@ function forEach(collection, iteratee) {
 var forEach_1 = forEach;
 
 var Offcanvas = function Offcanvas(settings) {
-  if (window.NodeList && !NodeList.prototype.forEach) {
-    NodeList.prototype.forEach = Array.prototype.forEach;
-  }
-
-  if (window.HTMLCollection && !HTMLCollection.prototype.forEach) {
-    HTMLCollection.prototype.forEach = Array.prototype.forEach;
-  }
-
+  // if(window.NodeList && !NodeList.prototype.forEach) {
+  // NodeList.prototype.forEach = Array.prototype.forEach;
+  // }
+  // if(window.HTMLCollection && !HTMLCollection.prototype.forEach) {
+  // HTMLCollection.prototype.forEach = Array.prototype.forEach;
+  // }
   console.log("ie 11 fix Snippet added");
   var body = document.querySelector('body');
   var nav = document.querySelector('.js-offcanvas__side');
@@ -965,12 +963,12 @@ var Offcanvas = function Offcanvas(settings) {
   //     const offCanvasSide = offCanvas[i].querySelector('.js-offcanvas__side');
   //     // console.log(offCanvas[i])
   //   /**
-  //   * Add event listener for 'changeOpenState'.
-  //   * The value of event.detail indicates whether the open state is true
-  //   * (i.e. the offcanvas content is visible).
-  //   * @function
-  //   * @param {object} event - The event object
-  //   */
+  // * Add event listener for 'changeOpenState'.
+  // * The value of event.detail indicates whether the open state is true
+  // * (i.e. the offcanvas content is visible).
+  // * @function
+  // * @param {object} event - The event object
+  // */
   //  offCanvas[i].addEventListener('changeOpenState', function (event) {
   //     if (event.detail) {
   //       if (!(/^(?:a|select|input|button|textarea)$/i.test(offCanvasSide.tagName))) {

@@ -44,9 +44,9 @@ class main {
   }
 
 
-	offCanvas(settings = false) {
-    return (settings) ? new Offcanvas(settings) : new Offcanvas();
-  }
+	// offCanvas(settings = false) {
+  //   return (settings) ? new Offcanvas(settings) : new Offcanvas();
+  // }
 
 	newsletter(settings = false) {
     return (settings) ? new Newsletter(settings) : new Newsletter();

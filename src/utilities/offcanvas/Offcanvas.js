@@ -36,14 +36,15 @@ class Offcanvas {
         mainOff.classList.toggle("o-offcanvas__main-right")
     }
 
-    // if (typeof NodeList.prototype.forEach !== 'function')  {
-    //   NodeList.prototype.forEach = Array.prototype.forEach;
-    // }
+
 
     const offCanvas = document.querySelectorAll('.js-offcanvas');
     if (offCanvas) {
-      forEach(offCanvas, function (offCanvasElem) {
-        const offCanvasSide = offCanvasElem.querySelector('.js-offcanvas__side');
+      // console.log(offCanvas)
+
+        for (let i = 0; i < offCanvas.length; i++) {
+          const offCanvasSide = offCanvas[i].querySelector('.js-offcanvas__side');
+          // console.log(offCanvas[i])
 
         /**
         * Add event listener for 'changeOpenState'.
@@ -52,7 +53,7 @@ class Offcanvas {
         * @function
         * @param {object} event - The event object
         */
-        offCanvasElem.addEventListener('changeOpenState', function (event) {
+       offCanvas[i].addEventListener('changeOpenState', function (event) {
           if (event.detail) {
             if (!(/^(?:a|select|input|button|textarea)$/i.test(offCanvasSide.tagName))) {
               offCanvasSide.tabIndex = -1;
@@ -60,8 +61,32 @@ class Offcanvas {
             offCanvasSide.focus();
           }
         }, false);
-      });
+      }
+
     }
+    // if (offCanvas) {
+    // 	console.log(offCanvas)
+    // 	// debugger
+    //   forEach(offCanvas, function (offCanvasElem) {
+    //     const offCanvasSide = offCanvasElem.querySelector('.js-offcanvas__side');
+
+    //     /**
+    //     * Add event listener for 'changeOpenState'.
+    //     * The value of event.detail indicates whether the open state is true
+    //     * (i.e. the offcanvas content is visible).
+    //     * @function
+    //     * @param {object} event - The event object
+    //     */
+    //     offCanvasElem.addEventListener('changeOpenState', function (event) {
+    //       if (event.detail) {
+    //         if (!(/^(?:a|select|input|button|textarea)$/i.test(offCanvasSide.tagName))) {
+    //           offCanvasSide.tabIndex = -1;
+    //         }
+    //         offCanvasSide.focus();
+    //       }
+    //     }, false);
+    //   });
+    // }
 
     this._toggle(openClass, nav, mainOff);
   }

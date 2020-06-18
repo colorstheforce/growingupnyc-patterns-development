@@ -1,6 +1,12 @@
 'use strict';
 
 import forEach from 'lodash/forEach';
+if(window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
+if(window.HTMLCollection && !HTMLCollection.prototype.forEach) {
+  HTMLCollection.prototype.forEach = Array.prototype.forEach;
+}
 
 class Offcanvas {
   /**
@@ -11,13 +17,7 @@ class Offcanvas {
    * @constructor
    */
   constructor(settings) {
-    // if(window.NodeList && !NodeList.prototype.forEach) {
-    //   NodeList.prototype.forEach = Array.prototype.forEach;
-    // }
-    // if(window.HTMLCollection && !HTMLCollection.prototype.forEach) {
-    //   HTMLCollection.prototype.forEach = Array.prototype.forEach;
-    // }
-    // console.log("ie 11 fix Snippet added")
+    console.log("ie 11 fix Snippet added")
 
 
     const body = document.querySelector('body');
@@ -48,36 +48,12 @@ class Offcanvas {
 
 
     const offCanvas = document.querySelectorAll('.js-offcanvas');
-    if (offCanvas) {
-      console.log("for loop")
-
-        for (let i = 0; i < offCanvas.length; i++) {
-          const offCanvasSide = offCanvas[i].querySelector('.js-offcanvas__side');
-          // console.log(offCanvas[i])
-
-        /**
-        * Add event listener for 'changeOpenState'.
-        * The value of event.detail indicates whether the open state is true
-        * (i.e. the offcanvas content is visible).
-        * @function
-        * @param {object} event - The event object
-        */
-       offCanvas[i].addEventListener('changeOpenState', function (event) {
-          if (event.detail) {
-            if (!(/^(?:a|select|input|button|textarea)$/i.test(offCanvasSide.tagName))) {
-              offCanvasSide.tabIndex = -1;
-            }
-            offCanvasSide.focus();
-          }
-        }, false);
-      }
-
-    }
     // if (offCanvas) {
-    //   console.log(offCanvas)
-    //   // debugger
-    //   forEach(offCanvas, function (offCanvasElem) {
-    //     const offCanvasSide = offCanvasElem.querySelector('.js-offcanvas__side');
+    //   console.log("for loop")
+
+    //     for (let i = 0; i < offCanvas.length; i++) {
+    //       const offCanvasSide = offCanvas[i].querySelector('.js-offcanvas__side');
+    //       // console.log(offCanvas[i])
 
     //     /**
     //     * Add event listener for 'changeOpenState'.
@@ -86,7 +62,7 @@ class Offcanvas {
     //     * @function
     //     * @param {object} event - The event object
     //     */
-    //     offCanvasElem.addEventListener('changeOpenState', function (event) {
+    //    offCanvas[i].addEventListener('changeOpenState', function (event) {
     //       if (event.detail) {
     //         if (!(/^(?:a|select|input|button|textarea)$/i.test(offCanvasSide.tagName))) {
     //           offCanvasSide.tabIndex = -1;
@@ -94,8 +70,32 @@ class Offcanvas {
     //         offCanvasSide.focus();
     //       }
     //     }, false);
-    //   });
+    //   }
+
     // }
+    if (offCanvas) {
+      // console.log(offCanvas)
+      // debugger
+      forEach(offCanvas, function (offCanvasElem) {
+        const offCanvasSide = offCanvasElem.querySelector('.js-offcanvas__side');
+
+        /**
+        * Add event listener for 'changeOpenState'.
+        * The value of event.detail indicates whether the open state is true
+        * (i.e. the offcanvas content is visible).
+        * @function
+        * @param {object} event - The event object
+        */
+        offCanvasElem.addEventListener('changeOpenState', function (event) {
+          if (event.detail) {
+            if (!(/^(?:a|select|input|button|textarea)$/i.test(offCanvasSide.tagName))) {
+              offCanvasSide.tabIndex = -1;
+            }
+            offCanvasSide.focus();
+          }
+        }, false);
+      });
+    }
 
     this._toggle(openClass, nav, mainOff);
   }
@@ -113,11 +113,8 @@ class Offcanvas {
     * Bind an event handler to toggle the openClass on/off on the target element
     * when the toggle element is clicked.
     */
-    // forEach(toggleElems, function (toggleElem) {
-
-      for (let i = 0; i < toggleElems.length; i++) {
-
-      const targetElemSelector = Offcanvas.dataset(toggleElems[i], 'js');
+    forEach(toggleElems, function (toggleElem) {
+      const targetElemSelector = Offcanvas.dataset(toggleElem, 'js');
 
       if (!targetElemSelector) return;
 
@@ -125,15 +122,15 @@ class Offcanvas {
 
       if (!targetElem) return;
 
-      toggleElems[i].addEventListener('click', function (event) {
+      toggleElem.addEventListener('click', function (event) {
         let toggleEvent;
-        let toggleClass = (toggleElems[i].dataset.toggleClass) ?
-          toggleElems[i].dataset.toggleClass : openClass;
+        let toggleClass = (toggleElem.dataset.toggleClass) ?
+          toggleElem.dataset.toggleClass : openClass;
 
         event.preventDefault();
 
         // Toggle the element's active class
-        toggleElems[i].classList.toggle(linkActiveClass);
+        toggleElem.classList.toggle(linkActiveClass);
         if (openClass === 'is-open-left') {
           nav.classList.toggle("o-offcanvas__side-left")
         } else {
@@ -165,11 +162,7 @@ class Offcanvas {
 
         targetElem.dispatchEvent(toggleEvent);
       });
-
-    }
-
-
-    // });
+    });
   };
 }
 Offcanvas.side = "right";

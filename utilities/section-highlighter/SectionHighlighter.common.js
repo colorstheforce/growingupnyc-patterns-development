@@ -10581,7 +10581,6 @@ return jQuery;
 // * @see https://stackoverflow.com/questions/32395988/highlight-menu-item-when-scrolling-down-to-section
 
 var SectionHighlighter = function SectionHighlighter() {
-  console.log("Highlighter");
   this._settings = {// selector: Animations.selector,
     // controller: Animations.controller,
   };
@@ -10610,8 +10609,8 @@ var SectionHighlighter = function SectionHighlighter() {
 SectionHighlighter.optimized = function ($navigationLinks, $sectionsReversed, sectionIdTonavigationLink) {
   var scrollPosition = jquery(window).scrollTop();
   $sectionsReversed.each(function () {
-    var currentSection = jquery(this);
-    console.log(currentSection);
+    var currentSection = jquery(this); // console.log(currentSection)
+
     var sectionTop = currentSection.offset().top; // if(currentSection.is('section:first-child') && sectionTop > scrollPosition){
     //   console.log('scrollPosition', scrollPosition);
     //   console.log('sectionTop', sectionTop);

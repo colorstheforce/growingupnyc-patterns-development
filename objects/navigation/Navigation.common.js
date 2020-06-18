@@ -950,6 +950,10 @@ var Offcanvas = function Offcanvas(settings) {
     mainOff.classList.toggle("o-offcanvas__main-right");
   }
 
+  if (typeof NodeList.prototype.forEach !== 'function') {
+    NodeList.prototype.forEach = Array.prototype.forEach;
+  }
+
   var offCanvas = document.querySelectorAll('.js-offcanvas');
 
   if (offCanvas) {

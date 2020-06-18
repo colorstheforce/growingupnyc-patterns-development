@@ -928,9 +928,8 @@ function forEach(collection, iteratee) {
 var forEach_1 = forEach;
 
 var StaticColumn = function StaticColumn() {
-  console.log("Static Column"); // const el = document.querySelector(AlertBanner.selector);
+  // const el = document.querySelector(AlertBanner.selector);
   // const control = document.querySelector(AlertBanner.controller);
-
   var stickyContent = document.querySelectorAll('.js-static');
   // selector: StaticColumn.selector,
   // notStickyClass: StaticColumn.notStickyClass,

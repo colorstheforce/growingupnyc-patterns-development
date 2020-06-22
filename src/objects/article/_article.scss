@@ -76,8 +76,8 @@
 	@media screen and (min-width: $screen-desktop) {
     display: block;
     // float: left;
-    // margin-left: 0;
-    // margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 		// margin-right: 3.125%;
     // width: 35%;
 		@if ($language == 'ar') or ($language == 'ur') {

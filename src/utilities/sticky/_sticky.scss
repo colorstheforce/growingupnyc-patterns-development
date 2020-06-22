@@ -48,7 +48,18 @@
 
 		&.is-stuck {
 			position: absolute;
-			left: 20px; width: 318px; top: auto; bottom: 0px;
+
+			@if ($language == 'ar') or ($language == 'ur') {
+				// right: 20px;
+				width: 318px;
+				top: auto;
+				bottom: 0px;
+			} @else {
+				// left: 20px;
+				width: 318px;
+				top: auto;
+				bottom: 0px;
+			}
 		}
 	}
 }
@@ -62,13 +73,13 @@
 // 		}
 // 	}
 // }
-@media screen and (min-width: $screen-desktop-large) {
-	.o-sticky-nav {
-		width: 414px;
+// @media screen and (min-width: $screen-desktop-large) {
+// 	.o-sticky-nav {
+// 		width: 414px;
 
-		&.is-sticky {
-			width: 414px;
-		}
-	}
-}
+// 		&.is-sticky {
+// 			width: 414px;
+// 		}
+// 	}
+// }
 

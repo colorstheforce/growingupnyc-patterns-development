@@ -1,4 +1,4 @@
-= extend('layouts/default')
+= extend('/slm/layouts/default')
 
 - title = 'Select'
 

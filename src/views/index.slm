@@ -1,8 +1,8 @@
 / Layout
-= extend('layouts/default');
+= extend('/slm/layouts/default');
 
 / Partials
-= partial('partials/head.mixin.slm');
+= partial('/slm/partials/head.mixin.slm');
 
 / Content blocks
 = content('head');

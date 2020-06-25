@@ -1,11 +1,11 @@
-= extend('layouts/default')
+= extend('/slm/layouts/default')
 
 - title = 'Icons'
 
 / Partials
-= partial('partials/head.mixin.slm');
-= partial('partials/content-header.mixin.slm');
-= partial('partials/section-icon.mixin.slm');
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section-icon.mixin.slm');
 
 / Content blocks
 = content('head');

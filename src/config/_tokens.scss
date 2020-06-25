@@ -1,12 +1,9 @@
 $tokens:(
-  opts: (
-    output: "./src/config/_tokens.scss"
-  ),
+  output: "./src/config/_tokens.scss",
   fonts: (
     system: (-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif),
     text-sans: ("Open Sans", sans-serif),
-    display-sans: ("museo-sans-rounded", sans-serif),
-    icons: ("FontAwesome", sans-serif)
+    display-sans: ("museo-sans-rounded", sans-serif)
   ),
   font-weights: (
     medium: 500,
@@ -168,6 +165,6 @@ $tokens:(
   ),
   icons: (icon-afterschool-guides, icon-anytime-anywhere, icon-arrow-right, icon-at-an-appt, icon-at-the-park, icon-at-the-store, icon-bathtime, icon-bedtime, icon-baby, icon-book, icon-calendar, icon-caret-down, icon-caret-left, icon-caret-right, icon-chevron-down, icon-chevron-left, icon-chevron-right, icon-chevron-up, icon-cash-expenses, icon-check, icon-check-outlined, icon-child-care, icon-city-id-card, icon-cleaning-up, icon-clock-o, icon-close, icon-diaper-change, icon-education, icon-enrichment, icon-envelope-o, icon-family-services, icon-food, icon-getting-dressed, icon-grade-schooler, icon-health-care, icon-housing, icon-laundry, icon-lightbulb, icon-map-marker, icon-mealtime, icon-nyc-logo, icon-on-the-go, icon-people-with-disabilities, icon-playtime, icon-pre-schooler, icon-pre-teen, icon-recurring, icon-search, icon-sms, icon-summer-guides, icon-teen, icon-toddler, icon-topic, icon-work, icon-young-adult),
   logos: (icon-growingupnyc-logo-white, icon-growingupnyc-logo-black, icon-vroom-logo-black-es, icon-vroom-logo-white, icon-vroom-logo-white-es, icon-vroom-logo-orange, icon-vroom-logo-orange-es),
-  version: "0.0.1-alpha",
+  version: 0.0.1-alpha,
   cdn: "https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/"
 );

@@ -1,11 +1,11 @@
-= extend('layouts/default')
+= extend('/slm/layouts/default')
 
 - title = 'Sticky'
 
 / Partials
-= partial('partials/head.mixin.slm');
-= partial('partials/content-header.mixin.slm');
-= partial('partials/section.mixin.slm');
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section.mixin.slm');
 
 
 / Content blocks

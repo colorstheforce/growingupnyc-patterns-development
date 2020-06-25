@@ -1,11 +1,11 @@
-= extend('layouts/demo-default')
+= extend('/slm/layouts/demo-default')
 
 - title = 'Static Column Demo'
 
 / Partials
-= partial('partials/head.mixin.slm');
-= partial('partials/content-header.mixin.slm');
-= partial('partials/section.mixin.slm');
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section.mixin.slm');
 
 
 / Content blocks

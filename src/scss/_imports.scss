@@ -43,19 +43,6 @@
 
 @import 'config/tokens';
 
-
-$neat-grid: (
-  columns: map-get(map-get($tokens, 'dimensions'), 'grid-columns'),
-  gutter: map-get(map-get($tokens, 'dimensions'), 'gutter'),
-);
-
-@import 'bourbon';
-@import 'neat';
-@import "fontawesome";
-@import "solid";
-
-// global - end
-
 /**********
 * Elements
 ***********/

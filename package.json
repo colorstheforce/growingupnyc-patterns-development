@@ -16,9 +16,6 @@
     "pttrn": "pttrn"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
-    "bourbon": "^6.0.0",
-    "bourbon-neat": "^4.0.0",
     "css-mqpacker": "^7.0.0",
     "imagesready": "^0.2.2",
     "jquery": "^3.4.1",
@@ -31,5 +28,15 @@
     "miss-plete-js": "^1.4.5",
     "smoothscroll-polyfill": "^0.4.4",
     "sticky-js": "^1.2.2"
+  },
+  "stylelintConfig": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "comment-whitespace-inside": null,
+      "no-missing-end-of-source-newline": null,
+      "at-rule-empty-line-before": null,
+      "number-leading-zero": "never",
+      "selector-pseudo-element-colon-notation": null
+    }
   }
 }

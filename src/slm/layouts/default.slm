@@ -4,15 +4,15 @@ html lang='en'
 
   body
     div class="o-offcanvas js-offcanvas" id="offcanvas-patterns"
-      = partial('/partials/nav-offcanvas.slm');
+      = partial('../partials/nav-offcanvas.slm');
 
       div class='o-offcanvas__main js-offcanvas__main'
-        = partial('/partials/nav.slm');
+        = partial('../partials/nav.slm');
         main class="pt-12 mobile:pt-20 tablet:pt-32"
           div class=''
             = content('main');
 
-    = partial('/partials/footer.slm');
+    = partial('../partials/footer.slm');
 
     script src='scripts/growingup-nyc.js'
 
@@ -25,11 +25,8 @@ html lang='en'
       gunyc.formEffect();
       gunyc.languageSwitcher();
 
-
-
-
     = content('script');
 
     / The reload script. This is reserved for development only.
-    - if this.env.NODE_ENV === 'development'
+    - if this.process.env.NODE_ENV == 'development'
       script src='/reload/reload.js'

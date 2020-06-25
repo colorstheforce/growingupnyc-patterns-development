@@ -3,7 +3,7 @@
  */
 
 const Path = require('path');
-const alerts = require('./alerts.js');
+const alerts = require('../node_modules/@nycopportunity/patterns-framework/config/alerts');
 
 /**
  * Config

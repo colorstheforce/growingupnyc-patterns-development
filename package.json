@@ -2,7 +2,12 @@
   "name": "growingupnyc-patterns",
   "version": "0.0.1-alpha",
   "description": "Patterns library for Growing Up NYC",
-  "main": "index.js",
+  "author": "Mayor's Office for Economic Opportunity",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NYCOpportunity/growingupnyc-patterns.git"
+  },
   "scripts": {
     "start": "cross-env NODE_ENV=development cross-env PORT=7070 concurrently \"pttrn default -w\" \"pttrn serve -w\" -p \"none\"",
     "preversion": "cross-env NODE_ENV=production pttrn default",
@@ -10,28 +15,17 @@
     "publish": "cross-env NODE_ENV=production pttrn publish",
     "pttrn": "pttrn"
   },
-  "author": "Mayor's Office for Economic Opportunity",
-  "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
-    "@nycopportunity/patterns-framework": "git+ssh://git@github.com/CityOfNewYork/nyco-patterns-framework.git#fix/publish",
     "bourbon": "^6.0.0",
     "bourbon-neat": "^4.0.0",
+    "css-mqpacker": "^7.0.0",
     "imagesready": "^0.2.2",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15"
   },
-  "stylelintConfig": {
-    "extends": "stylelint-config-standard",
-    "rules": {
-      "comment-whitespace-inside": null,
-      "no-missing-end-of-source-newline": null,
-      "at-rule-empty-line-before": null,
-      "number-leading-zero": "never",
-      "selector-pseudo-element-colon-notation": null
-    }
-  },
   "dependencies": {
+    "@nycopportunity/patterns-framework": "^1.0.0-6",
     "animate.css": "^3.7.2",
     "js-cookie": "^2.2.1",
     "miss-plete-js": "^1.4.5",

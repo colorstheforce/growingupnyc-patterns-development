@@ -3,26 +3,34 @@
  */
 
 const package = require(`${process.env.PWD}/package.json`);
-const version = process.env.V || package.version;
+const tokens = require(`${process.env.PWD}/config/tokens`);
 
 /**
  * Config
  */
 
-const site = {
-  versions: {
-    package: version
+module.exports = {
+  src: 'src',
+  views: 'views',
+  dist: 'dist',
+  tokens: tokens,
+  beautify: {
+    indent_size: 2,
+    indent_char: ' ',
+    preserve_newlines: false,
+    indent_inner_html: false,
+    wrap_line_length: 80,
+    indent_inner_html: false,
   },
-  prettier: {
-    parser: 'html',
-    printWidth: 2000,
-    singleQuote: true,
-    jsxBracketSameLine: true,
-    htmlWhitespaceSensitivity: 'ignore'
+  package: package,
+  process: {
+    env: {
+      NODE_ENV: process.env.NODE_ENV
+    }
   },
   urls: {
     production: 'https://cityofnewyork.github.io/growingupnyc-patterns',
-    cdn: '"https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns@v' + version + '/dist"'
+    cdn: `https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns@v${package.version}/dist`
   },
   forms: {
     url: '',
@@ -146,5 +154,3 @@ const site = {
     ]
   }
 };
-
-module.exports = site;

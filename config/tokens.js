@@ -2,29 +2,10 @@
  * Config
  */
 
-const package = require('../package.json');
-const version = process.env.V || package.version;
+const package = require(`${process.env.PWD}/package.json`);
 
-const tokens = {
-  /**
-   * Possiple opts (and their defaults) to pass to json-to-scss
-   * @param  {Source}  url  https://github.com/rlapoele/json-to-scss
-   */
-  opts: {
-    output: '"./src/config/_tokens.scss"',
-    // prefix: '$tokens:',
-    // suffix: ';',
-    // format: '.scss',
-    // indentationText: '  ',
-    // indentationSize: 1,
-    // emptyString: '""',
-    // noUnderscore: true,
-    // mergeSourceFiles: false,
-    // mergeSassObjects: false,
-    // keys: 'auto',
-    // values: 'auto'
-    // stringKeys: 'family,font-family,fontfamily,font-stack,fontstack,font-face,fontface'
-  },
+module.exports = {
+  output: '"./src/config/_tokens.scss"',
   'fonts': {
     'system': [
       '-apple-system',
@@ -45,10 +26,6 @@ const tokens = {
       '"museo-sans-rounded"',
       'sans-serif'
     ],
-    'icons': [
-      '"FontAwesome"',
-      'sans-serif'
-    ]
   },
   'font-weights': {
     'medium': '500',
@@ -173,9 +150,9 @@ const tokens = {
     'animate-timing-function': 'cubic-bezier(0.23, 1, 0.32, 1)'
   },
   'screens': {
-    'small': '375px', //screen-small
-    'medium': '700px', //screen-medium
-    'large': '1024px', //screen-large
+    'small': '375px',
+    'medium': '700px',
+    'large': '1024px',
     'xlarge': '1200px'
   },
   'padding': {
@@ -274,8 +251,6 @@ const tokens = {
     'icon-vroom-logo-orange',
     'icon-vroom-logo-orange-es'
   ],
-  version: `"${version}"`,
+  version: package.version,
   cdn: `"https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/"`
 };
-
-module.exports = tokens;

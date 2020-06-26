@@ -26,6 +26,14 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   min-height: 100%;
   z-index: 1;
 }
+.is-open-down {
+  min-height: 75%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .o-offcanvas__heading {
   // @include grid-media($bp-small) {
@@ -105,7 +113,7 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
     left: 0;
   }
 
-	@media screen and (min-width: $screen-mobile) {
+  @media screen and (min-width: $screen-mobile) {
     float: left;
     height: 100%;
   }
@@ -116,7 +124,7 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
     right: 0;
   }
 
-	@media screen and (min-width: $screen-mobile) {
+  @media screen and (min-width: $screen-mobile) {
     float: right;
     height: 100%;
   }
@@ -127,9 +135,9 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
     top: 0;
   }
 
-	@media screen and (min-width: $screen-mobile) {
-    float: right;
-    height: 100%;
+  @media screen and (min-width: $screen-mobile) {
+    // float: right;
+    height: auto;
   }
 }
 
@@ -156,6 +164,14 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   overflow: auto;
   transition: transform .5s;
   visibility: visible;
+  width: 100%;
+
+  @media screen and (min-width: $screen-desktop) {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
   // z-index: $z-index-offcanvas-side;
 }
 
@@ -206,6 +222,7 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
 }
 .is-open-down .o-offcanvas__side {
     z-index: 1;
+    max-height: 75%;
 
   &:after {
     height: 0;
@@ -231,7 +248,7 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
 //   transition: right .5s;
 // }
 .o-offcanvas__main-left {
-	left: 0;
+  left: 0;
   transition: left .5s;
 }
 // The content that slides over to make room for the offcanvas content
@@ -250,7 +267,7 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   height: 100%;
   position: relative;
   z-index: $z-index-offcanvas-main;
-	left: 0;
+  left: 0;
   transition: left .5s;
 }
 .o-offcanvas__main-right {
@@ -259,7 +276,7 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   height: 100%;
   position: relative;
   z-index: $z-index-offcanvas-main;
-	right: 0;
+  right: 0;
   transition: right .5s;
 }
 .o-offcanvas__main-down {
@@ -268,7 +285,7 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
   height: 100%;
   position: relative;
   z-index: $z-index-offcanvas-main;
-	top: 0;
+  top: 0;
   transition: top .5s;
 }
 
@@ -317,14 +334,14 @@ $width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanva
 }
 .is-open-down .o-offcanvas__main {
   position: fixed;
-  top: $width-offcanvas-side;
+  top: 75%;
   width: 100%;
 
   // @include grid-media($bp-large) {
   //   right: $width-offcanvas-side-large;
   // }
   @media screen and (min-width: $screen-desktop) {
-    top: $width-offcanvas-side-large;
+    top: 75%;
   }
 
 }

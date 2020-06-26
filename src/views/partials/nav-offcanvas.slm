@@ -5,11 +5,11 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
     svg class="icon--small" role="img"
       title = 'Close Resources by Patterns'
       use xlink:href="#icon-close"
-  ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true"
+  ol class="js-accordion c-list-box" data-multiselectable="true"
     li class='c-list-box__item'
       h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0"
         = 'Elements'
-      ol class="js-accordion__content c-list-box__content"
+      ol class="c-list-box__content"
         li
           a href="button" class="c-list-box__subitem"
             = 'Button'
@@ -50,11 +50,11 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
           a href="inline-list" class="c-list-box__subitem"
             = 'Inline List'
 
-  ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true"
+  ol class="js-accordion c-list-box" data-multiselectable="true"
     li class='c-list-box__item'
       h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0"
         = 'Components'
-      ol class="js-accordion__content c-list-box__content"
+      ol class="c-list-box__content"
         li
           a href="age-guide" class="c-list-box__subitem"
             = 'Age Guide'
@@ -104,11 +104,11 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
           a href="tout" class="c-list-box__subitem"
             = 'tout'
 
-  ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true"
+  ol class="js-accordion c-list-box" data-multiselectable="true"
     li class='c-list-box__item'
       h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0"
         = 'Objects'
-      ol class="js-accordion__content c-list-box__content"
+      ol class="c-list-box__content"
         li
           a href="accordion" class="c-list-box__subitem"
             = 'Accordion'
@@ -149,11 +149,11 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
           a href="static-column" class="c-list-box__subitem"
             = 'static column'
 
-  ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true"
+  ol class="js-accordion c-list-box" data-multiselectable="true"
     li class='c-list-box__item'
       h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0"
         = 'Utilities'
-      ol class="js-accordion__content c-list-box__content"
+      ol class="c-list-box__content"
         li
           a href="accessibility" class="c-list-box__subitem"
             = 'accessibility'
@@ -184,3 +184,12 @@ nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation"
         li
           a href="typography" class="c-list-box__subitem"
             = 'Typography'
+
+/ ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true"
+/     li class='c-list-box__item'
+/       h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0"
+/         = 'Utilities'
+/       ol class="js-accordion__content c-list-box__content"
+/         li
+/           a href="accessibility" class="c-list-box__subitem"
+/             = 'accessibility'

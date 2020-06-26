@@ -1,195 +1,128 @@
-nav class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation" aria-label="patterns-heading"
+nav class="flex text-center o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation" aria-label="patterns-heading"
   h2 id="patterns-heading" class="show-for-screen-reader"
     = 'Resources by Patterns'
   button data-js="offcanvas-patterns" class="o-offcanvas__close button--text"
     svg class="icon--small" role="img"
       title = 'Close Resources by Patterns'
       use xlink:href="#icon-close"
-  ol class="js-accordion c-list-box" data-multiselectable="true"
-    li class='c-list-box__item'
-      h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0"
-        = 'Elements'
-      ol class="c-list-box__content"
-        li
-          a href="button" class="c-list-box__subitem"
-            = 'Button'
-        li
-          a href="divider" class="c-list-box__subitem"
-            = 'Divider'
-        li
-          a href="checkbox" class="c-list-box__subitem"
-            = 'Checkbox'
-        li
-          a href="hero" class="c-list-box__subitem"
-            = 'Hero'
-        li
-          a href="icons" class="c-list-box__subitem"
-            = 'Icons'
-        li
-          a href="input" class="c-list-box__subitem"
-            = 'Input'
-        li
-          a href="layouts" class="c-list-box__subitem"
-            = 'Layouts'
-        li
-          a href="list-box" class="c-list-box__subitem"
-            = 'List Box'
-        li
-          a href="lists" class="c-list-box__subitem"
-            = 'Lists'
-        li
-          a href="spinner" class="c-list-box__subitem"
-            = 'Spinner'
-        li
-          a href="sticker" class="c-list-box__subitem"
-            = 'Sticker'
-        li
-          a href="table" class="c-list-box__subitem"
-            = 'table'
-        li
-          a href="inline-list" class="c-list-box__subitem"
-            = 'Inline List'
 
-  ol class="js-accordion c-list-box" data-multiselectable="true"
-    li class='c-list-box__item'
-      h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0"
-        = 'Components'
-      ol class="c-list-box__content"
-        li
-          a href="age-guide" class="c-list-box__subitem"
-            = 'Age Guide'
-        li
-          a href="arrow-pager" class="c-list-box__subitem"
-            = 'arrow pager'
-        li
-          a href="base" class="c-list-box__subitem"
-            = 'Base'
-        li
-          a href="block-list" class="c-list-box__subitem"
-            = 'Block List'
-        li
-          a href="card" class="c-list-box__subitem"
-            = 'Card'
-        li
-          a href="details-list" class="c-list-box__subitem"
-            = 'Details List'
-        li
-          a href="fonts" class="c-list-box__subitem"
-            = 'Fonts'
-        li
-          a href="footer" class="c-list-box__subitem"
-            = 'Footer'
-        li
-          a href="hero" class="c-list-box__subitem"
-            = 'hero'
-        li
-          a href="language-switcher" class="c-list-box__subitem"
-            = 'language switcher'
-        li
-          a href="list-box" class="c-list-box__subitem"
-            = 'List Box'
-        li
-          a href="share" class="c-list-box__subitem"
-            = 'Share'
-        li
-          a href="side-hero" class="c-list-box__subitem"
-            = 'Side hero'
-        li
-          a href="side-navigation" class="c-list-box__subitem"
-            = 'Side Navigation'
-        li
-          a href="tip" class="c-list-box__subitem"
-            = 'tip'
-        li
-          a href="tout" class="c-list-box__subitem"
-            = 'tout'
+  div class="flex-1"
+    h3 = 'Elements'
+    a href="button" class="block"
+      = 'Button'
+    a href="divider" class="block"
+      = 'Divider'
+    a href="checkbox" class="block"
+      = 'Checkbox'
+    a href="hero" class="block"
+      = 'Hero'
+    a href="icons" class="block"
+      = 'Icons'
+    a href="input" class="block"
+      = 'Input'
+    a href="layouts" class="block"
+      = 'Layouts'
+    a href="list-box" class="block"
+      = 'List Box'
+    a href="lists" class="block"
+      = 'Lists'
+    a href="spinner" class="block"
+      = 'Spinner'
+    a href="sticker" class="block"
+      = 'Sticker'
+    a href="table" class="block"
+      = 'table'
+    a href="inline-list" class="block"
+      = 'Inline List'
+  
+  div class="flex-1"
+    h3
+      = 'Components'
+    a href="age-guide" class="block"
+      = 'Age Guide'
+    a href="arrow-pager" class="block"
+      = 'arrow pager'
+    a href="base" class="block"
+      = 'Base'
+    a href="block-list" class="block"
+      = 'Block List'
+    a href="card" class="block"
+      = 'Card'
+    a href="details-list" class="block"
+      = 'Details List'
+    a href="fonts" class="block"
+      = 'Fonts'
+    a href="footer" class="block"
+      = 'Footer'
+    a href="hero" class="block"
+      = 'hero'
+    a href="language-switcher" class="block"
+      = 'language switcher'
+    a href="list-box" class="block"
+      = 'List Box'
+    a href="share" class="block"
+      = 'Share'
+    a href="side-hero" class="block"
+      = 'Side hero'
+    a href="side-navigation" class="block"
+      = 'Side Navigation'
+    a href="tip" class="block"
+      = 'tip'
+    a href="tout" class="block"
+      = 'tout'
 
-  ol class="js-accordion c-list-box" data-multiselectable="true"
-    li class='c-list-box__item'
-      h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0"
-        = 'Objects'
-      ol class="c-list-box__content"
-        li
-          a href="accordion" class="c-list-box__subitem"
-            = 'Accordion'
-        li
-          a href="alert-banner" class="c-list-box__subitem"
-            = 'alert banner'
-        li
-          a href="animations" class="c-list-box__subitem"
-            = 'animations'
-        li
-          a href="article" class="c-list-box__subitem"
-            = 'article'
-        li
-          a href="container" class="c-list-box__subitem"
-            = 'Container'
-        li
-          a href="content" class="c-list-box__subitem"
-            = 'Content'
-        li
-          a href="feature-photo" class="c-list-box__subitem"
-            = 'feature photo'
-        li
-          a href="flex-embed" class="c-list-box__subitem"
-            = 'flex embed'
-        li
-          a href="navigation" class="c-list-box__subitem"
-            = 'Navigation'
-        li
-          a href="newsletter" class="c-list-box__subitem"
-            = 'Newsletter'
-        li
-          a href="overlay" class="c-list-box__subitem"
-            = 'overlay'
-        li
-          a href="search" class="c-list-box__subitem"
-            = 'Search'
-        li
-          a href="static-column" class="c-list-box__subitem"
-            = 'static column'
+  div class="flex-1"
+    h3
+      = 'Objects'
+    a href="accordion" class="block"
+      = 'Accordion'
+    a href="alert-banner" class="block"
+      = 'alert banner'
+    a href="animations" class="block"
+      = 'animations'
+    a href="article" class="block"
+      = 'article'
+    a href="container" class="block"
+      = 'Container'
+    a href="content" class="block"
+      = 'Content'
+    a href="feature-photo" class="block"
+      = 'feature photo'
+    a href="flex-embed" class="block"
+      = 'flex embed'
+    a href="navigation" class="block"
+      = 'Navigation'
+    a href="newsletter" class="block"
+      = 'Newsletter'
+    a href="overlay" class="block"
+      = 'overlay'
+    a href="search" class="block"
+      = 'Search'
+    a href="static-column" class="block"
+      = 'static column'
 
-  ol class="js-accordion c-list-box" data-multiselectable="true"
-    li class='c-list-box__item'
-      h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0"
-        = 'Utilities'
-      ol class="c-list-box__content"
-        li
-          a href="accessibility" class="c-list-box__subitem"
-            = 'accessibility'
-        li
-          a href="animations" class="c-list-box__subitem"
-            = 'animations'
-        li
-          a href="background-image" class="c-list-box__subitem"
-            = 'background image'
-        li
-          a href="color" class="c-list-box__subitem"
-            = 'color'
-        li
-          a href="fonts" class="c-list-box__subitem"
-            = 'Font'
-        li
-          a href="form-effects" class="c-list-box__subitem"
-            = 'Form Effects'
-        li
-          a href="offcanvas" class="c-list-box__subitem"
-            = 'Offcanvas'
-        li
-          a href="sticky" class="c-list-box__subitem"
-            = 'sticky'
-        li
-          a href="tailwind" class="c-list-box__subitem"
-            = 'Tailwind'
-        li
-          a href="typography" class="c-list-box__subitem"
-            = 'Typography'
+  div class="flex-1"
+    h3
+      = 'Utilities'
+    a href="accessibility" class="block"
+      = 'accessibility'
+    a href="animations" class="block"
+      = 'animations'
+    a href="background-image" class="block"
+      = 'background image'
+    a href="color" class="block"
+      = 'color'
+    a href="fonts" class="block"
+      = 'Font'
+    a href="form-effects" class="block"
+      = 'Form Effects'
+    a href="offcanvas" class="block"
+      = 'Offcanvas'
+    a href="sticky" class="block"
+      = 'sticky'
+    a href="tailwind" class="block"
+      = 'Tailwind'
+    a href="typography" class="block"
+      = 'Typography'
 
-/ ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true"
-/     li class='c-list-box__item'
-/       h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0"
-/         = 'Utilities'
-/       ol class="js-accordion__content c-list-box__content"
-/         li
-/           a href="accessibility" class="c-list-box__subitem"
-/             = 'accessibility'
+  

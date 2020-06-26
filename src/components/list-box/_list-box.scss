@@ -3,13 +3,6 @@
  */
 
 // Dependencies
-// This is where variables, mixins, or functions are imported that the
-// pattern depends on. It's helpful to import dependencies into each
-// pattern so that they can be exported individually and it's clear
-// where the pattern is getting variables from. You can create a
-// pattern specific SASS configuration in the /src/config directory, or
-// add configuration to the /config/variables.js object (which is
-// to SASS during the compilation process).
 @import 'config/fonts';
 @import 'config/colors';
 @import 'scss/functions/font-size';
@@ -20,13 +13,6 @@
 .c-list-box {
   display: block;
   padding: rem-calc(6 4 2);
-}
-
-.is-open-down .c-list-box {
-
- @media screen and (min-width: $screen-desktop) {
- 		width: 25%;
-	}
 }
 
 .c-list-box--tertiary {
@@ -123,25 +109,6 @@
   }
 }
 
-.is-open-down .c-list-box__heading {
-	padding: rem-calc(3 40);
-	color: $color-text;
-	padding-bottom: rem-calc(20);
-	border-radius: rem-calc(0);
-	font-size: $font-size-small;
-
-	@media screen and (min-width: $screen-tablet) {
-		border-bottom: 1px solid $color-text;
-		padding-bottom: rem-calc(20);
-  }
-
-	@media screen and (min-width: $screen-mobile) {
-		padding-bottom: rem-calc(10);
-		margin-top: rem-calc(10);
-  }
-
-}
-
 .c-list-box--tertiary .c-list-box__heading {
   background: $color-primary;
   color: $color-text-invert;
@@ -196,10 +163,6 @@
   border-radius: 0 0 3px 3px;
   color: $color-text-invert;
   margin-top: -1px;
-}
-
-.is-open-down .c-list-box__content {
-	// margin-top: rem-calc(20);
 }
 
 
@@ -294,21 +257,6 @@
       color: inherit;
     }
   }
-}
-
- .is-open-down .c-list-box__subitem {
-	 	padding: rem-calc(3 40);
-		font-size: $font-size-x-small;
-	&:first-child {
-    padding-top: rem-calc(10);
-  }
-
-  &:last-child {
-    padding-bottom: rem-calc(10);
-  }
-	&:hover {
-		text-decoration: underline;
-	}
 }
 
 // List Box Border

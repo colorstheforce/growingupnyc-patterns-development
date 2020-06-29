@@ -1,4 +1,4 @@
-nav class="flex text-center o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation" aria-label="patterns-heading"
+nav class="flex flex-wrap text-center o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation" aria-label="patterns-heading"
   h2 id="patterns-heading" class="show-for-screen-reader"
     = 'Resources by Patterns'
   button data-js="offcanvas-patterns" class="o-offcanvas__close button--text"
@@ -6,7 +6,7 @@ nav class="flex text-center o-offcanvas__side js-offcanvas__side" id="patterns" 
       title = 'Close Resources by Patterns'
       use xlink:href="#icon-close"
 
-  div class="flex-1"
+  div class="tablet:flex-1 w-full mb-10"
     h3 = 'Elements'
     a href="button" class="block"
       = 'Button'
@@ -34,8 +34,8 @@ nav class="flex text-center o-offcanvas__side js-offcanvas__side" id="patterns" 
       = 'table'
     a href="inline-list" class="block"
       = 'Inline List'
-  
-  div class="flex-1"
+
+  div class="tablet:flex-1 w-full mb-10"
     h3
       = 'Components'
     a href="age-guide" class="block"
@@ -71,7 +71,7 @@ nav class="flex text-center o-offcanvas__side js-offcanvas__side" id="patterns" 
     a href="tout" class="block"
       = 'tout'
 
-  div class="flex-1"
+  div class="tablet:flex-1 w-full mb-10"
     h3
       = 'Objects'
     a href="accordion" class="block"
@@ -101,7 +101,7 @@ nav class="flex text-center o-offcanvas__side js-offcanvas__side" id="patterns" 
     a href="static-column" class="block"
       = 'static column'
 
-  div class="flex-1"
+  div class="tablet:flex-1 w-full mb-10"
     h3
       = 'Utilities'
     a href="accessibility" class="block"
@@ -125,4 +125,3 @@ nav class="flex text-center o-offcanvas__side js-offcanvas__side" id="patterns" 
     a href="typography" class="block"
       = 'Typography'
 
-  

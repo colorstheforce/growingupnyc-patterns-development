@@ -52,7 +52,7 @@
   </head>
   <body>
     <div class="o-offcanvas js-offcanvas" id="offcanvas-patterns">
-      <nav aria-label="patterns-heading" class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation">
+      <nav aria-label="patterns-heading" class="flex flex-wrap text-center o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation">
         <h2 class="show-for-screen-reader" id="patterns-heading">Resources by Patterns</h2>
         <button class="o-offcanvas__close button--text" data-js="offcanvas-patterns">
           <svg class="icon--small" role="img">
@@ -60,93 +60,77 @@
             <use xlink:href="#icon-close"></use>
           </svg>
         </button>
-        <ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true">
-          <li class="c-list-box__item">
-            <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Elements</h3>
-            <ol class="js-accordion__content c-list-box__content">
-              <li><a class="c-list-box__subitem" href="button">Button</a></li>
-              <li><a class="c-list-box__subitem" href="divider">Divider</a></li>
-              <li><a class="c-list-box__subitem" href="checkbox">Checkbox</a></li>
-              <li><a class="c-list-box__subitem" href="hero">Hero</a></li>
-              <li><a class="c-list-box__subitem" href="icons">Icons</a></li>
-              <li><a class="c-list-box__subitem" href="input">Input</a></li>
-              <li><a class="c-list-box__subitem" href="layouts">Layouts</a></li>
-              <li><a class="c-list-box__subitem" href="list-box">List Box</a></li>
-              <li><a class="c-list-box__subitem" href="lists">Lists</a></li>
-              <li><a class="c-list-box__subitem" href="spinner">Spinner</a></li>
-              <li><a class="c-list-box__subitem" href="sticker">Sticker</a></li>
-              <li><a class="c-list-box__subitem" href="table">table</a></li>
-              <li><a class="c-list-box__subitem" href="inline-list">Inline List</a></li>
-            </ol>
-          </li>
-        </ol>
-        <ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true">
-          <li class="c-list-box__item">
-            <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Components</h3>
-            <ol class="js-accordion__content c-list-box__content">
-              <li><a class="c-list-box__subitem" href="age-guide">Age Guide</a></li>
-              <li><a class="c-list-box__subitem" href="arrow-pager">arrow pager</a></li>
-              <li><a class="c-list-box__subitem" href="base">Base</a></li>
-              <li><a class="c-list-box__subitem" href="block-list">Block List</a></li>
-              <li><a class="c-list-box__subitem" href="card">Card</a></li>
-              <li><a class="c-list-box__subitem" href="details-list">Details List</a></li>
-              <li><a class="c-list-box__subitem" href="fonts">Fonts</a></li>
-              <li><a class="c-list-box__subitem" href="footer">Footer</a></li>
-              <li><a class="c-list-box__subitem" href="hero">hero</a></li>
-              <li><a class="c-list-box__subitem" href="language-switcher">language switcher</a></li>
-              <li><a class="c-list-box__subitem" href="list-box">List Box</a></li>
-              <li><a class="c-list-box__subitem" href="share">Share</a></li>
-              <li><a class="c-list-box__subitem" href="side-hero">Side hero</a></li>
-              <li><a class="c-list-box__subitem" href="side-navigation">Side Navigation</a></li>
-              <li><a class="c-list-box__subitem" href="tip">tip</a></li>
-              <li><a class="c-list-box__subitem" href="tout">tout</a></li>
-            </ol>
-          </li>
-        </ol>
-        <ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true">
-          <li class="c-list-box__item">
-            <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Objects</h3>
-            <ol class="js-accordion__content c-list-box__content">
-              <li><a class="c-list-box__subitem" href="accordion">Accordion</a></li>
-              <li><a class="c-list-box__subitem" href="alert-banner">alert banner</a></li>
-              <li><a class="c-list-box__subitem" href="animations">animations</a></li>
-              <li><a class="c-list-box__subitem" href="article">article</a></li>
-              <li><a class="c-list-box__subitem" href="container">Container</a></li>
-              <li><a class="c-list-box__subitem" href="content">Content</a></li>
-              <li><a class="c-list-box__subitem" href="feature-photo">feature photo</a></li>
-              <li><a class="c-list-box__subitem" href="flex-embed">flex embed</a></li>
-              <li><a class="c-list-box__subitem" href="navigation">Navigation</a></li>
-              <li><a class="c-list-box__subitem" href="newsletter">Newsletter</a></li>
-              <li><a class="c-list-box__subitem" href="overlay">overlay</a></li>
-              <li><a class="c-list-box__subitem" href="search">Search</a></li>
-              <li><a class="c-list-box__subitem" href="static-column">static column</a></li>
-            </ol>
-          </li>
-        </ol>
-        <ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true">
-          <li class="c-list-box__item">
-            <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Utilities</h3>
-            <ol class="js-accordion__content c-list-box__content">
-              <li><a class="c-list-box__subitem" href="accessibility">accessibility</a></li>
-              <li><a class="c-list-box__subitem" href="animations">animations</a></li>
-              <li><a class="c-list-box__subitem" href="background-image">background image</a></li>
-              <li><a class="c-list-box__subitem" href="color">color</a></li>
-              <li><a class="c-list-box__subitem" href="fonts">Font</a></li>
-              <li><a class="c-list-box__subitem" href="form-effects">Form Effects</a></li>
-              <li><a class="c-list-box__subitem" href="offcanvas">Offcanvas</a></li>
-              <li><a class="c-list-box__subitem" href="sticky">sticky</a></li>
-              <li><a class="c-list-box__subitem" href="tailwind">Tailwind</a></li>
-              <li><a class="c-list-box__subitem" href="typography">Typography</a></li>
-            </ol>
-          </li>
-        </ol>
+        <div class="tablet:flex-1 w-full mb-10">
+          <h3>Elements</h3>
+          <a class="block" href="button">Button</a>
+          <a class="block" href="divider">Divider</a>
+          <a class="block" href="checkbox">Checkbox</a>
+          <a class="block" href="hero">Hero</a>
+          <a class="block" href="icons">Icons</a>
+          <a class="block" href="input">Input</a>
+          <a class="block" href="layouts">Layouts</a>
+          <a class="block" href="list-box">List Box</a>
+          <a class="block" href="lists">Lists</a>
+          <a class="block" href="spinner">Spinner</a>
+          <a class="block" href="sticker">Sticker</a>
+          <a class="block" href="table">table</a>
+          <a class="block" href="inline-list">Inline List</a>
+        </div>
+        <div class="tablet:flex-1 w-full mb-10">
+          <h3>Components</h3>
+          <a class="block" href="age-guide">Age Guide</a>
+          <a class="block" href="arrow-pager">arrow pager</a>
+          <a class="block" href="base">Base</a>
+          <a class="block" href="block-list">Block List</a>
+          <a class="block" href="card">Card</a>
+          <a class="block" href="details-list">Details List</a>
+          <a class="block" href="fonts">Fonts</a>
+          <a class="block" href="footer">Footer</a>
+          <a class="block" href="hero">hero</a>
+          <a class="block" href="language-switcher">language switcher</a>
+          <a class="block" href="list-box">List Box</a>
+          <a class="block" href="share">Share</a>
+          <a class="block" href="side-hero">Side hero</a>
+          <a class="block" href="side-navigation">Side Navigation</a>
+          <a class="block" href="tip">tip</a>
+          <a class="block" href="tout">tout</a>
+        </div>
+        <div class="tablet:flex-1 w-full mb-10">
+          <h3>Objects</h3>
+          <a class="block" href="accordion">Accordion</a>
+          <a class="block" href="alert-banner">alert banner</a>
+          <a class="block" href="animations">animations</a>
+          <a class="block" href="article">article</a>
+          <a class="block" href="container">Container</a>
+          <a class="block" href="content">Content</a>
+          <a class="block" href="feature-photo">feature photo</a>
+          <a class="block" href="flex-embed">flex embed</a>
+          <a class="block" href="navigation">Navigation</a>
+          <a class="block" href="newsletter">Newsletter</a>
+          <a class="block" href="overlay">overlay</a>
+          <a class="block" href="search">Search</a>
+          <a class="block" href="static-column">static column</a>
+        </div>
+        <div class="tablet:flex-1 w-full mb-10">
+          <h3>Utilities</h3>
+          <a class="block" href="accessibility">accessibility</a>
+          <a class="block" href="animations">animations</a>
+          <a class="block" href="background-image">background image</a>
+          <a class="block" href="color">color</a>
+          <a class="block" href="fonts">Font</a>
+          <a class="block" href="form-effects">Form Effects</a>
+          <a class="block" href="offcanvas">Offcanvas</a>
+          <a class="block" href="sticky">sticky</a>
+          <a class="block" href="tailwind">Tailwind</a>
+          <a class="block" href="typography">Typography</a>
+        </div>
       </nav>
       <div class="o-offcanvas__main js-offcanvas__main">
-        <header class="o-navigation">
+        <header class="o-navigation p-12">
           <div class="o-container">
-            <a class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu" href="/"><span class="o-navigation__logo">Growing Up NYC</span></a>
+            <a class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu mt-1 mobile:h-16 desktop:h-20 shadow-none p-1" href="/"><span class="o-navigation__logo">Growing Up NYC</span></a>
             <nav class="o-navigation__nav">
-              <ul class="o-inline text-left">
+              <ul class="o-inline text-left -mt-8">
                 <li class="o-inline__item"><a class="o-navigation__nav-link js-offcanvas" data-js="offcanvas-patterns" href="#patterns">Patterns</a></li>
               </ul>
             </nav>
@@ -191,7 +175,7 @@
     <script src="scripts/growingup-nyc.js"></script>
     <script type="text/javascript">
       var gunyc = new GUNYC();
-      gunyc.navigation({ sideSelector: 'right' });
+      gunyc.navigation({ sideSelector: 'down' });
       gunyc.icons();
       gunyc.accordion();
       gunyc.newsletter();

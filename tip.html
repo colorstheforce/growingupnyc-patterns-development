@@ -52,7 +52,7 @@
   </head>
   <body>
     <div class="o-offcanvas js-offcanvas" id="offcanvas-patterns">
-      <nav aria-label="patterns-heading" class="o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation">
+      <nav aria-label="patterns-heading" class="flex flex-wrap text-center o-offcanvas__side js-offcanvas__side" id="patterns" role="navigation">
         <h2 class="show-for-screen-reader" id="patterns-heading">Resources by Patterns</h2>
         <button class="o-offcanvas__close button--text" data-js="offcanvas-patterns">
           <svg class="icon--small" role="img">
@@ -60,93 +60,77 @@
             <use xlink:href="#icon-close"></use>
           </svg>
         </button>
-        <ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true">
-          <li class="c-list-box__item">
-            <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Elements</h3>
-            <ol class="js-accordion__content c-list-box__content">
-              <li><a class="c-list-box__subitem" href="button">Button</a></li>
-              <li><a class="c-list-box__subitem" href="divider">Divider</a></li>
-              <li><a class="c-list-box__subitem" href="checkbox">Checkbox</a></li>
-              <li><a class="c-list-box__subitem" href="hero">Hero</a></li>
-              <li><a class="c-list-box__subitem" href="icons">Icons</a></li>
-              <li><a class="c-list-box__subitem" href="input">Input</a></li>
-              <li><a class="c-list-box__subitem" href="layouts">Layouts</a></li>
-              <li><a class="c-list-box__subitem" href="list-box">List Box</a></li>
-              <li><a class="c-list-box__subitem" href="lists">Lists</a></li>
-              <li><a class="c-list-box__subitem" href="spinner">Spinner</a></li>
-              <li><a class="c-list-box__subitem" href="sticker">Sticker</a></li>
-              <li><a class="c-list-box__subitem" href="table">table</a></li>
-              <li><a class="c-list-box__subitem" href="inline-list">Inline List</a></li>
-            </ol>
-          </li>
-        </ol>
-        <ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true">
-          <li class="c-list-box__item">
-            <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Components</h3>
-            <ol class="js-accordion__content c-list-box__content">
-              <li><a class="c-list-box__subitem" href="age-guide">Age Guide</a></li>
-              <li><a class="c-list-box__subitem" href="arrow-pager">arrow pager</a></li>
-              <li><a class="c-list-box__subitem" href="base">Base</a></li>
-              <li><a class="c-list-box__subitem" href="block-list">Block List</a></li>
-              <li><a class="c-list-box__subitem" href="card">Card</a></li>
-              <li><a class="c-list-box__subitem" href="details-list">Details List</a></li>
-              <li><a class="c-list-box__subitem" href="fonts">Fonts</a></li>
-              <li><a class="c-list-box__subitem" href="footer">Footer</a></li>
-              <li><a class="c-list-box__subitem" href="hero">hero</a></li>
-              <li><a class="c-list-box__subitem" href="language-switcher">language switcher</a></li>
-              <li><a class="c-list-box__subitem" href="list-box">List Box</a></li>
-              <li><a class="c-list-box__subitem" href="share">Share</a></li>
-              <li><a class="c-list-box__subitem" href="side-hero">Side hero</a></li>
-              <li><a class="c-list-box__subitem" href="side-navigation">Side Navigation</a></li>
-              <li><a class="c-list-box__subitem" href="tip">tip</a></li>
-              <li><a class="c-list-box__subitem" href="tout">tout</a></li>
-            </ol>
-          </li>
-        </ol>
-        <ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true">
-          <li class="c-list-box__item">
-            <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Objects</h3>
-            <ol class="js-accordion__content c-list-box__content">
-              <li><a class="c-list-box__subitem" href="accordion">Accordion</a></li>
-              <li><a class="c-list-box__subitem" href="alert-banner">alert banner</a></li>
-              <li><a class="c-list-box__subitem" href="animations">animations</a></li>
-              <li><a class="c-list-box__subitem" href="article">article</a></li>
-              <li><a class="c-list-box__subitem" href="container">Container</a></li>
-              <li><a class="c-list-box__subitem" href="content">Content</a></li>
-              <li><a class="c-list-box__subitem" href="feature-photo">feature photo</a></li>
-              <li><a class="c-list-box__subitem" href="flex-embed">flex embed</a></li>
-              <li><a class="c-list-box__subitem" href="navigation">Navigation</a></li>
-              <li><a class="c-list-box__subitem" href="newsletter">Newsletter</a></li>
-              <li><a class="c-list-box__subitem" href="overlay">overlay</a></li>
-              <li><a class="c-list-box__subitem" href="search">Search</a></li>
-              <li><a class="c-list-box__subitem" href="static-column">static column</a></li>
-            </ol>
-          </li>
-        </ol>
-        <ol class="js-accordion c-list-box c-list-box--secondary" data-multiselectable="true">
-          <li class="c-list-box__item">
-            <h3 class="js-accordion__header c-list-box__heading" id="patterns-heading" tabindex="0">Utilities</h3>
-            <ol class="js-accordion__content c-list-box__content">
-              <li><a class="c-list-box__subitem" href="accessibility">accessibility</a></li>
-              <li><a class="c-list-box__subitem" href="animations">animations</a></li>
-              <li><a class="c-list-box__subitem" href="background-image">background image</a></li>
-              <li><a class="c-list-box__subitem" href="color">color</a></li>
-              <li><a class="c-list-box__subitem" href="fonts">Font</a></li>
-              <li><a class="c-list-box__subitem" href="form-effects">Form Effects</a></li>
-              <li><a class="c-list-box__subitem" href="offcanvas">Offcanvas</a></li>
-              <li><a class="c-list-box__subitem" href="sticky">sticky</a></li>
-              <li><a class="c-list-box__subitem" href="tailwind">Tailwind</a></li>
-              <li><a class="c-list-box__subitem" href="typography">Typography</a></li>
-            </ol>
-          </li>
-        </ol>
+        <div class="tablet:flex-1 w-full mb-10">
+          <h3>Elements</h3>
+          <a class="block" href="button">Button</a>
+          <a class="block" href="divider">Divider</a>
+          <a class="block" href="checkbox">Checkbox</a>
+          <a class="block" href="hero">Hero</a>
+          <a class="block" href="icons">Icons</a>
+          <a class="block" href="input">Input</a>
+          <a class="block" href="layouts">Layouts</a>
+          <a class="block" href="list-box">List Box</a>
+          <a class="block" href="lists">Lists</a>
+          <a class="block" href="spinner">Spinner</a>
+          <a class="block" href="sticker">Sticker</a>
+          <a class="block" href="table">table</a>
+          <a class="block" href="inline-list">Inline List</a>
+        </div>
+        <div class="tablet:flex-1 w-full mb-10">
+          <h3>Components</h3>
+          <a class="block" href="age-guide">Age Guide</a>
+          <a class="block" href="arrow-pager">arrow pager</a>
+          <a class="block" href="base">Base</a>
+          <a class="block" href="block-list">Block List</a>
+          <a class="block" href="card">Card</a>
+          <a class="block" href="details-list">Details List</a>
+          <a class="block" href="fonts">Fonts</a>
+          <a class="block" href="footer">Footer</a>
+          <a class="block" href="hero">hero</a>
+          <a class="block" href="language-switcher">language switcher</a>
+          <a class="block" href="list-box">List Box</a>
+          <a class="block" href="share">Share</a>
+          <a class="block" href="side-hero">Side hero</a>
+          <a class="block" href="side-navigation">Side Navigation</a>
+          <a class="block" href="tip">tip</a>
+          <a class="block" href="tout">tout</a>
+        </div>
+        <div class="tablet:flex-1 w-full mb-10">
+          <h3>Objects</h3>
+          <a class="block" href="accordion">Accordion</a>
+          <a class="block" href="alert-banner">alert banner</a>
+          <a class="block" href="animations">animations</a>
+          <a class="block" href="article">article</a>
+          <a class="block" href="container">Container</a>
+          <a class="block" href="content">Content</a>
+          <a class="block" href="feature-photo">feature photo</a>
+          <a class="block" href="flex-embed">flex embed</a>
+          <a class="block" href="navigation">Navigation</a>
+          <a class="block" href="newsletter">Newsletter</a>
+          <a class="block" href="overlay">overlay</a>
+          <a class="block" href="search">Search</a>
+          <a class="block" href="static-column">static column</a>
+        </div>
+        <div class="tablet:flex-1 w-full mb-10">
+          <h3>Utilities</h3>
+          <a class="block" href="accessibility">accessibility</a>
+          <a class="block" href="animations">animations</a>
+          <a class="block" href="background-image">background image</a>
+          <a class="block" href="color">color</a>
+          <a class="block" href="fonts">Font</a>
+          <a class="block" href="form-effects">Form Effects</a>
+          <a class="block" href="offcanvas">Offcanvas</a>
+          <a class="block" href="sticky">sticky</a>
+          <a class="block" href="tailwind">Tailwind</a>
+          <a class="block" href="typography">Typography</a>
+        </div>
       </nav>
       <div class="o-offcanvas__main js-offcanvas__main">
-        <header class="o-navigation">
+        <header class="o-navigation p-12">
           <div class="o-container">
-            <a class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu" href="/"><span class="o-navigation__logo">Growing Up NYC</span></a>
+            <a class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu mt-1 mobile:h-16 desktop:h-20 shadow-none p-1" href="/"><span class="o-navigation__logo">Growing Up NYC</span></a>
             <nav class="o-navigation__nav">
-              <ul class="o-inline text-left">
+              <ul class="o-inline text-left -mt-8">
                 <li class="o-inline__item"><a class="o-navigation__nav-link js-offcanvas" data-js="offcanvas-patterns" href="#patterns">Patterns</a></li>
               </ul>
             </nav>
@@ -167,94 +151,23 @@
                         <div aria-hidden="true" class="c-tip__sticker sticker">
                           <svg class="icon--large"><use xlink:href="#icon-lightbulb"></use></svg>
                         </div>
-                        <div class="c-tip__inner">
-                          <p class="c-tip__content">Be sure your baby has simple and soft toys to stimulate his sense of sight, sound and touch. Naming the toys helps to develop his language skills.</p>
-                          <footer class="c-tip__footer">
-                            <p>For more information, you can check out these resources:</p>
-                            <p><a class="c-tip__link" href="#">Resource Link</a></p>
-                          </footer>
-                        </div>
+                        <p class="c-tip__content">Be sure your baby has simple and soft toys to stimulate his sense of sight, sound and touch. Naming the toys helps to develop his language skills.</p>
+                        <footer class="c-tip__footer">
+                          <p>For more information, you can check out these resources:</p>
+                          <p><a class="c-tip__link" href="#">Resource Link</a></p>
+                        </footer>
                       </aside>
                     </div>
                     <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"><pre>&lt;aside class=&quot;c-tip o-content-container&quot;&gt;
   &lt;div aria-hidden=&quot;true&quot; class=&quot;c-tip__sticker sticker&quot;&gt;
     &lt;svg class=&quot;icon--large&quot;&gt;&lt;use xlink:href=&quot;#icon-lightbulb&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;c-tip__inner&quot;&gt;
-    &lt;p class=&quot;c-tip__content&quot;&gt;Be sure your baby has simple and soft toys to stimulate his sense of sight, sound and touch. Naming the toys helps to develop his language skills.&lt;/p&gt;
-    &lt;footer class=&quot;c-tip__footer&quot;&gt;
-      &lt;p&gt;For more information, you can check out these resources:&lt;/p&gt;
-      &lt;p&gt;&lt;a class=&quot;c-tip__link&quot; href=&quot;#&quot;&gt;Resource Link&lt;/a&gt;&lt;/p&gt;
-    &lt;/footer&gt;
-  &lt;/div&gt;
+  &lt;p class=&quot;c-tip__content&quot;&gt;Be sure your baby has simple and soft toys to stimulate his sense of sight, sound and touch. Naming the toys helps to develop his language skills.&lt;/p&gt;
+  &lt;footer class=&quot;c-tip__footer&quot;&gt;
+    &lt;p&gt;For more information, you can check out these resources:&lt;/p&gt;
+    &lt;p&gt;&lt;a class=&quot;c-tip__link&quot; href=&quot;#&quot;&gt;Resource Link&lt;/a&gt;&lt;/p&gt;
+  &lt;/footer&gt;
 &lt;/aside&gt;
-</pre></div>
-                  </div>
-                </div>
-              </div>
-              <div class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-                <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10"><h1 class="type-h1 ">Brain Building Tip</h1></div>
-                <div class="html-tag my-8"><div></div></div>
-                <div class="my-8 py-4">
-                  <div>
-                    <div>
-                      <div class="bg-color-gray-light p-10">
-                        <div class="c-block-list__inner">
-                          <div class="c-tip-card">
-                            <div class="c-tip-card__header">
-                              <a href="#">
-                                <span class="sticker sticker--small c-tip-card__sticker">
-                                  <svg class="icon--large">
-                                    <title>Cash Expenses</title>
-                                    <use xlink:href="#icon-child-care"></use>
-                                  </svg>
-                                </span>
-                              </a>
-                              <a class="c-tip-card__title" href="#">A Tall Tale</a>
-                            </div>
-                            <div class="c-tip-card__content">
-                              During a diaper change, tell your child a silly story about the tallest little child in the world. While you are at it, stretch their arms over their head as you stretch out your words in a playful tone. (The taaaaaaallest baaaaaby in the wooooooorld!)
-                              <h3 class="u-top-spacing-small u-bottom-spacing-small">See what your child is learning</h3>
-                              Your voice is your child's favorite sound. Even if they can't talk back yet, they're listening to your words. Stretching out your words and using a sing-song voice makes it fun. This also helps their brain connect sounds and the ways we use our mouths to make them. You may not see it, but inside their brain they are practicing talking with you.
-                            </div>
-                          </div>
-                          <div class="c-tip-card__banner bg-color-brain-building-tip text-right">
-                            <svg class="icon--vroom">
-                              <title>Vroom Logo</title>
-                              <use xlink:href="#logo-vroom-white"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden"><pre>&lt;div class=&quot;bg-color-gray-light p-10&quot;&gt;
-  &lt;div class=&quot;c-block-list__inner&quot;&gt;
-    &lt;div class=&quot;c-tip-card&quot;&gt;
-      &lt;div class=&quot;c-tip-card__header&quot;&gt;
-        &lt;a href=&quot;#&quot;&gt;
-          &lt;span class=&quot;sticker sticker--small c-tip-card__sticker&quot;&gt;
-            &lt;svg class=&quot;icon--large&quot;&gt;
-              &lt;title&gt;Cash Expenses&lt;/title&gt;
-              &lt;use xlink:href=&quot;#icon-child-care&quot;&gt;&lt;/use&gt;
-            &lt;/svg&gt;
-          &lt;/span&gt;
-        &lt;/a&gt;
-        &lt;a class=&quot;c-tip-card__title&quot; href=&quot;#&quot;&gt;A Tall Tale&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;c-tip-card__content&quot;&gt;
-        During a diaper change, tell your child a silly story about the tallest little child in the world. While you are at it, stretch their arms over their head as you stretch out your words in a playful tone. (The taaaaaaallest baaaaaby in the wooooooorld!)
-        &lt;h3 class=&quot;u-top-spacing-small u-bottom-spacing-small&quot;&gt;See what your child is learning&lt;/h3&gt;
-        Your voice is your child&#39;s favorite sound. Even if they can&#39;t talk back yet, they&#39;re listening to your words. Stretching out your words and using a sing-song voice makes it fun. This also helps their brain connect sounds and the ways we use our mouths to make them. You may not see it, but inside their brain they are practicing talking with you.
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;c-tip-card__banner bg-color-brain-building-tip text-right&quot;&gt;
-      &lt;svg class=&quot;icon--vroom&quot;&gt;
-        &lt;title&gt;Vroom Logo&lt;/title&gt;
-        &lt;use xlink:href=&quot;#logo-vroom-white&quot;&gt;&lt;/use&gt;
-      &lt;/svg&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
 </pre></div>
                   </div>
                 </div>
@@ -281,7 +194,7 @@
     <script src="scripts/growingup-nyc.js"></script>
     <script type="text/javascript">
       var gunyc = new GUNYC();
-      gunyc.navigation({ sideSelector: 'right' });
+      gunyc.navigation({ sideSelector: 'down' });
       gunyc.icons();
       gunyc.accordion();
       gunyc.newsletter();

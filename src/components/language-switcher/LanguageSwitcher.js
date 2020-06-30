@@ -22,6 +22,8 @@ class LanguageSwitcher {
   const languageSwitcherWrapper = document.querySelector(`.${this._settings.languageSwitcherWrapper}`);
   const logoWrapper = document.querySelector(`.${this._settings.logoWrapper}`);
 
+  // Media Query
+  let isMobile = window.matchMedia("(max-width: 375px)");
 
   if(!languageSwitcherWrapper) {
     logoWrapper.style.marginTop = "2rem";
@@ -35,7 +37,7 @@ class LanguageSwitcher {
   }
 
 
-    //Span elemtn with the title "Translate"
+    //Span elemetn with the title "Translate"
     const span = document.createElement("span");
     if (document.querySelector("[data-js='translate']")) {
       span.classList.add("wpml-ls-native");
@@ -51,12 +53,6 @@ class LanguageSwitcher {
       span.appendChild(title);
     }
 
-    // var svg = document.createElement('svg'); //Get svg element
-    // var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'path'); //Create a path in SVG's namespace
-    // newElement.setAttribute("d","M 0 0 L 10 10"); //Set path's data
-    // newElement.style.stroke = "#000"; //Set stroke colour
-    // newElement.style.strokeWidth = "5px"; //Set stroke width
-    // svg.appendChild(newElement);
 
     const aTag = document.createElement("a")
     aTag.classList.add("wpml-ls-link", "title-tag");
@@ -91,7 +87,16 @@ class LanguageSwitcher {
     languageSwitcherWrapper.classList.toggle("mobile-languages-switcher")
   })
 
+
+
+    LanguageSwitcher.addTitleOnMobile(languagesDiv, isMobile);
+    window.addEventListener('resize', function() {
+      LanguageSwitcher.addTitleOnMobile(languagesDiv, isMobile);
+    }, false);
+
   }
+
+
 
 
   _toggle(allLanguages, currentLanguage) {
@@ -99,6 +104,33 @@ class LanguageSwitcher {
       item.style.display = ""
     })
   }
+
+}
+
+LanguageSwitcher.addTitleOnMobile = function(languagesDiv, isMobile) {
+    if (isMobile.matches) {
+        console.log("yes it is mobile")
+
+        const pTag = document.createElement("p");
+      if (document.querySelector("[data-js='pick-a-language']")) {
+        pTag.classList.add("wpml-ls-native");
+        const hiddenSpan = document.querySelector("[data-js='translate']")
+        const hiddenSpanContent = hiddenSpan.textContent;
+
+        const title = document.createTextNode(hiddenSpanContent);
+        spTagpan.appendChild(title);
+
+      } else {
+        pTag.classList.add("pick-a-language");
+        const title = document.createTextNode("Pick a language");
+        pTag.appendChild(title);
+      }
+
+       console.log(pTag)
+      languagesDiv.prepend(pTag)
+
+
+    }
 
 }
 

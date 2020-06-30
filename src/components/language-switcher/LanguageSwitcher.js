@@ -118,7 +118,7 @@ LanguageSwitcher.addTitleOnMobile = function(languagesDiv, isMobile) {
         const hiddenSpanContent = hiddenSpan.textContent;
 
         const title = document.createTextNode(hiddenSpanContent);
-        spTagpan.appendChild(title);
+        pTag.appendChild(title);
 
       } else {
         pTag.classList.add("pick-a-language");

@@ -88,25 +88,23 @@ var LanguageSwitcher = (function () {
   };
 
   LanguageSwitcher.addTitleOnMobile = function (languagesDiv, isMobile) {
-    if (isMobile.matches) {
-      console.log("yes it is mobile");
-      var pTag = document.createElement("p");
+    console.log("yes it is mobile");
+    var pTag = document.createElement("p");
 
-      if (document.querySelector("[data-js='pick-a-language']")) {
-        pTag.classList.add("wpml-ls-native");
-        var hiddenSpan = document.querySelector("[data-js='translate']");
-        var hiddenSpanContent = hiddenSpan.textContent;
-        var title = document.createTextNode(hiddenSpanContent);
-        pTag.appendChild(title);
-      } else {
-        pTag.classList.add("pick-a-language");
-        var title$1 = document.createTextNode("Pick a language");
-        pTag.appendChild(title$1);
-      }
-
-      console.log(pTag);
-      languagesDiv.prepend(pTag);
+    if (document.querySelector("[data-js='pick-a-language']")) {
+      pTag.classList.add("pick-a-language");
+      var hiddenSpan = document.querySelector("[data-js='pick-a-language']");
+      var hiddenSpanContent = hiddenSpan.textContent;
+      var title = document.createTextNode(hiddenSpanContent);
+      pTag.appendChild(title);
+    } else {
+      pTag.classList.add("pick-a-language");
+      var title$1 = document.createTextNode("Pick a language");
+      pTag.appendChild(title$1);
     }
+
+    console.log(pTag);
+    languagesDiv.prepend(pTag);
   };
 
   LanguageSwitcher.Selector = "rounded";

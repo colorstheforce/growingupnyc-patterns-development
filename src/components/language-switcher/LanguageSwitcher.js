@@ -108,13 +108,13 @@ class LanguageSwitcher {
 }
 
 LanguageSwitcher.addTitleOnMobile = function(languagesDiv, isMobile) {
-    if (isMobile.matches) {
+
         console.log("yes it is mobile")
 
         const pTag = document.createElement("p");
       if (document.querySelector("[data-js='pick-a-language']")) {
-        pTag.classList.add("wpml-ls-native");
-        const hiddenSpan = document.querySelector("[data-js='translate']")
+        pTag.classList.add("pick-a-language");
+        const hiddenSpan = document.querySelector("[data-js='pick-a-language']")
         const hiddenSpanContent = hiddenSpan.textContent;
 
         const title = document.createTextNode(hiddenSpanContent);
@@ -129,8 +129,6 @@ LanguageSwitcher.addTitleOnMobile = function(languagesDiv, isMobile) {
        console.log(pTag)
       languagesDiv.prepend(pTag)
 
-
-    }
 
 }
 

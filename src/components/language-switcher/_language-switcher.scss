@@ -129,6 +129,7 @@
         height: 50%;
         width: 100%;
         overflow: scroll;
+				z-index: 1;
 
     .o-container {
       padding: 0;
@@ -138,7 +139,7 @@
       // display: block;
     }
       .c-language-switcher {
-      		.c-language-switcher__horizontal {
+      		.wpml-ls-legacy-list-horizontal {
       			ul {
 
               li {

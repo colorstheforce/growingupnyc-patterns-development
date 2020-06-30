@@ -7959,15 +7959,16 @@ input[type=search].form-field {
   .mobile-languages-switcher .wpml-ls-item {
     display: block;
     border-bottom: 1px solid;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     margin: 0;
   }
-  .mobile-languages-switcher .c-language-switcher .wpml-ls-legacy-list-horizontal {
+  .mobile-languages-switcher .o-container .wpml-ls-legacy-list-horizontal, .mobile-languages-switcher .o-container-med .wpml-ls-legacy-list-horizontal {
     width: 100%;
     padding: 0 1rem;
   }
-  .mobile-languages-switcher .c-language-switcher .wpml-ls-legacy-list-horizontal ul li a {
+  .mobile-languages-switcher .o-container .wpml-ls-legacy-list-horizontal ul li a, .mobile-languages-switcher .o-container-med .wpml-ls-legacy-list-horizontal ul li a {
     padding: 0;
+    text-align: left;
   }
 }
 /**

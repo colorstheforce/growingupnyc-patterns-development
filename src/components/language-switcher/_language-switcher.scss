@@ -137,15 +137,16 @@
 
     .wpml-ls-item {
       // display: block;
+			display: block;
+			border-bottom: 1px solid;
+			padding: .5rem 0;
     }
       .c-language-switcher {
       		.wpml-ls-legacy-list-horizontal {
       			ul {
 
               li {
-                display: block;
-                border-bottom: 1px solid;
-                padding: .5rem 0;
+
 
 								a {
 									padding: 0;

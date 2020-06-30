@@ -23,7 +23,7 @@ var LanguageSwitcher = function LanguageSwitcher() {
 
 
   if (languagesDiv) {
-    languagesDiv.classList.add("desktop:w-11/12", "w-9/12");
+    languagesDiv.classList.add("desktop:w-11/12");
   } //Span elemtn with the title "Translate"
 
 
@@ -69,13 +69,14 @@ var LanguageSwitcher = function LanguageSwitcher() {
 
   }); // const switcher2 = switcher.outerHTML = "<a class=\"rounded\">Translate</a>"
   // switcher.addEventListener('click', (e) => {
-  // this._toggle(allLanguages, currentLanguage)
+  // 	this._toggle(allLanguages, currentLanguage)
   // })
 
   aTag.addEventListener('click', function (e) {
     this$1._toggle(allLanguages, currentLanguage);
 
     li.style.display = "none";
+    languageSwitcherWrapper.classList.toggle("mobile-languages-switcher");
   });
 };
 

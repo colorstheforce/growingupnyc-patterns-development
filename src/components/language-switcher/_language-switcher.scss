@@ -5,138 +5,59 @@
 // Dependencies
 @import 'scss/functions/rem-calc';
 
-
-
-// //Language switcher
-// .c-language-switcher-wrapper {
-//   background-color: $color-background;
-//   position: relative;
-//   z-index: 3;
-//   .c-language__switcher {
-//     background-color: $color-background;
-//     text-align: right;
-//     z-index: 1;
-//     @if ($language == 'ar') or ($language == 'ur') {
-//       text-align: left;
-//     }
-//     .wpml-ls-legacy-list-horizontal {
-//       padding: 7px 0 0;
-//       li {
-//         margin-right: rem-calc(5);
-//         &:last-child {
-//           margin-right: 0;
-//           a {
-//             padding-right: 0;
-//           }
-//         }
-//         a {
-//           font-size: rem-calc(11);
-//           // color: $light-gray-1;
-//           color: rgba(45,51,61,.5);
-//           padding: 5px 8px;
-//           &:hover {
-//             color: $color-primary;
-//           }
-//         }
-//         &.wpml-ls-current-language {
-//           a {
-//             color: $color-primary;
-//             &:before {
-//               content: '\f00c';
-//               font-family: FontAwesome;
-//               font-style: normal;
-//               font-weight: normal;
-//               position: relative;
-//               top: rem-calc(2);
-//               margin-right: rem-calc(3);
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-
-
-
-
 // Declarations
 
 .c-language__switcher {
   text-align: right;
   z-index: 1;
-	display: flex;
-	justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 
-	@if ($language == 'ar') or ($language == 'ur') {
+  @if ($language == 'ar') or ($language == 'ur') {
       text-align: left;
     }
-	// .rounded {
-	// 	display: inline-block;
-	// 	font-size: .6875rem;
-	// 	color: #999;
-	// 	// padding: 5px 8px;
-	// 	text-decoration: none;
-	// 	padding-left: 2rem !important;
-	// 	padding-bottom: .25rem !important;
-	// 	-webkit-box-ordinal-group: 10000 !important;
-  //   -ms-flex-order: 9999 !important;
-  //   order: 9999 !important;
-	// 	align-self: flex-end !important;
-	// 	padding-top: 1rem;
-
-	// 	&:before {
-	// 				content: "";
-	// 				// background-image: url('../icons.svg#icon-translate');
-  //         font-weight: 900;
-  //         font-style: normal;
-  //         position: relative;
-  //         top: rem-calc(2);
-  //         margin-right: rem-calc(3);
-  //       }
-
-	// }
 
   a {
     // @extend .font-sans--secondary;
 
   }
+
+
 }
 .wpml-ls-legacy-list-horizontal {
   padding: 7px 0 0;
 
-	.wpml-ls-item-button {
+  .wpml-ls-item-button {
 
-				.title-tag {
-					padding-top: 0;
+        .title-tag {
+          padding-top: 0;
 
-					&:before {
-						content: "";
-						-webkit-mask: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-translate.svg")  no-repeat 50% 50%;
-						mask: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-translate.svg")  no-repeat 50% 50%;
-						// mask: url("../svg/icon-translate.svg")  no-repeat 50% 50%;
-						// content: url('../svg/icon-translate.svg');
-						display: inline-block;
-						height: 15px;
-						width: 22px;
-						margin-bottom: -3px;
-      			background-color: $color-gray;
-						// margin-right: rem-calc(3);
-						// display: inline-block;
-						// width: 10px;
-						@if ($language == 'ar') or ($language == 'ur') {
-							width: 30px;
-						} @else {
-							width: 22px;
-						}
-					}
-					&:hover:before {
-						background-color: $color-primary;
-					}
-				}
+          &:before {
+            content: "";
+            -webkit-mask: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-translate.svg")  no-repeat 50% 50%;
+            mask: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-translate.svg")  no-repeat 50% 50%;
+            // mask: url("../svg/icon-translate.svg")  no-repeat 50% 50%;
+            // content: url('../svg/icon-translate.svg');
+            display: inline-block;
+            height: 15px;
+            width: 22px;
+            margin-bottom: -3px;
+            background-color: $color-gray;
+            // margin-right: rem-calc(3);
+            // display: inline-block;
+            // width: 10px;
+            @if ($language == 'ar') or ($language == 'ur') {
+              width: 30px;
+            } @else {
+              width: 22px;
+            }
+          }
+          &:hover:before {
+            background-color: $color-primary;
+          }
+        }
 
-	}
+  }
 
   ul {
     list-style: none;
@@ -167,11 +88,11 @@
       a {
         color: $color-primary;
         &:before {
-					content: "";
-					// content: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-check.svg");
-					// content: url('../svg/icon-check.svg');
-					-webkit-mask: url(https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-check.svg) no-repeat 50% 50%;
-  				mask: url(https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-check.svg) no-repeat 50% 50%;
+          content: "";
+          // content: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-check.svg");
+          // content: url('../svg/icon-check.svg');
+          -webkit-mask: url(https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-check.svg) no-repeat 50% 50%;
+          mask: url(https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-check.svg) no-repeat 50% 50%;
           // content: fa-content($fa-var-check);
           // font-family: 'Font Awesome 5 Free';
           // font-weight: 900;
@@ -179,25 +100,61 @@
           // position: relative;
           // top: rem-calc(2);
           // margin-right: rem-calc(3);
-					display: inline-block;
-					width: 10px;
-					height: 10px;
-					background-color: $color-primary;
-					position: relative;
-					top: .125rem;
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background-color: $color-primary;
+          position: relative;
+          top: .125rem;
 
-					@if ($language == 'ar') or ($language == 'ur') {
-						margin-left: .1875rem;
-					} @else {
-						margin-right: .1875rem;
-					}
+          @if ($language == 'ar') or ($language == 'ur') {
+            margin-left: .1875rem;
+          } @else {
+            margin-right: .1875rem;
+          }
         }
 
-				// &:hover:before {
-				// }
+        // &:hover:before {
+        // }
       }
     }
   }
+}
+
+@media screen and (max-width: $screen-mobile) {
+  .mobile-languages-switcher {
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+        height: 50%;
+        width: 100%;
+        overflow: scroll;
+
+    .o-container {
+      padding: 0;
+    }
+
+    .wpml-ls-item {
+      // display: block;
+    }
+      .c-language-switcher {
+      		.c-language-switcher__horizontal {
+      			ul {
+
+              li {
+                display: block;
+                border-bottom: 1px solid;
+                padding: .5rem 0;
+
+								a {
+									padding: 0;
+								}
+              }
+      			}
+      		}
+
+      }
+    }
 }
 
 

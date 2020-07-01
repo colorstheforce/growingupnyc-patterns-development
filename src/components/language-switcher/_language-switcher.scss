@@ -121,7 +121,7 @@
   }
 }
 
-@media screen and (max-width: $screen-mobile) {
+@media screen and (max-width: $screen-tablet) {
   .mobile-languages-switcher {
         position: fixed;
         bottom: 0;
@@ -171,6 +171,10 @@
 									text-align: right;
 
 									}
+								}
+								&:last-child {
+									border: none;
+
 								}
 
 

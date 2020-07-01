@@ -58,7 +58,7 @@ class LanguageSwitcher {
     console.log(closeIconLi)
 
     // Media Query
-    let isMobile = window.matchMedia("(max-width: 375px)");
+    let isMobile = window.matchMedia("(max-width: 700px)");
     if (isMobile.matches) {
       let ul = document.querySelector(".wpml-ls-legacy-list-horizontal").getElementsByTagName("ul");
       ul[0].prepend(closeIconLi);
@@ -104,17 +104,17 @@ class LanguageSwitcher {
         // });
 
 
-        aTag.addEventListener('click', (e) => {
-          this._toggle(allLanguages, currentLanguage);
-          li.style.display = "none";
-          languageSwitcherWrapper.classList.toggle("mobile-languages-switcher")
-        })
+    aTag.addEventListener('click', (e) => {
+      this._toggle(allLanguages, currentLanguage);
+      li.style.display = "none";
+      languageSwitcherWrapper.classList.toggle("mobile-languages-switcher")
+    })
 
-        CloseIconATag.addEventListener('click', (e) => {
-          this._hideAllLanguages(allLanguages);
-          languageSwitcherWrapper.classList.remove("mobile-languages-switcher");
-          li.style.display = "";
-        })
+    CloseIconATag.addEventListener('click', (e) => {
+      this._hideAllLanguages(allLanguages);
+      languageSwitcherWrapper.classList.remove("mobile-languages-switcher");
+      li.style.display = "";
+    })
 }
 
 

@@ -46,7 +46,7 @@ var LanguageSwitcher = function LanguageSwitcher() {
   closeIconLi.appendChild(CloseIconATag);
   console.log(closeIconLi); // Media Query
 
-  var isMobile = window.matchMedia("(max-width: 375px)");
+  var isMobile = window.matchMedia("(max-width: 700px)");
 
   if (isMobile.matches) {
     var ul = document.querySelector(".wpml-ls-legacy-list-horizontal").getElementsByTagName("ul");

@@ -52,7 +52,7 @@ class LanguageSwitcher {
 
 
 
-    CloseIconATag.textContent = "Close";
+    // CloseIconATag.textContent = "Close";
 
     closeIconLi.appendChild(CloseIconATag)
     console.log(closeIconLi)

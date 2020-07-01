@@ -42,8 +42,8 @@ var LanguageSwitcher = (function () {
     var closeIconLi = document.createElement("li");
     closeIconLi.classList.add("close-language-switcher", "wpml-ls-item");
     var CloseIconATag = document.createElement("a");
-    CloseIconATag.classList.add("wpml-ls-link", "ls-close-link");
-    CloseIconATag.textContent = "Close";
+    CloseIconATag.classList.add("wpml-ls-link", "ls-close-link"); // CloseIconATag.textContent = "Close";
+
     closeIconLi.appendChild(CloseIconATag);
     console.log(closeIconLi); // Media Query
 

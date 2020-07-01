@@ -138,7 +138,7 @@
     .wpml-ls-item {
       // display: block;
       display: block;
-      border-bottom: 1px solid;
+      border-bottom: 0.5px solid;
       padding: 1rem 0;
       margin: 0;
     }
@@ -156,26 +156,27 @@
 
               li {
 
-								&:first-child {
-									border: none;
-									width: 50%;
-									display: inline-block;
-									text-align: left;
-								}
-								&:nth-child(2) {
-									border: none;
-									width: 50%;
-									display: inline-block;
+                &:first-child {
+                  border: none;
+                  width: 50%;
+                  display: inline-block;
+                  text-align: left;
+                }
+                &:nth-child(2) {
+                  border: none;
+                  width: 50%;
+                  display: inline-block;
+                  text-align: right;
 
-									a {
-									text-align: right;
+                  a {
+                  text-align: right;
 
-									}
-								}
-								&:last-child {
-									border: none;
+                  }
+                }
+                &:nth-child(12) {
+                  border: none;
 
-								}
+                }
 
 
                 a {
@@ -184,6 +185,33 @@
                 }
               }
             }
+
+            .ls-close-link {
+                    &:before {
+                  content: "";
+                  -webkit-mask: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-close.svg")  no-repeat 50% 50%;
+                  mask: url("https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/svg/icon-close.svg")  no-repeat 50% 50%;
+                  // mask: url("../svg/icon-translate.svg")  no-repeat 50% 50%;
+                  // content: url('../svg/icon-translate.svg');
+                  display: inline-block;
+                  height: 25px;
+                  width: 32px;
+                  margin-bottom: -3px;
+                  background-color: $color-gray;
+                  // margin-right: rem-calc(3);
+                  // display: inline-block;
+                  // width: 10px;
+                  @if ($language == 'ar') or ($language == 'ur') {
+                    width: 30px;
+                  } @else {
+                    width: 22px;
+                  }
+                }
+                &:hover:before {
+                  background-color: $color-primary;
+                }
+              }
+
           }
 
       }

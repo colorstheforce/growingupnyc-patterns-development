@@ -160,12 +160,17 @@
 									border: none;
 									width: 50%;
 									display: inline-block;
+									text-align: left;
 								}
 								&:nth-child(2) {
 									border: none;
 									width: 50%;
 									display: inline-block;
+
+									a {
 									text-align: right;
+
+									}
 								}
 
 

@@ -156,6 +156,16 @@
 
               li {
 
+								&:first-child {
+									border: none;
+									display: inline-block;
+								}
+								&:nth-child(2) {
+									border: none;
+									display: inline-block;
+									float: right;
+								}
+
 
                 a {
                   padding: 0;

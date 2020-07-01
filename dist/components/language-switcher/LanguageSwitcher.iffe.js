@@ -13,20 +13,46 @@ var LanguageSwitcher = (function () {
     var switcher = document.querySelector("." + this._settings.selector);
     var languagesDiv = document.querySelector("." + this._settings.target);
     var currentLanguage = document.querySelector("." + this._settings.currentLanguage);
-    var allLanguages = document.querySelectorAll(".wpml-ls-item");
     var languageSwitcherWrapper = document.querySelector("." + this._settings.languageSwitcherWrapper);
-    var logoWrapper = document.querySelector("." + this._settings.logoWrapper); // Media Query
-
-    var isMobile = window.matchMedia("(max-width: 375px)");
-
-    if (!languageSwitcherWrapper) {
-      logoWrapper.style.marginTop = "2rem";
-    } // const languagesDiv = document.querySelector(".wpml-ls-legacy-list-horizontal")
-    // const switcher = document.querySelector(`.${LanguageSwitcher}`)
-
+    var logoWrapper = document.querySelector("." + this._settings.logoWrapper);
 
     if (languagesDiv) {
       languagesDiv.classList.add("desktop:w-11/12");
+    }
+
+    if (!languageSwitcherWrapper) {
+      logoWrapper.style.marginTop = "2rem";
+    } // Add Pick a language title on moble
+
+
+    var liTag = document.createElement("li");
+
+    if (document.querySelector("[data-js='pick-a-language']")) {
+      liTag.classList.add("pick-a-language", "wpml-ls-item");
+      var hiddenSpan = document.querySelector("[data-js='pick-a-language']");
+      var hiddenSpanContent = hiddenSpan.textContent;
+      var title = document.createTextNode(hiddenSpanContent);
+      liTag.appendChild(title);
+    } else {
+      liTag.classList.add("pick-a-language", "wpml-ls-item");
+      var title$1 = document.createTextNode("Pick a language");
+      liTag.appendChild(title$1);
+    }
+
+    var closeIconLi = document.createElement("li");
+    closeIconLi.classList.add("close-language-switcher", "wpml-ls-item");
+    var CloseIconATag = document.createElement("a");
+    CloseIconATag.classList.add("wpml-ls-link", "ls-close-link");
+    CloseIconATag.textContent = "Close";
+    closeIconLi.appendChild(CloseIconATag);
+    console.log(closeIconLi); // Media Query
+
+    var isMobile = window.matchMedia("(max-width: 375px)");
+
+    if (isMobile.matches) {
+      var ul = document.querySelector(".wpml-ls-legacy-list-horizontal").getElementsByTagName("ul");
+      ul[0].prepend(closeIconLi);
+      ul[0].prepend(liTag);
     } //Span elemetn with the title "Translate"
 
 
@@ -34,16 +60,14 @@ var LanguageSwitcher = (function () {
 
     if (document.querySelector("[data-js='translate']")) {
       span.classList.add("wpml-ls-native");
-      var hiddenSpan = document.querySelector("[data-js='translate']");
-      var hiddenSpanConten = hiddenSpan.textContent; // span.textContent = hiddenSpanConten;
-
-      var title = document.createTextNode(hiddenSpanConten);
-      span.appendChild(title);
-      console.log(hiddenSpanConten);
+      var hiddenSpan$1 = document.querySelector("[data-js='translate']");
+      var hiddenSpanConten = hiddenSpan$1.textContent;
+      var title$2 = document.createTextNode(hiddenSpanConten);
+      span.appendChild(title$2);
     } else {
       span.classList.add("wpml-ls-native");
-      var title$1 = document.createTextNode("Translate");
-      span.appendChild(title$1);
+      var title$3 = document.createTextNode("Translate");
+      span.appendChild(title$3);
     }
 
     var aTag = document.createElement("a");
@@ -54,57 +78,28 @@ var LanguageSwitcher = (function () {
     li.appendChild(aTag);
 
     if (document.querySelector(".wpml-ls-legacy-list-horizontal")) {
-      var ul = document.querySelector(".wpml-ls-legacy-list-horizontal").getElementsByTagName("ul");
-      ul[0].appendChild(li);
-    } // console.log(li)
+      var ul$1 = document.querySelector(".wpml-ls-legacy-list-horizontal").getElementsByTagName("ul");
+      ul$1[0].appendChild(li);
+    }
 
-
+    var allLanguages = document.querySelectorAll(".wpml-ls-item");
     allLanguages.forEach(function (item) {
       if (!item.classList.contains('wpml-ls-current-language')) {
         item.style.display = "none";
-      } // console.log(item.classList.contains('wpml-ls-current-language'))
-
-    }); // const switcher2 = switcher.outerHTML = "<a class=\"rounded\">Translate</a>"
-    // switcher.addEventListener('click', (e) => {
-    // 	this._toggle(allLanguages, currentLanguage)
-    // })
-
+      }
+    });
     aTag.addEventListener('click', function (e) {
       this$1._toggle(allLanguages, currentLanguage);
 
       li.style.display = "none";
       languageSwitcherWrapper.classList.toggle("mobile-languages-switcher");
     });
-    LanguageSwitcher.addTitleOnMobile(languagesDiv, isMobile);
-    window.addEventListener('resize', function () {
-      LanguageSwitcher.addTitleOnMobile(languagesDiv, isMobile);
-    }, false);
   };
 
   LanguageSwitcher.prototype._toggle = function _toggle(allLanguages, currentLanguage) {
     allLanguages.forEach(function (item) {
       item.style.display = "";
     });
-  };
-
-  LanguageSwitcher.addTitleOnMobile = function (languagesDiv, isMobile) {
-    console.log("yes it is mobile");
-    var pTag = document.createElement("p");
-
-    if (document.querySelector("[data-js='pick-a-language']")) {
-      pTag.classList.add("pick-a-language");
-      var hiddenSpan = document.querySelector("[data-js='pick-a-language']");
-      var hiddenSpanContent = hiddenSpan.textContent;
-      var title = document.createTextNode(hiddenSpanContent);
-      pTag.appendChild(title);
-    } else {
-      pTag.classList.add("pick-a-language");
-      var title$1 = document.createTextNode("Pick a language");
-      pTag.appendChild(title$1);
-    }
-
-    console.log(pTag);
-    languagesDiv.prepend(pTag);
   };
 
   LanguageSwitcher.Selector = "rounded";

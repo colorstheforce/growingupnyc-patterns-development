@@ -15,26 +15,51 @@ class LanguageSwitcher {
       logoWrapper: LanguageSwitcher.logoWrapper
     };
 
-  const switcher = document.querySelector(`.${this._settings.selector}`)
-  const languagesDiv = document.querySelector(`.${this._settings.target}`)
-  const currentLanguage = document.querySelector(`.${this._settings.currentLanguage}`)
-  const allLanguages = document.querySelectorAll(".wpml-ls-item");
-  const languageSwitcherWrapper = document.querySelector(`.${this._settings.languageSwitcherWrapper}`);
-  const logoWrapper = document.querySelector(`.${this._settings.logoWrapper}`);
+    const switcher = document.querySelector(`.${this._settings.selector}`)
+    const languagesDiv = document.querySelector(`.${this._settings.target}`)
+    const currentLanguage = document.querySelector(`.${this._settings.currentLanguage}`)
+    const languageSwitcherWrapper = document.querySelector(`.${this._settings.languageSwitcherWrapper}`);
+    const logoWrapper = document.querySelector(`.${this._settings.logoWrapper}`);
 
-  // Media Query
-  let isMobile = window.matchMedia("(max-width: 375px)");
 
-  if(!languageSwitcherWrapper) {
-    logoWrapper.style.marginTop = "2rem";
-  }
+    if (languagesDiv) {
+      languagesDiv.classList.add("desktop:w-11/12");
+    }
+    if(!languageSwitcherWrapper) {
+      logoWrapper.style.marginTop = "2rem";
+    }
 
-  // const languagesDiv = document.querySelector(".wpml-ls-legacy-list-horizontal")
-    // const switcher = document.querySelector(`.${LanguageSwitcher}`)
+    // Add Pick a language title on moble
+    const liTag = document.createElement("li");
+    if (document.querySelector("[data-js='pick-a-language']")) {
+      liTag.classList.add("pick-a-language", "wpml-ls-item");
+      const hiddenSpan = document.querySelector("[data-js='pick-a-language']")
+      const hiddenSpanContent = hiddenSpan.textContent;
 
-  if (languagesDiv) {
-    languagesDiv.classList.add("desktop:w-11/12");
-  }
+      const title = document.createTextNode(hiddenSpanContent);
+      liTag.appendChild(title);
+
+    } else {
+      liTag.classList.add("pick-a-language", "wpml-ls-item");
+      const title = document.createTextNode("Pick a language");
+      liTag.appendChild(title);
+    }
+
+    const closeIconLi = document.createElement("li");
+    closeIconLi.classList.add("close-language-switcher", "wpml-ls-item");
+    const CloseIconATag = document.createElement("a")
+    CloseIconATag.classList.add("wpml-ls-link", "ls-close-link");
+    CloseIconATag.textContent = "Close";
+    closeIconLi.appendChild(CloseIconATag)
+    console.log(closeIconLi)
+
+    // Media Query
+    let isMobile = window.matchMedia("(max-width: 375px)");
+    if (isMobile.matches) {
+      let ul = document.querySelector(".wpml-ls-legacy-list-horizontal").getElementsByTagName("ul");
+      ul[0].prepend(closeIconLi);
+      ul[0].prepend(liTag);
+    }
 
 
     //Span elemetn with the title "Translate"
@@ -43,10 +68,8 @@ class LanguageSwitcher {
       span.classList.add("wpml-ls-native");
       const hiddenSpan = document.querySelector("[data-js='translate']")
       const hiddenSpanConten = hiddenSpan.textContent;
-      // span.textContent = hiddenSpanConten;
       const title = document.createTextNode(hiddenSpanConten);
       span.appendChild(title);
-      console.log(hiddenSpanConten)
     } else {
       span.classList.add("wpml-ls-native");
       const title = document.createTextNode("Translate");
@@ -67,19 +90,14 @@ class LanguageSwitcher {
       ul[0].appendChild(li);
     }
 
-    // console.log(li)
 
+    const allLanguages = document.querySelectorAll(".wpml-ls-item");
     allLanguages.forEach(item => {
       if (!item.classList.contains('wpml-ls-current-language')) {
         item.style.display = "none"
       }
-      // console.log(item.classList.contains('wpml-ls-current-language'))
     });
 
-  // const switcher2 = switcher.outerHTML = "<a class=\"rounded\">Translate</a>"
-  // switcher.addEventListener('click', (e) => {
-  // 	this._toggle(allLanguages, currentLanguage)
-  // })
 
   aTag.addEventListener('click', (e) => {
     this._toggle(allLanguages, currentLanguage);
@@ -87,16 +105,7 @@ class LanguageSwitcher {
     languageSwitcherWrapper.classList.toggle("mobile-languages-switcher")
   })
 
-
-
-    LanguageSwitcher.addTitleOnMobile(languagesDiv, isMobile);
-    window.addEventListener('resize', function() {
-      LanguageSwitcher.addTitleOnMobile(languagesDiv, isMobile);
-    }, false);
-
-  }
-
-
+}
 
 
   _toggle(allLanguages, currentLanguage) {
@@ -107,30 +116,6 @@ class LanguageSwitcher {
 
 }
 
-LanguageSwitcher.addTitleOnMobile = function(languagesDiv, isMobile) {
-
-        console.log("yes it is mobile")
-
-        const pTag = document.createElement("p");
-      if (document.querySelector("[data-js='pick-a-language']")) {
-        pTag.classList.add("pick-a-language");
-        const hiddenSpan = document.querySelector("[data-js='pick-a-language']")
-        const hiddenSpanContent = hiddenSpan.textContent;
-
-        const title = document.createTextNode(hiddenSpanContent);
-        pTag.appendChild(title);
-
-      } else {
-        pTag.classList.add("pick-a-language");
-        const title = document.createTextNode("Pick a language");
-        pTag.appendChild(title);
-      }
-
-       console.log(pTag)
-      languagesDiv.prepend(pTag)
-
-
-}
 
 LanguageSwitcher.Selector = "rounded"
 LanguageSwitcher.Target = "wpml-ls-legacy-list-horizontal"

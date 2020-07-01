@@ -173,10 +173,10 @@
 
                   }
                 }
-                &:nth-child(12) {
-                  border: none;
+                // &:nth-child(14) {
+                //   border: none;
 
-                }
+                // }
 
 
                 a {
@@ -211,7 +211,10 @@
                   background-color: $color-primary;
                 }
               }
+            .wpml-ls-item-ht {
+              border: none;
 
+            }
           }
 
       }

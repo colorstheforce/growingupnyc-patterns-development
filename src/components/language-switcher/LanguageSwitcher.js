@@ -49,7 +49,11 @@ class LanguageSwitcher {
     closeIconLi.classList.add("close-language-switcher", "wpml-ls-item");
     const CloseIconATag = document.createElement("a")
     CloseIconATag.classList.add("wpml-ls-link", "ls-close-link");
+
+
+
     CloseIconATag.textContent = "Close";
+
     closeIconLi.appendChild(CloseIconATag)
     console.log(closeIconLi)
 
@@ -92,19 +96,25 @@ class LanguageSwitcher {
 
 
     const allLanguages = document.querySelectorAll(".wpml-ls-item");
-    allLanguages.forEach(item => {
-      if (!item.classList.contains('wpml-ls-current-language')) {
-        item.style.display = "none"
-      }
-    });
+    this._hideAllLanguages(allLanguages);
+    // allLanguages.forEach(item => {
+      //   if (!item.classList.contains('wpml-ls-current-language')) {
+        //     item.style.display = "none"
+        //   }
+        // });
 
 
-  aTag.addEventListener('click', (e) => {
-    this._toggle(allLanguages, currentLanguage);
-    li.style.display = "none";
-    languageSwitcherWrapper.classList.toggle("mobile-languages-switcher")
-  })
+        aTag.addEventListener('click', (e) => {
+          this._toggle(allLanguages, currentLanguage);
+          li.style.display = "none";
+          languageSwitcherWrapper.classList.toggle("mobile-languages-switcher")
+        })
 
+        CloseIconATag.addEventListener('click', (e) => {
+          this._hideAllLanguages(allLanguages);
+          languageSwitcherWrapper.classList.remove("mobile-languages-switcher");
+          li.style.display = "";
+        })
 }
 
 
@@ -112,6 +122,14 @@ class LanguageSwitcher {
     allLanguages.forEach(item => {
       item.style.display = ""
     })
+  }
+
+  _hideAllLanguages(allLanguages) {
+    allLanguages.forEach(item => {
+      if (!item.classList.contains('wpml-ls-current-language')) {
+        item.style.display = "none"
+      }
+    });
   }
 
 }

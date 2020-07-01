@@ -82,22 +82,39 @@ var LanguageSwitcher = function LanguageSwitcher() {
   }
 
   var allLanguages = document.querySelectorAll(".wpml-ls-item");
-  allLanguages.forEach(function (item) {
-    if (!item.classList.contains('wpml-ls-current-language')) {
-      item.style.display = "none";
-    }
-  });
+
+  this._hideAllLanguages(allLanguages); // allLanguages.forEach(item => {
+  // if (!item.classList.contains('wpml-ls-current-language')) {
+  //   item.style.display = "none"
+  // }
+  // });
+
+
   aTag.addEventListener('click', function (e) {
     this$1._toggle(allLanguages, currentLanguage);
 
     li.style.display = "none";
     languageSwitcherWrapper.classList.toggle("mobile-languages-switcher");
   });
+  CloseIconATag.addEventListener('click', function (e) {
+    this$1._hideAllLanguages(allLanguages);
+
+    languageSwitcherWrapper.classList.remove("mobile-languages-switcher");
+    li.style.display = "";
+  });
 };
 
 LanguageSwitcher.prototype._toggle = function _toggle(allLanguages, currentLanguage) {
   allLanguages.forEach(function (item) {
     item.style.display = "";
+  });
+};
+
+LanguageSwitcher.prototype._hideAllLanguages = function _hideAllLanguages(allLanguages) {
+  allLanguages.forEach(function (item) {
+    if (!item.classList.contains('wpml-ls-current-language')) {
+      item.style.display = "none";
+    }
   });
 };
 

@@ -103,11 +103,11 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
 }
 
 
-// @media screen and (max-width: $screen-tablet) {
-//   .mobile-languages-switcher .o-navigation__logo-wrapper {
-// 		  top: 0;
-// 	}
-// }
+@media screen and (max-width: $screen-tablet) {
+  .ls-logo {
+		  top: 0;
+	}
+}
 
 .o-navigation__logo-wrapper-no-menu {
   // top: 0 !important;

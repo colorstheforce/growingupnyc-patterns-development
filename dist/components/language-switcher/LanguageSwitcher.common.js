@@ -95,12 +95,14 @@ var LanguageSwitcher = function LanguageSwitcher() {
 
     li.style.display = "none";
     languageSwitcherWrapper.classList.toggle("mobile-languages-switcher");
+    logoWrapper.classList.toggle("ls-logo");
   });
   CloseIconATag.addEventListener('click', function (e) {
     this$1._hideAllLanguages(allLanguages);
 
     languageSwitcherWrapper.classList.remove("mobile-languages-switcher");
     li.style.display = "";
+    logoWrapper.classList.remove("ls-logo");
   });
 };
 

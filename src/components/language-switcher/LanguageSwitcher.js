@@ -108,12 +108,15 @@ class LanguageSwitcher {
       this._toggle(allLanguages, currentLanguage);
       li.style.display = "none";
       languageSwitcherWrapper.classList.toggle("mobile-languages-switcher")
+      logoWrapper.classList.toggle("ls-logo")
+
     })
 
     CloseIconATag.addEventListener('click', (e) => {
       this._hideAllLanguages(allLanguages);
       languageSwitcherWrapper.classList.remove("mobile-languages-switcher");
       li.style.display = "";
+      logoWrapper.classList.remove("ls-logo")
     })
 }
 

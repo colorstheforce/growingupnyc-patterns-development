@@ -90,12 +90,13 @@ var LanguageSwitcher = function LanguageSwitcher() {
   // });
 
 
+  console.log(logoWrapper);
   aTag.addEventListener('click', function (e) {
     this$1._toggle(allLanguages, currentLanguage);
 
     li.style.display = "none";
     languageSwitcherWrapper.classList.toggle("mobile-languages-switcher");
-    logoWrapper.classList.toggle("ls-logo");
+    logoWrapper.classList.add("ls-logo");
   });
   CloseIconATag.addEventListener('click', function (e) {
     this$1._hideAllLanguages(allLanguages);
